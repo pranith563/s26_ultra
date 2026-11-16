@@ -1,0 +1,75 @@
+[31mNot meant for machine consumption. Use --query-raw for scripts.[0m
+
+Service: Perfetto v51.2 (N/A)
+Tracing sessions: 0 (started: 0)
+
+
+PRODUCER PROCESSES CONNECTED:
+
+ID     PID      UID      FLAGS  NAME                                       SDK
+==     ===      ===      =====  ====                                       ===
+1      2458     9999            traced                                     
+2      2452     9999            perfetto.traced_probes                     Perfetto v51.2 (N/A)
+3      2050     1072            /system/bin/gpuservice                     Perfetto v51.2 (N/A)
+4      2068     1000            /system/bin/surfaceflinger                 Perfetto v51.2 (N/A)
+5      3181     1000            system_server                              Perfetto v51.2 (N/A)
+6      1013     1000            /system/bin/servicemanager                 Perfetto v51.2 (N/A)
+7      4238     10049           com.android.systemui                       Perfetto v51.2 (N/A)
+9      2068     1000            /system/bin/surfaceflinger                 Perfetto v51.2 (N/A)
+10     4956     10158           com.sec.android.app.launcher               Perfetto v51.2 (N/A)
+12     5108     10277           cronet-com.google.android.gms-5108         Perfetto v0.0 (unknown)
+16     16199    10277           cronet-com.google.android.gms-16199        Perfetto v0.0 (unknown)
+
+
+DATA SOURCES REGISTERED:
+
+NAME                                     PRODUCER                     DETAILS
+===                                      ========                     ========
+android.app_wakelocks                    system_server (5)            
+android.cpu_per_uid                      perfetto.traced_probes (2)   
+android.game_interventions               perfetto.traced_probes (2)   
+android.gpu.memory                       /system/bin/gpuservice (3)   
+android.heapprofd                        traced (1)                   
+android.inputmethod                      com.android.systemui (7)     
+android.inputmethod                      com.sec.android.app.launcher (10) 
+android.java_hprof                       traced (1)                   
+android.java_hprof.oom                   traced (1)                   
+android.kernel_wakelocks                 perfetto.traced_probes (2)   
+android.log                              perfetto.traced_probes (2)   
+android.packages_list                    perfetto.traced_probes (2)   
+android.polled_state                     perfetto.traced_probes (2)   
+android.power                            perfetto.traced_probes (2)   
+android.protolog                         system_server (5)            
+android.protolog                         com.android.systemui (7)     
+android.protolog                         com.sec.android.app.launcher (10) 
+android.sdk_sysprop_guard                traced (1)                   
+android.statsd                           perfetto.traced_probes (2)   
+android.surfaceflinger.frame             /system/bin/surfaceflinger (4) 
+android.surfaceflinger.frametimeline     /system/bin/surfaceflinger (4) 
+android.surfaceflinger.layers            /system/bin/surfaceflinger (4) 
+android.system_property                  perfetto.traced_probes (2)   
+android.windowmanager                    system_server (5)            
+com.android.wm.shell.transition          system_server (5)            
+com.android.wm.shell.transition          com.android.systemui (7)     
+linux.frozen_ftrace                      perfetto.traced_probes (2)   
+linux.ftrace                             perfetto.traced_probes (2)   gfx,input,view,webview,wm,am,sm,audio,vi... (use --long to expand)
+linux.inode_file_map                     perfetto.traced_probes (2)   
+linux.perf                               traced (1)                   
+linux.process_stats                      perfetto.traced_probes (2)   
+linux.sys_stats                          perfetto.traced_probes (2)   
+linux.sysfs_power                        perfetto.traced_probes (2)   
+linux.system_info                        perfetto.traced_probes (2)   
+perfetto.metatrace                       traced (1)                   
+perfetto.metatrace                       perfetto.traced_probes (2)   
+track_event                              system_server (5)            always,gfx,input,view,webview,wm,am,sm,a... (use --long to expand)
+track_event                              /system/bin/servicemanager (6) servicemanager
+track_event                              com.android.systemui (7)     always,gfx,input,view,webview,wm,am,sm,a... (use --long to expand)
+track_event                              /system/bin/surfaceflinger (9) always,gfx,input,view,webview,wm,am,sm,a... (use --long to expand)
+track_event                              cronet-com.google.android.gms-5108 (12) __metadata,accessibility,AccountFetcherS... (use --long to expand)
+track_event                              cronet-com.google.android.gms-16199 (16) __metadata,accessibility,AccountFetcherS... (use --long to expand)
+
+
+TRACING SESSIONS:
+
+ID      UID     STATE      BUF (#) KB   DUR (s)   #DS  STARTED  NAME
+===     ===     =====      ==========   =======   ===  =======  ====

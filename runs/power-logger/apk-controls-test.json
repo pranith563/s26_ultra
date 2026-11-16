@@ -1,0 +1,7 @@
+{
+  "apk_start": true,
+  "initialization_countdown": true,
+  "continues_with_activity_in_background": true,
+  "apk_stop": true,
+  "phone_csv": "/data/local/tmp/s26-power-logger/power-f23a96a6-fe8e-4804-8076-32df8aa2f25e-8408260725275.csv"
+}

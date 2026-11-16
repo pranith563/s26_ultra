@@ -1,0 +1,17 @@
+---
+timestamp: 4223618704
+command: ./qnn-net-run --model ./libqnn_conv_relu.so --backend ./lib/libQnnHtp.so --input_list input_list.txt --output_dir session-20261114T125641Z --profiling_level detailed --duration 3 --keep_num_outputs 2 --log_level info
+execution_mode: synchronous
+inferences_completed: 404
+graphs:
+  - graph_name: convReluModel
+    input_tensors:
+    - tensor_name: input_0
+      id: 1
+      datatype: QNN_DATATYPE_UFIXED_POINT_8
+      dimensions: [1,299,299,3]
+    output_tensors:
+    - tensor_name: InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu_0
+      id: 8
+      datatype: QNN_DATATYPE_UFIXED_POINT_8
+      dimensions: [1,149,149,32]

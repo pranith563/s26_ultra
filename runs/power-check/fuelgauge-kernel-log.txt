@@ -1,0 +1,15 @@
+[ 5667.124495] [FG power] ISYS(68mA),ISYSAVG(76mA),VSYS(3975mV),IIN(466mA),VBYP(4891mV),QH(695000 uah),WA(0)
+[ 5677.371979] [FG power] ISYS(84mA),ISYSAVG(78mA),VSYS(3974mV),IIN(468mA),VBYP(4892mV),QH(700000 uah),WA(0)
+[ 5687.603956] [FG power] ISYS(84mA),ISYSAVG(78mA),VSYS(3972mV),IIN(467mA),VBYP(4892mV),QH(700000 uah),WA(0)
+[ 5687.606622] max77775_fg_read_isys_avg: isys_avg_current=78mA
+[ 5687.607377] max77775_fg_read_isys: isys_current=84mA
+[ 5688.739391] max77775_fg_read_isys_avg: isys_avg_current=80mA
+[ 5697.852459] [FG power] ISYS(85mA),ISYSAVG(82mA),VSYS(3972mV),IIN(469mA),VBYP(4889mV),QH(700000 uah),WA(0)
+[ 5708.086505] max77775_fg_read_isys_avg: isys_avg_current=80mA
+[ 5708.088086] [FG power] ISYS(74mA),ISYSAVG(80mA),VSYS(3976mV),IIN(465mA),VBYP(4891mV),QH(700000 uah),WA(0)
+[ 5718.321420] max77775_fg_read_isys: isys_current=81mA
+[ 5718.324248] [FG power] ISYS(81mA),ISYSAVG(82mA),VSYS(3975mV),IIN(465mA),VBYP(4891mV),QH(705000 uah),WA(0)
+[ 5718.419827] max77775_fg_read_isys_avg: isys_avg_current=82mA
+[ 5728.564640] [FG power] ISYS(68mA),ISYSAVG(83mA),VSYS(3974mV),IIN(467mA),VBYP(4892mV),QH(705000 uah),WA(0)
+[ 5728.649565] max77775_fg_read_isys: isys_current=90mA
+[ 5738.808454] [FG power] ISYS(73mA),ISYSAVG(84mA),VSYS(3974mV),IIN(467mA),VBYP(4889mV),QH(705000 uah),WA(0)

@@ -1,0 +1,321 @@
+{
+  "checked_utc": "2026-11-14T11:57:14.121427+00:00",
+  "checks": {
+    "identity": {
+      "command": "id; id -Z; getenforce; uname -a; getprop ro.build.type; getprop ro.product.cpu.abi",
+      "exit_code": 0,
+      "stdout": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0\nu:r:ksu:s0\nEnforcing\nLinux localhost 6.12.30-android16-5-p595aaaa-abogkiS948BXXU1AZAB-4k #1 SMP PREEMPT Fri Jan  9 15:40:27 UTC 2026 aarch64 Toybox\nuser\narm64-v8a\n",
+      "stderr": ""
+    },
+    "dma_heaps": {
+      "command": "ls -lZ /dev/dma_heap 2>&1",
+      "exit_code": 0,
+      "stdout": "total 0\ncr--r--r-- 1 system system u:object_r:dmabuf_heap_device:s0                         249,  10 1970-01-01 05:32 qcom,camera\ncr--r--r-- 1 system system u:object_r:dmabuf_heap_device:s0                         249,  11 1970-01-01 05:32 qcom,camera-uncached\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_display_heap_device:s0          249,   4 1970-01-01 05:32 qcom,display\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_qseecom_heap_device:s0          249,   5 1970-01-01 05:32 qcom,qseecom\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_qseecom_ta_heap_device:s0       249,   6 1970-01-01 05:32 qcom,qseecom-ta\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_secure_non_pixel:s0             249,   3 1970-01-01 05:32 qcom,secure-non-pixel\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_secure_pixel:s0                 249,   2 1970-01-01 05:32 qcom,secure-pixel\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_secure_sp_modem_heap_device:s0  249,   9 1970-01-01 05:32 qcom,secure-sp-modem\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_secure_sp_tz_heap_device:s0     249,   8 1970-01-01 05:32 qcom,secure-sp-tz\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_sp_hlos_heap_device:s0          249,   7 1970-01-01 05:32 qcom,sp-hlos\ncr--r--r-- 1 system system u:object_r:vendor_dmabuf_system_heap_device:s0           249,   0 1970-01-01 05:32 qcom,system\ncr--r--r-- 1 system system u:object_r:dmabuf_system_heap_device:s0                  249,   1 1970-01-01 05:32 system\n",
+      "stderr": ""
+    },
+    "qualcomm_nodes": {
+      "command": "ls -lZ /dev/kgsl* /dev/*adsprpc* /dev/*fastrpc* /dev/*cdsprpc* 2>&1",
+      "exit_code": 0,
+      "stdout": "ls: /dev/*adsprpc*: No such file or directory\nls: /dev/*cdsprpc*: No such file or directory\ncrw-r--r-- 1 system system u:object_r:vendor_xdsp_device:s0   10,  95 1970-01-01 05:32 /dev/fastrpc-adsp-secure\ncrw-rw-r-- 1 system system u:object_r:vendor_qdsp_device:s0   10,  99 1970-01-01 05:32 /dev/fastrpc-cdsp\ncrw-r--r-- 1 system system u:object_r:vendor_xdsp_device:s0   10, 100 1970-01-01 05:32 /dev/fastrpc-cdsp-secure\ncrw-r--r-- 1 system system u:object_r:vendor_xdsp_device:s0   10,  96 1970-01-01 05:32 /dev/fastrpc-lpass2000\ncrw-r--r-- 1 system system u:object_r:vendor_qdsp_device:s0   10, 101 1970-01-01 05:32 /dev/fastrpc-nsp1000\ncrw-rw-rw- 1 system system u:object_r:gpu_device:s0          472,   0 1970-01-01 05:32 /dev/kgsl-3d0\n",
+      "stderr": ""
+    },
+    "profiling_interfaces": {
+      "command": "ls -ld /sys/kernel/tracing /sys/kernel/debug; cat /proc/sys/kernel/perf_event_paranoid; cat /proc/sys/kernel/kptr_restrict; ls /sys/bus/event_source/devices; cat /sys/kernel/tracing/tracing_on; head -n 35 /sys/kernel/tracing/available_events",
+      "exit_code": 0,
+      "stdout": "dr-xr-xr-x 2 root root        0 2026-01-09 21:05 /sys/kernel/debug\ndrwxr-xr-x 6 root readtracefs 0 1970-01-01 05:30 /sys/kernel/tracing\n-1\n2\narmv8_pmuv3  cs_etm  llcc-pmu      smmu_0_3da2  tracepoint\nbreakpoint   kprobe  smmu_0_15002  software     uprobe\n0\nwlan:dp_tx_enqueue\nwlan:dp_ce_tasklet_sched_latency\nwlan:dp_del_reg_write\nwlan:dp_tx_comp_pkt\nwlan:dp_rx_pkt\nwlan:dp_tx_comp_generic_ip_pkt\nwlan:dp_rx_generic_ip_pkt\nwlan:dp_tx_comp_udp_pkt\nwlan:dp_rx_udp_pkt\nwlan:dp_tx_comp_tcp_pkt\nwlan:dp_rx_tcp_pkt\nwda:wda_client_state_down\nwda:wda_client_state_up\nwda:wda_set_powersave_mode\ndfc:dfc_pm_event\ndfc:dfc_set_powersave_mode\ndfc:dfc_ll_switch\ndfc:dfc_watchdog\ndfc:dfc_adjust_grant\ndfc:dfc_qmap\ndfc:dfc_tx_link_status_ind\ndfc:dfc_qmap_cmd\ndfc:dfc_client_state_down\ndfc:dfc_client_state_up\ndfc:dfc_flow_info\ndfc:dfc_flow_check\ndfc:dfc_flow_ind\ndfc:dfc_qmi_tc\nrmnet:rmnet_freq_update\nrmnet:rmnet_freq_reset\nrmnet:rmnet_freq_boost\nrmnet:rmnet_shs_wq_err\nrmnet:rmnet_shs_wq_high\nrmnet:rmnet_shs_wq_low\nrmnet:rmnet_shs_err\n",
+      "stderr": ""
+    },
+    "profiling_tools": {
+      "command": "command -v simpleperf; command -v perfetto; command -v qprof; ls -ld /vendor/qprof /vendor/qprof/backends /vendor/bin/qprof /data/local/tmp/qprof 2>&1",
+      "exit_code": 0,
+      "stdout": "/system/bin/simpleperf\n/system/bin/perfetto\n/vendor/bin/qprof\nls: /vendor/qprof/backends: No such file or directory\nls: /data/local/tmp/qprof: No such file or directory\n-rwxr-xr-x 1 root shell 4738936 2022-01-01 05:30 /vendor/bin/qprof\ndrwxr-xr-x 3 root shell      66 2022-01-01 05:30 /vendor/qprof\n",
+      "stderr": ""
+    },
+    "vendor_libraries": {
+      "command": "find /vendor/lib64 /vendor/dsp /vendor/bin -maxdepth 2 -iname \"*qnn*\" -o -iname \"*fastrpc*\" -o -iname \"*qprof*\" -o -iname \"*cdsprpc*\" -o -iname \"*adreno*\" 2>/dev/null",
+      "exit_code": 0,
+      "stdout": "/vendor/lib64/egl/libEGL_adreno.so\n/vendor/lib64/egl/libGLESv1_CM_adreno.so\n/vendor/lib64/egl/libGLESv2_adreno.so\n/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so\n/vendor/lib64/egl/libq3dtools_adreno.so\n/vendor/lib64/hw/vulkan.adreno.so\n/vendor/lib64/libEGL_adreno.so\n/vendor/lib64/libGLESv2_adreno.so\n/vendor/lib64/libOpenCL_adreno.so\n/vendor/lib64/libadreno_app_profiles.so\n/vendor/lib64/libadreno_compiler_cl.so\n/vendor/lib64/libadreno_utils.so\n/vendor/lib64/libcdsprpc.so\n/vendor/lib64/libnspextensiongenericqnnservice.so\n/vendor/lib64/libq3dtools_adreno.so\n/vendor/dsp/adsp/libQnnLpaiIsland.so\n/vendor/dsp/adsp/fastrpc_shell_0\n/vendor/dsp/adsp/libQnnLpai.so\n/vendor/dsp/cdsp/fastrpc_shell_3\n/vendor/dsp/cdsp/fastrpc_shell_unsigned_3\n/vendor/bin/cdsprpcd\n/vendor/bin/qprof\n",
+      "stderr": ""
+    },
+    "cpu_gpu": {
+      "command": "cat /sys/devices/soc0/soc_id /sys/devices/soc0/machine /sys/class/kgsl/kgsl-3d0/gpu_model 2>/dev/null; ls /sys/class/kgsl/kgsl-3d0; ls /sys/devices/system/cpu/cpufreq; cat /proc/self/status | grep -E \"Cap|Cpus_allowed_list\"",
+      "exit_code": 0,
+      "stdout": "660\nCANOE\nAdreno840v2acd                   gpu_available_frequencies  pagefault_procs\nbcl                   gpu_busy_percentage        pagefaults\nbus_split             gpu_clock_stats            perfcounter\nclock_mhz             gpu_llc_slice_enable       popp\nclx                   gpu_model                  power\ndcvs_mode             gpubusy                    preempt_count\ndcvs_profile_enabled  gpuclk                     preempt_info\ndcvs_tuning_mingap    gpufault_procs             preemption\ndcvs_tuning_numbusy   gpufaults                  pwrscale\ndcvs_tuning_penalty   gpuhtw_llc_slice_enable    reset_count\ndefault_pwrlevel      gpumv_llc_slice_enable     rt_bus_hint\ndev                   hwcg                       rt_pwrlevel_hint\ndevice                idle_timer                 snapshot\ndms                   ifpc                       sptp_pc\nforce_bus_on          ifpc_count                 subsystem\nforce_clk_on          l3_vote                    temp\nforce_no_nap          lm                         thermal_pwrlevel\nforce_rail_on         lpac                       thermal_time\nfreq_table_mhz        max_clock_mhz              throttling\nft_hang_intr_status   max_gpuclk                 touch_wake\nft_long_ib_detect     max_pwrlevel               uevent\nft_pagefault_policy   min_clock_mhz              wake_nice\nft_policy             min_pwrlevel               wake_timeout\ngmu                   minbw_timer\ngmu_ab                num_pwrlevels\nboost  policy0  policy6\nCapInh:\t0000000000000000\nCapPrm:\t000001ffffffffff\nCapEff:\t000001ffffffffff\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nCpus_allowed_list:\t0-7\n",
+      "stderr": ""
+    },
+    "root_options": {
+      "command": "cat /data/user/0/dev.experimental.azhlroot/shared_prefs/appearance.xml | grep -E \"disable_ksu_modules|boot_root_mode|partition_read_only_protected\"",
+      "exit_code": 0,
+      "stdout": "    <int name=\"partition_read_only_protected_devices\" value=\"17\" />\n    <boolean name=\"disable_ksu_modules\" value=\"true\" />\n    <string name=\"partition_read_only_protected_boot\">f23a96a6-fe8e-4804-8076-32df8aa2f25e</string>\n    <boolean name=\"boot_root_mode\" value=\"true\" />\n",
+      "stderr": ""
+    },
+    "qprof_help": {
+      "command": "timeout 10 /vendor/bin/qprof --help",
+      "exit_code": 0,
+      "stdout": "Supported Options::\n\u001b[0m-h[ --help ]           Display this Help Message\n\u001b[0m-v[--version]          Display the version number\n\u001b[0m--launch-app           Launch Application with Specified Arguments\n\u001b[0m--capabilities         Get available Profilers for the Device\n\u001b[0m--profile              Start Profiling with Specified Arguments\n\u001b[0m--generate-config      Generate the configuration for the capabilities\n\u001b[0m--start-server         Start Profiling Server on the Device\n\u001b[0m--stop-server          Stop Profiling Server on the Device\n\u001b[0m--configure            Configure the profiler CLI\n\u001b[0m--get-server-info      Display information about configured server ip and port\n\u001b[0m--commands             Get available commands for the Device\n\u001b[0m--execute-command      Execute command on the Device\n\u001b[0m\nPlease use help option with command name to get the Command Usage Information\n\u001b[0m",
+      "stderr": ""
+    },
+    "qprof_files": {
+      "command": "find /vendor/qprof -maxdepth 4 -type f; ls /vendor/lib64/*[Qq]rof* /vendor/lib64/*[Qq]ualcomm[Pp]rof* 2>/dev/null; ps -A | grep -E \"qprof|perfetto|simpleperf|traced\"",
+      "exit_code": 0,
+      "stdout": "/vendor/qprof/libs/command-handlers/libQualcommProfilerEtmSyncCommandHandler.so\n/vendor/qprof/libs/command-handlers/libQualcommProfilerHWInfoSyncCommandHandler.so\n/vendor/qprof/libs/handlers/QualcommProfilerGpuProfilingRpcHandler\n/vendor/qprof/libs/handlers/libQualcommProfilerCpuHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerIoHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerLaBwProfHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerLaDdrNocProfHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerMemHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerNetStatHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerPowerHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerProcessHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerProcmemHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerSysmonProfilingHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerSysmonStatsHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerThermalHandler.so\n/vendor/qprof/libs/handlers/libQualcommProfilerThreadProfilingHandler.so\n/vendor/qprof/libs/libDSPTestLA.so\n/vendor/qprof/libs/libGPUProf.so\n/vendor/qprof/libs/libProfileCMetaSharedLib.so\n/vendor/qprof/libs/libQRpcSocketUtility.so\n/vendor/qprof/libs/libQualcommProfilerApi.so\n/vendor/qprof/libs/libQualcommProfilerCore.so\n/vendor/qprof/libs/libQualcommProfilerQLog.so\n/vendor/qprof/libs/libQualcommProfilerThreadProfiler.so\n/vendor/qprof/libs/libQualcommProfilerTraceRouter.so\n/vendor/qprof/libs/libsysmonapps.so\n/vendor/qprof/verison.txt\nnobody        2452     1   10879448   3216 do_sys_poll         0 S traced_probes\nnobody        2458     1   10889304   3084 do_sys_poll         0 S traced\n",
+      "stderr": ""
+    },
+    "simpleperf_stat": {
+      "command": "timeout 10 simpleperf stat -e cpu-cycles,instructions,task-clock -- /system/bin/sleep 1",
+      "exit_code": 0,
+      "stdout": "Performance counter statistics:\n\n#        count  event_name     # count / runtime\n    13,365,182  cpu-cycles     # 1.432791 GHz      \n    19,551,407  instructions   # 2.096 G/sec       \n  9.328075(ms)  task-clock     # 0.009231 cpus used\n\nTotal test time: 1.010570 seconds.\n",
+      "stderr": ""
+    },
+    "perfetto_sources": {
+      "command": "timeout 10 perfetto --query",
+      "exit_code": 0,
+      "stdout": "\u001b[31mNot meant for machine consumption. Use --query-raw for scripts.\u001b[0m\n\nService: Perfetto v51.2 (N/A)\nTracing sessions: 0 (started: 0)\n\n\nPRODUCER PROCESSES CONNECTED:\n\nID     PID      UID      FLAGS  NAME                                       SDK\n==     ===      ===      =====  ====                                       ===\n1      2458     9999            traced                                     \n2      2452     9999            perfetto.traced_probes                     Perfetto v51.2 (N/A)\n3      2050     1072            /system/bin/gpuservice                     Perfetto v51.2 (N/A)\n4      2068     1000            /system/bin/surfaceflinger                 Perfetto v51.2 (N/A)\n5      3181     1000            system_server                              Perfetto v51.2 (N/A)\n6      1013     1000            /system/bin/servicemanager                 Perfetto v51.2 (N/A)\n7      4238     10049           com.android.systemui                       Perfetto v51.2 (N/A)\n9      2068     1000            /system/bin/surfaceflinger                 Perfetto v51.2 (N/A)\n10     4956     10158           com.sec.android.app.launcher               Perfetto v51.2 (N/A)\n12     5108     10277           cronet-com.google.android.gms-5108         Perfetto v0.0 (unknown)\n\n\nDATA SOURCES REGISTERED:\n\nNAME                                     PRODUCER                     DETAILS\n===                                      ========                     ========\nandroid.app_wakelocks                    system_server (5)            \nandroid.cpu_per_uid                      perfetto.traced_probes (2)   \nandroid.game_interventions               perfetto.traced_probes (2)   \nandroid.gpu.memory                       /system/bin/gpuservice (3)   \nandroid.heapprofd                        traced (1)                   \nandroid.inputmethod                      com.android.systemui (7)     \nandroid.inputmethod                      com.sec.android.app.launcher (10) \nandroid.java_hprof                       traced (1)                   \nandroid.java_hprof.oom                   traced (1)                   \nandroid.kernel_wakelocks                 perfetto.traced_probes (2)   \nandroid.log                              perfetto.traced_probes (2)   \nandroid.packages_list                    perfetto.traced_probes (2)   \nandroid.polled_state                     perfetto.traced_probes (2)   \nandroid.power                            perfetto.traced_probes (2)   \nandroid.protolog                         system_server (5)            \nandroid.protolog                         com.android.systemui (7)     \nandroid.protolog                         com.sec.android.app.launcher (10) \nandroid.sdk_sysprop_guard                traced (1)                   \nandroid.statsd                           perfetto.traced_probes (2)   \nandroid.surfaceflinger.frame             /system/bin/surfaceflinger (4) \nandroid.surfaceflinger.frametimeline     /system/bin/surfaceflinger (4) \nandroid.surfaceflinger.layers            /system/bin/surfaceflinger (4) \nandroid.system_property                  perfetto.traced_probes (2)   \nandroid.windowmanager                    system_server (5)            \ncom.android.wm.shell.transition          system_server (5)            \ncom.android.wm.shell.transition          com.android.systemui (7)     \nlinux.frozen_ftrace                      perfetto.traced_probes (2)   \nlinux.ftrace                             perfetto.traced_probes (2)   gfx,input,view,webview,wm,am,sm,audio,vi... (use --long to expand)\nlinux.inode_file_map                     perfetto.traced_probes (2)   \nlinux.perf                               traced (1)                   \nlinux.process_stats                      perfetto.traced_probes (2)   \nlinux.sys_stats                          perfetto.traced_probes (2)   \nlinux.sysfs_power                        perfetto.traced_probes (2)   \nlinux.system_info                        perfetto.traced_probes (2)   \nperfetto.metatrace                       traced (1)                   \nperfetto.metatrace                       perfetto.traced_probes (2)   \ntrack_event                              system_server (5)            always,gfx,input,view,webview,wm,am,sm,a... (use --long to expand)\ntrack_event                              /system/bin/servicemanager (6) servicemanager\ntrack_event                              com.android.systemui (7)     always,gfx,input,view,webview,wm,am,sm,a... (use --long to expand)\ntrack_event                              /system/bin/surfaceflinger (9) always,gfx,input,view,webview,wm,am,sm,a... (use --long to expand)\ntrack_event                              cronet-com.google.android.gms-5108 (12) __metadata,accessibility,AccountFetcherS... (use --long to expand)\n\n\nTRACING SESSIONS:\n\nID      UID     STATE      BUF (#) KB   DUR (s)   #DS  STARTED  NAME\n===     ===     =====      ==========   =======   ===  =======  ====\n",
+      "stderr": ""
+    },
+    "gpu_readings": {
+      "command": "cat /sys/class/kgsl/kgsl-3d0/gpu_model /sys/class/kgsl/kgsl-3d0/gpuclk /sys/class/kgsl/kgsl-3d0/gpubusy /sys/class/kgsl/kgsl-3d0/perfcounter; grep -E \"^(sched:sched_switch|power:cpu_frequency|kgsl:|dma_heap:|dma_fence:)\" /sys/kernel/tracing/available_events | head -n 35",
+      "exit_code": 0,
+      "stdout": "Adreno840v2191000000\n  14785 1003422\n0\nkgsl:kgsl_migrate_process\nkgsl:kgsl_migrate_memdesc\nkgsl:kgsl_reclaim_process\nkgsl:kgsl_reclaim_memdesc\nkgsl:kgsl_pool_free_page\nkgsl:kgsl_pool_try_page_lower\nkgsl:kgsl_pool_alloc_page_system\nkgsl:kgsl_pool_get_page\nkgsl:kgsl_pool_add_page\nkgsl:kgsl_thermal_constraint\nkgsl:kgsl_drawobj_timeline\nkgsl:kgsl_aux_command\nkgsl:kgsl_timeline_wait\nkgsl:kgsl_timeline_fence_release\nkgsl:kgsl_timeline_fence_alloc\nkgsl:kgsl_timeline_signal\nkgsl:kgsl_timeline_destroy\nkgsl:kgsl_timeline_alloc\nkgsl:kgsl_hfi_receive\nkgsl:kgsl_hfi_send\nkgsl:kgsl_gmu_oob_clear\nkgsl:kgsl_gmu_oob_set\nkgsl:kgsl_bcl_clock_throttling\nkgsl:kgsl_clock_throttling\nkgsl:kgsl_msg\nkgsl:syncpoint_fence_expire\nkgsl:syncpoint_fence\nkgsl:syncpoint_timestamp_expire\nkgsl:syncpoint_timestamp\nkgsl:kgsl_pagetable_destroy\nkgsl:kgsl_active_count\nkgsl:kgsl_fire_event\nkgsl:kgsl_register_event\nkgsl:kgsl_regwrite\nkgsl:kgsl_mmu_pagefault\n",
+      "stderr": ""
+    },
+    "qprof_version": {
+      "command": "/vendor/bin/qprof --version; cat /vendor/qprof/verison.txt",
+      "exit_code": 0,
+      "stdout": "Version : 2.25.7.16\n\u001b[0mQualcomm_Profiler_CLI: 2.25.7.16\nQualcomm_Profiler_API: 2.25.7.16",
+      "stderr": ""
+    },
+    "qprof_capabilities_help": {
+      "command": "/vendor/bin/qprof --capabilities --help; /vendor/bin/qprof --start-server --help; /vendor/bin/qprof --profile --help; /vendor/bin/qprof --get-server-info",
+      "exit_code": 0,
+      "stdout": "Example Usage : qprof --capabilities\n\u001b[0m--roofline    : Use this flag to query capabilities with roofline support\n\u001b[0m--ops         : Use this flag to query capabilities with ops support\n\u001b[0mInvalid command line arguments. Please run qprof --help for valid arguments\n\u001b[0mIt profiles the sync or async command. Sync calls involves command & response, Async calls involves streaming trace data to the client\n\u001b[0mExample Usage : qprof --profile --application Path_To_Executable --application-arguments [Arg1,Arg2] --trace-options Config_Json --profile-type async --capabilities-list capability1 capability2 --profile-time 5 --streaming-rate 500 --sampling-rate 100 --filter filter1 filter2 --metric-id-list metricId1 metricId3:metricId5 metricId7 --live --result-format verbose/trace/csv --analysis roofline-system --summary --roofline-operationType scalar --roofline-operationSubType float --roofline-pass 2 --pmu-event-list pmuEventId1 pmuEventId2 --result-dir-path C:/temp/resultdir\n\u001b[0mDescription:\n\u001b[0m--application(Optional)             : To start some application before starting Profiling, takes path to executable.\n\u001b[0m--application-arguments(Optional)   : Application arguments.\n\u001b[0m--trace-options(Optional)           : Configuration to be passed to profiler.\n\u001b[0m                                      If not passed default configuration will be used\n\u001b[0m--profile-type(Optional)            : <sync/async> Async calls involves streaming trace data to the client.\n\u001b[0m                                      Currently, only async mode is supported.\n\u001b[0m--capabilities-list(Mandatory)      : List of profilers to be enabled . More than 1 profiler can be enabled.\n\u001b[0m--profile-time(Optional)            : Duration in seconds for which profilers need to  be enabled.\n\u001b[0m                                      By default profiling will be enable for 10 sec.\n\u001b[0m--streaming-rate(Optional)          : Time interval in milliseconds between 2 profiling packets recieved on the client.\n\u001b[0m                                      By default user will recieve packet every 500 ms\n\u001b[0m--sampling-rate(Optional)           : Time interval in milliseconds between 2 profiling samples collected from the device.\n\u001b[0m                                      By default sampling rate will be same as streaming rate.\n\u001b[0m--filter (Optional)                 : Show the profiling result of specific parameter.\n\u001b[0m--metric-id-list(Optional)          : Filter results for particular IDs.\n\u001b[0m--live(Optional)                    : Live streaming of data to standard output . By default live will not be enabled.\n\u001b[0m--result-format arg (Optional)      : Capture Profiling Data in verbose or trace event format. Supported values (verbose/trace/csv).\n\u001b[0m--analysis arg (Optional)           : Option to enable roofline profiling. Supported values (profile/roofline-system/roofline-functional/ops).\n\u001b[0m--summary (Optional)                : Print summary Min , Max & Avgerage at the end. By default summary will not be enabled.\n\u001b[0m--pmu-event-list(Optional)          : collect defined pmu event Ids profiling data.\n\u001b[0m--result-dir-path (Optional)        : Directory path to save profiling result file\n\u001b[0m--roofline-operationType            : Option to provide roofline operation type. Supported values (scalar/vector/matrix).\n\u001b[0m--roofline-operationSubType         : Option to provide roofline datatype. Supported values (fixed/float).\n\u001b[0m--roofline-pass (Optional)          : Perform roofline for the provided pass number. By Default roofline is performed for the supported pass numbers.\n\u001b[0m\u001b[1;33mConfigured server IP : 127.0.0.1 port : 62472\n\u001b[0m",
+      "stderr": ""
+    },
+    "qprof_related_files": {
+      "command": "ls -l /vendor/lib64/*[Qq]rof* /vendor/lib64/*[Qq]onitor* /vendor/lib64/*[Qq]ualcomm[Pp]rof* 2>/dev/null; ls -l /vendor/etc/init/*qprof* /vendor/etc/*qprof* /data/vendor/qprof* 2>/dev/null",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "simpleperf_record_help": {
+      "command": "simpleperf record --help | head -n 65",
+      "exit_code": 0,
+      "stdout": "Usage: simpleperf record [options] [--] [command [command-args]]\n       Gather sampling information of running [command]. And -a/-p/-t option\n       can be used to change target of sampling information.\n       The default options are: -e cpu-cycles -f 4000 -o perf.data.\nSelect monitored threads:\n-a     System-wide collection. Use with --exclude-perf to exclude samples for\n       simpleperf process.\n--app package_name    Profile the process of an Android application.\n                      On non-rooted devices, the app must be debuggable,\n                      because we use run-as to switch to the app's context.\n-p pid_or_process_name_regex1,pid_or_process_name_regex2,...\n                      Record events on existing processes. Processes are searched either by pid\n                      or process name regex. Mutually exclusive with -a.\n-t tid1,tid2,... Record events on existing threads. Mutually exclusive with -a.\n\nSelect monitored event types:\n-e event1[:modifier1],event2[:modifier2],...\n             Select a list of events to record. An event can be:\n               1) an event name listed in `simpleperf list`;\n               2) a raw PMU event in rN format. N is a hex number.\n                  For example, r1b selects event number 0x1b.\n               3) a kprobe event added by --kprobe option.\n               4) a uprobe event added by --uprobe option.\n             Modifiers can be added to define how the event should be\n             monitored. Possible modifiers are:\n                u - monitor user space events only\n                k - monitor kernel space events only\n--group event1[:modifier],event2[:modifier2],...\n             Similar to -e option. But events specified in the same --group\n             option are monitored as a group, and scheduled in and out at the\n             same time.\n--trace-offcpu   Generate samples when threads are scheduled off cpu.\n                 Similar to \"-c 1 -e sched:sched_switch\".\n--kprobe kprobe_event1,kprobe_event2,...\n             Add kprobe events during recording. The kprobe_event format is in\n             Documentation/trace/kprobetrace.rst in the kernel. Examples:\n               'p:myprobe do_sys_openat2 $arg2:string'   - add event kprobes:myprobe\n               'r:myretprobe do_sys_openat2 $retval:s64' - add event kprobes:myretprobe\n--uprobe uprobe_event1,uprobe_event2,...\n             Add uprobe events during recording. The uprobe_event format is in\n             Documentation/trace/uprobetracer.rst in the kernel. Examples:\n               'p:myprobe /system/lib64/libc.so:0x1000'\n                   - add event uprobes:myprobe\n               'r:myretprobe /system/lib64/libc.so:0x1000'\n                   - add event uprobes:myretprobe\n--add-counter event1,event2,...     Add additional event counts in record samples. For example,\n                                    we can use `-e cpu-cycles --add-counter instructions` to\n                                    get samples for cpu-cycles event, while having instructions\n                                    event count for each sample.\n\nSelect monitoring options:\n-f freq      Set event sample frequency. It means recording at most [freq]\n             samples every second. For non-tracepoint events, the default\n             option is -f 4000. A -f/-c option affects all event types\n             following it until meeting another -f/-c option. For example,\n             for \"-f 1000 -e cpu-cycles -c 1 -e sched:sched_switch\", cpu-cycles\n             has sample freq 1000, sched:sched_switch event has sample period 1.\n-c count     Set event sample period. It means recording one sample when\n             [count] events happen. For tracepoint events, the default option\n             is -c 1.\n--call-graph fp | dwarf[,<dump_stack_size>]\n             Enable call graph recording. Use frame pointer or dwarf debug\n             frame as the method to parse call graph in stack.\n             Default is no call graph. Default dump_stack_size with -g is 65528.\n-g           Same as '--call-graph dwarf'.\n",
+      "stderr": ""
+    },
+    "qprof_capabilities_initial": {
+      "command": "timeout 8 /vendor/bin/qprof --capabilities",
+      "exit_code": 0,
+      "stdout": "Failure opening database \"/data/shared/qcom/Shared/Prof_Ext/ExtQProfiler.db\": unable to open database file\n\u001b[1;31mCannot fetch capabilities from the device . Are you sure Qualcomm Profiler was installed correctly?\n\u001b[0m",
+      "stderr": ""
+    },
+    "perfetto_capture": {
+      "command": "timeout 12 perfetto -o /data/local/tmp/s26-capability.perfetto-trace -t 3s sched freq idle",
+      "exit_code": 0,
+      "stdout": "\u001b[90m[775.220]    perfetto_cmd.cc:1048\u001b[0m \u001b[39mConnected to the Perfetto traced service, TTL: 3s\u001b[0m\n\u001b[90m[778.248]    perfetto_cmd.cc:1211\u001b[0m \u001b[39mWrote 118699 bytes into /data/local/tmp/s26-capability.perfetto-trace\u001b[0m\n",
+      "stderr": ""
+    },
+    "simpleperf_sampling": {
+      "command": "timeout 12 simpleperf record -e cpu-cycles -f 200 --duration 2 -o /data/local/tmp/s26-capability.perf.data -- /system/bin/sh -c \"while true; do :; done\"",
+      "exit_code": 0,
+      "stdout": "simpleperf I cmd_record.cpp:826] Recorded for 2.00097 seconds. Start post processing.\nsimpleperf I cmd_record.cpp:927] Samples recorded: 377. Samples lost: 0.\n",
+      "stderr": ""
+    },
+    "simpleperf_report": {
+      "command": "simpleperf report -i /data/local/tmp/s26-capability.perf.data --sort comm,dso,symbol --percent-limit 2",
+      "exit_code": 0,
+      "stdout": "Cmdline: /system/bin/simpleperf record -e cpu-cycles -f 200 --duration 2 -o /data/local/tmp/s26-capability.perf.data -- /system/bin/sh -c while true; do :; done\nArch: arm64\nEvent: cpu-cycles (type 0, config 0)\nSamples: 377\nEvent count: 7138206054\n\nOverhead  Command  Shared Object                                   Symbol\n14.78%    sh       /apex/com.android.runtime/lib64/bionic/libc.so  scudo::Allocator<scudo::AndroidNormalConfig, &scudo_malloc_postinit>::allocate(unsigned long, scudo::Chunk::Origin, unsigned long, bool)\n11.18%    sh       /apex/com.android.runtime/lib64/bionic/libc.so  scudo::Allocator<scudo::AndroidNormalConfig, &scudo_malloc_postinit>::quarantineOrDeallocateChunk(scudo::Options const&, void*, scudo::Chunk::UnpackedHeader*, unsigned long)\n10.11%    sh       /system/bin/sh                                  execute\n6.64%     sh       /system/bin/sh                                  expand\n6.07%     sh       /apex/com.android.runtime/lib64/bionic/libc.so  realloc\n5.08%     sh       /apex/com.android.runtime/lib64/bionic/libc.so  scudo::Allocator<scudo::AndroidNormalConfig, &scudo_malloc_postinit>::reallocate(void*, unsigned long, unsigned long)\n4.07%     sh       /apex/com.android.runtime/lib64/bionic/libc.so  scudo::Allocator<scudo::AndroidNormalConfig, &scudo_malloc_postinit>::deallocate(void*, scudo::Chunk::Origin, unsigned long, unsigned long)\n3.79%     sh       /system/bin/sh                                  aresize\n3.38%     sh       /system/bin/sh                                  comexec\n3.05%     sh       /apex/com.android.runtime/lib64/bionic/libc.so  .tiny_end\n2.54%     sh       /apex/com.android.runtime/lib64/bionic/libc.so  scudo::HybridMutex::unlock()\n2.29%     sh       /apex/com.android.runtime/lib64/bionic/libc.so  __memset_aarch64_nt\n2.03%     sh       /apex/com.android.runtime/lib64/bionic/libc.so  __aarch64_cas4_acq\n",
+      "stderr": ""
+    },
+    "profiling_after": {
+      "command": "cat /sys/kernel/tracing/tracing_on; getenforce; ps -A | grep -E \"s26-capability|simpleperf|qprof\"; ls -l /data/local/tmp/s26-capability*",
+      "exit_code": 0,
+      "stdout": "0\nEnforcing\n-rw-r--r-- 1 root root 106676 2026-01-09 21:17 /data/local/tmp/s26-capability.perf.data\n-rw------- 1 root root 118699 2026-01-09 21:17 /data/local/tmp/s26-capability.perfetto-trace\n",
+      "stderr": ""
+    },
+    "dma_system_shell": {
+      "command": [
+        "shell",
+        "timeout",
+        "10",
+        "/data/local/tmp/s26-dma-buf-smoke",
+        "/dev/dma_heap/system"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS uid=2000 heap=/dev/dma_heap/system bytes=65536 allocation,mmap,CPU-sync,SCM_RIGHTS,child-readback\n",
+      "stderr": ""
+    },
+    "dma_system_root": {
+      "command": [
+        "exec-out",
+        "su",
+        "-c",
+        "timeout 10 /data/local/tmp/s26-dma-buf-smoke /dev/dma_heap/system"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS uid=0 heap=/dev/dma_heap/system bytes=65536 allocation,mmap,CPU-sync,SCM_RIGHTS,child-readback\n",
+      "stderr": ""
+    },
+    "dma_qcom_system_root": {
+      "command": [
+        "exec-out",
+        "su",
+        "-c",
+        "timeout 10 /data/local/tmp/s26-dma-buf-smoke /dev/dma_heap/qcom,system"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS uid=0 heap=/dev/dma_heap/qcom,system bytes=65536 allocation,mmap,CPU-sync,SCM_RIGHTS,child-readback\n",
+      "stderr": ""
+    },
+    "qprof_new_version": {
+      "exit_code": 0,
+      "stdout": "Version : 2.26.10.6\n\u001b[0m"
+    },
+    "qprof_new_capabilities": {
+      "status": "timed_out",
+      "timeout_seconds": 35,
+      "test_process_stopped": 16629,
+      "boot_id_unchanged": true
+    },
+    "qprof_server_status": {
+      "command": "cat /data/local/tmp/s26-qprof-2.26.10.6/server.log; ss -lntp | grep 62472",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "qualification": "Initial failed attempt; empty output and ADB/su exit 0 did not establish success. Later foreground check exposed process exit 139."
+    },
+    "qprof_capabilities_with_server": {
+      "command": "env LD_LIBRARY_PATH=/data/local/tmp/s26-qprof-2.26.10.6/libs QMONITOR_BACKEND_LIB_PATH=/data/local/tmp/s26-qprof-2.26.10.6/libs/backends QPROF_META_FB_PATH=/data/local/tmp/s26-qprof-2.26.10.6/ExtQProfiler.fb timeout -s KILL 15 /data/local/tmp/s26-qprof-2.26.10.6/bins/qprof --capabilities",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "qualification": "Initial failed attempt; empty output and ADB/su exit 0 did not establish success. Later foreground check exposed process exit 139."
+    },
+    "qprof_capabilities_explicit_paths": {
+      "command": "cd /data/local/tmp/s26-qprof-2.26.10.6; env LD_LIBRARY_PATH=/data/local/tmp/s26-qprof-2.26.10.6/libs QMONITOR_BACKEND_LIB_PATH=/data/local/tmp/s26-qprof-2.26.10.6/libs/backends QPROF_META_FB_PATH=/data/local/tmp/s26-qprof-2.26.10.6/ExtQProfiler.fb PROFILER_HANDLERS_LIB_PATH_1=/data/local/tmp/s26-qprof-2.26.10.6/libs/handlers COMMAND_HANDLERS_LIB_PATH_1=/data/local/tmp/s26-qprof-2.26.10.6/libs/command-handlers QPROFILER_LOG_LEVEL=debug timeout -s KILL 15 /data/local/tmp/s26-qprof-2.26.10.6/bins/qprof --capabilities; echo TOOL_EXIT=$?",
+      "stdout": "TOOL_EXIT=139\n",
+      "stderr": "",
+      "transport_exit": 0
+    },
+    "qprof_capabilities_isolated": {
+      "command": "mkdir -p /data/local/tmp/s26-qprof-2.26.10.6/empty-handlers; cd /data/local/tmp/s26-qprof-2.26.10.6; env PATH=/data/local/tmp/s26-qprof-2.26.10.6/bins:/system/bin:/vendor/bin LD_LIBRARY_PATH=/data/local/tmp/s26-qprof-2.26.10.6/libs QMONITOR_BACKEND_LIB_PATH=/data/local/tmp/s26-qprof-2.26.10.6/libs/backends QPROF_META_FB_PATH=/data/local/tmp/s26-qprof-2.26.10.6/ExtQProfiler.fb PROFILER_HANDLERS_LIB_PATH_1=/data/local/tmp/s26-qprof-2.26.10.6/libs/handlers PROFILER_HANDLERS_LIB_PATH_2=/data/local/tmp/s26-qprof-2.26.10.6/empty-handlers COMMAND_HANDLERS_LIB_PATH_1=/data/local/tmp/s26-qprof-2.26.10.6/libs/command-handlers COMMAND_HANDLERS_LIB_PATH_2=/data/local/tmp/s26-qprof-2.26.10.6/empty-handlers timeout -s KILL 20 /data/local/tmp/s26-qprof-2.26.10.6/bins/qprof --capabilities; echo TOOL_EXIT=$?",
+      "stdout": "TOOL_EXIT=139\n",
+      "stderr": "",
+      "transport_exit": 0
+    },
+    "qprof_capabilities_private_mount": {
+      "command": "sha256sum /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so; unshare -m sh /data/local/tmp/s26-qprof-2.26.10.6/isolated-check.sh; sha256sum /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so",
+      "stdout": "d48142468b6d94f7fb22a954457567c56a46c0bb0fdda162510d89e554202b7f  /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so\n\u001b[1;33mFriendly Name                                      Capability                Streaming Rate(s)         Sampling Rate(s)               Available Metric(s)           \n\u001b[0m\u001b[1;32m-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\u001b[0m\u001b[1;32mBattery                   profiler:apps-proc-battery-metrics                200-1000                  50-1000                        4703 4705-4706 4708 \n\u001b[0m\u001b[1;32mCPU                           profiler:apps-proc-cpu-metrics                200-1000                  10-1000                        4609-4616 4618-4624 4696 4720 4731-4735 6414 6424-6426 6455-6462 \n\u001b[0m\u001b[1;32mCPU-PMU                   profiler:apps-proc-cpu-pmu-metrics                200-1000                  20-200                         0-33133 \n\u001b[0m\u001b[1;32mGPU-Processor             profiler:proc-gpu-specific-metrics                200-2000                  50-1000                        4864-4876 4878-4886 4888-4906 4908-4919 4923-4927 4929-4930 4932-4952 \n\u001b[0m\u001b[1;32mIO                             profiler:apps-proc-io-metrics                1000                      200-1000                       4646-4647 \n\u001b[0m\u001b[1;32mDDR                           profiler:apps-proc-ddr-metrics                200-500                   10                             4661-4663 4268 4270-4271 4275 \n\u001b[0m\u001b[1;32mMemory                        profiler:apps-proc-mem-metrics                200-1000                  50-1000                        4639-4641 4643-4645 4648-4649 \n\u001b[0m\u001b[1;32mNetwork                       profiler:apps-proc-net-metrics                200-1000                  100-1000                       4656-4659 4678-4682 \n\u001b[0m\u001b[1;32mProcess                   profiler:apps-proc-process-metrics                200-1000                  50-1000                        4642 \n\u001b[0m\u001b[1;32mProcess Memory        profiler:apps-proc-process-mem-metrics                200-1000                  50-1000                        4683-4686 \n\u001b[0m\u001b[1;32mADSP                               profiler:adsp-dsp-metrics                200-5000                  1-200                          4096-4182 4185-4187 4189-4190 4193-4197 4204-4205 4244-4259 4261-4263 4285 \n\u001b[0m\u001b[1;32m                                                                                                                                     4287-4288 4290 \n\u001b[0m\u001b[1;32mNPU0                                profiler:nsp-dsp-metrics                200-1000                  1-200                          4096-4184 4187-4188 4190-4192 4195 4204-4205 4236-4241 4244-4259 4266-4267 \n\u001b[0m\u001b[1;32m                                                                                                                                     4285 4288 4290 4352 4356 4358 4360-4362 4366-4374 4377-4385 4391 4394 \n\u001b[0m\u001b[1;32m                                                                                                                                     4480-4481 4496-4524 \n\u001b[0m\u001b[1;32mADSP-Stats                           profiler:adsp-dsp-stats                1000-2000                 1000-2000                      5888-5897 5900 5903-5907 5909-5910 5912 5914 \n\u001b[0m\u001b[1;32mNPU0-Stats                            profiler:nsp-dsp-stats                1000-2000                 1000-2000                      5888-5890 5893-5900 5903-5907 5909-5912 5914 \n\u001b[0m\u001b[1;32mThermal                   profiler:apps-proc-thermal-metrics                200-1000                  10-1000                        6464-6465 \n\u001b[0m\u001b[1;32mTHREAD                   profiler:apps-proc-thread-profiling                200-400                   100-1000                       4660 \n\u001b[0m\nTOOL_EXIT=0\nd48142468b6d94f7fb22a954457567c56a46c0bb0fdda162510d89e554202b7f  /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so\n",
+      "stderr": "",
+      "transport_exit": 0
+    },
+    "qprof_final_state": {
+      "command": "id; getenforce; cat /proc/sys/kernel/random/boot_id; cat /sys/kernel/tracing/tracing_on; sha256sum /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so; grep \" /vendor/qprof/libs \" /proc/1/mountinfo; ps -A -o PID,PPID,NAME,ARGS | grep -E \"qprof|qmonitor|lldb\"",
+      "stdout": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0\nEnforcing\nf23a96a6-fe8e-4804-8076-32df8aa2f25e\n0\nd48142468b6d94f7fb22a954457567c56a46c0bb0fdda162510d89e554202b7f  /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so\n17257  5734 sh                          sh -c su '-c' 'id; getenforce; cat /proc/sys/kernel/random/boot_id; cat /sys/kernel/tracing/tracing_on; sha256sum /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so; grep \" /vendor/qprof/libs \" /proc/1/mountinfo; ps -A -o PID,PPID,NAME,ARGS | grep -E \"qprof|qmonitor|lldb\"'\n17259 17257 sh                          sh -c id; getenforce; cat /proc/sys/kernel/random/boot_id; cat /sys/kernel/tracing/tracing_on; sha256sum /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so; grep \" /vendor/qprof/libs \" /proc/1/mountinfo; ps -A -o PID,PPID,NAME,ARGS | grep -E \"qprof|qmonitor|lldb\"\n17267 17259 grep                        grep -E qprof|qmonitor|lldb\n",
+      "stderr": ""
+    },
+    "qprof_host_capabilities": {
+      "exit_code": 0,
+      "output_file": "runs/qprof-host-capabilities.txt",
+      "capability_count": 16
+    },
+    "qprof_host_capture": {
+      "exit_code": 0,
+      "duration_seconds": 3,
+      "capabilities": [
+        "CPU",
+        "Memory",
+        "Thermal"
+      ],
+      "log": "runs/qprof-host-capture.txt"
+    },
+    "qprof_gpu_capture": {
+      "exit_code": 0,
+      "duration_seconds": 3,
+      "log": "runs/qprof-gpu-capture.txt",
+      "qualification": "Raw GPU samples received. GPU Frequency_4952 reports 191/222 MHz, but GPU Clocks Cycle Executed_4864 has implausible huge values. Validate per counter before performance conclusions; no known GPU workload tested."
+    },
+    "qprof_capture_files": [
+      {
+        "path": "runs\\qprof-baseline\\14-11-2026_18-11-17_profile.apps-proc-mem-metrics.csv",
+        "bytes": 12835,
+        "data_rows": 240,
+        "metric_count": 8
+      },
+      {
+        "path": "runs\\qprof-baseline\\14-11-2026_18-11-18_profile.apps-proc-cpu-metrics.csv",
+        "bytes": 53062,
+        "data_rows": 1020,
+        "metric_count": 34
+      },
+      {
+        "path": "runs\\qprof-baseline\\14-11-2026_18-11-18_profile.apps-proc-thermal-metrics.csv",
+        "bytes": 102102,
+        "data_rows": 1551,
+        "metric_count": 2
+      },
+      {
+        "path": "runs\\qprof-baseline\\14-11-2026_18-11-37_profile.proc-gpu-specific-metrics.csv",
+        "bytes": 149088,
+        "data_rows": 2430,
+        "metric_count": 81
+      }
+    ],
+    "htp_validation": {
+      "session": "runs/qnn-htp/20261114T130003Z",
+      "analysis": "runs/qnn-htp/20261114T130003Z/analysis.json",
+      "inferences_completed": 454,
+      "initial_cpu_and_htp_uid": 2000,
+      "profiled_htp_uid": 0,
+      "qnn_backend": "QnnHtp 2.44.0.260225143659",
+      "cpu_comparison_max_quantization_steps": 2,
+      "zero_copy_verified": false
+    }
+  },
+  "ndk": {
+    "version": "r30",
+    "revision": "30.0.16248370",
+    "path": "C:/Android/android-ndk-r30",
+    "download_url": "https://dl.google.com/android/repository/android-ndk-r30-windows.zip",
+    "official_sha1_verified": "9bf167a1985fa7d4a036186b78f702eab9179408"
+  },
+  "summary": {
+    "native_cpp": "Compiled with Windows NDK r30 for Android arm64/API 36; executed successfully as shell and root.",
+    "dma_buf": "64 KiB allocation, mmap, CPU synchronization, SCM_RIGHTS FD transfer, and child-process readback passed. system heap passed as UID 2000 and UID 0; qcom,system passed as UID 0.",
+    "cpu_profiling": "Simpleperf hardware counters and 2-second sampling passed: 377 samples, zero lost.",
+    "perfetto": "Three-second sched/freq/idle trace saved: 118699 bytes. Trace contents not yet analyzed.",
+    "qualcomm_profiler": "Installed Windows CLI/API 2.26.10.6 and GUI 2.26.10.4 through authenticated QSC. Matching staged target agent works in private mount namespace. Windows client enumerated 16 capabilities and captured CPU, memory and thermal CSV data. Test server stopped; no boot service configured.",
+    "gpu_htp": "QNN HTP Conv/ReLU sample executed as UID 2000; 454-inference profiled run with QNN detailed, qprof CPU/memory/thermal/NPU and marked Perfetto trace completed. CPU/HTP output max difference two quantization steps. GPU counters remain qualified; external GPU/HTP DMA-BUF import and zero-copy untested.",
+    "security": "SELinux remains Enforcing. KernelSU modules remain disabled and image-partition protection remains enabled.",
+    "power_telemetry": "Battery voltage/current and Samsung ISYS system current respond to CPU load. power_now/power_avg are mA, confirmed from installed drivers. No rail-energy tracks or registered PowerStats HAL found. Whole-device watts unvalidated with Monsoon plus USB and removed battery cell."
+  },
+  "qualcomm_profiler": {
+    "host_version": "2.26.10.6",
+    "gui_version": "2.26.10.4",
+    "qsc_cli_version": "1.32.0",
+    "install_exit_code": 0,
+    "host_cli": "C:\\Program Files (x86)\\Qualcomm\\QualcommProfiler\\CLI\\host-windows\\bins\\qprof.exe",
+    "target_directory": "/data/local/tmp/s26-qprof-2.26.10.6",
+    "server_script": "qprof-server.sh",
+    "connection": "Phone loopback 127.0.0.1:62472 over ADB forward; test server stopped and forward removed.",
+    "isolation": "Private mount namespace binds staged matching libraries over /vendor/qprof/libs for this process only; no vendor files changed.",
+    "cause_of_initial_crash": "Debugger located crash in stock /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so loaded by new Core; private library mount resolved initialization.",
+    "debugger_log": "runs/qprof-debugger.txt"
+  },
+  "completed_utc": "2026-11-14T12:43:36.898619+00:00",
+  "power_telemetry": {
+    "checked_utc": "2026-11-14T13:25:58.135487+00:00",
+    "assessment": "runs/power-check/assessment.txt",
+    "results": "runs/power-check/summary.json",
+    "final_state": "runs/power-check/final-state.txt"
+  },
+  "power_logger": {
+    "updated_utc": "2026-11-14T14:12:40.129778+00:00",
+    "apk": "dev.s26.powerlogger",
+    "local_apk": "power-app\\build\\S26-Power.apk",
+    "collector": "/data/local/tmp/s26-power-logger",
+    "controls": "APK Start/Stop/live readings and ADB start INIT_SECONDS RUN_SECONDS INTERVAL_MS",
+    "sleep_policy": "preserve normal sleep and flag gaps",
+    "test_evidence": "runs/power-logger/validation.json"
+  }
+}

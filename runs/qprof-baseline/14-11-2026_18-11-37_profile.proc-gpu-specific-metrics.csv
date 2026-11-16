@@ -1,0 +1,2431 @@
+Timestamp,Metric ID,Metric_Name,Value,CoreId
+3319903233828,4864,GPU Clocks Cycle Executed,9795358773.314 Mhz,0
+3319903233828,4865,GPU Utilization_4865,100.000 %,0
+3319903233828,4866,GPU Memory Bus Busy,4.161 %,0
+3319903233828,4869,Vertex Fetch Stall,17.367 %,0
+3319903233828,4870,Texture Fetch Stall,17.969 %,0
+3319903233828,4871,L1 Texture Cache Miss Per Pixel,60578.137 count,0
+3319903233828,4872,Texture L1 Miss,100.000 %,0
+3319903233828,4873,Texture L2 Miss,0.012 %,0
+3319903233828,4874,Stalled on System Memory,4.161 %,0
+3319903233828,4875,Instruction Cache Miss,14.068 %,0
+3319903233828,4876,BVH Fetch Stall,0.000 %,0
+3319903233828,4878,Pre-clipped Polygons/Second,9582126107761.783 polygons/sec,0
+3319903233828,4879,Prims Trivially Rejected,100.000 %,0
+3319903233828,4880,Prims Clipped,100.000 %,0
+3319903233828,4881,Average Vertices / Polygon,7573857.332 count,0
+3319903233828,4882,Reused Vertices / Second,645900007785527936.000 vertices/sec,0
+3319903233828,4883,Average Polygon Area,0.000 count,0
+3319903233828,4884,LRZ Busy,55.274 %,0
+3319903233828,4885,LRZ Pixels Killed,-13849131804216999936.000 count,0
+3319903233828,4886,LRZ Prims Killed,144116837343297568.000 count,0
+3319903233828,4888,Shaders Busy,0.001 %,0
+3319903233828,4889,Shaders Stalled,0.000 %,0
+3319903233828,4890,Vertices Shaded / Second,72573656076668665856.000 shaded/sec,0
+3319903233828,4891,Fragments Shaded / Second,4878505575003277.000 shaded/sec,0
+3319903233828,4892,Vertex Instructions / Second,1354171247461814501376.000 instructions/sec,0
+3319903233828,4893,Fragment Instructions / Second,200296899534837448704.000 instructions/sec,0
+3319903233828,4894,Fragment ALU Instructions / Sec (Full),313145360992900608.000 instructions/sec,0
+3319903233828,4895,Fragment ALU Instructions / Sec (Half),1258087142124308480.000 instructions/sec,0
+3319903233828,4896,Fragment EFU Instructions / Second,199354710602782408704.000 instructions/sec,0
+3319903233828,4897,Textures / Vertex,0.035 count,0
+3319903233828,4898,Textures / Fragment,3083.572 count,0
+3319903233828,4899,ALU / Vertex,10.090 count,0
+3319903233828,4900,ALU / Fragment,0.003 count,0
+3319903233828,4901,EFU / Fragment,0.662 count,0
+3319903233828,4902,EFU / Vertex,8.569 count,0
+3319903233828,4903,Time Shading Fragments,0.933 %,0
+3319903233828,4904,Time Shading Vertices,61.659 %,0
+3319903233828,4905,Time Compute,0.015 %,0
+3319903233828,4906,Shader ALU Capacity Utilized,100.000 %,0
+3319903233828,4908,Time ALUs Working,100.000 %,0
+3319903233828,4909,Time EFUs Working,100.000 %,0
+3319903233828,4910,Nearest Filtered,100.000 %,0
+3319903233828,4911,Linear Filtered,100.000 %,0
+3319903233828,4912,Anisotropic Filtered,16.693 %,0
+3319903233828,4913,Non-Base Level Textures,-1761.631 %,0
+3319903233828,4914,Texture Pipes Busy,0.000 %,0
+3319903233828,4916,RTU Busy,100.000 %,0
+3319903233828,4917,RTU Ray Box Intersections Per Instruction,0.055 count,0
+3319903233828,4918,RTU Ray Triangle Intersections Per Instruction,3.531 count,0
+3319903233828,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3319903233828,4915,Wave Context Occupancy,0.000 %,0
+3319903233828,4867,GPU Memory Read Total,533694.384 bytes/sec,0
+3319903233828,4868,GPU Memory Write Total,136694.806 bytes/sec,0
+3319903233828,4923,Texture Memory Read BW,5135586538387713032192.000 Bytes/sec,0
+3319903233828,4924,Vertex Memory Read,5130413205061945524224.000 Bytes/sec,0
+3319903233828,4925,SP Memory Read,2565291377916986785792.000 Bytes/sec,0
+3319903233828,4926,Avg Bytes / Fragment,0.490 count,0
+3319903233828,4927,Avg Bytes / Vertex,70.693 count,0
+3319903233828,4929,Preemptions / second,38868287418846429184.000 preemptions/sec,0
+3319903233828,4930,GPU_RESERVED_4930,0.000,0
+3319903233828,4932,Kernel Load Cycles,100.000 %,0
+3319903233828,4933,Global Buffer Read L2 Hit,75.012 %,0
+3319903233828,4934,Global Buffer Write L2 Hit,0.000 %,0
+3319903233828,4935,Image Read L2 Hit,99.994 %,0
+3319903233828,4936,Local Memory Atomic Instructions,0.000 count,0
+3319903233828,4937,Global Memory Atomic Instructions,0.000 count,0
+3319903233828,4938,Local Memory Load Instructions,0.000 count,0
+3319903233828,4939,Global Memory Load Instructions,0.000 count,0
+3319903233828,4940,Local Memory Store Instructions,0.000 count,0
+3319903233828,4941,Global Memory Store Instructions,0.000 count,0
+3319903233828,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3319903233828,4943,Load-Store Utilization,0.000 %,0
+3319903233828,4944,L1 Hit,-2.231 %,0
+3319903233828,4945,Bytes Data Write Requested,1152639754752229376.000 count,0
+3319903233828,4946,Bytes Data Actually Written,1180519490693581766656.000 count,0
+3319903233828,4947,Global Buffer Data Read Request BW,2566541816761421398016.000 Bytes/sec,0
+3319903233828,4948,Global Image Data Read Request BW,10017589339250198528.000 Bytes/sec,0
+3319903233828,4949,Global Buffer Data Read BW,2565291377916986785792.000 Bytes/sec,0
+3319903233828,4950,Global Image Uncompressed Data Read BW,2391538159889222.500 Bytes/sec,0
+3319903233828,4951,Global Image Compressed Data Read BW,5135584146849552924672.000 Bytes/sec,0
+3319903233828,4952,GPU Frequency_4952,222000000.000 Hz,0
+3319985684552,4864,GPU Clocks Cycle Executed,2.105 Mhz,0
+3319985684552,4865,GPU Utilization_4865,0.054 %,0
+3319985684552,4866,GPU Memory Bus Busy,1.223 %,0
+3319985684552,4869,Vertex Fetch Stall,0.000 %,0
+3319985684552,4870,Texture Fetch Stall,0.000 %,0
+3319985684552,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3319985684552,4872,Texture L1 Miss,0.000 %,0
+3319985684552,4873,Texture L2 Miss,0.000 %,0
+3319985684552,4874,Stalled on System Memory,0.000 %,0
+3319985684552,4875,Instruction Cache Miss,0.000 %,0
+3319985684552,4876,BVH Fetch Stall,0.000 %,0
+3319985684552,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3319985684552,4879,Prims Trivially Rejected,0.000 %,0
+3319985684552,4880,Prims Clipped,0.000 %,0
+3319985684552,4881,Average Vertices / Polygon,0.000 count,0
+3319985684552,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3319985684552,4883,Average Polygon Area,0.000 count,0
+3319985684552,4884,LRZ Busy,10.916 %,0
+3319985684552,4885,LRZ Pixels Killed,0.000 count,0
+3319985684552,4886,LRZ Prims Killed,0.000 count,0
+3319985684552,4888,Shaders Busy,2.293 %,0
+3319985684552,4889,Shaders Stalled,0.000 %,0
+3319985684552,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3319985684552,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3319985684552,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3319985684552,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3319985684552,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3319985684552,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3319985684552,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3319985684552,4897,Textures / Vertex,0.000 count,0
+3319985684552,4898,Textures / Fragment,0.000 count,0
+3319985684552,4899,ALU / Vertex,0.000 count,0
+3319985684552,4900,ALU / Fragment,0.000 count,0
+3319985684552,4901,EFU / Fragment,0.000 count,0
+3319985684552,4902,EFU / Vertex,0.000 count,0
+3319985684552,4903,Time Shading Fragments,0.000 %,0
+3319985684552,4904,Time Shading Vertices,0.000 %,0
+3319985684552,4905,Time Compute,0.000 %,0
+3319985684552,4906,Shader ALU Capacity Utilized,0.000 %,0
+3319985684552,4908,Time ALUs Working,0.000 %,0
+3319985684552,4909,Time EFUs Working,0.000 %,0
+3319985684552,4910,Nearest Filtered,0.000 %,0
+3319985684552,4911,Linear Filtered,0.000 %,0
+3319985684552,4912,Anisotropic Filtered,0.000 %,0
+3319985684552,4913,Non-Base Level Textures,0.000 %,0
+3319985684552,4914,Texture Pipes Busy,2.293 %,0
+3319985684552,4916,RTU Busy,0.000 %,0
+3319985684552,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3319985684552,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3319985684552,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3319985684552,4915,Wave Context Occupancy,0.000 %,0
+3319985684552,4867,GPU Memory Read Total,993612.343 bytes/sec,0
+3319985684552,4868,GPU Memory Write Total,250217.805 bytes/sec,0
+3319985684552,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3319985684552,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3319985684552,4925,SP Memory Read,0.000 Bytes/sec,0
+3319985684552,4926,Avg Bytes / Fragment,0.000 count,0
+3319985684552,4927,Avg Bytes / Vertex,0.000 count,0
+3319985684552,4929,Preemptions / second,0.000 preemptions/sec,0
+3319985684552,4930,GPU_RESERVED_4930,0.000,0
+3319985684552,4932,Kernel Load Cycles,33.345 %,0
+3319985684552,4933,Global Buffer Read L2 Hit,0.000 %,0
+3319985684552,4934,Global Buffer Write L2 Hit,0.000 %,0
+3319985684552,4935,Image Read L2 Hit,0.000 %,0
+3319985684552,4936,Local Memory Atomic Instructions,0.000 count,0
+3319985684552,4937,Global Memory Atomic Instructions,0.000 count,0
+3319985684552,4938,Local Memory Load Instructions,0.000 count,0
+3319985684552,4939,Global Memory Load Instructions,0.000 count,0
+3319985684552,4940,Local Memory Store Instructions,0.000 count,0
+3319985684552,4941,Global Memory Store Instructions,0.000 count,0
+3319985684552,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3319985684552,4943,Load-Store Utilization,0.000 %,0
+3319985684552,4944,L1 Hit,0.000 %,0
+3319985684552,4945,Bytes Data Write Requested,0.000 count,0
+3319985684552,4946,Bytes Data Actually Written,0.000 count,0
+3319985684552,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3319985684552,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3319985684552,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3319985684552,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3319985684552,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3319985684552,4952,GPU Frequency_4952,191000000.000 Hz,0
+3320099811992,4864,GPU Clocks Cycle Executed,172254889326065.375 Mhz,0
+3320099811992,4865,GPU Utilization_4865,100.000 %,0
+3320099811992,4866,GPU Memory Bus Busy,100.000 %,0
+3320099811992,4869,Vertex Fetch Stall,100.000 %,0
+3320099811992,4870,Texture Fetch Stall,100.000 %,0
+3320099811992,4871,L1 Texture Cache Miss Per Pixel,3.972 count,0
+3320099811992,4872,Texture L1 Miss,50.318 %,0
+3320099811992,4873,Texture L2 Miss,100.000 %,0
+3320099811992,4874,Stalled on System Memory,100.000 %,0
+3320099811992,4875,Instruction Cache Miss,0.151 %,0
+3320099811992,4876,BVH Fetch Stall,100.000 %,0
+3320099811992,4878,Pre-clipped Polygons/Second,167724949994288192.000 polygons/sec,0
+3320099811992,4879,Prims Trivially Rejected,49.899 %,0
+3320099811992,4880,Prims Clipped,100.000 %,0
+3320099811992,4881,Average Vertices / Polygon,1088.267 count,0
+3320099811992,4882,Reused Vertices / Second,172413497246183194624.000 vertices/sec,0
+3320099811992,4883,Average Polygon Area,2.081 count,0
+3320099811992,4884,LRZ Busy,100.000 %,0
+3320099811992,4885,LRZ Pixels Killed,11550079350755835904.000 count,0
+3320099811992,4886,LRZ Prims Killed,17726167033827041280.000 count,0
+3320099811992,4888,Shaders Busy,100.000 %,0
+3320099811992,4889,Shaders Stalled,100.000 %,0
+3320099811992,4890,Vertices Shaded / Second,182529500226023063552.000 shaded/sec,0
+3320099811992,4891,Fragments Shaded / Second,43439974128341901312.000 shaded/sec,0
+3320099811992,4892,Vertex Instructions / Second,2055561940095466995712.000 instructions/sec,0
+3320099811992,4893,Fragment Instructions / Second,1056255869681342218240.000 instructions/sec,0
+3320099811992,4894,Fragment ALU Instructions / Sec (Full),668179683797676720128.000 instructions/sec,0
+3320099811992,4895,Fragment ALU Instructions / Sec (Half),517459317568567050240.000 instructions/sec,0
+3320099811992,4896,Fragment EFU Instructions / Second,129346527099381940224.000 instructions/sec,0
+3320099811992,4897,Textures / Vertex,7.439 count,0
+3320099811992,4898,Textures / Fragment,-11.443 count,0
+3320099811992,4899,ALU / Vertex,7.249 count,0
+3320099811992,4900,ALU / Fragment,2.688 count,0
+3320099811992,4901,EFU / Fragment,0.375 count,0
+3320099811992,4902,EFU / Vertex,4.012 count,0
+3320099811992,4903,Time Shading Fragments,0.000 %,0
+3320099811992,4904,Time Shading Vertices,38.901 %,0
+3320099811992,4905,Time Compute,53.680 %,0
+3320099811992,4906,Shader ALU Capacity Utilized,10.205 %,0
+3320099811992,4908,Time ALUs Working,0.391 %,0
+3320099811992,4909,Time EFUs Working,100.000 %,0
+3320099811992,4910,Nearest Filtered,88.132 %,0
+3320099811992,4911,Linear Filtered,1.614 %,0
+3320099811992,4912,Anisotropic Filtered,53.333 %,0
+3320099811992,4913,Non-Base Level Textures,20.211 %,0
+3320099811992,4914,Texture Pipes Busy,100.000 %,0
+3320099811992,4916,RTU Busy,100.000 %,0
+3320099811992,4917,RTU Ray Box Intersections Per Instruction,0.538 count,0
+3320099811992,4918,RTU Ray Triangle Intersections Per Instruction,0.001 count,0
+3320099811992,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320099811992,4915,Wave Context Occupancy,0.000 %,0
+3320099811992,4867,GPU Memory Read Total,581199.820 bytes/sec,0
+3320099811992,4868,GPU Memory Write Total,153151.986 bytes/sec,0
+3320099811992,4923,Texture Memory Read BW,11031048297683991134208.000 Bytes/sec,0
+3320099811992,4924,Vertex Memory Read,6546995380517334.000 Bytes/sec,0
+3320099811992,4925,SP Memory Read,2694257826983644160.000 Bytes/sec,0
+3320099811992,4926,Avg Bytes / Fragment,127.023 count,0
+3320099811992,4927,Avg Bytes / Vertex,0.000 count,0
+3320099811992,4929,Preemptions / second,43129049358992490496.000 preemptions/sec,0
+3320099811992,4930,GPU_RESERVED_4930,0.000,0
+3320099811992,4932,Kernel Load Cycles,-8.332 %,0
+3320099811992,4933,Global Buffer Read L2 Hit,99.975 %,0
+3320099811992,4934,Global Buffer Write L2 Hit,0.000 %,0
+3320099811992,4935,Image Read L2 Hit,42.597 %,0
+3320099811992,4936,Local Memory Atomic Instructions,0.000 count,0
+3320099811992,4937,Global Memory Atomic Instructions,0.000 count,0
+3320099811992,4938,Local Memory Load Instructions,0.000 count,0
+3320099811992,4939,Global Memory Load Instructions,0.000 count,0
+3320099811992,4940,Local Memory Store Instructions,0.000 count,0
+3320099811992,4941,Global Memory Store Instructions,0.000 count,0
+3320099811992,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320099811992,4943,Load-Store Utilization,0.000 %,0
+3320099811992,4944,L1 Hit,0.000 %,0
+3320099811992,4945,Bytes Data Write Requested,155644403396802248704.000 count,0
+3320099811992,4946,Bytes Data Actually Written,1097545316156466790400.000 count,0
+3320099811992,4947,Global Buffer Data Read Request BW,2672692423870998118400.000 Bytes/sec,0
+3320099811992,4948,Global Image Data Read Request BW,2403125193961480650752.000 Bytes/sec,0
+3320099811992,4949,Global Buffer Data Read BW,2694257826983644160.000 Bytes/sec,0
+3320099811992,4950,Global Image Uncompressed Data Read BW,5517876179280208068608.000 Bytes/sec,0
+3320099811992,4951,Global Image Compressed Data Read BW,5513172118403782017024.000 Bytes/sec,0
+3320099811992,4952,GPU Frequency_4952,222000000.000 Hz,0
+3320203202142,4864,GPU Clocks Cycle Executed,187491300743.716 Mhz,0
+3320203202142,4865,GPU Utilization_4865,100.000 %,0
+3320203202142,4866,GPU Memory Bus Busy,15.612 %,0
+3320203202142,4869,Vertex Fetch Stall,100.000 %,0
+3320203202142,4870,Texture Fetch Stall,100.000 %,0
+3320203202142,4871,L1 Texture Cache Miss Per Pixel,0.445 count,0
+3320203202142,4872,Texture L1 Miss,100.000 %,0
+3320203202142,4873,Texture L2 Miss,100.000 %,0
+3320203202142,4874,Stalled on System Memory,15.612 %,0
+3320203202142,4875,Instruction Cache Miss,100.000 %,0
+3320203202142,4876,BVH Fetch Stall,100.000 %,0
+3320203202142,4878,Pre-clipped Polygons/Second,191803611447242784768.000 polygons/sec,0
+3320203202142,4879,Prims Trivially Rejected,0.196 %,0
+3320203202142,4880,Prims Clipped,33.365 %,0
+3320203202142,4881,Average Vertices / Polygon,0.756 count,0
+3320203202142,4882,Reused Vertices / Second,3045361114353240064.000 vertices/sec,0
+3320203202142,4883,Average Polygon Area,0.284 count,0
+3320203202142,4884,LRZ Busy,100.000 %,0
+3320203202142,4885,LRZ Pixels Killed,2291170026683301888.000 count,0
+3320203202142,4886,LRZ Prims Killed,141864496355336224.000 count,0
+3320203202142,4888,Shaders Busy,100.000 %,0
+3320203202142,4889,Shaders Stalled,100.000 %,0
+3320203202142,4890,Vertices Shaded / Second,144916078841133940736.000 shaded/sec,0
+3320203202142,4891,Fragments Shaded / Second,47997840811679350784.000 shaded/sec,0
+3320203202142,4892,Vertex Instructions / Second,1538672532927775506432.000 instructions/sec,0
+3320203202142,4893,Fragment Instructions / Second,359965224594201772032.000 instructions/sec,0
+3320203202142,4894,Fragment ALU Instructions / Sec (Full),23623903865411854336.000 instructions/sec,0
+3320203202142,4895,Fragment ALU Instructions / Sec (Half),189751466630738083840.000 instructions/sec,0
+3320203202142,4896,Fragment EFU Instructions / Second,241465587413420867584.000 instructions/sec,0
+3320203202142,4897,Textures / Vertex,0.166 count,0
+3320203202142,4898,Textures / Fragment,3.031 count,0
+3320203202142,4899,ALU / Vertex,5.483 count,0
+3320203202142,4900,ALU / Fragment,0.154 count,0
+3320203202142,4901,EFU / Fragment,0.315 count,0
+3320203202142,4902,EFU / Vertex,5.135 count,0
+3320203202142,4903,Time Shading Fragments,-3.816 %,0
+3320203202142,4904,Time Shading Vertices,42.098 %,0
+3320203202142,4905,Time Compute,48.846 %,0
+3320203202142,4906,Shader ALU Capacity Utilized,100.000 %,0
+3320203202142,4908,Time ALUs Working,100.000 %,0
+3320203202142,4909,Time EFUs Working,10.934 %,0
+3320203202142,4910,Nearest Filtered,34.754 %,0
+3320203202142,4911,Linear Filtered,50.099 %,0
+3320203202142,4912,Anisotropic Filtered,100.000 %,0
+3320203202142,4913,Non-Base Level Textures,-49.076 %,0
+3320203202142,4914,Texture Pipes Busy,100.000 %,0
+3320203202142,4916,RTU Busy,100.000 %,0
+3320203202142,4917,RTU Ray Box Intersections Per Instruction,0.885 count,0
+3320203202142,4918,RTU Ray Triangle Intersections Per Instruction,0.948 count,0
+3320203202142,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320203202142,4915,Wave Context Occupancy,0.000 %,0
+3320203202142,4867,GPU Memory Read Total,638459.637 bytes/sec,0
+3320203202142,4868,GPU Memory Write Total,166525.727 bytes/sec,0
+3320203202142,4923,Texture Memory Read BW,12094688496261177278464.000 Bytes/sec,0
+3320203202142,4924,Vertex Memory Read,4607976640256687472640.000 Bytes/sec,0
+3320203202142,4925,SP Memory Read,3068856907378414583808.000 Bytes/sec,0
+3320203202142,4926,Avg Bytes / Fragment,124.000 count,0
+3320203202142,4927,Avg Bytes / Vertex,31.798 count,0
+3320203202142,4929,Preemptions / second,47992073815705018368.000 preemptions/sec,0
+3320203202142,4930,GPU_RESERVED_4930,0.000,0
+3320203202142,4932,Kernel Load Cycles,16.698 %,0
+3320203202142,4933,Global Buffer Read L2 Hit,0.000 %,0
+3320203202142,4934,Global Buffer Write L2 Hit,98.434 %,0
+3320203202142,4935,Image Read L2 Hit,0.000 %,0
+3320203202142,4936,Local Memory Atomic Instructions,0.000 count,0
+3320203202142,4937,Global Memory Atomic Instructions,0.000 count,0
+3320203202142,4938,Local Memory Load Instructions,0.000 count,0
+3320203202142,4939,Global Memory Load Instructions,0.000 count,0
+3320203202142,4940,Local Memory Store Instructions,0.000 count,0
+3320203202142,4941,Global Memory Store Instructions,0.000 count,0
+3320203202142,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320203202142,4943,Load-Store Utilization,0.000 %,0
+3320203202142,4944,L1 Hit,93.744 %,0
+3320203202142,4945,Bytes Data Write Requested,147535953467837251584.000 count,0
+3320203202142,4946,Bytes Data Actually Written,9241384244394070016.000 count,0
+3320203202142,4947,Global Buffer Data Read Request BW,96488076682850680832.000 Bytes/sec,0
+3320203202142,4948,Global Image Data Read Request BW,1164133072471362502656.000 Bytes/sec,0
+3320203202142,4949,Global Buffer Data Read BW,3068856907378414583808.000 Bytes/sec,0
+3320203202142,4950,Global Image Uncompressed Data Read BW,5951723895153673371648.000 Bytes/sec,0
+3320203202142,4951,Global Image Compressed Data Read BW,6142964601107503906816.000 Bytes/sec,0
+3320203202142,4952,GPU Frequency_4952,222000000.000 Hz,0
+3320286291668,4864,GPU Clocks Cycle Executed,2.027 Mhz,0
+3320286291668,4865,GPU Utilization_4865,0.053 %,0
+3320286291668,4866,GPU Memory Bus Busy,1.145 %,0
+3320286291668,4869,Vertex Fetch Stall,0.000 %,0
+3320286291668,4870,Texture Fetch Stall,0.000 %,0
+3320286291668,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3320286291668,4872,Texture L1 Miss,0.000 %,0
+3320286291668,4873,Texture L2 Miss,0.000 %,0
+3320286291668,4874,Stalled on System Memory,0.000 %,0
+3320286291668,4875,Instruction Cache Miss,0.000 %,0
+3320286291668,4876,BVH Fetch Stall,0.000 %,0
+3320286291668,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3320286291668,4879,Prims Trivially Rejected,0.000 %,0
+3320286291668,4880,Prims Clipped,0.000 %,0
+3320286291668,4881,Average Vertices / Polygon,0.000 count,0
+3320286291668,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3320286291668,4883,Average Polygon Area,0.000 count,0
+3320286291668,4884,LRZ Busy,10.914 %,0
+3320286291668,4885,LRZ Pixels Killed,0.000 count,0
+3320286291668,4886,LRZ Prims Killed,0.000 count,0
+3320286291668,4888,Shaders Busy,2.292 %,0
+3320286291668,4889,Shaders Stalled,0.000 %,0
+3320286291668,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3320286291668,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3320286291668,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3320286291668,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3320286291668,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3320286291668,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3320286291668,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3320286291668,4897,Textures / Vertex,0.000 count,0
+3320286291668,4898,Textures / Fragment,0.000 count,0
+3320286291668,4899,ALU / Vertex,0.000 count,0
+3320286291668,4900,ALU / Fragment,0.000 count,0
+3320286291668,4901,EFU / Fragment,0.000 count,0
+3320286291668,4902,EFU / Vertex,0.000 count,0
+3320286291668,4903,Time Shading Fragments,0.000 %,0
+3320286291668,4904,Time Shading Vertices,0.000 %,0
+3320286291668,4905,Time Compute,0.000 %,0
+3320286291668,4906,Shader ALU Capacity Utilized,0.000 %,0
+3320286291668,4908,Time ALUs Working,0.000 %,0
+3320286291668,4909,Time EFUs Working,0.000 %,0
+3320286291668,4910,Nearest Filtered,0.000 %,0
+3320286291668,4911,Linear Filtered,0.000 %,0
+3320286291668,4912,Anisotropic Filtered,0.000 %,0
+3320286291668,4913,Non-Base Level Textures,0.000 %,0
+3320286291668,4914,Texture Pipes Busy,2.292 %,0
+3320286291668,4916,RTU Busy,0.000 %,0
+3320286291668,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3320286291668,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3320286291668,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320286291668,4915,Wave Context Occupancy,0.000 %,0
+3320286291668,4867,GPU Memory Read Total,912103.479 bytes/sec,0
+3320286291668,4868,GPU Memory Write Total,235017.967 bytes/sec,0
+3320286291668,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3320286291668,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3320286291668,4925,SP Memory Read,0.000 Bytes/sec,0
+3320286291668,4926,Avg Bytes / Fragment,0.000 count,0
+3320286291668,4927,Avg Bytes / Vertex,0.000 count,0
+3320286291668,4929,Preemptions / second,0.000 preemptions/sec,0
+3320286291668,4930,GPU_RESERVED_4930,0.000,0
+3320286291668,4932,Kernel Load Cycles,33.864 %,0
+3320286291668,4933,Global Buffer Read L2 Hit,0.000 %,0
+3320286291668,4934,Global Buffer Write L2 Hit,0.000 %,0
+3320286291668,4935,Image Read L2 Hit,0.000 %,0
+3320286291668,4936,Local Memory Atomic Instructions,0.000 count,0
+3320286291668,4937,Global Memory Atomic Instructions,0.000 count,0
+3320286291668,4938,Local Memory Load Instructions,0.000 count,0
+3320286291668,4939,Global Memory Load Instructions,0.000 count,0
+3320286291668,4940,Local Memory Store Instructions,0.000 count,0
+3320286291668,4941,Global Memory Store Instructions,0.000 count,0
+3320286291668,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320286291668,4943,Load-Store Utilization,0.000 %,0
+3320286291668,4944,L1 Hit,0.000 %,0
+3320286291668,4945,Bytes Data Write Requested,0.000 count,0
+3320286291668,4946,Bytes Data Actually Written,0.000 count,0
+3320286291668,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3320286291668,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3320286291668,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3320286291668,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3320286291668,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3320286291668,4952,GPU Frequency_4952,222000000.000 Hz,0
+3320401467129,4864,GPU Clocks Cycle Executed,49416.442 Mhz,0
+3320401467129,4865,GPU Utilization_4865,100.000 %,0
+3320401467129,4866,GPU Memory Bus Busy,24.993 %,0
+3320401467129,4869,Vertex Fetch Stall,29.719 %,0
+3320401467129,4870,Texture Fetch Stall,9.185 %,0
+3320401467129,4871,L1 Texture Cache Miss Per Pixel,1.892 count,0
+3320401467129,4872,Texture L1 Miss,97.506 %,0
+3320401467129,4873,Texture L2 Miss,4.084 %,0
+3320401467129,4874,Stalled on System Memory,24.993 %,0
+3320401467129,4875,Instruction Cache Miss,46.733 %,0
+3320401467129,4876,BVH Fetch Stall,8.338 %,0
+3320401467129,4878,Pre-clipped Polygons/Second,168500844765631744.000 polygons/sec,0
+3320401467129,4879,Prims Trivially Rejected,100.000 %,0
+3320401467129,4880,Prims Clipped,100.000 %,0
+3320401467129,4881,Average Vertices / Polygon,189.594 count,0
+3320401467129,4882,Reused Vertices / Second,334368392677891899392.000 vertices/sec,0
+3320401467129,4883,Average Polygon Area,7.984 count,0
+3320401467129,4884,LRZ Busy,41.004 %,0
+3320401467129,4885,LRZ Pixels Killed,-2296905049227108352.000 count,0
+3320401467129,4886,LRZ Prims Killed,439099305878355968.000 count,0
+3320401467129,4888,Shaders Busy,8.272 %,0
+3320401467129,4889,Shaders Stalled,4.169 %,0
+3320401467129,4890,Vertices Shaded / Second,31946822580576501760.000 shaded/sec,0
+3320401467129,4891,Fragments Shaded / Second,170883610013333225472.000 shaded/sec,0
+3320401467129,4892,Vertex Instructions / Second,524762501918027087872.000 instructions/sec,0
+3320401467129,4893,Fragment Instructions / Second,723592455613367189504.000 instructions/sec,0
+3320401467129,4894,Fragment ALU Instructions / Sec (Full),335726678627482112.000 instructions/sec,0
+3320401467129,4895,Fragment ALU Instructions / Sec (Half),684037966623965708288.000 instructions/sec,0
+3320401467129,4896,Fragment EFU Instructions / Second,381237745622757015552.000 instructions/sec,0
+3320401467129,4897,Textures / Vertex,21.773 count,0
+3320401467129,4898,Textures / Fragment,-0.031 count,0
+3320401467129,4899,ALU / Vertex,16.416 count,0
+3320401467129,4900,ALU / Fragment,0.504 count,0
+3320401467129,4901,EFU / Fragment,0.561 count,0
+3320401467129,4902,EFU / Vertex,0.010 count,0
+3320401467129,4903,Time Shading Fragments,-53.861 %,0
+3320401467129,4904,Time Shading Vertices,65.554 %,0
+3320401467129,4905,Time Compute,54.716 %,0
+3320401467129,4906,Shader ALU Capacity Utilized,4.013 %,0
+3320401467129,4908,Time ALUs Working,5.153 %,0
+3320401467129,4909,Time EFUs Working,99.879 %,0
+3320401467129,4910,Nearest Filtered,100.000 %,0
+3320401467129,4911,Linear Filtered,100.000 %,0
+3320401467129,4912,Anisotropic Filtered,100.000 %,0
+3320401467129,4913,Non-Base Level Textures,49.954 %,0
+3320401467129,4914,Texture Pipes Busy,8.272 %,0
+3320401467129,4916,RTU Busy,98.396 %,0
+3320401467129,4917,RTU Ray Box Intersections Per Instruction,9.117 count,0
+3320401467129,4918,RTU Ray Triangle Intersections Per Instruction,4.004 count,0
+3320401467129,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320401467129,4915,Wave Context Occupancy,0.000 %,0
+3320401467129,4867,GPU Memory Read Total,575022.818 bytes/sec,0
+3320401467129,4868,GPU Memory Write Total,152072.150 bytes/sec,0
+3320401467129,4923,Texture Memory Read BW,176611100996653940736.000 Bytes/sec,0
+3320401467129,4924,Vertex Memory Read,347615480997094162432.000 Bytes/sec,0
+3320401467129,4925,SP Memory Read,3426366823548751708160.000 Bytes/sec,0
+3320401467129,4926,Avg Bytes / Fragment,1.002 count,0
+3320401467129,4927,Avg Bytes / Vertex,10.881 count,0
+3320401467129,4929,Preemptions / second,42783910616408104960.000 preemptions/sec,0
+3320401467129,4930,GPU_RESERVED_4930,0.000,0
+3320401467129,4932,Kernel Load Cycles,100.000 %,0
+3320401467129,4933,Global Buffer Read L2 Hit,68.250 %,0
+3320401467129,4934,Global Buffer Write L2 Hit,0.000 %,0
+3320401467129,4935,Image Read L2 Hit,97.958 %,0
+3320401467129,4936,Local Memory Atomic Instructions,0.000 count,0
+3320401467129,4937,Global Memory Atomic Instructions,0.000 count,0
+3320401467129,4938,Local Memory Load Instructions,0.000 count,0
+3320401467129,4939,Global Memory Load Instructions,0.000 count,0
+3320401467129,4940,Local Memory Store Instructions,0.000 count,0
+3320401467129,4941,Global Memory Store Instructions,0.000 count,0
+3320401467129,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320401467129,4943,Load-Store Utilization,0.000 %,0
+3320401467129,4944,L1 Hit,0.150 %,0
+3320401467129,4945,Bytes Data Write Requested,285962531989476081664.000 count,0
+3320401467129,4946,Bytes Data Actually Written,1180501550915834085376.000 count,0
+3320401467129,4947,Global Buffer Data Read Request BW,2697946665241176702976.000 Bytes/sec,0
+3320401467129,4948,Global Image Data Read Request BW,2096788495160937283584.000 Bytes/sec,0
+3320401467129,4949,Global Buffer Data Read BW,3426366823548751708160.000 Bytes/sec,0
+3320401467129,4950,Global Image Uncompressed Data Read BW,171260190919372013568.000 Bytes/sec,0
+3320401467129,4951,Global Image Compressed Data Read BW,5350910077281942528.000 Bytes/sec,0
+3320401467129,4952,GPU Frequency_4952,222000000.000 Hz,0
+3320506824362,4864,GPU Clocks Cycle Executed,11567634.726 Mhz,0
+3320506824362,4865,GPU Utilization_4865,100.000 %,0
+3320506824362,4866,GPU Memory Bus Busy,100.000 %,0
+3320506824362,4869,Vertex Fetch Stall,100.000 %,0
+3320506824362,4870,Texture Fetch Stall,100.000 %,0
+3320506824362,4871,L1 Texture Cache Miss Per Pixel,0.001 count,0
+3320506824362,4872,Texture L1 Miss,0.037 %,0
+3320506824362,4873,Texture L2 Miss,100.000 %,0
+3320506824362,4874,Stalled on System Memory,100.000 %,0
+3320506824362,4875,Instruction Cache Miss,3.027 %,0
+3320506824362,4876,BVH Fetch Stall,100.000 %,0
+3320506824362,4878,Pre-clipped Polygons/Second,187425556578292072448.000 polygons/sec,0
+3320506824362,4879,Prims Trivially Rejected,100.000 %,0
+3320506824362,4880,Prims Clipped,33.629 %,0
+3320506824362,4881,Average Vertices / Polygon,1.834 count,0
+3320506824362,4882,Reused Vertices / Second,8911784613548307456.000 vertices/sec,0
+3320506824362,4883,Average Polygon Area,0.250 count,0
+3320506824362,4884,LRZ Busy,100.000 %,0
+3320506824362,4885,LRZ Pixels Killed,-16171863245244581888.000 count,0
+3320506824362,4886,LRZ Prims Killed,18014391373326714880.000 count,0
+3320506824362,4888,Shaders Busy,100.000 %,0
+3320506824362,4889,Shaders Stalled,100.000 %,0
+3320506824362,4890,Vertices Shaded / Second,343658406427718778880.000 shaded/sec,0
+3320506824362,4891,Fragments Shaded / Second,47226038750724464640.000 shaded/sec,0
+3320506824362,4892,Vertex Instructions / Second,1855825878829814251520.000 instructions/sec,0
+3320506824362,4893,Fragment Instructions / Second,478164650105840533504.000 instructions/sec,0
+3320506824362,4894,Fragment ALU Instructions / Sec (Full),349399099588600.312 instructions/sec,0
+3320506824362,4895,Fragment ALU Instructions / Sec (Half),4974248217863430144.000 instructions/sec,0
+3320506824362,4896,Fragment EFU Instructions / Second,475677176597809266688.000 instructions/sec,0
+3320506824362,4897,Textures / Vertex,4.367 count,0
+3320506824362,4898,Textures / Fragment,-11.793 count,0
+3320506824362,4899,ALU / Vertex,3.199 count,0
+3320506824362,4900,ALU / Fragment,0.104 count,0
+3320506824362,4901,EFU / Fragment,19.816 count,0
+3320506824362,4902,EFU / Vertex,2.201 count,0
+3320506824362,4903,Time Shading Fragments,57.863 %,0
+3320506824362,4904,Time Shading Vertices,42.125 %,0
+3320506824362,4905,Time Compute,0.013 %,0
+3320506824362,4906,Shader ALU Capacity Utilized,4.554 %,0
+3320506824362,4908,Time ALUs Working,46.883 %,0
+3320506824362,4909,Time EFUs Working,1.180 %,0
+3320506824362,4910,Nearest Filtered,81.126 %,0
+3320506824362,4911,Linear Filtered,50.587 %,0
+3320506824362,4912,Anisotropic Filtered,1.574 %,0
+3320506824362,4913,Non-Base Level Textures,-48.962 %,0
+3320506824362,4914,Texture Pipes Busy,100.000 %,0
+3320506824362,4916,RTU Busy,50.020 %,0
+3320506824362,4917,RTU Ray Box Intersections Per Instruction,0.984 count,0
+3320506824362,4918,RTU Ray Triangle Intersections Per Instruction,0.159 count,0
+3320506824362,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320506824362,4915,Wave Context Occupancy,0.000 %,0
+3320506824362,4867,GPU Memory Read Total,631104.928 bytes/sec,0
+3320506824362,4868,GPU Memory Write Total,165648.643 bytes/sec,0
+3320506824362,4923,Texture Memory Read BW,12095743178742647750656.000 Bytes/sec,0
+3320506824362,4924,Vertex Memory Read,5655125901260195102720.000 Bytes/sec,0
+3320506824362,4925,SP Memory Read,5670448835406171471872.000 Bytes/sec,0
+3320506824362,4926,Avg Bytes / Fragment,128.124 count,0
+3320506824362,4927,Avg Bytes / Vertex,16.456 count,0
+3320506824362,4929,Preemptions / second,1482667632376174592.000 preemptions/sec,0
+3320506824362,4930,GPU_RESERVED_4930,0.000,0
+3320506824362,4932,Kernel Load Cycles,-136195676.153 %,0
+3320506824362,4933,Global Buffer Read L2 Hit,0.000 %,0
+3320506824362,4934,Global Buffer Write L2 Hit,88.380 %,0
+3320506824362,4935,Image Read L2 Hit,49.017 %,0
+3320506824362,4936,Local Memory Atomic Instructions,0.000 count,0
+3320506824362,4937,Global Memory Atomic Instructions,0.000 count,0
+3320506824362,4938,Local Memory Load Instructions,0.000 count,0
+3320506824362,4939,Global Memory Load Instructions,0.000 count,0
+3320506824362,4940,Local Memory Store Instructions,0.000 count,0
+3320506824362,4941,Global Memory Store Instructions,0.000 count,0
+3320506824362,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320506824362,4943,Load-Store Utilization,0.000 %,0
+3320506824362,4944,L1 Hit,66.156 %,0
+3320506824362,4945,Bytes Data Write Requested,159103185227930927104.000 count,0
+3320506824362,4946,Bytes Data Actually Written,73949244419888611328.000 count,0
+3320506824362,4947,Global Buffer Data Read Request BW,46881294115692986368.000 Bytes/sec,0
+3320506824362,4948,Global Image Data Read Request BW,2967073325251728244736.000 Bytes/sec,0
+3320506824362,4949,Global Buffer Data Read BW,5670448835406171471872.000 Bytes/sec,0
+3320506824362,4950,Global Image Uncompressed Data Read BW,6050810247509114355712.000 Bytes/sec,0
+3320506824362,4951,Global Image Compressed Data Read BW,6044932931233533394944.000 Bytes/sec,0
+3320506824362,4952,GPU Frequency_4952,222000000.000 Hz,0
+3320592820190,4864,GPU Clocks Cycle Executed,2.160 Mhz,0
+3320592820190,4865,GPU Utilization_4865,0.051 %,0
+3320592820190,4866,GPU Memory Bus Busy,1.173 %,0
+3320592820190,4869,Vertex Fetch Stall,0.000 %,0
+3320592820190,4870,Texture Fetch Stall,0.000 %,0
+3320592820190,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3320592820190,4872,Texture L1 Miss,0.000 %,0
+3320592820190,4873,Texture L2 Miss,0.000 %,0
+3320592820190,4874,Stalled on System Memory,0.000 %,0
+3320592820190,4875,Instruction Cache Miss,0.000 %,0
+3320592820190,4876,BVH Fetch Stall,0.000 %,0
+3320592820190,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3320592820190,4879,Prims Trivially Rejected,0.000 %,0
+3320592820190,4880,Prims Clipped,0.000 %,0
+3320592820190,4881,Average Vertices / Polygon,0.000 count,0
+3320592820190,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3320592820190,4883,Average Polygon Area,0.000 count,0
+3320592820190,4884,LRZ Busy,10.912 %,0
+3320592820190,4885,LRZ Pixels Killed,0.000 count,0
+3320592820190,4886,LRZ Prims Killed,0.000 count,0
+3320592820190,4888,Shaders Busy,2.292 %,0
+3320592820190,4889,Shaders Stalled,0.000 %,0
+3320592820190,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3320592820190,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3320592820190,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3320592820190,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3320592820190,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3320592820190,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3320592820190,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3320592820190,4897,Textures / Vertex,0.000 count,0
+3320592820190,4898,Textures / Fragment,0.000 count,0
+3320592820190,4899,ALU / Vertex,0.000 count,0
+3320592820190,4900,ALU / Fragment,0.000 count,0
+3320592820190,4901,EFU / Fragment,0.000 count,0
+3320592820190,4902,EFU / Vertex,0.000 count,0
+3320592820190,4903,Time Shading Fragments,0.000 %,0
+3320592820190,4904,Time Shading Vertices,0.000 %,0
+3320592820190,4905,Time Compute,0.000 %,0
+3320592820190,4906,Shader ALU Capacity Utilized,0.000 %,0
+3320592820190,4908,Time ALUs Working,0.000 %,0
+3320592820190,4909,Time EFUs Working,0.000 %,0
+3320592820190,4910,Nearest Filtered,0.000 %,0
+3320592820190,4911,Linear Filtered,0.000 %,0
+3320592820190,4912,Anisotropic Filtered,0.000 %,0
+3320592820190,4913,Non-Base Level Textures,0.000 %,0
+3320592820190,4914,Texture Pipes Busy,2.292 %,0
+3320592820190,4916,RTU Busy,0.000 %,0
+3320592820190,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3320592820190,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3320592820190,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320592820190,4915,Wave Context Occupancy,0.000 %,0
+3320592820190,4867,GPU Memory Read Total,909559.904 bytes/sec,0
+3320592820190,4868,GPU Memory Write Total,230638.404 bytes/sec,0
+3320592820190,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3320592820190,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3320592820190,4925,SP Memory Read,0.000 Bytes/sec,0
+3320592820190,4926,Avg Bytes / Fragment,0.000 count,0
+3320592820190,4927,Avg Bytes / Vertex,0.000 count,0
+3320592820190,4929,Preemptions / second,0.000 preemptions/sec,0
+3320592820190,4930,GPU_RESERVED_4930,0.000,0
+3320592820190,4932,Kernel Load Cycles,30.914 %,0
+3320592820190,4933,Global Buffer Read L2 Hit,0.000 %,0
+3320592820190,4934,Global Buffer Write L2 Hit,0.000 %,0
+3320592820190,4935,Image Read L2 Hit,0.000 %,0
+3320592820190,4936,Local Memory Atomic Instructions,0.000 count,0
+3320592820190,4937,Global Memory Atomic Instructions,0.000 count,0
+3320592820190,4938,Local Memory Load Instructions,0.000 count,0
+3320592820190,4939,Global Memory Load Instructions,0.000 count,0
+3320592820190,4940,Local Memory Store Instructions,0.000 count,0
+3320592820190,4941,Global Memory Store Instructions,0.000 count,0
+3320592820190,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320592820190,4943,Load-Store Utilization,0.000 %,0
+3320592820190,4944,L1 Hit,0.000 %,0
+3320592820190,4945,Bytes Data Write Requested,0.000 count,0
+3320592820190,4946,Bytes Data Actually Written,0.000 count,0
+3320592820190,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3320592820190,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3320592820190,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3320592820190,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3320592820190,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3320592820190,4952,GPU Frequency_4952,222000000.000 Hz,0
+3320711686172,4864,GPU Clocks Cycle Executed,1362082640359.002 Mhz,0
+3320711686172,4865,GPU Utilization_4865,100.000 %,0
+3320711686172,4866,GPU Memory Bus Busy,100.000 %,0
+3320711686172,4869,Vertex Fetch Stall,100.000 %,0
+3320711686172,4870,Texture Fetch Stall,100.000 %,0
+3320711686172,4871,L1 Texture Cache Miss Per Pixel,7.929 count,0
+3320711686172,4872,Texture L1 Miss,100.000 %,0
+3320711686172,4873,Texture L2 Miss,100.000 %,0
+3320711686172,4874,Stalled on System Memory,100.000 %,0
+3320711686172,4875,Instruction Cache Miss,99.954 %,0
+3320711686172,4876,BVH Fetch Stall,14.772 %,0
+3320711686172,4878,Pre-clipped Polygons/Second,2068000237221127.000 polygons/sec,0
+3320711686172,4879,Prims Trivially Rejected,32.160 %,0
+3320711686172,4880,Prims Clipped,100.000 %,0
+3320711686172,4881,Average Vertices / Polygon,82573.381 count,0
+3320711686172,4882,Reused Vertices / Second,345948432482072985600.000 vertices/sec,0
+3320711686172,4883,Average Polygon Area,127226.183 count,0
+3320711686172,4884,LRZ Busy,100.000 %,0
+3320711686172,4885,LRZ Pixels Killed,16170807711978270720.000 count,0
+3320711686172,4886,LRZ Prims Killed,8802275424384.000 count,0
+3320711686172,4888,Shaders Busy,100.000 %,0
+3320711686172,4889,Shaders Stalled,100.000 %,0
+3320711686172,4890,Vertices Shaded / Second,170761770968315527168.000 shaded/sec,0
+3320711686172,4891,Fragments Shaded / Second,43629541953789747200.000 shaded/sec,0
+3320711686172,4892,Vertex Instructions / Second,1740645228671825608704.000 instructions/sec,0
+3320711686172,4893,Fragment Instructions / Second,1350261418782265704448.000 instructions/sec,0
+3320711686172,4894,Fragment ALU Instructions / Sec (Full),697388717607994523648.000 instructions/sec,0
+3320711686172,4895,Fragment ALU Instructions / Sec (Half),695533381308345221120.000 instructions/sec,0
+3320711686172,4896,Fragment EFU Instructions / Second,305106010520098504704.000 instructions/sec,0
+3320711686172,4897,Textures / Vertex,8.024 count,0
+3320711686172,4898,Textures / Fragment,-11.582 count,0
+3320711686172,4899,ALU / Vertex,6.109 count,0
+3320711686172,4900,ALU / Fragment,1.499 count,0
+3320711686172,4901,EFU / Fragment,0.438 count,0
+3320711686172,4902,EFU / Vertex,4.084 count,0
+3320711686172,4903,Time Shading Fragments,-21.651 %,0
+3320711686172,4904,Time Shading Vertices,64.780 %,0
+3320711686172,4905,Time Compute,42.310 %,0
+3320711686172,4906,Shader ALU Capacity Utilized,100.000 %,0
+3320711686172,4908,Time ALUs Working,100.000 %,0
+3320711686172,4909,Time EFUs Working,36.089 %,0
+3320711686172,4910,Nearest Filtered,57.563 %,0
+3320711686172,4911,Linear Filtered,53.794 %,0
+3320711686172,4912,Anisotropic Filtered,50.644 %,0
+3320711686172,4913,Non-Base Level Textures,58.474 %,0
+3320711686172,4914,Texture Pipes Busy,100.000 %,0
+3320711686172,4916,RTU Busy,100.000 %,0
+3320711686172,4917,RTU Ray Box Intersections Per Instruction,0.063 count,0
+3320711686172,4918,RTU Ray Triangle Intersections Per Instruction,1.128 count,0
+3320711686172,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320711686172,4915,Wave Context Occupancy,0.000 %,0
+3320711686172,4867,GPU Memory Read Total,582207.408 bytes/sec,0
+3320711686172,4868,GPU Memory Write Total,152734.931 bytes/sec,0
+3320711686172,4923,Texture Memory Read BW,5410273077311348670464.000 Bytes/sec,0
+3320711686172,4924,Vertex Memory Read,10814242524327999488.000 Bytes/sec,0
+3320711686172,4925,SP Memory Read,5186855569905313382400.000 Bytes/sec,0
+3320711686172,4926,Avg Bytes / Fragment,123.880 count,0
+3320711686172,4927,Avg Bytes / Vertex,0.063 count,0
+3320711686172,4929,Preemptions / second,353162508981859.500 preemptions/sec,0
+3320711686172,4930,GPU_RESERVED_4930,0.000,0
+3320711686172,4932,Kernel Load Cycles,-11.181 %,0
+3320711686172,4933,Global Buffer Read L2 Hit,0.000 %,0
+3320711686172,4934,Global Buffer Write L2 Hit,0.000 %,0
+3320711686172,4935,Image Read L2 Hit,44.642 %,0
+3320711686172,4936,Local Memory Atomic Instructions,0.000 count,0
+3320711686172,4937,Global Memory Atomic Instructions,0.000 count,0
+3320711686172,4938,Local Memory Load Instructions,0.000 count,0
+3320711686172,4939,Global Memory Load Instructions,0.000 count,0
+3320711686172,4940,Local Memory Store Instructions,0.000 count,0
+3320711686172,4941,Global Memory Store Instructions,0.000 count,0
+3320711686172,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320711686172,4943,Load-Store Utilization,0.000 %,0
+3320711686172,4944,L1 Hit,-3.204 %,0
+3320711686172,4945,Bytes Data Write Requested,292842044577953087488.000 count,0
+3320711686172,4946,Bytes Data Actually Written,1180393321596318646272.000 count,0
+3320711686172,4947,Global Buffer Data Read Request BW,1382045511168624128.000 Bytes/sec,0
+3320711686172,4948,Global Image Data Read Request BW,2440852030400478314496.000 Bytes/sec,0
+3320711686172,4949,Global Buffer Data Read BW,5186855569905313382400.000 Bytes/sec,0
+3320711686172,4950,Global Image Uncompressed Data Read BW,5404824684459063246848.000 Bytes/sec,0
+3320711686172,4951,Global Image Compressed Data Read BW,5448392852285913088.000 Bytes/sec,0
+3320711686172,4952,GPU Frequency_4952,222000000.000 Hz,0
+3320798099864,4864,GPU Clocks Cycle Executed,2.000 Mhz,0
+3320798099864,4865,GPU Utilization_4865,0.050 %,0
+3320798099864,4866,GPU Memory Bus Busy,1.260 %,0
+3320798099864,4869,Vertex Fetch Stall,0.000 %,0
+3320798099864,4870,Texture Fetch Stall,0.000 %,0
+3320798099864,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3320798099864,4872,Texture L1 Miss,0.000 %,0
+3320798099864,4873,Texture L2 Miss,0.000 %,0
+3320798099864,4874,Stalled on System Memory,0.000 %,0
+3320798099864,4875,Instruction Cache Miss,0.000 %,0
+3320798099864,4876,BVH Fetch Stall,0.000 %,0
+3320798099864,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3320798099864,4879,Prims Trivially Rejected,0.000 %,0
+3320798099864,4880,Prims Clipped,0.000 %,0
+3320798099864,4881,Average Vertices / Polygon,0.000 count,0
+3320798099864,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3320798099864,4883,Average Polygon Area,0.000 count,0
+3320798099864,4884,LRZ Busy,11.132 %,0
+3320798099864,4885,LRZ Pixels Killed,0.000 count,0
+3320798099864,4886,LRZ Prims Killed,0.000 count,0
+3320798099864,4888,Shaders Busy,2.338 %,0
+3320798099864,4889,Shaders Stalled,0.000 %,0
+3320798099864,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3320798099864,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3320798099864,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3320798099864,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3320798099864,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3320798099864,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3320798099864,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3320798099864,4897,Textures / Vertex,0.000 count,0
+3320798099864,4898,Textures / Fragment,0.000 count,0
+3320798099864,4899,ALU / Vertex,0.000 count,0
+3320798099864,4900,ALU / Fragment,0.000 count,0
+3320798099864,4901,EFU / Fragment,0.000 count,0
+3320798099864,4902,EFU / Vertex,0.000 count,0
+3320798099864,4903,Time Shading Fragments,0.000 %,0
+3320798099864,4904,Time Shading Vertices,0.000 %,0
+3320798099864,4905,Time Compute,0.000 %,0
+3320798099864,4906,Shader ALU Capacity Utilized,0.000 %,0
+3320798099864,4908,Time ALUs Working,0.000 %,0
+3320798099864,4909,Time EFUs Working,0.000 %,0
+3320798099864,4910,Nearest Filtered,0.000 %,0
+3320798099864,4911,Linear Filtered,0.000 %,0
+3320798099864,4912,Anisotropic Filtered,0.000 %,0
+3320798099864,4913,Non-Base Level Textures,0.000 %,0
+3320798099864,4914,Texture Pipes Busy,2.338 %,0
+3320798099864,4916,RTU Busy,0.000 %,0
+3320798099864,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3320798099864,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3320798099864,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320798099864,4915,Wave Context Occupancy,0.000 %,0
+3320798099864,4867,GPU Memory Read Total,948212.151 bytes/sec,0
+3320798099864,4868,GPU Memory Write Total,246811.653 bytes/sec,0
+3320798099864,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3320798099864,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3320798099864,4925,SP Memory Read,0.000 Bytes/sec,0
+3320798099864,4926,Avg Bytes / Fragment,0.000 count,0
+3320798099864,4927,Avg Bytes / Vertex,0.000 count,0
+3320798099864,4929,Preemptions / second,0.000 preemptions/sec,0
+3320798099864,4930,GPU_RESERVED_4930,0.000,0
+3320798099864,4932,Kernel Load Cycles,32.775 %,0
+3320798099864,4933,Global Buffer Read L2 Hit,0.000 %,0
+3320798099864,4934,Global Buffer Write L2 Hit,0.000 %,0
+3320798099864,4935,Image Read L2 Hit,0.000 %,0
+3320798099864,4936,Local Memory Atomic Instructions,0.000 count,0
+3320798099864,4937,Global Memory Atomic Instructions,0.000 count,0
+3320798099864,4938,Local Memory Load Instructions,0.000 count,0
+3320798099864,4939,Global Memory Load Instructions,0.000 count,0
+3320798099864,4940,Local Memory Store Instructions,0.000 count,0
+3320798099864,4941,Global Memory Store Instructions,0.000 count,0
+3320798099864,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320798099864,4943,Load-Store Utilization,0.000 %,0
+3320798099864,4944,L1 Hit,0.000 %,0
+3320798099864,4945,Bytes Data Write Requested,0.000 count,0
+3320798099864,4946,Bytes Data Actually Written,0.000 count,0
+3320798099864,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3320798099864,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3320798099864,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3320798099864,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3320798099864,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3320798099864,4952,GPU Frequency_4952,191000000.000 Hz,0
+3320914849180,4864,GPU Clocks Cycle Executed,169840950064418.344 Mhz,0
+3320914849180,4865,GPU Utilization_4865,100.000 %,0
+3320914849180,4866,GPU Memory Bus Busy,100.000 %,0
+3320914849180,4869,Vertex Fetch Stall,100.000 %,0
+3320914849180,4870,Texture Fetch Stall,100.000 %,0
+3320914849180,4871,L1 Texture Cache Miss Per Pixel,1.032 count,0
+3320914849180,4872,Texture L1 Miss,100.000 %,0
+3320914849180,4873,Texture L2 Miss,8.236 %,0
+3320914849180,4874,Stalled on System Memory,100.000 %,0
+3320914849180,4875,Instruction Cache Miss,38.542 %,0
+3320914849180,4876,BVH Fetch Stall,100.000 %,0
+3320914849180,4878,Pre-clipped Polygons/Second,160552135644564324352.000 polygons/sec,0
+3320914849180,4879,Prims Trivially Rejected,0.000 %,0
+3320914849180,4880,Prims Clipped,35.262 %,0
+3320914849180,4881,Average Vertices / Polygon,1.075 count,0
+3320914849180,4882,Reused Vertices / Second,1215784499790580.000 vertices/sec,0
+3320914849180,4883,Average Polygon Area,8127.602 count,0
+3320914849180,4884,LRZ Busy,100.000 %,0
+3320914849180,4885,LRZ Pixels Killed,-18437139835272316928.000 count,0
+3320914849180,4886,LRZ Prims Killed,259522430.000 count,0
+3320914849180,4888,Shaders Busy,100.000 %,0
+3320914849180,4889,Shaders Stalled,100.000 %,0
+3320914849180,4890,Vertices Shaded / Second,172670942138795294720.000 shaded/sec,0
+3320914849180,4891,Fragments Shaded / Second,167187164266329276416.000 shaded/sec,0
+3320914849180,4892,Vertex Instructions / Second,562471079795968835584.000 instructions/sec,0
+3320914849180,4893,Fragment Instructions / Second,1039947179603839287296.000 instructions/sec,0
+3320914849180,4894,Fragment ALU Instructions / Sec (Full),658136274332362080256.000 instructions/sec,0
+3320914849180,4895,Fragment ALU Instructions / Sec (Half),678695179743976226816.000 instructions/sec,0
+3320914849180,4896,Fragment EFU Instructions / Second,42463315399489011712.000 instructions/sec,0
+3320914849180,4897,Textures / Vertex,3.934 count,0
+3320914849180,4898,Textures / Fragment,-3.032 count,0
+3320914849180,4899,ALU / Vertex,3.012 count,0
+3320914849180,4900,ALU / Fragment,194.006 count,0
+3320914849180,4901,EFU / Fragment,8.259 count,0
+3320914849180,4902,EFU / Vertex,0.246 count,0
+3320914849180,4903,Time Shading Fragments,9.443 %,0
+3320914849180,4904,Time Shading Vertices,15.539 %,0
+3320914849180,4905,Time Compute,0.001 %,0
+3320914849180,4906,Shader ALU Capacity Utilized,6.986 %,0
+3320914849180,4908,Time ALUs Working,0.000 %,0
+3320914849180,4909,Time EFUs Working,0.006 %,0
+3320914849180,4910,Nearest Filtered,91.657 %,0
+3320914849180,4911,Linear Filtered,83.307 %,0
+3320914849180,4912,Anisotropic Filtered,89.895 %,0
+3320914849180,4913,Non-Base Level Textures,32.832 %,0
+3320914849180,4914,Texture Pipes Busy,100.000 %,0
+3320914849180,4916,RTU Busy,99.988 %,0
+3320914849180,4917,RTU Ray Box Intersections Per Instruction,3.235 count,0
+3320914849180,4918,RTU Ray Triangle Intersections Per Instruction,0.418 count,0
+3320914849180,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320914849180,4915,Wave Context Occupancy,0.000 %,0
+3320914849180,4867,GPU Memory Read Total,572165.797 bytes/sec,0
+3320914849180,4868,GPU Memory Write Total,150554.440 bytes/sec,0
+3320914849180,4923,Texture Memory Read BW,170460315336518467584.000 Bytes/sec,0
+3320914849180,4924,Vertex Memory Read,21307896187077595136.000 Bytes/sec,0
+3320914849180,4925,SP Memory Read,1061507235715241213952.000 Bytes/sec,0
+3320914849180,4926,Avg Bytes / Fragment,1.016 count,0
+3320914849180,4927,Avg Bytes / Vertex,0.123 count,0
+3320914849180,4929,Preemptions / second,42454710428841156608.000 preemptions/sec,0
+3320914849180,4930,GPU_RESERVED_4930,0.000,0
+3320914849180,4932,Kernel Load Cycles,-8.327 %,0
+3320914849180,4933,Global Buffer Read L2 Hit,89.914 %,0
+3320914849180,4934,Global Buffer Write L2 Hit,99.974 %,0
+3320914849180,4935,Image Read L2 Hit,95.882 %,0
+3320914849180,4936,Local Memory Atomic Instructions,0.000 count,0
+3320914849180,4937,Global Memory Atomic Instructions,0.000 count,0
+3320914849180,4938,Local Memory Load Instructions,0.000 count,0
+3320914849180,4939,Global Memory Load Instructions,0.000 count,0
+3320914849180,4940,Local Memory Store Instructions,0.000 count,0
+3320914849180,4941,Global Memory Store Instructions,0.000 count,0
+3320914849180,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320914849180,4943,Load-Store Utilization,0.000 %,0
+3320914849180,4944,L1 Hit,-3339542794.139 %,0
+3320914849180,4945,Bytes Data Write Requested,138350580827682766848.000 count,0
+3320914849180,4946,Bytes Data Actually Written,144115187538919232.000 count,0
+3320914849180,4947,Global Buffer Data Read Request BW,2631207848674348498944.000 Bytes/sec,0
+3320914849180,4948,Global Image Data Read Request BW,1030802712894988746752.000 Bytes/sec,0
+3320914849180,4949,Global Buffer Data Read BW,1061507235715241213952.000 Bytes/sec,0
+3320914849180,4950,Global Image Uncompressed Data Read BW,169796893718117875712.000 Bytes/sec,0
+3320914849180,4951,Global Image Compressed Data Read BW,663421618400581248.000 Bytes/sec,0
+3320914849180,4952,GPU Frequency_4952,222000000.000 Hz,0
+3320998572143,4864,GPU Clocks Cycle Executed,2.271 Mhz,0
+3320998572143,4865,GPU Utilization_4865,0.060 %,0
+3320998572143,4866,GPU Memory Bus Busy,0.968 %,0
+3320998572143,4869,Vertex Fetch Stall,0.000 %,0
+3320998572143,4870,Texture Fetch Stall,0.000 %,0
+3320998572143,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3320998572143,4872,Texture L1 Miss,0.000 %,0
+3320998572143,4873,Texture L2 Miss,0.000 %,0
+3320998572143,4874,Stalled on System Memory,0.000 %,0
+3320998572143,4875,Instruction Cache Miss,0.000 %,0
+3320998572143,4876,BVH Fetch Stall,0.000 %,0
+3320998572143,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3320998572143,4879,Prims Trivially Rejected,0.000 %,0
+3320998572143,4880,Prims Clipped,0.000 %,0
+3320998572143,4881,Average Vertices / Polygon,0.000 count,0
+3320998572143,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3320998572143,4883,Average Polygon Area,0.000 count,0
+3320998572143,4884,LRZ Busy,9.563 %,0
+3320998572143,4885,LRZ Pixels Killed,0.000 count,0
+3320998572143,4886,LRZ Prims Killed,0.000 count,0
+3320998572143,4888,Shaders Busy,2.008 %,0
+3320998572143,4889,Shaders Stalled,0.000 %,0
+3320998572143,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3320998572143,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3320998572143,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3320998572143,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3320998572143,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3320998572143,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3320998572143,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3320998572143,4897,Textures / Vertex,0.000 count,0
+3320998572143,4898,Textures / Fragment,0.000 count,0
+3320998572143,4899,ALU / Vertex,0.000 count,0
+3320998572143,4900,ALU / Fragment,0.000 count,0
+3320998572143,4901,EFU / Fragment,0.000 count,0
+3320998572143,4902,EFU / Vertex,0.000 count,0
+3320998572143,4903,Time Shading Fragments,0.000 %,0
+3320998572143,4904,Time Shading Vertices,0.000 %,0
+3320998572143,4905,Time Compute,0.000 %,0
+3320998572143,4906,Shader ALU Capacity Utilized,0.000 %,0
+3320998572143,4908,Time ALUs Working,0.000 %,0
+3320998572143,4909,Time EFUs Working,0.000 %,0
+3320998572143,4910,Nearest Filtered,0.000 %,0
+3320998572143,4911,Linear Filtered,0.000 %,0
+3320998572143,4912,Anisotropic Filtered,0.000 %,0
+3320998572143,4913,Non-Base Level Textures,0.000 %,0
+3320998572143,4914,Texture Pipes Busy,2.008 %,0
+3320998572143,4916,RTU Busy,0.000 %,0
+3320998572143,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3320998572143,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3320998572143,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3320998572143,4915,Wave Context Occupancy,0.000 %,0
+3320998572143,4867,GPU Memory Read Total,886247.101 bytes/sec,0
+3320998572143,4868,GPU Memory Write Total,227832.392 bytes/sec,0
+3320998572143,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3320998572143,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3320998572143,4925,SP Memory Read,0.000 Bytes/sec,0
+3320998572143,4926,Avg Bytes / Fragment,0.000 count,0
+3320998572143,4927,Avg Bytes / Vertex,0.000 count,0
+3320998572143,4929,Preemptions / second,0.000 preemptions/sec,0
+3320998572143,4930,GPU_RESERVED_4930,0.000,0
+3320998572143,4932,Kernel Load Cycles,34.539 %,0
+3320998572143,4933,Global Buffer Read L2 Hit,0.000 %,0
+3320998572143,4934,Global Buffer Write L2 Hit,0.000 %,0
+3320998572143,4935,Image Read L2 Hit,0.000 %,0
+3320998572143,4936,Local Memory Atomic Instructions,0.000 count,0
+3320998572143,4937,Global Memory Atomic Instructions,0.000 count,0
+3320998572143,4938,Local Memory Load Instructions,0.000 count,0
+3320998572143,4939,Global Memory Load Instructions,0.000 count,0
+3320998572143,4940,Local Memory Store Instructions,0.000 count,0
+3320998572143,4941,Global Memory Store Instructions,0.000 count,0
+3320998572143,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3320998572143,4943,Load-Store Utilization,0.000 %,0
+3320998572143,4944,L1 Hit,0.000 %,0
+3320998572143,4945,Bytes Data Write Requested,0.000 count,0
+3320998572143,4946,Bytes Data Actually Written,0.000 count,0
+3320998572143,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3320998572143,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3320998572143,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3320998572143,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3320998572143,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3320998572143,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321115749740,4864,GPU Clocks Cycle Executed,167641993050172.188 Mhz,0
+3321115749740,4865,GPU Utilization_4865,100.000 %,0
+3321115749740,4866,GPU Memory Bus Busy,21.895 %,0
+3321115749740,4869,Vertex Fetch Stall,33.838 %,0
+3321115749740,4870,Texture Fetch Stall,1.237 %,0
+3321115749740,4871,L1 Texture Cache Miss Per Pixel,1.940 count,0
+3321115749740,4872,Texture L1 Miss,100.000 %,0
+3321115749740,4873,Texture L2 Miss,0.001 %,0
+3321115749740,4874,Stalled on System Memory,21.895 %,0
+3321115749740,4875,Instruction Cache Miss,100.000 %,0
+3321115749740,4876,BVH Fetch Stall,0.000 %,0
+3321115749740,4878,Pre-clipped Polygons/Second,10230756072504797184.000 polygons/sec,0
+3321115749740,4879,Prims Trivially Rejected,3.219 %,0
+3321115749740,4880,Prims Clipped,100.000 %,0
+3321115749740,4881,Average Vertices / Polygon,20.644 count,0
+3321115749740,4882,Reused Vertices / Second,287761707566632009728.000 vertices/sec,0
+3321115749740,4883,Average Polygon Area,0.515 count,0
+3321115749740,4884,LRZ Busy,49.773 %,0
+3321115749740,4885,LRZ Pixels Killed,-15870125433277427712.000 count,0
+3321115749740,4886,LRZ Prims Killed,589971551186059136.000 count,0
+3321115749740,4888,Shaders Busy,8.333 %,0
+3321115749740,4889,Shaders Stalled,1.043 %,0
+3321115749740,4890,Vertices Shaded / Second,211202510532903632896.000 shaded/sec,0
+3321115749740,4891,Fragments Shaded / Second,87079805167655256064.000 shaded/sec,0
+3321115749740,4892,Vertex Instructions / Second,2333371772040863023104.000 instructions/sec,0
+3321115749740,4893,Fragment Instructions / Second,284532438937914769408.000 instructions/sec,0
+3321115749740,4894,Fragment ALU Instructions / Sec (Full),20790176632448786432.000 instructions/sec,0
+3321115749740,4895,Fragment ALU Instructions / Sec (Half),20620092005099159552.000 instructions/sec,0
+3321115749740,4896,Fragment EFU Instructions / Second,253432216302916403200.000 instructions/sec,0
+3321115749740,4897,Textures / Vertex,3.312 count,0
+3321115749740,4898,Textures / Fragment,-0.027 count,0
+3321115749740,4899,ALU / Vertex,4.750 count,0
+3321115749740,4900,ALU / Fragment,0.046 count,0
+3321115749740,4901,EFU / Fragment,0.378 count,0
+3321115749740,4902,EFU / Vertex,6.298 count,0
+3321115749740,4903,Time Shading Fragments,-24.580 %,0
+3321115749740,4904,Time Shading Vertices,73.649 %,0
+3321115749740,4905,Time Compute,49.750 %,0
+3321115749740,4906,Shader ALU Capacity Utilized,4.830 %,0
+3321115749740,4908,Time ALUs Working,1.183 %,0
+3321115749740,4909,Time EFUs Working,100.000 %,0
+3321115749740,4910,Nearest Filtered,97.443 %,0
+3321115749740,4911,Linear Filtered,81.746 %,0
+3321115749740,4912,Anisotropic Filtered,100.000 %,0
+3321115749740,4913,Non-Base Level Textures,75.494 %,0
+3321115749740,4914,Texture Pipes Busy,8.333 %,0
+3321115749740,4916,RTU Busy,28.412 %,0
+3321115749740,4917,RTU Ray Box Intersections Per Instruction,1.391 count,0
+3321115749740,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3321115749740,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321115749740,4915,Wave Context Occupancy,0.000 %,0
+3321115749740,4867,GPU Memory Read Total,596463.308 bytes/sec,0
+3321115749740,4868,GPU Memory Write Total,153292.536 bytes/sec,0
+3321115749740,4923,Texture Memory Read BW,5403528320987530526720.000 Bytes/sec,0
+3321115749740,4924,Vertex Memory Read,5388139040456147206144.000 Bytes/sec,0
+3321115749740,4925,SP Memory Read,5406779113331025248256.000 Bytes/sec,0
+3321115749740,4926,Avg Bytes / Fragment,0.000 count,0
+3321115749740,4927,Avg Bytes / Vertex,25.512 count,0
+3321115749740,4929,Preemptions / second,42261469133615259648.000 preemptions/sec,0
+3321115749740,4930,GPU_RESERVED_4930,0.000,0
+3321115749740,4932,Kernel Load Cycles,92.470 %,0
+3321115749740,4933,Global Buffer Read L2 Hit,50.000 %,0
+3321115749740,4934,Global Buffer Write L2 Hit,0.000 %,0
+3321115749740,4935,Image Read L2 Hit,100.000 %,0
+3321115749740,4936,Local Memory Atomic Instructions,0.000 count,0
+3321115749740,4937,Global Memory Atomic Instructions,0.000 count,0
+3321115749740,4938,Local Memory Load Instructions,0.000 count,0
+3321115749740,4939,Global Memory Load Instructions,0.000 count,0
+3321115749740,4940,Local Memory Store Instructions,0.000 count,0
+3321115749740,4941,Global Memory Store Instructions,0.000 count,0
+3321115749740,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321115749740,4943,Load-Store Utilization,0.000 %,0
+3321115749740,4944,L1 Hit,100.000 %,0
+3321115749740,4945,Bytes Data Write Requested,156759043754841735168.000 count,0
+3321115749740,4946,Bytes Data Actually Written,1106786630024604811264.000 count,0
+3321115749740,4947,Global Buffer Data Read Request BW,2703372788577975926784.000 Bytes/sec,0
+3321115749740,4948,Global Image Data Read Request BW,2015844712719850668032.000 Bytes/sec,0
+3321115749740,4949,Global Buffer Data Read BW,5406779113331025248256.000 Bytes/sec,0
+3321115749740,4950,Global Image Uncompressed Data Read BW,38974540990900496.000 Bytes/sec,0
+3321115749740,4951,Global Image Compressed Data Read BW,5403489346446539358208.000 Bytes/sec,0
+3321115749740,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321222624993,4864,GPU Clocks Cycle Executed,1453755292975.232 Mhz,0
+3321222624993,4865,GPU Utilization_4865,100.000 %,0
+3321222624993,4866,GPU Memory Bus Busy,100.000 %,0
+3321222624993,4869,Vertex Fetch Stall,100.000 %,0
+3321222624993,4870,Texture Fetch Stall,100.000 %,0
+3321222624993,4871,L1 Texture Cache Miss Per Pixel,4094.867 count,0
+3321222624993,4872,Texture L1 Miss,97.009 %,0
+3321222624993,4873,Texture L2 Miss,96.875 %,0
+3321222624993,4874,Stalled on System Memory,100.000 %,0
+3321222624993,4875,Instruction Cache Miss,100.000 %,0
+3321222624993,4876,BVH Fetch Stall,100.000 %,0
+3321222624993,4878,Pre-clipped Polygons/Second,184988274881043070976.000 polygons/sec,0
+3321222624993,4879,Prims Trivially Rejected,100.000 %,0
+3321222624993,4880,Prims Clipped,1.048 %,0
+3321222624993,4881,Average Vertices / Polygon,0.502 count,0
+3321222624993,4882,Reused Vertices / Second,49452159782114893824.000 vertices/sec,0
+3321222624993,4883,Average Polygon Area,50.928 count,0
+3321222624993,4884,LRZ Busy,100.000 %,0
+3321222624993,4885,LRZ Pixels Killed,2017582939797436416.000 count,0
+3321222624993,4886,LRZ Prims Killed,17856762609739499520.000 count,0
+3321222624993,4888,Shaders Busy,100.000 %,0
+3321222624993,4889,Shaders Stalled,100.000 %,0
+3321222624993,4890,Vertices Shaded / Second,92847278427476918272.000 shaded/sec,0
+3321222624993,4891,Fragments Shaded / Second,45431336777427344.000 shaded/sec,0
+3321222624993,4892,Vertex Instructions / Second,1049767387209985425408.000 instructions/sec,0
+3321222624993,4893,Fragment Instructions / Second,1477668958487691395072.000 instructions/sec,0
+3321222624993,4894,Fragment ALU Instructions / Sec (Full),744321467631434596352.000 instructions/sec,0
+3321222624993,4895,Fragment ALU Instructions / Sec (Half),722349024556543377408.000 instructions/sec,0
+3321222624993,4896,Fragment EFU Instructions / Second,372172978577985110016.000 instructions/sec,0
+3321222624993,4897,Textures / Vertex,0.501 count,0
+3321222624993,4898,Textures / Fragment,3703.880 count,0
+3321222624993,4899,ALU / Vertex,3.288 count,0
+3321222624993,4900,ALU / Fragment,1.533 count,0
+3321222624993,4901,EFU / Fragment,0.516 count,0
+3321222624993,4902,EFU / Vertex,8.019 count,0
+3321222624993,4903,Time Shading Fragments,17.977 %,0
+3321222624993,4904,Time Shading Vertices,60.331 %,0
+3321222624993,4905,Time Compute,0.005 %,0
+3321222624993,4906,Shader ALU Capacity Utilized,100.000 %,0
+3321222624993,4908,Time ALUs Working,100.000 %,0
+3321222624993,4909,Time EFUs Working,100.000 %,0
+3321222624993,4910,Nearest Filtered,100.000 %,0
+3321222624993,4911,Linear Filtered,100.000 %,0
+3321222624993,4912,Anisotropic Filtered,100.000 %,0
+3321222624993,4913,Non-Base Level Textures,-9.695 %,0
+3321222624993,4914,Texture Pipes Busy,100.000 %,0
+3321222624993,4916,RTU Busy,100.000 %,0
+3321222624993,4917,RTU Ray Box Intersections Per Instruction,1.302 count,0
+3321222624993,4918,RTU Ray Triangle Intersections Per Instruction,1.309 count,0
+3321222624993,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321222624993,4915,Wave Context Occupancy,0.000 %,0
+3321222624993,4867,GPU Memory Read Total,575549.898 bytes/sec,0
+3321222624993,4868,GPU Memory Write Total,153974.931 bytes/sec,0
+3321222624993,4923,Texture Memory Read BW,11720135405914132840448.000 Bytes/sec,0
+3321222624993,4924,Vertex Memory Read,5946133121675786452992.000 Bytes/sec,0
+3321222624993,4925,SP Memory Read,5213171981527102259200.000 Bytes/sec,0
+3321222624993,4926,Avg Bytes / Fragment,126971.071 count,0
+3321222624993,4927,Avg Bytes / Vertex,64.042 count,0
+3321222624993,4929,Preemptions / second,93039984244114194432.000 preemptions/sec,0
+3321222624993,4930,GPU_RESERVED_4930,0.000,0
+3321222624993,4932,Kernel Load Cycles,-14.521 %,0
+3321222624993,4933,Global Buffer Read L2 Hit,0.000 %,0
+3321222624993,4934,Global Buffer Write L2 Hit,88.430 %,0
+3321222624993,4935,Image Read L2 Hit,51.563 %,0
+3321222624993,4936,Local Memory Atomic Instructions,0.000 count,0
+3321222624993,4937,Global Memory Atomic Instructions,0.000 count,0
+3321222624993,4938,Local Memory Load Instructions,0.000 count,0
+3321222624993,4939,Global Memory Load Instructions,0.000 count,0
+3321222624993,4940,Local Memory Store Instructions,0.000 count,0
+3321222624993,4941,Global Memory Store Instructions,0.000 count,0
+3321222624993,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321222624993,4943,Load-Store Utilization,0.000 %,0
+3321222624993,4944,L1 Hit,99.213 %,0
+3321222624993,4945,Bytes Data Write Requested,139539530854443122688.000 count,0
+3321222624993,4946,Bytes Data Actually Written,64581618518512869376.000 count,0
+3321222624993,4947,Global Buffer Data Read Request BW,93152526992448929792.000 Bytes/sec,0
+3321222624993,4948,Global Image Data Read Request BW,2977274511736190271488.000 Bytes/sec,0
+3321222624993,4949,Global Buffer Data Read BW,5213171981527102259200.000 Bytes/sec,0
+3321222624993,4950,Global Image Uncompressed Data Read BW,5768465475924658225152.000 Bytes/sec,0
+3321222624993,4951,Global Image Compressed Data Read BW,5951669929989473566720.000 Bytes/sec,0
+3321222624993,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321304520405,4864,GPU Clocks Cycle Executed,2.618 Mhz,0
+3321304520405,4865,GPU Utilization_4865,0.063 %,0
+3321304520405,4866,GPU Memory Bus Busy,1.009 %,0
+3321304520405,4869,Vertex Fetch Stall,0.000 %,0
+3321304520405,4870,Texture Fetch Stall,0.000 %,0
+3321304520405,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3321304520405,4872,Texture L1 Miss,0.000 %,0
+3321304520405,4873,Texture L2 Miss,0.000 %,0
+3321304520405,4874,Stalled on System Memory,0.000 %,0
+3321304520405,4875,Instruction Cache Miss,0.000 %,0
+3321304520405,4876,BVH Fetch Stall,0.000 %,0
+3321304520405,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3321304520405,4879,Prims Trivially Rejected,0.000 %,0
+3321304520405,4880,Prims Clipped,0.000 %,0
+3321304520405,4881,Average Vertices / Polygon,0.000 count,0
+3321304520405,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3321304520405,4883,Average Polygon Area,0.000 count,0
+3321304520405,4884,LRZ Busy,9.438 %,0
+3321304520405,4885,LRZ Pixels Killed,0.000 count,0
+3321304520405,4886,LRZ Prims Killed,0.000 count,0
+3321304520405,4888,Shaders Busy,1.982 %,0
+3321304520405,4889,Shaders Stalled,0.000 %,0
+3321304520405,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3321304520405,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3321304520405,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3321304520405,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3321304520405,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3321304520405,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3321304520405,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3321304520405,4897,Textures / Vertex,0.000 count,0
+3321304520405,4898,Textures / Fragment,0.000 count,0
+3321304520405,4899,ALU / Vertex,0.000 count,0
+3321304520405,4900,ALU / Fragment,0.000 count,0
+3321304520405,4901,EFU / Fragment,0.000 count,0
+3321304520405,4902,EFU / Vertex,0.000 count,0
+3321304520405,4903,Time Shading Fragments,0.000 %,0
+3321304520405,4904,Time Shading Vertices,0.000 %,0
+3321304520405,4905,Time Compute,0.000 %,0
+3321304520405,4906,Shader ALU Capacity Utilized,0.000 %,0
+3321304520405,4908,Time ALUs Working,0.000 %,0
+3321304520405,4909,Time EFUs Working,0.000 %,0
+3321304520405,4910,Nearest Filtered,0.000 %,0
+3321304520405,4911,Linear Filtered,0.000 %,0
+3321304520405,4912,Anisotropic Filtered,0.000 %,0
+3321304520405,4913,Non-Base Level Textures,0.000 %,0
+3321304520405,4914,Texture Pipes Busy,1.982 %,0
+3321304520405,4916,RTU Busy,0.000 %,0
+3321304520405,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3321304520405,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3321304520405,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321304520405,4915,Wave Context Occupancy,0.000 %,0
+3321304520405,4867,GPU Memory Read Total,953087.389 bytes/sec,0
+3321304520405,4868,GPU Memory Write Total,242121.841 bytes/sec,0
+3321304520405,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3321304520405,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3321304520405,4925,SP Memory Read,0.000 Bytes/sec,0
+3321304520405,4926,Avg Bytes / Fragment,0.000 count,0
+3321304520405,4927,Avg Bytes / Vertex,0.000 count,0
+3321304520405,4929,Preemptions / second,0.000 preemptions/sec,0
+3321304520405,4930,GPU_RESERVED_4930,0.000,0
+3321304520405,4932,Kernel Load Cycles,31.067 %,0
+3321304520405,4933,Global Buffer Read L2 Hit,0.000 %,0
+3321304520405,4934,Global Buffer Write L2 Hit,0.000 %,0
+3321304520405,4935,Image Read L2 Hit,0.000 %,0
+3321304520405,4936,Local Memory Atomic Instructions,0.000 count,0
+3321304520405,4937,Global Memory Atomic Instructions,0.000 count,0
+3321304520405,4938,Local Memory Load Instructions,0.000 count,0
+3321304520405,4939,Global Memory Load Instructions,0.000 count,0
+3321304520405,4940,Local Memory Store Instructions,0.000 count,0
+3321304520405,4941,Global Memory Store Instructions,0.000 count,0
+3321304520405,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321304520405,4943,Load-Store Utilization,0.000 %,0
+3321304520405,4944,L1 Hit,0.000 %,0
+3321304520405,4945,Bytes Data Write Requested,0.000 count,0
+3321304520405,4946,Bytes Data Actually Written,0.000 count,0
+3321304520405,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3321304520405,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3321304520405,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3321304520405,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3321304520405,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3321304520405,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321420867845,4864,GPU Clocks Cycle Executed,169119088162063.688 Mhz,0
+3321420867845,4865,GPU Utilization_4865,100.000 %,0
+3321420867845,4866,GPU Memory Bus Busy,0.006 %,0
+3321420867845,4869,Vertex Fetch Stall,16.138 %,0
+3321420867845,4870,Texture Fetch Stall,16.339 %,0
+3321420867845,4871,L1 Texture Cache Miss Per Pixel,1.016 count,0
+3321420867845,4872,Texture L1 Miss,50.202 %,0
+3321420867845,4873,Texture L2 Miss,100.000 %,0
+3321420867845,4874,Stalled on System Memory,0.006 %,0
+3321420867845,4875,Instruction Cache Miss,50.007 %,0
+3321420867845,4876,BVH Fetch Stall,8.333 %,0
+3321420867845,4878,Pre-clipped Polygons/Second,170243698672276799488.000 polygons/sec,0
+3321420867845,4879,Prims Trivially Rejected,0.047 %,0
+3321420867845,4880,Prims Clipped,33.362 %,0
+3321420867845,4881,Average Vertices / Polygon,1.502 count,0
+3321420867845,4882,Reused Vertices / Second,177689635288990121984.000 vertices/sec,0
+3321420867845,4883,Average Polygon Area,1.125 count,0
+3321420867845,4884,LRZ Busy,25.456 %,0
+3321420867845,4885,LRZ Pixels Killed,13837238391151622144.000 count,0
+3321420867845,4886,LRZ Prims Killed,8813339998368.000 count,0
+3321420867845,4888,Shaders Busy,8.333 %,0
+3321420867845,4889,Shaders Stalled,7.292 %,0
+3321420867845,4890,Vertices Shaded / Second,255623590241639661568.000 shaded/sec,0
+3321420867845,4891,Fragments Shaded / Second,167746001732322361344.000 shaded/sec,0
+3321420867845,4892,Vertex Instructions / Second,948002548547135995904.000 instructions/sec,0
+3321420867845,4893,Fragment Instructions / Second,747537921887756091392.000 instructions/sec,0
+3321420867845,4894,Fragment ALU Instructions / Sec (Full),660335727476807565312.000 instructions/sec,0
+3321420867845,4895,Fragment ALU Instructions / Sec (Half),1332623334959268352.000 instructions/sec,0
+3321420867845,4896,Fragment EFU Instructions / Second,86535882743468752896.000 instructions/sec,0
+3321420867845,4897,Textures / Vertex,5.073 count,0
+3321420867845,4898,Textures / Fragment,-2.952 count,0
+3321420867845,4899,ALU / Vertex,3.625 count,0
+3321420867845,4900,ALU / Fragment,31.276 count,0
+3321420867845,4901,EFU / Fragment,4.095 count,0
+3321420867845,4902,EFU / Vertex,0.084 count,0
+3321420867845,4903,Time Shading Fragments,13.305 %,0
+3321420867845,4904,Time Shading Vertices,68.534 %,0
+3321420867845,4905,Time Compute,0.000 %,0
+3321420867845,4906,Shader ALU Capacity Utilized,7.415 %,0
+3321420867845,4908,Time ALUs Working,1.194 %,0
+3321420867845,4909,Time EFUs Working,100.000 %,0
+3321420867845,4910,Nearest Filtered,0.980 %,0
+3321420867845,4911,Linear Filtered,67.059 %,0
+3321420867845,4912,Anisotropic Filtered,98.213 %,0
+3321420867845,4913,Non-Base Level Textures,37.127 %,0
+3321420867845,4914,Texture Pipes Busy,8.333 %,0
+3321420867845,4916,RTU Busy,0.117 %,0
+3321420867845,4917,RTU Ray Box Intersections Per Instruction,1.044 count,0
+3321420867845,4918,RTU Ray Triangle Intersections Per Instruction,1.035 count,0
+3321420867845,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321420867845,4915,Wave Context Occupancy,0.000 %,0
+3321420867845,4867,GPU Memory Read Total,571418.289 bytes/sec,0
+3321420867845,4868,GPU Memory Write Total,150170.973 bytes/sec,0
+3321420867845,4923,Texture Memory Read BW,178393841488483057664.000 Bytes/sec,0
+3321420867845,4924,Vertex Memory Read,5074370489461390336.000 Bytes/sec,0
+3321420867845,4925,SP Memory Read,680969878553678184448.000 Bytes/sec,0
+3321420867845,4926,Avg Bytes / Fragment,1.016 count,0
+3321420867845,4927,Avg Bytes / Vertex,0.020 count,0
+3321420867845,4929,Preemptions / second,85188799824124379136.000 preemptions/sec,0
+3321420867845,4930,GPU_RESERVED_4930,0.000,0
+3321420867845,4932,Kernel Load Cycles,92.521 %,0
+3321420867845,4933,Global Buffer Read L2 Hit,93.552 %,0
+3321420867845,4934,Global Buffer Write L2 Hit,99.994 %,0
+3321420867845,4935,Image Read L2 Hit,19.994 %,0
+3321420867845,4936,Local Memory Atomic Instructions,0.000 count,0
+3321420867845,4937,Global Memory Atomic Instructions,0.000 count,0
+3321420867845,4938,Local Memory Load Instructions,0.000 count,0
+3321420867845,4939,Global Memory Load Instructions,0.000 count,0
+3321420867845,4940,Local Memory Store Instructions,0.000 count,0
+3321420867845,4941,Global Memory Store Instructions,0.000 count,0
+3321420867845,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321420867845,4943,Load-Store Utilization,0.000 %,0
+3321420867845,4944,L1 Hit,0.000 %,0
+3321420867845,4945,Bytes Data Write Requested,293979221350928089088.000 count,0
+3321420867845,4946,Bytes Data Actually Written,72059931038053824.000 count,0
+3321420867845,4947,Global Buffer Data Read Request BW,2640254753481581658112.000 Bytes/sec,0
+3321420867845,4948,Global Image Data Read Request BW,53247551178847551488.000 Bytes/sec,0
+3321420867845,4949,Global Buffer Data Read BW,680969878553678184448.000 Bytes/sec,0
+3321420867845,4950,Global Image Uncompressed Data Read BW,170405888211178192896.000 Bytes/sec,0
+3321420867845,4951,Global Image Compressed Data Read BW,7987953277304849408.000 Bytes/sec,0
+3321420867845,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321506377944,4864,GPU Clocks Cycle Executed,2.118 Mhz,0
+3321506377944,4865,GPU Utilization_4865,0.059 %,0
+3321506377944,4866,GPU Memory Bus Busy,1.003 %,0
+3321506377944,4869,Vertex Fetch Stall,0.000 %,0
+3321506377944,4870,Texture Fetch Stall,0.000 %,0
+3321506377944,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3321506377944,4872,Texture L1 Miss,0.000 %,0
+3321506377944,4873,Texture L2 Miss,0.000 %,0
+3321506377944,4874,Stalled on System Memory,0.000 %,0
+3321506377944,4875,Instruction Cache Miss,0.000 %,0
+3321506377944,4876,BVH Fetch Stall,0.000 %,0
+3321506377944,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3321506377944,4879,Prims Trivially Rejected,0.000 %,0
+3321506377944,4880,Prims Clipped,0.000 %,0
+3321506377944,4881,Average Vertices / Polygon,0.000 count,0
+3321506377944,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3321506377944,4883,Average Polygon Area,0.000 count,0
+3321506377944,4884,LRZ Busy,9.561 %,0
+3321506377944,4885,LRZ Pixels Killed,0.000 count,0
+3321506377944,4886,LRZ Prims Killed,0.000 count,0
+3321506377944,4888,Shaders Busy,2.007 %,0
+3321506377944,4889,Shaders Stalled,0.000 %,0
+3321506377944,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3321506377944,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3321506377944,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3321506377944,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3321506377944,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3321506377944,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3321506377944,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3321506377944,4897,Textures / Vertex,0.000 count,0
+3321506377944,4898,Textures / Fragment,0.000 count,0
+3321506377944,4899,ALU / Vertex,0.000 count,0
+3321506377944,4900,ALU / Fragment,0.000 count,0
+3321506377944,4901,EFU / Fragment,0.000 count,0
+3321506377944,4902,EFU / Vertex,0.000 count,0
+3321506377944,4903,Time Shading Fragments,0.000 %,0
+3321506377944,4904,Time Shading Vertices,0.000 %,0
+3321506377944,4905,Time Compute,0.000 %,0
+3321506377944,4906,Shader ALU Capacity Utilized,0.000 %,0
+3321506377944,4908,Time ALUs Working,0.000 %,0
+3321506377944,4909,Time EFUs Working,0.000 %,0
+3321506377944,4910,Nearest Filtered,0.000 %,0
+3321506377944,4911,Linear Filtered,0.000 %,0
+3321506377944,4912,Anisotropic Filtered,0.000 %,0
+3321506377944,4913,Non-Base Level Textures,0.000 %,0
+3321506377944,4914,Texture Pipes Busy,2.007 %,0
+3321506377944,4916,RTU Busy,0.000 %,0
+3321506377944,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3321506377944,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3321506377944,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321506377944,4915,Wave Context Occupancy,0.000 %,0
+3321506377944,4867,GPU Memory Read Total,872779.583 bytes/sec,0
+3321506377944,4868,GPU Memory Write Total,221366.036 bytes/sec,0
+3321506377944,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3321506377944,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3321506377944,4925,SP Memory Read,0.000 Bytes/sec,0
+3321506377944,4926,Avg Bytes / Fragment,0.000 count,0
+3321506377944,4927,Avg Bytes / Vertex,0.000 count,0
+3321506377944,4929,Preemptions / second,0.000 preemptions/sec,0
+3321506377944,4930,GPU_RESERVED_4930,0.000,0
+3321506377944,4932,Kernel Load Cycles,36.268 %,0
+3321506377944,4933,Global Buffer Read L2 Hit,0.000 %,0
+3321506377944,4934,Global Buffer Write L2 Hit,0.000 %,0
+3321506377944,4935,Image Read L2 Hit,0.000 %,0
+3321506377944,4936,Local Memory Atomic Instructions,0.000 count,0
+3321506377944,4937,Global Memory Atomic Instructions,0.000 count,0
+3321506377944,4938,Local Memory Load Instructions,0.000 count,0
+3321506377944,4939,Global Memory Load Instructions,0.000 count,0
+3321506377944,4940,Local Memory Store Instructions,0.000 count,0
+3321506377944,4941,Global Memory Store Instructions,0.000 count,0
+3321506377944,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321506377944,4943,Load-Store Utilization,0.000 %,0
+3321506377944,4944,L1 Hit,0.000 %,0
+3321506377944,4945,Bytes Data Write Requested,0.000 count,0
+3321506377944,4946,Bytes Data Actually Written,0.000 count,0
+3321506377944,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3321506377944,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3321506377944,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3321506377944,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3321506377944,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3321506377944,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321622437103,4864,GPU Clocks Cycle Executed,170136274485230.938 Mhz,0
+3321622437103,4865,GPU Utilization_4865,100.000 %,0
+3321622437103,4866,GPU Memory Bus Busy,0.006 %,0
+3321622437103,4869,Vertex Fetch Stall,50.529 %,0
+3321622437103,4870,Texture Fetch Stall,0.195 %,0
+3321622437103,4871,L1 Texture Cache Miss Per Pixel,1.932 count,0
+3321622437103,4872,Texture L1 Miss,99.589 %,0
+3321622437103,4873,Texture L2 Miss,0.003 %,0
+3321622437103,4874,Stalled on System Memory,0.006 %,0
+3321622437103,4875,Instruction Cache Miss,99.628 %,0
+3321622437103,4876,BVH Fetch Stall,8.333 %,0
+3321622437103,4878,Pre-clipped Polygons/Second,1162675835424743168.000 polygons/sec,0
+3321622437103,4879,Prims Trivially Rejected,21.608 %,0
+3321622437103,4880,Prims Clipped,100.000 %,0
+3321622437103,4881,Average Vertices / Polygon,73.327 count,0
+3321622437103,4882,Reused Vertices / Second,285201516155922808832.000 vertices/sec,0
+3321622437103,4883,Average Polygon Area,0.518 count,0
+3321622437103,4884,LRZ Busy,37.175 %,0
+3321622437103,4885,LRZ Pixels Killed,-16126195094326622208.000 count,0
+3321622437103,4886,LRZ Prims Killed,18446740757995061248.000 count,0
+3321622437103,4888,Shaders Busy,0.138 %,0
+3321622437103,4889,Shaders Stalled,1.042 %,0
+3321622437103,4890,Vertices Shaded / Second,85255120745866215424.000 shaded/sec,0
+3321622437103,4891,Fragments Shaded / Second,88080522081396948992.000 shaded/sec,0
+3321622437103,4892,Vertex Instructions / Second,1986508834127968993280.000 instructions/sec,0
+3321622437103,4893,Fragment Instructions / Second,1017074827732267827200.000 instructions/sec,0
+3321622437103,4894,Fragment ALU Instructions / Sec (Full),332064114327438144.000 instructions/sec,0
+3321622437103,4895,Fragment ALU Instructions / Sec (Half),674722630434580856832.000 instructions/sec,0
+3321622437103,4896,Fragment EFU Instructions / Second,679381448400649977856.000 instructions/sec,0
+3321622437103,4897,Textures / Vertex,0.281 count,0
+3321622437103,4898,Textures / Fragment,1.691 count,0
+3321622437103,4899,ALU / Vertex,7.833 count,0
+3321622437103,4900,ALU / Fragment,0.512 count,0
+3321622437103,4901,EFU / Fragment,1.030 count,0
+3321622437103,4902,EFU / Vertex,15.468 count,0
+3321622437103,4903,Time Shading Fragments,0.000 %,0
+3321622437103,4904,Time Shading Vertices,55.546 %,0
+3321622437103,4905,Time Compute,0.000 %,0
+3321622437103,4906,Shader ALU Capacity Utilized,100.000 %,0
+3321622437103,4908,Time ALUs Working,100.000 %,0
+3321622437103,4909,Time EFUs Working,49.998 %,0
+3321622437103,4910,Nearest Filtered,100.000 %,0
+3321622437103,4911,Linear Filtered,46.665 %,0
+3321622437103,4912,Anisotropic Filtered,50.097 %,0
+3321622437103,4913,Non-Base Level Textures,55.565 %,0
+3321622437103,4914,Texture Pipes Busy,0.002 %,0
+3321622437103,4916,RTU Busy,100.000 %,0
+3321622437103,4917,RTU Ray Box Intersections Per Instruction,0.050 count,0
+3321622437103,4918,RTU Ray Triangle Intersections Per Instruction,1.600 count,0
+3321622437103,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321622437103,4915,Wave Context Occupancy,0.000 %,0
+3321622437103,4867,GPU Memory Read Total,599869.692 bytes/sec,0
+3321622437103,4868,GPU Memory Write Total,154690.806 bytes/sec,0
+3321622437103,4923,Texture Memory Read BW,5437752426091628199936.000 Bytes/sec,0
+3321622437103,4924,Vertex Memory Read,2751211600652867072.000 Bytes/sec,0
+3321622437103,4925,SP Memory Read,5443695680268667977728.000 Bytes/sec,0
+3321622437103,4926,Avg Bytes / Fragment,0.000 count,0
+3321622437103,4927,Avg Bytes / Vertex,0.032 count,0
+3321622437103,4929,Preemptions / second,31180776602517216.000 preemptions/sec,0
+3321622437103,4930,GPU_RESERVED_4930,0.000,0
+3321622437103,4932,Kernel Load Cycles,99.886 %,0
+3321622437103,4933,Global Buffer Read L2 Hit,0.000 %,0
+3321622437103,4934,Global Buffer Write L2 Hit,0.000 %,0
+3321622437103,4935,Image Read L2 Hit,99.998 %,0
+3321622437103,4936,Local Memory Atomic Instructions,0.000 count,0
+3321622437103,4937,Global Memory Atomic Instructions,0.000 count,0
+3321622437103,4938,Local Memory Load Instructions,0.000 count,0
+3321622437103,4939,Global Memory Load Instructions,0.000 count,0
+3321622437103,4940,Local Memory Store Instructions,0.000 count,0
+3321622437103,4941,Global Memory Store Instructions,0.000 count,0
+3321622437103,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321622437103,4943,Load-Store Utilization,0.000 %,0
+3321622437103,4944,L1 Hit,96.912 %,0
+3321622437103,4945,Bytes Data Write Requested,156813087225209683968.000 count,0
+3321622437103,4946,Bytes Data Actually Written,1115955956666365640704.000 count,0
+3321622437103,4947,Global Buffer Data Read Request BW,2295489417126392576.000 Bytes/sec,0
+3321622437103,4948,Global Image Data Read Request BW,626907527538107088896.000 Bytes/sec,0
+3321622437103,4949,Global Buffer Data Read BW,5443695680268667977728.000 Bytes/sec,0
+3321622437103,4950,Global Image Uncompressed Data Read BW,39275210622930592.000 Bytes/sec,0
+3321622437103,4951,Global Image Compressed Data Read BW,5437713150881004781568.000 Bytes/sec,0
+3321622437103,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321730122669,4864,GPU Clocks Cycle Executed,184951978889055.469 Mhz,0
+3321730122669,4865,GPU Utilization_4865,100.000 %,0
+3321730122669,4866,GPU Memory Bus Busy,100.000 %,0
+3321730122669,4869,Vertex Fetch Stall,100.000 %,0
+3321730122669,4870,Texture Fetch Stall,100.000 %,0
+3321730122669,4871,L1 Texture Cache Miss Per Pixel,0.010 count,0
+3321730122669,4872,Texture L1 Miss,63.592 %,0
+3321730122669,4873,Texture L2 Miss,100.000 %,0
+3321730122669,4874,Stalled on System Memory,100.000 %,0
+3321730122669,4875,Instruction Cache Miss,25.208 %,0
+3321730122669,4876,BVH Fetch Stall,100.000 %,0
+3321730122669,4878,Pre-clipped Polygons/Second,173574664936072216576.000 polygons/sec,0
+3321730122669,4879,Prims Trivially Rejected,0.052 %,0
+3321730122669,4880,Prims Clipped,0.005 %,0
+3321730122669,4881,Average Vertices / Polygon,1.199 count,0
+3321730122669,4882,Reused Vertices / Second,369542259553363558400.000 vertices/sec,0
+3321730122669,4883,Average Polygon Area,1.983 count,0
+3321730122669,4884,LRZ Busy,100.000 %,0
+3321730122669,4885,LRZ Pixels Killed,-29342666835617792.000 count,0
+3321730122669,4886,LRZ Prims Killed,13690946182853689344.000 count,0
+3321730122669,4888,Shaders Busy,100.000 %,0
+3321730122669,4889,Shaders Stalled,100.000 %,0
+3321730122669,4890,Vertices Shaded / Second,208085088371800932352.000 shaded/sec,0
+3321730122669,4891,Fragments Shaded / Second,45918732683894259712.000 shaded/sec,0
+3321730122669,4892,Vertex Instructions / Second,2278807378276430643200.000 instructions/sec,0
+3321730122669,4893,Fragment Instructions / Second,303449876445000302592.000 instructions/sec,0
+3321730122669,4894,Fragment ALU Instructions / Sec (Full),23141584165113876480.000 instructions/sec,0
+3321730122669,4895,Fragment ALU Instructions / Sec (Half),5246548778737542144.000 instructions/sec,0
+3321730122669,4896,Fragment EFU Instructions / Second,277685017890517647360.000 instructions/sec,0
+3321730122669,4897,Textures / Vertex,7.104 count,0
+3321730122669,4898,Textures / Fragment,-15.623 count,0
+3321730122669,4899,ALU / Vertex,4.057 count,0
+3321730122669,4900,ALU / Fragment,1.113 count,0
+3321730122669,4901,EFU / Fragment,11.999 count,0
+3321730122669,4902,EFU / Vertex,6.894 count,0
+3321730122669,4903,Time Shading Fragments,-23.869 %,0
+3321730122669,4904,Time Shading Vertices,53.692 %,0
+3321730122669,4905,Time Compute,47.744 %,0
+3321730122669,4906,Shader ALU Capacity Utilized,100.000 %,0
+3321730122669,4908,Time ALUs Working,100.000 %,0
+3321730122669,4909,Time EFUs Working,100.000 %,0
+3321730122669,4910,Nearest Filtered,100.000 %,0
+3321730122669,4911,Linear Filtered,100.000 %,0
+3321730122669,4912,Anisotropic Filtered,100.000 %,0
+3321730122669,4913,Non-Base Level Textures,-1161.676 %,0
+3321730122669,4914,Texture Pipes Busy,100.000 %,0
+3321730122669,4916,RTU Busy,100.000 %,0
+3321730122669,4917,RTU Ray Box Intersections Per Instruction,1.906 count,0
+3321730122669,4918,RTU Ray Triangle Intersections Per Instruction,0.250 count,0
+3321730122669,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321730122669,4915,Wave Context Occupancy,0.000 %,0
+3321730122669,4867,GPU Memory Read Total,605375.568 bytes/sec,0
+3321730122669,4868,GPU Memory Write Total,156723.224 bytes/sec,0
+3321730122669,4923,Texture Memory Read BW,5925674283760597598208.000 Bytes/sec,0
+3321730122669,4924,Vertex Memory Read,5909685980519729201152.000 Bytes/sec,0
+3321730122669,4925,SP Memory Read,2962117828220110766080.000 Bytes/sec,0
+3321730122669,4926,Avg Bytes / Fragment,0.031 count,0
+3321730122669,4927,Avg Bytes / Vertex,28.400 count,0
+3321730122669,4929,Preemptions / second,91080460232980742144.000 preemptions/sec,0
+3321730122669,4930,GPU_RESERVED_4930,0.000,0
+3321730122669,4932,Kernel Load Cycles,0.000 %,0
+3321730122669,4933,Global Buffer Read L2 Hit,74.991 %,0
+3321730122669,4934,Global Buffer Write L2 Hit,94.353 %,0
+3321730122669,4935,Image Read L2 Hit,47.626 %,0
+3321730122669,4936,Local Memory Atomic Instructions,0.000 count,0
+3321730122669,4937,Global Memory Atomic Instructions,0.000 count,0
+3321730122669,4938,Local Memory Load Instructions,0.000 count,0
+3321730122669,4939,Global Memory Load Instructions,0.000 count,0
+3321730122669,4940,Local Memory Store Instructions,0.000 count,0
+3321730122669,4941,Global Memory Store Instructions,0.000 count,0
+3321730122669,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321730122669,4943,Load-Store Utilization,0.000 %,0
+3321730122669,4944,L1 Hit,-2151672341.845 %,0
+3321730122669,4945,Bytes Data Write Requested,285926784667451129856.000 count,0
+3321730122669,4946,Bytes Data Actually Written,64581618656492912640.000 count,0
+3321730122669,4947,Global Buffer Data Read Request BW,2961073322131743309824.000 Bytes/sec,0
+3321730122669,4948,Global Image Data Read Request BW,680779340293651712.000 Bytes/sec,0
+3321730122669,4949,Global Buffer Data Read BW,2962117828220110766080.000 Bytes/sec,0
+3321730122669,4950,Global Image Uncompressed Data Read BW,1426200183865993728.000 Bytes/sec,0
+3321730122669,4951,Global Image Compressed Data Read BW,5924248083576731467776.000 Bytes/sec,0
+3321730122669,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321814598185,4864,GPU Clocks Cycle Executed,2.289 Mhz,0
+3321814598185,4865,GPU Utilization_4865,0.060 %,0
+3321814598185,4866,GPU Memory Bus Busy,0.972 %,0
+3321814598185,4869,Vertex Fetch Stall,0.000 %,0
+3321814598185,4870,Texture Fetch Stall,0.000 %,0
+3321814598185,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3321814598185,4872,Texture L1 Miss,0.000 %,0
+3321814598185,4873,Texture L2 Miss,0.000 %,0
+3321814598185,4874,Stalled on System Memory,0.000 %,0
+3321814598185,4875,Instruction Cache Miss,0.000 %,0
+3321814598185,4876,BVH Fetch Stall,0.000 %,0
+3321814598185,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3321814598185,4879,Prims Trivially Rejected,0.000 %,0
+3321814598185,4880,Prims Clipped,0.000 %,0
+3321814598185,4881,Average Vertices / Polygon,0.000 count,0
+3321814598185,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3321814598185,4883,Average Polygon Area,0.000 count,0
+3321814598185,4884,LRZ Busy,9.578 %,0
+3321814598185,4885,LRZ Pixels Killed,0.000 count,0
+3321814598185,4886,LRZ Prims Killed,0.000 count,0
+3321814598185,4888,Shaders Busy,2.012 %,0
+3321814598185,4889,Shaders Stalled,0.000 %,0
+3321814598185,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3321814598185,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3321814598185,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3321814598185,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3321814598185,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3321814598185,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3321814598185,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3321814598185,4897,Textures / Vertex,0.000 count,0
+3321814598185,4898,Textures / Fragment,0.000 count,0
+3321814598185,4899,ALU / Vertex,0.000 count,0
+3321814598185,4900,ALU / Fragment,0.000 count,0
+3321814598185,4901,EFU / Fragment,0.000 count,0
+3321814598185,4902,EFU / Vertex,0.000 count,0
+3321814598185,4903,Time Shading Fragments,0.000 %,0
+3321814598185,4904,Time Shading Vertices,0.000 %,0
+3321814598185,4905,Time Compute,0.000 %,0
+3321814598185,4906,Shader ALU Capacity Utilized,0.000 %,0
+3321814598185,4908,Time ALUs Working,0.000 %,0
+3321814598185,4909,Time EFUs Working,0.000 %,0
+3321814598185,4910,Nearest Filtered,0.000 %,0
+3321814598185,4911,Linear Filtered,0.000 %,0
+3321814598185,4912,Anisotropic Filtered,0.000 %,0
+3321814598185,4913,Non-Base Level Textures,0.000 %,0
+3321814598185,4914,Texture Pipes Busy,2.012 %,0
+3321814598185,4916,RTU Busy,0.000 %,0
+3321814598185,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3321814598185,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3321814598185,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321814598185,4915,Wave Context Occupancy,0.000 %,0
+3321814598185,4867,GPU Memory Read Total,885503.553 bytes/sec,0
+3321814598185,4868,GPU Memory Write Total,225643.124 bytes/sec,0
+3321814598185,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3321814598185,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3321814598185,4925,SP Memory Read,0.000 Bytes/sec,0
+3321814598185,4926,Avg Bytes / Fragment,0.000 count,0
+3321814598185,4927,Avg Bytes / Vertex,0.000 count,0
+3321814598185,4929,Preemptions / second,0.000 preemptions/sec,0
+3321814598185,4930,GPU_RESERVED_4930,0.000,0
+3321814598185,4932,Kernel Load Cycles,34.071 %,0
+3321814598185,4933,Global Buffer Read L2 Hit,0.000 %,0
+3321814598185,4934,Global Buffer Write L2 Hit,0.000 %,0
+3321814598185,4935,Image Read L2 Hit,0.000 %,0
+3321814598185,4936,Local Memory Atomic Instructions,0.000 count,0
+3321814598185,4937,Global Memory Atomic Instructions,0.000 count,0
+3321814598185,4938,Local Memory Load Instructions,0.000 count,0
+3321814598185,4939,Global Memory Load Instructions,0.000 count,0
+3321814598185,4940,Local Memory Store Instructions,0.000 count,0
+3321814598185,4941,Global Memory Store Instructions,0.000 count,0
+3321814598185,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321814598185,4943,Load-Store Utilization,0.000 %,0
+3321814598185,4944,L1 Hit,0.000 %,0
+3321814598185,4945,Bytes Data Write Requested,0.000 count,0
+3321814598185,4946,Bytes Data Actually Written,0.000 count,0
+3321814598185,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3321814598185,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3321814598185,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3321814598185,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3321814598185,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3321814598185,4952,GPU Frequency_4952,222000000.000 Hz,0
+3321931196302,4864,GPU Clocks Cycle Executed,1495241783484.683 Mhz,0
+3321931196302,4865,GPU Utilization_4865,100.000 %,0
+3321931196302,4866,GPU Memory Bus Busy,48.439 %,0
+3321931196302,4869,Vertex Fetch Stall,100.000 %,0
+3321931196302,4870,Texture Fetch Stall,100.000 %,0
+3321931196302,4871,L1 Texture Cache Miss Per Pixel,7.992 count,0
+3321931196302,4872,Texture L1 Miss,100.000 %,0
+3321931196302,4873,Texture L2 Miss,100.000 %,0
+3321931196302,4874,Stalled on System Memory,48.439 %,0
+3321931196302,4875,Instruction Cache Miss,100.000 %,0
+3321931196302,4876,BVH Fetch Stall,100.000 %,0
+3321931196302,4878,Pre-clipped Polygons/Second,11079399058362140672.000 polygons/sec,0
+3321931196302,4879,Prims Trivially Rejected,100.000 %,0
+3321931196302,4880,Prims Clipped,4.502 %,0
+3321931196302,4881,Average Vertices / Polygon,10.571 count,0
+3321931196302,4882,Reused Vertices / Second,206676351526212075520.000 vertices/sec,0
+3321931196302,4883,Average Polygon Area,0.333 count,0
+3321931196302,4884,LRZ Busy,100.000 %,0
+3321931196302,4885,LRZ Pixels Killed,-2282093493604409344.000 count,0
+3321931196302,4886,LRZ Prims Killed,4604922905225070592.000 count,0
+3321931196302,4888,Shaders Busy,100.000 %,0
+3321931196302,4889,Shaders Stalled,100.000 %,0
+3321931196302,4890,Vertices Shaded / Second,117125608539561295872.000 shaded/sec,0
+3321931196302,4891,Fragments Shaded / Second,42534197104761880576.000 shaded/sec,0
+3321931196302,4892,Vertex Instructions / Second,629085900764466905088.000 instructions/sec,0
+3321931196302,4893,Fragment Instructions / Second,1105244851479086104576.000 instructions/sec,0
+3321931196302,4894,Fragment ALU Instructions / Sec (Full),680172368571542405120.000 instructions/sec,0
+3321931196302,4895,Fragment ALU Instructions / Sec (Half),677333402992740270080.000 instructions/sec,0
+3321931196302,4896,Fragment EFU Instructions / Second,86405781411173466112.000 instructions/sec,0
+3321931196302,4897,Textures / Vertex,5.787 count,0
+3321931196302,4898,Textures / Fragment,-12.437 count,0
+3321931196302,4899,ALU / Vertex,5.005 count,0
+3321931196302,4900,ALU / Fragment,1.498 count,0
+3321931196302,4901,EFU / Fragment,0.127 count,0
+3321931196302,4902,EFU / Vertex,0.366 count,0
+3321931196302,4903,Time Shading Fragments,79.422 %,0
+3321931196302,4904,Time Shading Vertices,12.310 %,0
+3321931196302,4905,Time Compute,0.000 %,0
+3321931196302,4906,Shader ALU Capacity Utilized,100.000 %,0
+3321931196302,4908,Time ALUs Working,100.000 %,0
+3321931196302,4909,Time EFUs Working,100.000 %,0
+3321931196302,4910,Nearest Filtered,67.227 %,0
+3321931196302,4911,Linear Filtered,50.397 %,0
+3321931196302,4912,Anisotropic Filtered,53.784 %,0
+3321931196302,4913,Non-Base Level Textures,5.985 %,0
+3321931196302,4914,Texture Pipes Busy,100.000 %,0
+3321931196302,4916,RTU Busy,100.000 %,0
+3321931196302,4917,RTU Ray Box Intersections Per Instruction,0.279 count,0
+3321931196302,4918,RTU Ray Triangle Intersections Per Instruction,1.736 count,0
+3321931196302,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3321931196302,4915,Wave Context Occupancy,0.000 %,0
+3321931196302,4867,GPU Memory Read Total,593195.760 bytes/sec,0
+3321931196302,4868,GPU Memory Write Total,153463.580 bytes/sec,0
+3321931196302,4923,Texture Memory Read BW,10886742616660848410624.000 Bytes/sec,0
+3321931196302,4924,Vertex Memory Read,1361200752869092360192.000 Bytes/sec,0
+3321931196302,4925,SP Memory Read,2381776161656612061184.000 Bytes/sec,0
+3321931196302,4926,Avg Bytes / Fragment,127.961 count,0
+3321931196302,4927,Avg Bytes / Vertex,11.622 count,0
+3321931196302,4929,Preemptions / second,1334345740012631552.000 preemptions/sec,0
+3321931196302,4930,GPU_RESERVED_4930,0.000,0
+3321931196302,4932,Kernel Load Cycles,4.687 %,0
+3321931196302,4933,Global Buffer Read L2 Hit,0.000 %,0
+3321931196302,4934,Global Buffer Write L2 Hit,0.000 %,0
+3321931196302,4935,Image Read L2 Hit,34.710 %,0
+3321931196302,4936,Local Memory Atomic Instructions,0.000 count,0
+3321931196302,4937,Global Memory Atomic Instructions,0.000 count,0
+3321931196302,4938,Local Memory Load Instructions,0.000 count,0
+3321931196302,4939,Global Memory Load Instructions,0.000 count,0
+3321931196302,4940,Local Memory Store Instructions,0.000 count,0
+3321931196302,4941,Global Memory Store Instructions,0.000 count,0
+3321931196302,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3321931196302,4943,Load-Store Utilization,0.000 %,0
+3321931196302,4944,L1 Hit,0.000 %,0
+3321931196302,4945,Bytes Data Write Requested,1150669704792637440.000 count,0
+3321931196302,4946,Bytes Data Actually Written,1116009931691637342208.000 count,0
+3321931196302,4947,Global Buffer Data Read Request BW,87390771907921969152.000 Bytes/sec,0
+3321931196302,4948,Global Image Data Read Request BW,2084046556620718604288.000 Bytes/sec,0
+3321931196302,4949,Global Buffer Data Read BW,2381776161656612061184.000 Bytes/sec,0
+3321931196302,4950,Global Image Uncompressed Data Read BW,5442697674884958388224.000 Bytes/sec,0
+3321931196302,4951,Global Image Compressed Data Read BW,5444044941775890022400.000 Bytes/sec,0
+3321931196302,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322018933849,4864,GPU Clocks Cycle Executed,2.048 Mhz,0
+3322018933849,4865,GPU Utilization_4865,0.058 %,0
+3322018933849,4866,GPU Memory Bus Busy,0.958 %,0
+3322018933849,4869,Vertex Fetch Stall,0.000 %,0
+3322018933849,4870,Texture Fetch Stall,0.000 %,0
+3322018933849,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3322018933849,4872,Texture L1 Miss,0.000 %,0
+3322018933849,4873,Texture L2 Miss,0.000 %,0
+3322018933849,4874,Stalled on System Memory,0.000 %,0
+3322018933849,4875,Instruction Cache Miss,0.000 %,0
+3322018933849,4876,BVH Fetch Stall,0.000 %,0
+3322018933849,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3322018933849,4879,Prims Trivially Rejected,0.000 %,0
+3322018933849,4880,Prims Clipped,0.000 %,0
+3322018933849,4881,Average Vertices / Polygon,0.000 count,0
+3322018933849,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3322018933849,4883,Average Polygon Area,0.000 count,0
+3322018933849,4884,LRZ Busy,9.466 %,0
+3322018933849,4885,LRZ Pixels Killed,0.000 count,0
+3322018933849,4886,LRZ Prims Killed,0.000 count,0
+3322018933849,4888,Shaders Busy,1.992 %,0
+3322018933849,4889,Shaders Stalled,0.000 %,0
+3322018933849,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3322018933849,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3322018933849,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3322018933849,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3322018933849,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3322018933849,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3322018933849,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3322018933849,4897,Textures / Vertex,0.000 count,0
+3322018933849,4898,Textures / Fragment,0.000 count,0
+3322018933849,4899,ALU / Vertex,0.000 count,0
+3322018933849,4900,ALU / Fragment,0.000 count,0
+3322018933849,4901,EFU / Fragment,0.000 count,0
+3322018933849,4902,EFU / Vertex,0.000 count,0
+3322018933849,4903,Time Shading Fragments,0.000 %,0
+3322018933849,4904,Time Shading Vertices,0.000 %,0
+3322018933849,4905,Time Compute,0.000 %,0
+3322018933849,4906,Shader ALU Capacity Utilized,0.000 %,0
+3322018933849,4908,Time ALUs Working,0.000 %,0
+3322018933849,4909,Time EFUs Working,0.000 %,0
+3322018933849,4910,Nearest Filtered,0.000 %,0
+3322018933849,4911,Linear Filtered,0.000 %,0
+3322018933849,4912,Anisotropic Filtered,0.000 %,0
+3322018933849,4913,Non-Base Level Textures,0.000 %,0
+3322018933849,4914,Texture Pipes Busy,1.992 %,0
+3322018933849,4916,RTU Busy,0.000 %,0
+3322018933849,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3322018933849,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3322018933849,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322018933849,4915,Wave Context Occupancy,0.000 %,0
+3322018933849,4867,GPU Memory Read Total,846765.176 bytes/sec,0
+3322018933849,4868,GPU Memory Write Total,218197.173 bytes/sec,0
+3322018933849,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3322018933849,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3322018933849,4925,SP Memory Read,0.000 Bytes/sec,0
+3322018933849,4926,Avg Bytes / Fragment,0.000 count,0
+3322018933849,4927,Avg Bytes / Vertex,0.000 count,0
+3322018933849,4929,Preemptions / second,0.000 preemptions/sec,0
+3322018933849,4930,GPU_RESERVED_4930,0.000,0
+3322018933849,4932,Kernel Load Cycles,36.978 %,0
+3322018933849,4933,Global Buffer Read L2 Hit,0.000 %,0
+3322018933849,4934,Global Buffer Write L2 Hit,0.000 %,0
+3322018933849,4935,Image Read L2 Hit,0.000 %,0
+3322018933849,4936,Local Memory Atomic Instructions,0.000 count,0
+3322018933849,4937,Global Memory Atomic Instructions,0.000 count,0
+3322018933849,4938,Local Memory Load Instructions,0.000 count,0
+3322018933849,4939,Global Memory Load Instructions,0.000 count,0
+3322018933849,4940,Local Memory Store Instructions,0.000 count,0
+3322018933849,4941,Global Memory Store Instructions,0.000 count,0
+3322018933849,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322018933849,4943,Load-Store Utilization,0.000 %,0
+3322018933849,4944,L1 Hit,0.000 %,0
+3322018933849,4945,Bytes Data Write Requested,0.000 count,0
+3322018933849,4946,Bytes Data Actually Written,0.000 count,0
+3322018933849,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3322018933849,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3322018933849,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3322018933849,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3322018933849,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3322018933849,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322134909258,4864,GPU Clocks Cycle Executed,84071896130462.109 Mhz,0
+3322134909258,4865,GPU Utilization_4865,100.000 %,0
+3322134909258,4866,GPU Memory Bus Busy,24.987 %,0
+3322134909258,4869,Vertex Fetch Stall,50.019 %,0
+3322134909258,4870,Texture Fetch Stall,16.530 %,0
+3322134909258,4871,L1 Texture Cache Miss Per Pixel,2.750 count,0
+3322134909258,4872,Texture L1 Miss,100.000 %,0
+3322134909258,4873,Texture L2 Miss,100.000 %,0
+3322134909258,4874,Stalled on System Memory,24.987 %,0
+3322134909258,4875,Instruction Cache Miss,100.000 %,0
+3322134909258,4876,BVH Fetch Stall,0.521 %,0
+3322134909258,4878,Pre-clipped Polygons/Second,169519969152508428288.000 polygons/sec,0
+3322134909258,4879,Prims Trivially Rejected,100.000 %,0
+3322134909258,4880,Prims Clipped,33.555 %,0
+3322134909258,4881,Average Vertices / Polygon,1.197 count,0
+3322134909258,4882,Reused Vertices / Second,6652147057860784128.000 vertices/sec,0
+3322134909258,4883,Average Polygon Area,1.500 count,0
+3322134909258,4884,LRZ Busy,7.393 %,0
+3322134909258,4885,LRZ Pixels Killed,-16288424740765302784.000 count,0
+3322134909258,4886,LRZ Prims Killed,150878294835722080.000 count,0
+3322134909258,4888,Shaders Busy,8.208 %,0
+3322134909258,4889,Shaders Stalled,1.042 %,0
+3322134909258,4890,Vertices Shaded / Second,202850393371027439616.000 shaded/sec,0
+3322134909258,4891,Fragments Shaded / Second,64054818582509797376.000 shaded/sec,0
+3322134909258,4892,Vertex Instructions / Second,1185989492922400112640.000 instructions/sec,0
+3322134909258,4893,Fragment Instructions / Second,298748480533884108800.000 instructions/sec,0
+3322134909258,4894,Fragment ALU Instructions / Sec (Full),9942610203.117 instructions/sec,0
+3322134909258,4895,Fragment ALU Instructions / Sec (Half),1675906637222012416.000 instructions/sec,0
+3322134909258,4896,Fragment EFU Instructions / Second,297910527205330518016.000 instructions/sec,0
+3322134909258,4897,Textures / Vertex,0.026 count,0
+3322134909258,4898,Textures / Fragment,2.625 count,0
+3322134909258,4899,ALU / Vertex,0.901 count,0
+3322134909258,4900,ALU / Fragment,0.001 count,0
+3322134909258,4901,EFU / Fragment,0.450 count,0
+3322134909258,4902,EFU / Vertex,4.945 count,0
+3322134909258,4903,Time Shading Fragments,2.527 %,0
+3322134909258,4904,Time Shading Vertices,55.143 %,0
+3322134909258,4905,Time Compute,0.000 %,0
+3322134909258,4906,Shader ALU Capacity Utilized,0.853 %,0
+3322134909258,4908,Time ALUs Working,1.600 %,0
+3322134909258,4909,Time EFUs Working,100.000 %,0
+3322134909258,4910,Nearest Filtered,100.000 %,0
+3322134909258,4911,Linear Filtered,71.229 %,0
+3322134909258,4912,Anisotropic Filtered,5.908 %,0
+3322134909258,4913,Non-Base Level Textures,-9.570 %,0
+3322134909258,4914,Texture Pipes Busy,0.065 %,0
+3322134909258,4916,RTU Busy,50.778 %,0
+3322134909258,4917,RTU Ray Box Intersections Per Instruction,0.127 count,0
+3322134909258,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3322134909258,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322134909258,4915,Wave Context Occupancy,0.000 %,0
+3322134909258,4867,GPU Memory Read Total,573661.721 bytes/sec,0
+3322134909258,4868,GPU Memory Write Total,150526.939 bytes/sec,0
+3322134909258,4923,Texture Memory Read BW,5472013482004997734400.000 Bytes/sec,0
+3322134909258,4924,Vertex Memory Read,15995449732542107648.000 Bytes/sec,0
+3322134909258,4925,SP Memory Read,4782757430164587544576.000 Bytes/sec,0
+3322134909258,4926,Avg Bytes / Fragment,85.333 count,0
+3322134909258,4927,Avg Bytes / Vertex,0.079 count,0
+3322134909258,4929,Preemptions / second,85066195173755469824.000 preemptions/sec,0
+3322134909258,4930,GPU_RESERVED_4930,0.000,0
+3322134909258,4932,Kernel Load Cycles,100.000 %,0
+3322134909258,4933,Global Buffer Read L2 Hit,56.235 %,0
+3322134909258,4934,Global Buffer Write L2 Hit,99.995 %,0
+3322134909258,4935,Image Read L2 Hit,49.232 %,0
+3322134909258,4936,Local Memory Atomic Instructions,0.000 count,0
+3322134909258,4937,Global Memory Atomic Instructions,0.000 count,0
+3322134909258,4938,Local Memory Load Instructions,0.000 count,0
+3322134909258,4939,Global Memory Load Instructions,0.000 count,0
+3322134909258,4940,Local Memory Store Instructions,0.000 count,0
+3322134909258,4941,Global Memory Store Instructions,0.000 count,0
+3322134909258,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322134909258,4943,Load-Store Utilization,0.000 %,0
+3322134909258,4944,L1 Hit,-3.281 %,0
+3322134909258,4945,Bytes Data Write Requested,293997235749438095360.000 count,0
+3322134909258,4946,Bytes Data Actually Written,54043195528446976.000 count,0
+3322134909258,4947,Global Buffer Data Read Request BW,2732086084783405793280.000 Bytes/sec,0
+3322134909258,4948,Global Image Data Read Request BW,2691634458767672213504.000 Bytes/sec,0
+3322134909258,4949,Global Buffer Data Read BW,4782757430164587544576.000 Bytes/sec,0
+3322134909258,4950,Global Image Uncompressed Data Read BW,5466002859517054812160.000 Bytes/sec,0
+3322134909258,4951,Global Image Compressed Data Read BW,6010622487943049216.000 Bytes/sec,0
+3322134909258,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322242755761,4864,GPU Clocks Cycle Executed,92569912960045.922 Mhz,0
+3322242755761,4865,GPU Utilization_4865,100.000 %,0
+3322242755761,4866,GPU Memory Bus Busy,6.272 %,0
+3322242755761,4869,Vertex Fetch Stall,100.000 %,0
+3322242755761,4870,Texture Fetch Stall,58.528 %,0
+3322242755761,4871,L1 Texture Cache Miss Per Pixel,7.627 count,0
+3322242755761,4872,Texture L1 Miss,93.884 %,0
+3322242755761,4873,Texture L2 Miss,0.022 %,0
+3322242755761,4874,Stalled on System Memory,6.272 %,0
+3322242755761,4875,Instruction Cache Miss,100.000 %,0
+3322242755761,4876,BVH Fetch Stall,0.001 %,0
+3322242755761,4878,Pre-clipped Polygons/Second,184596023548923740160.000 polygons/sec,0
+3322242755761,4879,Prims Trivially Rejected,0.000 %,0
+3322242755761,4880,Prims Clipped,32.125 %,0
+3322242755761,4881,Average Vertices / Polygon,0.803 count,0
+3322242755761,4882,Reused Vertices / Second,190969261651297206272.000 vertices/sec,0
+3322242755761,4883,Average Polygon Area,918.068 count,0
+3322242755761,4884,LRZ Busy,100.000 %,0
+3322242755761,4885,LRZ Pixels Killed,4747915408143812608.000 count,0
+3322242755761,4886,LRZ Prims Killed,18442232786099109888.000 count,0
+3322242755761,4888,Shaders Busy,25.002 %,0
+3322242755761,4889,Shaders Stalled,29.169 %,0
+3322242755761,4890,Vertices Shaded / Second,148154624529940840448.000 shaded/sec,0
+3322242755761,4891,Fragments Shaded / Second,23504036984524369920.000 shaded/sec,0
+3322242755761,4892,Vertex Instructions / Second,1075884628290560851968.000 instructions/sec,0
+3322242755761,4893,Fragment Instructions / Second,1135080534962578915328.000 instructions/sec,0
+3322242755761,4894,Fragment ALU Instructions / Sec (Full),717416473224597995520.000 instructions/sec,0
+3322242755761,4895,Fragment ALU Instructions / Sec (Half),2898448767452339200.000 instructions/sec,0
+3322242755761,4896,Fragment EFU Instructions / Second,416214837354254630912.000 instructions/sec,0
+3322242755761,4897,Textures / Vertex,0.079 count,0
+3322242755761,4898,Textures / Fragment,-0.231 count,0
+3322242755761,4899,ALU / Vertex,4.608 count,0
+3322242755761,4900,ALU / Fragment,30.555 count,0
+3322242755761,4901,EFU / Fragment,17.691 count,0
+3322242755761,4902,EFU / Vertex,2.654 count,0
+3322242755761,4903,Time Shading Fragments,-133.175 %,0
+3322242755761,4904,Time Shading Vertices,0.046 %,0
+3322242755761,4905,Time Compute,100.000 %,0
+3322242755761,4906,Shader ALU Capacity Utilized,100.000 %,0
+3322242755761,4908,Time ALUs Working,100.000 %,0
+3322242755761,4909,Time EFUs Working,3.843 %,0
+3322242755761,4910,Nearest Filtered,100.000 %,0
+3322242755761,4911,Linear Filtered,28.064 %,0
+3322242755761,4912,Anisotropic Filtered,100.000 %,0
+3322242755761,4913,Non-Base Level Textures,15.786 %,0
+3322242755761,4914,Texture Pipes Busy,25.002 %,0
+3322242755761,4916,RTU Busy,100.000 %,0
+3322242755761,4917,RTU Ray Box Intersections Per Instruction,3.589 count,0
+3322242755761,4918,RTU Ray Triangle Intersections Per Instruction,0.470 count,0
+3322242755761,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322242755761,4915,Wave Context Occupancy,0.000 %,0
+3322242755761,4867,GPU Memory Read Total,580990.023 bytes/sec,0
+3322242755761,4868,GPU Memory Write Total,156086.872 bytes/sec,0
+3322242755761,4923,Texture Memory Read BW,5912917014623356452864.000 Bytes/sec,0
+3322242755761,4924,Vertex Memory Read,4446340442106959495168.000 Bytes/sec,0
+3322242755761,4925,SP Memory Read,4075967583797055586304.000 Bytes/sec,0
+3322242755761,4926,Avg Bytes / Fragment,0.001 count,0
+3322242755761,4927,Avg Bytes / Vertex,30.011 count,0
+3322242755761,4929,Preemptions / second,45201564684987924480.000 preemptions/sec,0
+3322242755761,4930,GPU_RESERVED_4930,0.000,0
+3322242755761,4932,Kernel Load Cycles,49.785 %,0
+3322242755761,4933,Global Buffer Read L2 Hit,65.563 %,0
+3322242755761,4934,Global Buffer Write L2 Hit,87.509 %,0
+3322242755761,4935,Image Read L2 Hit,99.989 %,0
+3322242755761,4936,Local Memory Atomic Instructions,0.000 count,0
+3322242755761,4937,Global Memory Atomic Instructions,0.000 count,0
+3322242755761,4938,Local Memory Load Instructions,0.000 count,0
+3322242755761,4939,Global Memory Load Instructions,0.000 count,0
+3322242755761,4940,Local Memory Store Instructions,0.000 count,0
+3322242755761,4941,Global Memory Store Instructions,0.000 count,0
+3322242755761,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322242755761,4943,Load-Store Utilization,0.000 %,0
+3322242755761,4944,L1 Hit,99.993 %,0
+3322242755761,4945,Bytes Data Write Requested,147571700789862727680.000 count,0
+3322242755761,4946,Bytes Data Actually Written,73733005530175102976.000 count,0
+3322242755761,4947,Global Buffer Data Read Request BW,2958982807529447227392.000 Bytes/sec,0
+3322242755761,4948,Global Image Data Read Request BW,44866800276940759040.000 Bytes/sec,0
+3322242755761,4949,Global Buffer Data Read BW,4075967583797055586304.000 Bytes/sec,0
+3322242755761,4950,Global Image Uncompressed Data Read BW,19752975114260488.000 Bytes/sec,0
+3322242755761,4951,Global Image Compressed Data Read BW,5912897261648242278400.000 Bytes/sec,0
+3322242755761,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322324927475,4864,GPU Clocks Cycle Executed,2.264 Mhz,0
+3322324927475,4865,GPU Utilization_4865,0.062 %,0
+3322324927475,4866,GPU Memory Bus Busy,0.970 %,0
+3322324927475,4869,Vertex Fetch Stall,0.000 %,0
+3322324927475,4870,Texture Fetch Stall,0.000 %,0
+3322324927475,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3322324927475,4872,Texture L1 Miss,0.000 %,0
+3322324927475,4873,Texture L2 Miss,0.000 %,0
+3322324927475,4874,Stalled on System Memory,0.000 %,0
+3322324927475,4875,Instruction Cache Miss,0.000 %,0
+3322324927475,4876,BVH Fetch Stall,0.000 %,0
+3322324927475,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3322324927475,4879,Prims Trivially Rejected,0.000 %,0
+3322324927475,4880,Prims Clipped,0.000 %,0
+3322324927475,4881,Average Vertices / Polygon,0.000 count,0
+3322324927475,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3322324927475,4883,Average Polygon Area,0.000 count,0
+3322324927475,4884,LRZ Busy,9.575 %,0
+3322324927475,4885,LRZ Pixels Killed,0.000 count,0
+3322324927475,4886,LRZ Prims Killed,0.000 count,0
+3322324927475,4888,Shaders Busy,2.011 %,0
+3322324927475,4889,Shaders Stalled,0.000 %,0
+3322324927475,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3322324927475,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3322324927475,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3322324927475,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3322324927475,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3322324927475,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3322324927475,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3322324927475,4897,Textures / Vertex,0.000 count,0
+3322324927475,4898,Textures / Fragment,0.000 count,0
+3322324927475,4899,ALU / Vertex,0.000 count,0
+3322324927475,4900,ALU / Fragment,0.000 count,0
+3322324927475,4901,EFU / Fragment,0.000 count,0
+3322324927475,4902,EFU / Vertex,0.000 count,0
+3322324927475,4903,Time Shading Fragments,0.000 %,0
+3322324927475,4904,Time Shading Vertices,0.000 %,0
+3322324927475,4905,Time Compute,0.000 %,0
+3322324927475,4906,Shader ALU Capacity Utilized,0.000 %,0
+3322324927475,4908,Time ALUs Working,0.000 %,0
+3322324927475,4909,Time EFUs Working,0.000 %,0
+3322324927475,4910,Nearest Filtered,0.000 %,0
+3322324927475,4911,Linear Filtered,0.000 %,0
+3322324927475,4912,Anisotropic Filtered,0.000 %,0
+3322324927475,4913,Non-Base Level Textures,0.000 %,0
+3322324927475,4914,Texture Pipes Busy,2.011 %,0
+3322324927475,4916,RTU Busy,0.000 %,0
+3322324927475,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3322324927475,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3322324927475,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322324927475,4915,Wave Context Occupancy,0.000 %,0
+3322324927475,4867,GPU Memory Read Total,918298.283 bytes/sec,0
+3322324927475,4868,GPU Memory Write Total,235960.662 bytes/sec,0
+3322324927475,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3322324927475,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3322324927475,4925,SP Memory Read,0.000 Bytes/sec,0
+3322324927475,4926,Avg Bytes / Fragment,0.000 count,0
+3322324927475,4927,Avg Bytes / Vertex,0.000 count,0
+3322324927475,4929,Preemptions / second,0.000 preemptions/sec,0
+3322324927475,4930,GPU_RESERVED_4930,0.000,0
+3322324927475,4932,Kernel Load Cycles,35.845 %,0
+3322324927475,4933,Global Buffer Read L2 Hit,0.000 %,0
+3322324927475,4934,Global Buffer Write L2 Hit,0.000 %,0
+3322324927475,4935,Image Read L2 Hit,0.000 %,0
+3322324927475,4936,Local Memory Atomic Instructions,0.000 count,0
+3322324927475,4937,Global Memory Atomic Instructions,0.000 count,0
+3322324927475,4938,Local Memory Load Instructions,0.000 count,0
+3322324927475,4939,Global Memory Load Instructions,0.000 count,0
+3322324927475,4940,Local Memory Store Instructions,0.000 count,0
+3322324927475,4941,Global Memory Store Instructions,0.000 count,0
+3322324927475,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322324927475,4943,Load-Store Utilization,0.000 %,0
+3322324927475,4944,L1 Hit,0.000 %,0
+3322324927475,4945,Bytes Data Write Requested,0.000 count,0
+3322324927475,4946,Bytes Data Actually Written,0.000 count,0
+3322324927475,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3322324927475,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3322324927475,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3322324927475,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3322324927475,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3322324927475,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322441419551,4864,GPU Clocks Cycle Executed,1328239860939.846 Mhz,0
+3322441419551,4865,GPU Utilization_4865,100.000 %,0
+3322441419551,4866,GPU Memory Bus Busy,23.438 %,0
+3322441419551,4869,Vertex Fetch Stall,16.667 %,0
+3322441419551,4870,Texture Fetch Stall,3.075 %,0
+3322441419551,4871,L1 Texture Cache Miss Per Pixel,2.000 count,0
+3322441419551,4872,Texture L1 Miss,100.000 %,0
+3322441419551,4873,Texture L2 Miss,0.000 %,0
+3322441419551,4874,Stalled on System Memory,23.438 %,0
+3322441419551,4875,Instruction Cache Miss,99.997 %,0
+3322441419551,4876,BVH Fetch Stall,8.333 %,0
+3322441419551,4878,Pre-clipped Polygons/Second,1494258942971688704.000 polygons/sec,0
+3322441419551,4879,Prims Trivially Rejected,100.000 %,0
+3322441419551,4880,Prims Clipped,100.000 %,0
+3322441419551,4881,Average Vertices / Polygon,148.830 count,0
+3322441419551,4882,Reused Vertices / Second,304124724015495577600.000 vertices/sec,0
+3322441419551,4883,Average Polygon Area,0.500 count,0
+3322441419551,4884,LRZ Busy,33.162 %,0
+3322441419551,4885,LRZ Pixels Killed,16131892763546357760.000 count,0
+3322441419551,4886,LRZ Prims Killed,13839570431666814976.000 count,0
+3322441419551,4888,Shaders Busy,2.083 %,0
+3322441419551,4889,Shaders Stalled,1.041 %,0
+3322441419551,4890,Vertices Shaded / Second,222390818420134182912.000 shaded/sec,0
+3322441419551,4891,Fragments Shaded / Second,85012531859077169152.000 shaded/sec,0
+3322441419551,4892,Vertex Instructions / Second,775714177592846581760.000 instructions/sec,0
+3322441419551,4893,Fragment Instructions / Second,360802239680103383040.000 instructions/sec,0
+3322441419551,4894,Fragment ALU Instructions / Sec (Full),21251835884086616064.000 instructions/sec,0
+3322441419551,4895,Fragment ALU Instructions / Sec (Half),679065137091143663616.000 instructions/sec,0
+3322441419551,4896,Fragment EFU Instructions / Second,17835250444920644.000 instructions/sec,0
+3322441419551,4897,Textures / Vertex,6.068 count,0
+3322441419551,4898,Textures / Fragment,-7.628 count,0
+3322441419551,4899,ALU / Vertex,3.297 count,0
+3322441419551,4900,ALU / Fragment,0.531 count,0
+3322441419551,4901,EFU / Fragment,0.000 count,0
+3322441419551,4902,EFU / Vertex,0.191 count,0
+3322441419551,4903,Time Shading Fragments,-348.815 %,0
+3322441419551,4904,Time Shading Vertices,22.446 %,0
+3322441419551,4905,Time Compute,100.000 %,0
+3322441419551,4906,Shader ALU Capacity Utilized,100.000 %,0
+3322441419551,4908,Time ALUs Working,0.042 %,0
+3322441419551,4909,Time EFUs Working,100.000 %,0
+3322441419551,4910,Nearest Filtered,100.000 %,0
+3322441419551,4911,Linear Filtered,100.000 %,0
+3322441419551,4912,Anisotropic Filtered,100.000 %,0
+3322441419551,4913,Non-Base Level Textures,-280.875 %,0
+3322441419551,4914,Texture Pipes Busy,2.083 %,0
+3322441419551,4916,RTU Busy,24.952 %,0
+3322441419551,4917,RTU Ray Box Intersections Per Instruction,0.117 count,0
+3322441419551,4918,RTU Ray Triangle Intersections Per Instruction,3.283 count,0
+3322441419551,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322441419551,4915,Wave Context Occupancy,0.000 %,0
+3322441419551,4867,GPU Memory Read Total,551516.237 bytes/sec,0
+3322441419551,4868,GPU Memory Write Total,147464.234 bytes/sec,0
+3322441419551,4923,Texture Memory Read BW,9987565472845346816.000 Bytes/sec,0
+3322441419551,4924,Vertex Memory Read,5432251520972142673920.000 Bytes/sec,0
+3322441419551,4925,SP Memory Read,4417720184034502901760.000 Bytes/sec,0
+3322441419551,4926,Avg Bytes / Fragment,0.000 count,0
+3322441419551,4927,Avg Bytes / Vertex,24.427 count,0
+3322441419551,4929,Preemptions / second,43852990149060132864.000 preemptions/sec,0
+3322441419551,4930,GPU_RESERVED_4930,0.000,0
+3322441419551,4932,Kernel Load Cycles,100.000 %,0
+3322441419551,4933,Global Buffer Read L2 Hit,58.130 %,0
+3322441419551,4934,Global Buffer Write L2 Hit,99.805 %,0
+3322441419551,4935,Image Read L2 Hit,100.000 %,0
+3322441419551,4936,Local Memory Atomic Instructions,0.000 count,0
+3322441419551,4937,Global Memory Atomic Instructions,0.000 count,0
+3322441419551,4938,Local Memory Load Instructions,0.000 count,0
+3322441419551,4939,Global Memory Load Instructions,0.000 count,0
+3322441419551,4940,Local Memory Store Instructions,0.000 count,0
+3322441419551,4941,Global Memory Store Instructions,0.000 count,0
+3322441419551,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322441419551,4943,Load-Store Utilization,0.000 %,0
+3322441419551,4944,L1 Hit,-98.509 %,0
+3322441419551,4945,Bytes Data Write Requested,9225905311645171712.000 count,0
+3322441419551,4946,Bytes Data Actually Written,72055394477735936.000 count,0
+3322441419551,4947,Global Buffer Data Read Request BW,2637780359307724849152.000 Bytes/sec,0
+3322441419551,4948,Global Image Data Read Request BW,2688352738973549854720.000 Bytes/sec,0
+3322441419551,4949,Global Buffer Data Read BW,4417720184034502901760.000 Bytes/sec,0
+3322441419551,4950,Global Image Uncompressed Data Read BW,25493777529409172.000 Bytes/sec,0
+3322441419551,4951,Global Image Compressed Data Read BW,9962071695315937280.000 Bytes/sec,0
+3322441419551,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322526892514,4864,GPU Clocks Cycle Executed,2.241 Mhz,0
+3322526892514,4865,GPU Utilization_4865,0.060 %,0
+3322526892514,4866,GPU Memory Bus Busy,0.966 %,0
+3322526892514,4869,Vertex Fetch Stall,0.000 %,0
+3322526892514,4870,Texture Fetch Stall,0.000 %,0
+3322526892514,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3322526892514,4872,Texture L1 Miss,0.000 %,0
+3322526892514,4873,Texture L2 Miss,0.000 %,0
+3322526892514,4874,Stalled on System Memory,0.000 %,0
+3322526892514,4875,Instruction Cache Miss,0.000 %,0
+3322526892514,4876,BVH Fetch Stall,0.000 %,0
+3322526892514,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3322526892514,4879,Prims Trivially Rejected,0.000 %,0
+3322526892514,4880,Prims Clipped,0.000 %,0
+3322526892514,4881,Average Vertices / Polygon,0.000 count,0
+3322526892514,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3322526892514,4883,Average Polygon Area,0.000 count,0
+3322526892514,4884,LRZ Busy,9.501 %,0
+3322526892514,4885,LRZ Pixels Killed,0.000 count,0
+3322526892514,4886,LRZ Prims Killed,0.000 count,0
+3322526892514,4888,Shaders Busy,1.994 %,0
+3322526892514,4889,Shaders Stalled,0.000 %,0
+3322526892514,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3322526892514,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3322526892514,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3322526892514,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3322526892514,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3322526892514,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3322526892514,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3322526892514,4897,Textures / Vertex,0.000 count,0
+3322526892514,4898,Textures / Fragment,0.000 count,0
+3322526892514,4899,ALU / Vertex,0.000 count,0
+3322526892514,4900,ALU / Fragment,0.000 count,0
+3322526892514,4901,EFU / Fragment,0.000 count,0
+3322526892514,4902,EFU / Vertex,0.000 count,0
+3322526892514,4903,Time Shading Fragments,0.000 %,0
+3322526892514,4904,Time Shading Vertices,0.000 %,0
+3322526892514,4905,Time Compute,0.000 %,0
+3322526892514,4906,Shader ALU Capacity Utilized,0.000 %,0
+3322526892514,4908,Time ALUs Working,0.000 %,0
+3322526892514,4909,Time EFUs Working,0.000 %,0
+3322526892514,4910,Nearest Filtered,0.000 %,0
+3322526892514,4911,Linear Filtered,0.000 %,0
+3322526892514,4912,Anisotropic Filtered,0.000 %,0
+3322526892514,4913,Non-Base Level Textures,0.000 %,0
+3322526892514,4914,Texture Pipes Busy,1.994 %,0
+3322526892514,4916,RTU Busy,0.000 %,0
+3322526892514,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3322526892514,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3322526892514,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322526892514,4915,Wave Context Occupancy,0.000 %,0
+3322526892514,4867,GPU Memory Read Total,872522.364 bytes/sec,0
+3322526892514,4868,GPU Memory Write Total,227275.020 bytes/sec,0
+3322526892514,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3322526892514,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3322526892514,4925,SP Memory Read,0.000 Bytes/sec,0
+3322526892514,4926,Avg Bytes / Fragment,0.000 count,0
+3322526892514,4927,Avg Bytes / Vertex,0.000 count,0
+3322526892514,4929,Preemptions / second,0.000 preemptions/sec,0
+3322526892514,4930,GPU_RESERVED_4930,0.000,0
+3322526892514,4932,Kernel Load Cycles,34.660 %,0
+3322526892514,4933,Global Buffer Read L2 Hit,0.000 %,0
+3322526892514,4934,Global Buffer Write L2 Hit,0.000 %,0
+3322526892514,4935,Image Read L2 Hit,0.000 %,0
+3322526892514,4936,Local Memory Atomic Instructions,0.000 count,0
+3322526892514,4937,Global Memory Atomic Instructions,0.000 count,0
+3322526892514,4938,Local Memory Load Instructions,0.000 count,0
+3322526892514,4939,Global Memory Load Instructions,0.000 count,0
+3322526892514,4940,Local Memory Store Instructions,0.000 count,0
+3322526892514,4941,Global Memory Store Instructions,0.000 count,0
+3322526892514,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322526892514,4943,Load-Store Utilization,0.000 %,0
+3322526892514,4944,L1 Hit,0.000 %,0
+3322526892514,4945,Bytes Data Write Requested,0.000 count,0
+3322526892514,4946,Bytes Data Actually Written,0.000 count,0
+3322526892514,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3322526892514,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3322526892514,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3322526892514,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3322526892514,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3322526892514,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322642716777,4864,GPU Clocks Cycle Executed,1337005742907.960 Mhz,0
+3322642716777,4865,GPU Utilization_4865,100.000 %,0
+3322642716777,4866,GPU Memory Bus Busy,2.108 %,0
+3322642716777,4869,Vertex Fetch Stall,26.983 %,0
+3322642716777,4870,Texture Fetch Stall,20.551 %,0
+3322642716777,4871,L1 Texture Cache Miss Per Pixel,1.127 count,0
+3322642716777,4872,Texture L1 Miss,100.000 %,0
+3322642716777,4873,Texture L2 Miss,100.000 %,0
+3322642716777,4874,Stalled on System Memory,2.108 %,0
+3322642716777,4875,Instruction Cache Miss,100.000 %,0
+3322642716777,4876,BVH Fetch Stall,11.111 %,0
+3322642716777,4878,Pre-clipped Polygons/Second,335557189702720960.000 polygons/sec,0
+3322642716777,4879,Prims Trivially Rejected,25.195 %,0
+3322642716777,4880,Prims Clipped,100.000 %,0
+3322642716777,4881,Average Vertices / Polygon,326.782 count,0
+3322642716777,4882,Reused Vertices / Second,1442112829509607168.000 vertices/sec,0
+3322642716777,4883,Average Polygon Area,0.998 count,0
+3322642716777,4884,LRZ Busy,43.175 %,0
+3322642716777,4885,LRZ Pixels Killed,-208256193098160128.000 count,0
+3322642716777,4886,LRZ Prims Killed,4611686009837455360.000 count,0
+3322642716777,4888,Shaders Busy,11.111 %,0
+3322642716777,4889,Shaders Stalled,0.002 %,0
+3322642716777,4890,Vertices Shaded / Second,109654077793363001344.000 shaded/sec,0
+3322642716777,4891,Fragments Shaded / Second,170797282456978653184.000 shaded/sec,0
+3322642716777,4892,Vertex Instructions / Second,1925684688832193101824.000 instructions/sec,0
+3322642716777,4893,Fragment Instructions / Second,983839575503273590784.000 instructions/sec,0
+3322642716777,4894,Fragment ALU Instructions / Sec (Full),1387274367263502.750 instructions/sec,0
+3322642716777,4895,Fragment ALU Instructions / Sec (Half),684197225642919723008.000 instructions/sec,0
+3322642716777,4896,Fragment EFU Instructions / Second,641739575407446327296.000 instructions/sec,0
+3322642716777,4897,Textures / Vertex,0.000 count,0
+3322642716777,4898,Textures / Fragment,0.845 count,0
+3322642716777,4899,ALU / Vertex,5.463 count,0
+3322642716777,4900,ALU / Fragment,0.516 count,0
+3322642716777,4901,EFU / Fragment,0.967 count,0
+3322642716777,4902,EFU / Vertex,12.098 count,0
+3322642716777,4903,Time Shading Fragments,0.000 %,0
+3322642716777,4904,Time Shading Vertices,98.210 %,0
+3322642716777,4905,Time Compute,0.000 %,0
+3322642716777,4906,Shader ALU Capacity Utilized,4.387 %,0
+3322642716777,4908,Time ALUs Working,1.595 %,0
+3322642716777,4909,Time EFUs Working,0.452 %,0
+3322642716777,4910,Nearest Filtered,95.728 %,0
+3322642716777,4911,Linear Filtered,27.378 %,0
+3322642716777,4912,Anisotropic Filtered,82.906 %,0
+3322642716777,4913,Non-Base Level Textures,99.866 %,0
+3322642716777,4914,Texture Pipes Busy,11.111 %,0
+3322642716777,4916,RTU Busy,50.957 %,0
+3322642716777,4917,RTU Ray Box Intersections Per Instruction,4.209 count,0
+3322642716777,4918,RTU Ray Triangle Intersections Per Instruction,4.284 count,0
+3322642716777,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322642716777,4915,Wave Context Occupancy,0.000 %,0
+3322642716777,4867,GPU Memory Read Total,568812.471 bytes/sec,0
+3322642716777,4868,GPU Memory Write Total,149624.992 bytes/sec,0
+3322642716777,4923,Texture Memory Read BW,5479012141374448336896.000 Bytes/sec,0
+3322642716777,4924,Vertex Memory Read,5473704151665049862144.000 Bytes/sec,0
+3322642716777,4925,SP Memory Read,3083135980172787318784.000 Bytes/sec,0
+3322642716777,4926,Avg Bytes / Fragment,32.063 count,0
+3322642716777,4927,Avg Bytes / Vertex,49.918 count,0
+3322642716777,4929,Preemptions / second,85552394269734207488.000 preemptions/sec,0
+3322642716777,4930,GPU_RESERVED_4930,0.000,0
+3322642716777,4932,Kernel Load Cycles,100.000 %,0
+3322642716777,4933,Global Buffer Read L2 Hit,0.000 %,0
+3322642716777,4934,Global Buffer Write L2 Hit,0.000 %,0
+3322642716777,4935,Image Read L2 Hit,0.000 %,0
+3322642716777,4936,Local Memory Atomic Instructions,0.000 count,0
+3322642716777,4937,Global Memory Atomic Instructions,0.000 count,0
+3322642716777,4938,Local Memory Load Instructions,0.000 count,0
+3322642716777,4939,Global Memory Load Instructions,0.000 count,0
+3322642716777,4940,Local Memory Store Instructions,0.000 count,0
+3322642716777,4941,Global Memory Store Instructions,0.000 count,0
+3322642716777,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322642716777,4943,Load-Store Utilization,0.000 %,0
+3322642716777,4944,L1 Hit,-101.524 %,0
+3322642716777,4945,Bytes Data Write Requested,138348328478130044928.000 count,0
+3322642716777,4946,Bytes Data Actually Written,1106658209410991652864.000 count,0
+3322642716777,4947,Global Buffer Data Read Request BW,85923530810339540992.000 Bytes/sec,0
+3322642716777,4948,Global Image Data Read Request BW,31402955857807679488.000 Bytes/sec,0
+3322642716777,4949,Global Buffer Data Read BW,3083135980172787318784.000 Bytes/sec,0
+3322642716777,4950,Global Image Uncompressed Data Read BW,5476338108831777161216.000 Bytes/sec,0
+3322642716777,4951,Global Image Compressed Data Read BW,2674032542670807552.000 Bytes/sec,0
+3322642716777,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322728045991,4864,GPU Clocks Cycle Executed,2.199 Mhz,0
+3322728045991,4865,GPU Utilization_4865,0.060 %,0
+3322728045991,4866,GPU Memory Bus Busy,0.956 %,0
+3322728045991,4869,Vertex Fetch Stall,0.000 %,0
+3322728045991,4870,Texture Fetch Stall,0.000 %,0
+3322728045991,4871,L1 Texture Cache Miss Per Pixel,0.000 count,0
+3322728045991,4872,Texture L1 Miss,0.000 %,0
+3322728045991,4873,Texture L2 Miss,0.000 %,0
+3322728045991,4874,Stalled on System Memory,0.000 %,0
+3322728045991,4875,Instruction Cache Miss,0.000 %,0
+3322728045991,4876,BVH Fetch Stall,0.000 %,0
+3322728045991,4878,Pre-clipped Polygons/Second,0.000 polygons/sec,0
+3322728045991,4879,Prims Trivially Rejected,0.000 %,0
+3322728045991,4880,Prims Clipped,0.000 %,0
+3322728045991,4881,Average Vertices / Polygon,0.000 count,0
+3322728045991,4882,Reused Vertices / Second,0.000 vertices/sec,0
+3322728045991,4883,Average Polygon Area,0.000 count,0
+3322728045991,4884,LRZ Busy,9.467 %,0
+3322728045991,4885,LRZ Pixels Killed,0.000 count,0
+3322728045991,4886,LRZ Prims Killed,0.000 count,0
+3322728045991,4888,Shaders Busy,1.989 %,0
+3322728045991,4889,Shaders Stalled,0.000 %,0
+3322728045991,4890,Vertices Shaded / Second,0.000 shaded/sec,0
+3322728045991,4891,Fragments Shaded / Second,0.000 shaded/sec,0
+3322728045991,4892,Vertex Instructions / Second,0.000 instructions/sec,0
+3322728045991,4893,Fragment Instructions / Second,0.000 instructions/sec,0
+3322728045991,4894,Fragment ALU Instructions / Sec (Full),0.000 instructions/sec,0
+3322728045991,4895,Fragment ALU Instructions / Sec (Half),0.000 instructions/sec,0
+3322728045991,4896,Fragment EFU Instructions / Second,0.000 instructions/sec,0
+3322728045991,4897,Textures / Vertex,0.000 count,0
+3322728045991,4898,Textures / Fragment,0.000 count,0
+3322728045991,4899,ALU / Vertex,0.000 count,0
+3322728045991,4900,ALU / Fragment,0.000 count,0
+3322728045991,4901,EFU / Fragment,0.000 count,0
+3322728045991,4902,EFU / Vertex,0.000 count,0
+3322728045991,4903,Time Shading Fragments,0.000 %,0
+3322728045991,4904,Time Shading Vertices,0.000 %,0
+3322728045991,4905,Time Compute,0.000 %,0
+3322728045991,4906,Shader ALU Capacity Utilized,0.000 %,0
+3322728045991,4908,Time ALUs Working,0.000 %,0
+3322728045991,4909,Time EFUs Working,0.000 %,0
+3322728045991,4910,Nearest Filtered,0.000 %,0
+3322728045991,4911,Linear Filtered,0.000 %,0
+3322728045991,4912,Anisotropic Filtered,0.000 %,0
+3322728045991,4913,Non-Base Level Textures,0.000 %,0
+3322728045991,4914,Texture Pipes Busy,1.989 %,0
+3322728045991,4916,RTU Busy,0.000 %,0
+3322728045991,4917,RTU Ray Box Intersections Per Instruction,0.000 count,0
+3322728045991,4918,RTU Ray Triangle Intersections Per Instruction,0.000 count,0
+3322728045991,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322728045991,4915,Wave Context Occupancy,0.000 %,0
+3322728045991,4867,GPU Memory Read Total,868561.463 bytes/sec,0
+3322728045991,4868,GPU Memory Write Total,223097.859 bytes/sec,0
+3322728045991,4923,Texture Memory Read BW,0.000 Bytes/sec,0
+3322728045991,4924,Vertex Memory Read,0.000 Bytes/sec,0
+3322728045991,4925,SP Memory Read,0.000 Bytes/sec,0
+3322728045991,4926,Avg Bytes / Fragment,0.000 count,0
+3322728045991,4927,Avg Bytes / Vertex,0.000 count,0
+3322728045991,4929,Preemptions / second,0.000 preemptions/sec,0
+3322728045991,4930,GPU_RESERVED_4930,0.000,0
+3322728045991,4932,Kernel Load Cycles,35.404 %,0
+3322728045991,4933,Global Buffer Read L2 Hit,0.000 %,0
+3322728045991,4934,Global Buffer Write L2 Hit,0.000 %,0
+3322728045991,4935,Image Read L2 Hit,0.000 %,0
+3322728045991,4936,Local Memory Atomic Instructions,0.000 count,0
+3322728045991,4937,Global Memory Atomic Instructions,0.000 count,0
+3322728045991,4938,Local Memory Load Instructions,0.000 count,0
+3322728045991,4939,Global Memory Load Instructions,0.000 count,0
+3322728045991,4940,Local Memory Store Instructions,0.000 count,0
+3322728045991,4941,Global Memory Store Instructions,0.000 count,0
+3322728045991,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322728045991,4943,Load-Store Utilization,0.000 %,0
+3322728045991,4944,L1 Hit,0.000 %,0
+3322728045991,4945,Bytes Data Write Requested,0.000 count,0
+3322728045991,4946,Bytes Data Actually Written,0.000 count,0
+3322728045991,4947,Global Buffer Data Read Request BW,0.000 Bytes/sec,0
+3322728045991,4948,Global Image Data Read Request BW,0.000 Bytes/sec,0
+3322728045991,4949,Global Buffer Data Read BW,0.000 Bytes/sec,0
+3322728045991,4950,Global Image Uncompressed Data Read BW,0.000 Bytes/sec,0
+3322728045991,4951,Global Image Compressed Data Read BW,0.000 Bytes/sec,0
+3322728045991,4952,GPU Frequency_4952,222000000.000 Hz,0
+3322844609265,4864,GPU Clocks Cycle Executed,10399406153.184 Mhz,0
+3322844609265,4865,GPU Utilization_4865,100.000 %,0
+3322844609265,4866,GPU Memory Bus Busy,23.414 %,0
+3322844609265,4869,Vertex Fetch Stall,29.765 %,0
+3322844609265,4870,Texture Fetch Stall,7.634 %,0
+3322844609265,4871,L1 Texture Cache Miss Per Pixel,7.297 count,0
+3322844609265,4872,Texture L1 Miss,97.284 %,0
+3322844609265,4873,Texture L2 Miss,100.000 %,0
+3322844609265,4874,Stalled on System Memory,23.414 %,0
+3322844609265,4875,Instruction Cache Miss,0.020 %,0
+3322844609265,4876,BVH Fetch Stall,8.333 %,0
+3322844609265,4878,Pre-clipped Polygons/Second,169052117844937277440.000 polygons/sec,0
+3322844609265,4879,Prims Trivially Rejected,0.196 %,0
+3322844609265,4880,Prims Clipped,0.000 %,0
+3322844609265,4881,Average Vertices / Polygon,0.063 count,0
+3322844609265,4882,Reused Vertices / Second,196923892595848151040.000 vertices/sec,0
+3322844609265,4883,Average Polygon Area,13107.160 count,0
+3322844609265,4884,LRZ Busy,34.880 %,0
+3322844609265,4885,LRZ Pixels Killed,-4430451383298113536.000 count,0
+3322844609265,4886,LRZ Prims Killed,18302620106720540672.000 count,0
+3322844609265,4888,Shaders Busy,0.044 %,0
+3322844609265,4889,Shaders Stalled,3.125 %,0
+3322844609265,4890,Vertices Shaded / Second,10646397346988015616.000 shaded/sec,0
+3322844609265,4891,Fragments Shaded / Second,21297903415509143552.000 shaded/sec,0
+3322844609265,4892,Vertex Instructions / Second,1939367197318086131712.000 instructions/sec,0
+3322844609265,4893,Fragment Instructions / Second,384440298760637972480.000 instructions/sec,0
+3322844609265,4894,Fragment ALU Instructions / Sec (Full),330423633081463360.000 instructions/sec,0
+3322844609265,4895,Fragment ALU Instructions / Sec (Half),1515706762762944512.000 instructions/sec,0
+3322844609265,4896,Fragment EFU Instructions / Second,383352021746175049728.000 instructions/sec,0
+3322844609265,4897,Textures / Vertex,62.014 count,0
+3322844609265,4898,Textures / Fragment,-30.812 count,0
+3322844609265,4899,ALU / Vertex,118.021 count,0
+3322844609265,4900,ALU / Fragment,0.052 count,0
+3322844609265,4901,EFU / Fragment,18.285 count,0
+3322844609265,4902,EFU / Vertex,64.140 count,0
+3322844609265,4903,Time Shading Fragments,72.453 %,0
+3322844609265,4904,Time Shading Vertices,26.349 %,0
+3322844609265,4905,Time Compute,0.000 %,0
+3322844609265,4906,Shader ALU Capacity Utilized,100.000 %,0
+3322844609265,4908,Time ALUs Working,100.000 %,0
+3322844609265,4909,Time EFUs Working,100.000 %,0
+3322844609265,4910,Nearest Filtered,100.000 %,0
+3322844609265,4911,Linear Filtered,100.000 %,0
+3322844609265,4912,Anisotropic Filtered,54.352 %,0
+3322844609265,4913,Non-Base Level Textures,-122.115 %,0
+3322844609265,4914,Texture Pipes Busy,0.000 %,0
+3322844609265,4916,RTU Busy,100.000 %,0
+3322844609265,4917,RTU Ray Box Intersections Per Instruction,1.863 count,0
+3322844609265,4918,RTU Ray Triangle Intersections Per Instruction,1.889 count,0
+3322844609265,4919,Average BVH Fetch Latency Cycles,0.000 count,0
+3322844609265,4915,Wave Context Occupancy,0.000 %,0
+3322844609265,4867,GPU Memory Read Total,572810.362 bytes/sec,0
+3322844609265,4868,GPU Memory Write Total,150444.001 bytes/sec,0
+3322844609265,4923,Texture Memory Read BW,10901863964958345134080.000 Bytes/sec,0
+3322844609265,4924,Vertex Memory Read,2758070662078377492480.000 Bytes/sec,0
+3322844609265,4925,SP Memory Read,5108834564052651868160.000 Bytes/sec,0
+3322844609265,4926,Avg Bytes / Fragment,256.000 count,0
+3322844609265,4927,Avg Bytes / Vertex,259.061 count,0
+3322844609265,4929,Preemptions / second,15598256886628772.000 preemptions/sec,0
+3322844609265,4930,GPU_RESERVED_4930,0.000,0
+3322844609265,4932,Kernel Load Cycles,100.000 %,0
+3322844609265,4933,Global Buffer Read L2 Hit,53.098 %,0
+3322844609265,4934,Global Buffer Write L2 Hit,0.000 %,0
+3322844609265,4935,Image Read L2 Hit,0.000 %,0
+3322844609265,4936,Local Memory Atomic Instructions,0.000 count,0
+3322844609265,4937,Global Memory Atomic Instructions,0.000 count,0
+3322844609265,4938,Local Memory Load Instructions,0.000 count,0
+3322844609265,4939,Global Memory Load Instructions,0.000 count,0
+3322844609265,4940,Local Memory Store Instructions,0.000 count,0
+3322844609265,4941,Global Memory Store Instructions,0.000 count,0
+3322844609265,4942,Avg Load-Store Instructions Per Cycle,0.000 count,0
+3322844609265,4943,Load-Store Utilization,0.000 %,0
+3322844609265,4944,L1 Hit,-70.018 %,0
+3322844609265,4945,Bytes Data Write Requested,10379108291228729344.000 count,0
+3322844609265,4946,Bytes Data Actually Written,73789296256319750144.000 count,0
+3322844609265,4947,Global Buffer Data Read Request BW,2723115800489962766336.000 Bytes/sec,0
+3322844609265,4948,Global Image Data Read Request BW,638958261723769995264.000 Bytes/sec,0
+3322844609265,4949,Global Buffer Data Read BW,5108834564052651868160.000 Bytes/sec,0
+3322844609265,4950,Global Image Uncompressed Data Read BW,5452258074736669491200.000 Bytes/sec,0
+3322844609265,4951,Global Image Compressed Data Read BW,5449605890221674594304.000 Bytes/sec,0
+3322844609265,4952,GPU Frequency_4952,222000000.000 Hz,0

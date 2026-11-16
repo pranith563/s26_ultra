@@ -1,0 +1,217 @@
+S26 Ultra development setup - 2026-11-14
+
+Target: SM-S948B, Android 16, firmware S948BXXU1AZAB, arm64-v8a.
+Use adb -s RZGL21DRL6B to avoid selecting another connected device.
+
+Installed on Windows
+--------------------
+Android NDK r30 / 30.0.16248370:
+  C:\Android\android-ndk-r30
+Official download: https://developer.android.com/ndk/downloads
+Archive SHA1 verified: 9bf167a1985fa7d4a036186b78f702eab9179408
+No global PATH changes were required.
+
+Qualcomm Software Center / qsc-cli 1.32.0:
+  C:\Program Files (x86)\Qualcomm\Qualcomm_Software_Center\1.32.0.0\qsc-cli.exe
+Installed from Qualcomm's public Windows installer; Authenticode signature
+verified as Qualcomm. Desktop login succeeded and the CLI can access the
+Qualcomm Profiler catalog. No API key was supplied or needed.
+QSC_API_KEY is supported by this CLI for automation if needed later.
+
+Build the native C++ DMA-BUF test from PowerShell in this project:
+
+& 'C:\Android\android-ndk-r30\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe' --target=aarch64-linux-android36 -std=c++17 -O2 -g -Wall -Wextra -Werror -static-libstdc++ .\dma_buf_smoke.cpp -o .\runs\dma_buf_smoke
+adb -s RZGL21DRL6B push .\runs\dma_buf_smoke /data/local/tmp/s26-dma-buf-smoke
+adb -s RZGL21DRL6B shell chmod 755 /data/local/tmp/s26-dma-buf-smoke
+
+Ordinary shell test:
+adb -s RZGL21DRL6B shell /data/local/tmp/s26-dma-buf-smoke /dev/dma_heap/system
+
+Root test:
+adb -s RZGL21DRL6B shell "su -c '/data/local/tmp/s26-dma-buf-smoke /dev/dma_heap/qcom,system'"
+
+Verified results
+----------------
+Native C++ execution: PASS as UID 2000 and UID 0.
+DMA-BUF: PASS for 64 KiB allocation, mmap, CPU synchronization, SCM_RIGHTS
+file-descriptor transfer, and readback in a child process.
+  /dev/dma_heap/system: PASS as shell and root.
+  /dev/dma_heap/qcom,system: PASS as root.
+These checks do not establish GPU/HTP import support, physical contiguity,
+secure-heap access, or access to other applications' buffers.
+
+Simpleperf: CPU cycles, instructions and task-clock counters worked.
+A two-second CPU sampling capture recorded 377 samples with zero lost.
+  runs\s26-capability.perf.data
+Perfetto: A three-second sched/freq/idle capture succeeded, 118699 bytes.
+  runs\s26-capability.perfetto-trace
+The Perfetto trace contents have not yet been analyzed.
+
+Qualcomm Profiler
+-----------------
+Installed successfully through authenticated qsc-cli:
+  CLI/API 2.26.10.6, GUI 2.26.10.4, Utility App 2.26.10.0.
+Windows CLI:
+  C:\Program Files (x86)\Qualcomm\QualcommProfiler\CLI\host-windows\bins\qprof.exe
+Windows GUI:
+  C:\Program Files (x86)\Qualcomm\QualcommProfiler\GUI
+Matching Android ARM64 agent and metadata are staged at:
+  /data/local/tmp/s26-qprof-2.26.10.6
+
+Samsung's stock agent 2.25.7.16 lacks its ExtQProfiler.db metadata. Running
+the new agent directly also loaded the older vendor GPU handler and crashed.
+The debugger identified that handler in the stack. qprof-server.sh fixes
+the library mix by starting the server in its own private mount namespace
+and binding the staged matching libraries over /vendor/qprof/libs there.
+It does not overwrite vendor files or change other processes' mounts.
+Use this script rather than invoking the staged agent directly.
+
+Verified from the Windows client over ADB:
+  16 capabilities enumerated.
+  Three-second CPU, memory and thermal captures returned populated CSVs.
+  Three-second GPU capture returned 81 metrics. Frequency metric 4952
+  reported 191/222 MHz, but metric 4864 (GPU Clocks Cycle Executed) returned
+  implausible huge values. GPU counters need individual validation against
+  a known workload before drawing performance conclusions.
+  DDR and ADSP are listed but have not been captured or validated.
+  NPU capture was subsequently tested with QNN HTP, as described below.
+CSV files: runs\qprof-baseline
+The test server is stopped and its ADB forward has been removed.
+No server or profiler was configured to start automatically at boot.
+
+Start the staged server in one PowerShell terminal (leave it running):
+adb -s RZGL21DRL6B shell "su -c 'sh /data/local/tmp/s26-qprof-2.26.10.6/server.sh'"
+
+In a second PowerShell terminal:
+$env:Path = [Environment]::GetEnvironmentVariable('Path','Machine')+';'+[Environment]::GetEnvironmentVariable('Path','User')
+$qprof = 'C:\Program Files (x86)\Qualcomm\QualcommProfiler\CLI\host-windows\bins\qprof.exe'
+adb -s RZGL21DRL6B forward --no-rebind tcp:62472 tcp:62472
+& $qprof --configure --server-ip 127.0.0.1 --port 62472
+& $qprof --capabilities
+& $qprof --profile --capabilities-list profiler:apps-proc-cpu-metrics profiler:apps-proc-mem-metrics profiler:apps-proc-thermal-metrics --profile-time 3 --streaming-rate 500 --sampling-rate 100 --result-format csv --result-dir-path C:\Users\prani\s26_ultra\runs\qprof-baseline
+
+To stop only this server, enter an Android shell with:
+adb -s RZGL21DRL6B shell
+Then run these Android shell commands:
+su
+base=/data/local/tmp/s26-qprof-2.26.10.6
+pid=$(cat "$base/server.pid")
+[ "$(readlink /proc/$pid/exe)" = "$base/bins/qmonitor-grpc-server" ] && kill -TERM "$pid"
+exit
+exit
+Back in PowerShell, remove this forward:
+adb -s RZGL21DRL6B forward --remove tcp:62472
+
+Existing Qualcomm AI Runtime SDKs on this PC
+------------------------------------------
+C:\qairt-data\qairt\2.41.0.251128
+C:\qairt-data\qairt\2.44.0.260225
+The 2.44 SDK includes Android ARM64 and Hexagon v81 components. Its QNN HTP
+backend has now executed the bundled quantized Conv/ReLU sample on this
+phone. No additional Hexagon SDK was installed.
+
+QNN HTP validation - 2026-11-14
+-------------------------------
+Used the SDK's qnn_model_8bit_quantized.cpp/.bin and two bundled inputs.
+This is a small Conv/ReLU graph extracted from an Inception-style example,
+not the complete InceptionV3 classifier or a representative application.
+Built the model with NDK r30; exact compiler/object-copy commands are in:
+  runs\qnn-htp\build\commands.json
+The SDK's Windows model generator supports Windows targets only, so the
+Android library was built directly from the supplied model/wrapper sources.
+Android files are staged at /data/local/tmp/s26-qnn-2.44.
+
+CPU and HTP each executed both inputs successfully as ordinary ADB shell
+(UID 2000). HTP detailed profiling includes RPC/accelerator timings and
+optimized-operation cycle counts. All outputs were finite. Against the CPU
+reference, the largest absolute difference was 0.10941744: two output
+quantization steps (scale 0.0547085). This establishes a measured numerical
+difference, not bit-exact equivalence or application-level accuracy.
+  runs\qnn-htp\output-comparison.json
+
+The final overlapping capture completed 454 HTP inferences with a three-second
+execution budget. This capture used UID 0 so the same shell could write
+Perfetto trace markers. It collected:
+  QNN detailed profile and output tensors;
+  qprof CPU, memory, thermal and 22 distinct NPU metrics;
+  Perfetto scheduling/frequency/idle events and S26_QNN_HTP_RUN marker.
+The marked interval lasts 3.465 seconds including initialization/teardown.
+Perfetto parsed successfully: 18783 scheduler rows, no nonzero error/data-loss
+stats. Saved output tensors match the initial HTP outputs byte for byte.
+  runs\qnn-htp\20261114T130003Z\analysis.json
+  runs\qnn-htp\20261114T130003Z\qnn-profile.txt
+  runs\qnn-htp\20261114T130003Z\htp.perfetto-trace
+
+Clock alignment matters: qprof uses ARM CNTVCT ticks times 52.08333 ns;
+QNN uses MONOTONIC microseconds and Perfetto uses BOOTTIME nanoseconds.
+On this boot, qprof's timestamp base is approximately 6.273426 seconds ahead
+of BOOTTIME. clock_probe.cpp samples the clocks before/after each workload.
+The final run's aligned-qprof folder adds BootTimestamp_ns and QnnPhase
+columns using those paired measurements. Raw CSVs are preserved in qprof.
+NPU utilization increases during the marked workload and decreases afterward.
+This confirms useful correlation, not calibration of every hardware counter.
+The offset must be measured again after reboot; do not reuse a fixed offset.
+
+Repeat a bounded capture from this workspace:
+  python -u .\run_htp_profile.py
+The runner uses the already staged model/libraries/clock probe, starts the
+isolated profiler, captures ten seconds around the workload, saves commands
+and device metadata in a new UTC-named directory, then stops its server and
+removes its ADB forward. It preserves raw captures and clock probes; the
+aligned CSVs and analysis.json above were generated in a separate analysis
+step. Keep the phone connected for the entire run.
+
+This is a functional profiling test with observer overhead and default
+power policy, not a throughput comparison. Source operations may be fused,
+so detailed profiling does not time each original layer independently.
+GPU counter validation and external GPU/HTP DMA-BUF import remain open.
+No claim of zero-copy execution is established by these tests.
+
+Baseline versions, installed APK hashes and local artifact hashes:
+  baseline-manifest-2026-11-14.json
+
+GPU/HTP access
+--------------
+/dev/kgsl-3d0, /dev/fastrpc-cdsp and other FastRPC nodes exist.
+GPU model reports Adreno840v2. GPU frequency and busy-time nodes are readable.
+HTP workload execution is verified above. GPU workload execution and external
+GPU/HTP DMA-BUF import remain untested. GPU counter capture is qualified above.
+
+Security and power
+------------------
+SELinux is Enforcing. KernelSU modules are disabled. Image-partition
+protection is enabled. Tracing is off after the short captures. The temporary
+profiler/debugger processes have stopped. No CPU/GPU clock or thermal
+settings were changed. The phone remained on the same boot throughout.
+Cold-start logo repetitions predate rooting and remain unresolved. Keep
+this limitation separate from successful automatic root restoration.
+
+Raw commands, outputs, and checks: capability-check-2026-11-14.json
+
+Power telemetry validation - 2026-11-14
+--------------------------------------
+Battery voltage/current responded to a short CPU workload. Samsung battery
+power_now/power_avg are ISYS system current in mA, confirmed from installed
+drivers; do not treat these as watts. Mean ISYS: idle 95 mA, CPU 1339 mA,
+recovery 97 mA. This is not an externally calibrated power measurement.
+Perfetto returned battery tracks but no hardware rail energy in both a
+30-second mixed trace and an eight-second power-only confirmation capture.
+No registered PowerStats HAL was found. The batt.power_mw trace is calculated
+from absolute battery voltage times current, not a separate hardware meter.
+With the battery cell removed and both Monsoon and PC USB connected, battery
+flow alone does not establish total input power. Both supply paths need to be
+accounted for before reporting whole-device watts or inference energy.
+Detailed findings and raw evidence: runs\power-check\assessment.txt
+Machine-readable statistics/inventory: runs\power-check\summary.json
+Power settings were unchanged; same boot, root retained, SELinux Enforcing.
+
+USB-independent logging
+-----------------------
+power_logger.cpp and power-logger.sh implement the installed native background
+collector at /data/local/tmp/s26-power-logger. It logs locally at 1 Hz by default,
+including USB connection state, and survives the launching ADB session ending.
+S26 Power (dev.s26.powerlogger) provides on-phone Start/Stop and live readings.
+Both APK and ADB control the same collector with init delay and run duration.
+Normal sleep is preserved; gaps are flagged and timed runs stop automatically.
+No boot autostart or wake lock is installed. Start/stop/retrieve instructions:
+  power-logger.txt

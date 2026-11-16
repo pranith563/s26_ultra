@@ -1,0 +1,3 @@
+"name","value","severity"
+"entity_state_residency_invalid",1,"error"
+"power_rail_empty_packet",1,"error"

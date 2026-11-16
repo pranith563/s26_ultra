@@ -1,0 +1,12 @@
+Cached HealthInfo:
+  ac: 0 usb: 1 wireless: 0 dock: 0 current_max: 0 voltage_max: 0
+  status: 2 health: 2 present: 1
+  level: 59 voltage: 3953 temp: 269
+  current now: 479687
+  Full charge: 5000000
+Real-time Values:
+  current now: 12500
+  current avg: 459375
+  charge counter: 2949090
+
+getHealthInfo -> HealthInfo{chargerAcOnline: false, chargerUsbOnline: true, chargerWirelessOnline: false, chargerDockOnline: false, maxChargingCurrentMicroamps: 0, maxChargingVoltageMicrovolts: 0, batteryStatus: CHARGING, batteryHealth: GOOD, batteryPresent: true, batteryLevel: 59, batteryVoltageMillivolts: 3953, batteryTemperatureTenthsCelsius: 269, batteryCurrentMicroamps: 12500, batteryCycleCount: 0, batteryFullChargeUah: 5000000, batteryChargeCounterUah: 2949090, batteryTechnology: Li-ion, batteryCurrentAverageMicroamps: 459375, diskStats: [], storageInfos: [], batteryCapacityLevel: UNSUPPORTED, batteryChargeTimeToFullNowSeconds: 14337, batteryFullChargeDesignCapacityUah: 5000000, chargingState: INVALID, chargingPolicy: INVALID, batteryHealthData: (null), hingeInfos: (null)}

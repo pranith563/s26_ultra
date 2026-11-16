@@ -1,0 +1,8 @@
+--------- beginning of crash
+01-09 21:49:23.821 16725 16725 F linker  : CANNOT LINK EXECUTABLE "/data/local/tmp/s26-qprof-2.26.10.6/bins/qmonitor-grpc-server": "/vendor/lib64/libbinderdebug.so" has unexpected e_type: 1
+01-09 21:50:12.327 16758 16758 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 16758 (qprof), pid 16758 (qprof)
+01-09 21:50:12.328 16758 16758 F libc    : Crash due to signal: crash_dump helper failed to exec, or was killed
+01-09 21:52:55.133 16820 16820 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 16820 (qmonitor-grpc-s), pid 16820 (qmonitor-grpc-s)
+01-09 21:52:55.137 16820 16820 F libc    : Crash due to signal: crash_dump helper failed to exec, or was killed
+01-09 21:52:55.436 16837 16837 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 16837 (qprof), pid 16837 (qprof)
+01-09 21:52:55.437 16837 16837 F libc    : Crash due to signal: crash_dump helper failed to exec, or was killed

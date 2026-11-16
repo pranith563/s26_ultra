@@ -1,0 +1,111 @@
+Input Log File Location: runs\qnn-htp\output_htp\qnn-profiling-data_0.log
+Log File Created: Fri Jan  9 22:10:05 2026
+Time Scale: 1e-06
+Epoch Timestamp: 1767976805392553 Steady Clock Timestamp: 3906426057
+Generated using: 
+qnn-profile-viewer: v2.44.0.260225143659
+qnn-net-run: v2.44.0.260225143659
+Backend: v2.44.0.260225143659
+
+Qnn Init/Prepare/Finalize/De-Init/Execute/Lib-Load Statistics:
+------------------------------------------------------------
+Init Stats:
+-----------
+    NetRun: 190562 us
+
+Compose Graphs Stats:
+--------------
+    NetRun: 172754 us
+
+Finalize Stats:
+---------------
+Graph 0 (convReluModel):
+    NetRun: 17605 us
+    Backend (RPC (finalize) time): 2931 us
+    Backend (QNN accelerator (finalize) time): 2527 us
+    Backend (Accelerator (finalize) time): 2329 us
+    Backend (QNN (finalize) time): 17542 us
+        Graph Preparation Initializing: 244 us
+        Graph Optimizations: 6215 us
+        Post Graph Optimization: 473 us
+        Graph Sequencing for Target: 1727 us
+        VTCM Allocation: 480 us
+        Parallelization Optimization: 74 us
+        Finalizing Graph Sequence: 474 us
+        Completion: 59 us
+
+De-Init Stats:
+--------------
+    NetRun: 14171 us
+    Backend (RPC (deinit) time): 2125 us
+    Backend (QNN Accelerator (deinit) time): 1513 us
+    Backend (Accelerator (deinit) time): 1466 us
+    Backend (QNN (deinit) time): 14120 us
+
+Execute Stats (Overall):
+------------------------
+    NetRun IPS (includes IO and misc. time): 38.6563 inf/sec 
+
+Execute Stats (Average):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (convReluModel):
+    NetRun: 5002 us
+    Backend (Number of HVX threads used): 8 count
+    Backend (RPC (execute) time): 4792 us
+    Backend (QNN accelerator (execute) time): 4035 us
+    Backend (Num times yield occured): 0 count
+    Backend (Time for initial VTCM acquire): 3136 us
+    Backend (Time for HVX + HMX power on and acquire): 28808 us
+    Backend (Accelerator (execute) time (cycles)): 372401 cycles
+        Input OpId_2 (cycles): 0 cycles
+        InceptionV3_InceptionV3_Conv2d_1a_3x3_Conv2D:OpId_21 (cycles): 0 cycles
+        InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu:OpId_24 (cycles): 141777 cycles
+        Output OpId_3 (cycles): 230624 cycles
+    Backend (Accelerator (execute) time): 3367 us
+    Backend (Accelerator (execute excluding wait) time): 667 us
+    Backend (QNN (execute) time): 4965 us
+
+Execute Stats (Min):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (convReluModel):
+    NetRun: 3009 us
+    Backend (Number of HVX threads used): 8 count
+    Backend (RPC (execute) time): 2906 us
+    Backend (QNN accelerator (execute) time): 2198 us
+    Backend (Num times yield occured): 0 count
+    Backend (Time for initial VTCM acquire): 3837 us
+    Backend (Time for HVX + HMX power on and acquire): 21 us
+    Backend (Accelerator (execute) time (cycles)): 342104 cycles
+        Input OpId_2 (cycles): 0 cycles
+        InceptionV3_InceptionV3_Conv2d_1a_3x3_Conv2D:OpId_21 (cycles): 0 cycles
+        InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu:OpId_24 (cycles): 116633 cycles
+        Output OpId_3 (cycles): 225471 cycles
+    Backend (Accelerator (execute) time): 1843 us
+    Backend (Accelerator (execute excluding wait) time): 656 us
+    Backend (QNN (execute) time): 2974 us
+
+Execute Stats (Max):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (convReluModel):
+    NetRun: 6995 us
+    Backend (Number of HVX threads used): 8 count
+    Backend (RPC (execute) time): 6678 us
+    Backend (QNN accelerator (execute) time): 5873 us
+    Backend (Num times yield occured): 0 count
+    Backend (Time for initial VTCM acquire): 2436 us
+    Backend (Time for HVX + HMX power on and acquire): 57595 us
+    Backend (Accelerator (execute) time (cycles)): 402698 cycles
+        Input OpId_2 (cycles): 0 cycles
+        InceptionV3_InceptionV3_Conv2d_1a_3x3_Conv2D:OpId_21 (cycles): 0 cycles
+        InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu:OpId_24 (cycles): 166921 cycles
+        Output OpId_3 (cycles): 235777 cycles
+    Backend (Accelerator (execute) time): 4891 us
+    Backend (Accelerator (execute excluding wait) time): 678 us
+    Backend (QNN (execute) time): 6956 us
+

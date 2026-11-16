@@ -1,0 +1,59 @@
+[
+  {
+    "args": [
+      "shell",
+      "su -c 'sh /data/local/tmp/s26-power-logger/control.sh stop'"
+    ],
+    "code": 0,
+    "stdout": "Already stopped\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "push",
+      "power-app\\build\\assets\\power-logger",
+      "/data/local/tmp/s26-power-logger/power-logger"
+    ],
+    "code": 0,
+    "stdout": "",
+    "stderr": "power-app\\build\\assets\\power-logger: 1 file pushed, 0 skipped. 146.9 MB/s (985304 bytes in 0.006s)\n"
+  },
+  {
+    "args": [
+      "push",
+      "power-app\\build\\assets\\control.sh",
+      "/data/local/tmp/s26-power-logger/control.sh"
+    ],
+    "code": 0,
+    "stdout": "",
+    "stderr": "power-app\\build\\assets\\control.sh: 1 file pushed, 0 skipped. 11.3 MB/s (2282 bytes in 0.000s)\n"
+  },
+  {
+    "args": [
+      "shell",
+      "chmod 755 /data/local/tmp/s26-power-logger/power-logger"
+    ],
+    "code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "install",
+      "-r",
+      "power-app\\build\\S26-Power.apk"
+    ],
+    "code": 0,
+    "stdout": "Performing Incremental Install\nPerforming Streamed Install\nSuccess\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "shell",
+      "am start -n dev.s26.powerlogger/.MainActivity"
+    ],
+    "code": 0,
+    "stdout": "Starting: Intent { cmp=dev.s26.powerlogger/.MainActivity }\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,24 @@
+LKM
+Working [Jailbreak mode]
+Version: 32727-6
+Custom
+Manager version
+v3.3.1-47-gdbb73665 (32727-6)
+Kernel version
+6.12.30-android16-5-p595aaaa-abogkiS948BXXU1AZAB-4k
+Device model
+Samsung Galaxy S26 Ultra
+Fingerprint
+samsung/m3qxins/m3q:16/BP4A.251205.006/S948BXXU1AZAB_OXM1AZAB:user/release-keys
+SELinux status
+Enforcing
+Seccomp status
+Filter
+Support Us
+KernelSU is, and always will be, free, and open source. However, you can show us that you care by making a donation.
+KernelSU
+Home
+2
+Superuser
+Module
+Settings

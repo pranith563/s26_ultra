@@ -1,0 +1,2 @@
+Secured UI process 7592 started, waiting for exit
+Secured UI process 7592 finished, exitcode is 0

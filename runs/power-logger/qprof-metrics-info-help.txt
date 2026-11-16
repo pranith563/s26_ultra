@@ -1,0 +1,5 @@
+It fetches the metrics information based on the capabilities' name  
+[0mExample Usage : qprof --metrics-info --capabilities-list <capability1_name> <capability2_name> 
+[0mDescription:
+[0m-clist        [--capabilities-list]    (Mandatory) : Specifies one or more capabilities to be used when fetching metrics information.
+[0m

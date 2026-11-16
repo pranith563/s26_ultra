@@ -1,0 +1,63 @@
+{
+  "host_utc": "2026-11-14T13:43:03.356941+00:00",
+  "commands": [
+    {
+      "arguments": [
+        "shell",
+        "mkdir -p /data/local/tmp/s26-power-logger"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "push",
+        "runs\\power-logger\\power-logger",
+        "/data/local/tmp/s26-power-logger/power-logger"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "runs\\power-logger\\power-logger: 1 file pushed, 0 skipped. 163.6 MB/s (979280 bytes in 0.006s)\n"
+    },
+    {
+      "arguments": [
+        "push",
+        "runs\\power-logger\\power-logger.sh",
+        "/data/local/tmp/s26-power-logger/control.sh"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "runs\\power-logger\\power-logger.sh: 1 file pushed, 0 skipped. 0.3 MB/s (1749 bytes in 0.006s)\n"
+    },
+    {
+      "arguments": [
+        "shell",
+        "chmod 755 /data/local/tmp/s26-power-logger/power-logger"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "shell",
+        "sh -n /data/local/tmp/s26-power-logger/control.sh"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "shell",
+        "su",
+        "-c",
+        "sh /data/local/tmp/s26-power-logger/control.sh start; r=$?; echo CONTROL_EXIT=$r"
+      ],
+      "exit_code": 0,
+      "stdout": "Started: PID 19644, interval 1000 ms\n/data/local/tmp/s26-power-logger/power-f23a96a6-fe8e-4804-8076-32df8aa2f25e-6999427890191.csv\nCONTROL_EXIT=0\n",
+      "stderr": ""
+    }
+  ]
+}

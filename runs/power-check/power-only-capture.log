@@ -1,0 +1,3 @@
+[90m[506.479]    perfetto_cmd.cc:1048[0m [39mConnected to the Perfetto traced service, TTL: 8s[0m
+[90m[514.488]    perfetto_cmd.cc:1211[0m [39mWrote 2409 bytes into /data/misc/perfetto-traces/s26-power-only.perfetto-trace[0m
+PERFETTO_EXIT=0

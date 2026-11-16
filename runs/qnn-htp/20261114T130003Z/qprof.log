@@ -1,0 +1,5 @@
+Using default Configuration for capability profiler:apps-proc-cpu-metrics
+Using default Configuration for capability profiler:apps-proc-mem-metrics
+Using default Configuration for capability profiler:apps-proc-thermal-metrics
+Using default Configuration for capability profiler:nsp-dsp-metrics
+Please check profiling results at C:\Users\prani\s26_ultra\runs\qnn-htp\20261114T130003Z\qprof\

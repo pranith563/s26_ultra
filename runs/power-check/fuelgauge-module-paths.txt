@@ -1,0 +1,23 @@
+/sys/module/max77775_fuelgauge
+max77775_charger 86016 0 - Live 0x0000000000000000 (O)
+pdic_max77775 245760 1 max77775_charger, Live 0x0000000000000000 (O)
+max77775_fuelgauge 65536 0 - Live 0x0000000000000000 (O)
+sec_battery 507904 7 max77775_charger,s2miw06_charger,sc8583_charger,cps4059_charger,sec_direct_charger,sm5446_charger,max77775_fuelgauge, Live 0x0000000000000000 (O)
+sec_pd 57344 5 sec_direct_charger,sc8583_charger,sm5446_charger,pdic_max77775,sec_battery,[permanent], Live 0x0000000000000000 (O)
+usb_typec_manager 49152 8 pdic_max77775,msm_drm,usb_notifier_module,sec_battery,dwc3_msm,sec_common_fn,usb_f_ss_mon_gadget,sec_pd, Live 0x0000000000000000 (O)
+mfd_max77775 53248 40 max77775_charger,pdic_max77775,max77775_fuelgauge, Live 0x0000000000000000 (O)
+pdic_notifier_module 53248 3 pdic_max77775,mfd_max77775,usb_typec_manager, Live 0x0000000000000000 (O)
+common_muic 32768 4 pdic_max77775,usb_notifier_module,sec_battery,usb_typec_manager, Live 0x0000000000000000 (O)
+vbus_notifier 16384 5 pdic_max77775,usb_notifier_module,sec_battery,sec_common_fn,usb_typec_manager, Live 0x0000000000000000 (O)
+if_cb_manager 28672 4 pdic_max77775,msm_drm,dwc3_msm,lvstest, Live 0x0000000000000000 (O)
+sb_core 45056 3 sec_direct_charger,sec_battery,sb_wireless, Live 0x0000000000000000 (O)
+usb_notify_layer 364544 12 max77775_charger,pdic_max77775,usb_notifier_module,dwc3_msm,usb_f_ss_mon_gadget,usb_typec_manager,mfd_max77775,snd_usb_audio_qmi,pdic_notifier_module,common_muic,sec_vibrator_inputff_module,usb_vendor_hook_receiver, Live 0x0000000000000000 (O)
+hall_ic_notifier_module 16384 5 wez02,akm,sec_battery,hall_ic,adsp_factory_module, Live 0x0000000000000000 (O)
+abc 73728 18 machine_dlkm,max77775_charger,pdic_max77775,sm5446_charger,sec_direct_charger,msm_drm,synaptics_s3916t_spi,sec_battery,msm_video,camera,msm_kgsl,usb_typec_manager,mfd_max77775,vib_cs40l26,abc_hub,sec_abc_detect_conn,sec_vibrator_inputff_module,ufs_sec, Live 0x0000000000000000 (O)
+lrw-r--r-- 1 root root    24 2022-01-01 05:30 /vendor/lib/modules -> /vendor_dlkm/lib/modules
+drwxr-xr-x 2 root root 10613 2022-01-01 05:30 /vendor_dlkm/lib/modules
+/vendor_dlkm/lib/modules/max77775-charger.ko
+/vendor_dlkm/lib/modules/max77775-fuelgauge.ko
+/vendor_dlkm/lib/modules/mfd_max77775.ko
+/vendor_dlkm/lib/modules/pdic_max77775.ko
+ls: /odm/lib/modules: No such file or directory

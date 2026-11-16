@@ -1,0 +1,350 @@
+[Info]: Starting qsc-cli version 1.32.0...
+[Info] : Activating license for Qualcomm_Profiler
+[Info] : License activation is successful with Activation Id/s - [ fb80ddc4-e025-11f1-bb98-064291a33d05 ]
+[Info] : Downloading package file for product Qualcomm_Profiler for version 2.26.10.6
+
+[Info] : Downloading... 0%
+[Info] : Downloading... 1%
+[Info] : Downloading... 1%
+[Info] : Downloading... 1%
+[Info] : Downloading... 2%
+[Info] : Downloading... 2%
+[Info] : Downloading... 2%
+[Info] : Downloading... 3%
+[Info] : Downloading... 3%
+[Info] : Downloading... 4%
+[Info] : Downloading... 4%
+[Info] : Downloading... 4%
+[Info] : Downloading... 5%
+[Info] : Downloading... 5%
+[Info] : Downloading... 5%
+[Info] : Downloading... 6%
+[Info] : Downloading... 6%
+[Info] : Downloading... 7%
+[Info] : Downloading... 7%
+[Info] : Downloading... 7%
+[Info] : Downloading... 8%
+[Info] : Downloading... 8%
+[Info] : Downloading... 8%
+[Info] : Downloading... 9%
+[Info] : Downloading... 9%
+[Info] : Downloading... 9%
+[Info] : Downloading... 10%
+[Info] : Downloading... 10%
+[Info] : Downloading... 10%
+[Info] : Downloading... 10%
+[Info] : Downloading... 11%
+[Info] : Downloading... 11%
+[Info] : Downloading... 12%
+[Info] : Downloading... 12%
+[Info] : Downloading... 12%
+[Info] : Downloading... 13%
+[Info] : Downloading... 13%
+[Info] : Downloading... 14%
+[Info] : Downloading... 14%
+[Info] : Downloading... 15%
+[Info] : Downloading... 15%
+[Info] : Downloading... 15%
+[Info] : Downloading... 16%
+[Info] : Downloading... 16%
+[Info] : Downloading... 16%
+[Info] : Downloading... 17%
+[Info] : Downloading... 17%
+[Info] : Downloading... 18%
+[Info] : Downloading... 18%
+[Info] : Downloading... 18%
+[Info] : Downloading... 18%
+[Info] : Downloading... 19%
+[Info] : Downloading... 19%
+[Info] : Downloading... 19%
+[Info] : Downloading... 20%
+[Info] : Downloading... 20%
+[Info] : Downloading... 21%
+[Info] : Downloading... 21%
+[Info] : Downloading... 21%
+[Info] : Downloading... 21%
+[Info] : Downloading... 22%
+[Info] : Downloading... 22%
+[Info] : Downloading... 23%
+[Info] : Downloading... 23%
+[Info] : Downloading... 23%
+[Info] : Downloading... 24%
+[Info] : Downloading... 24%
+[Info] : Downloading... 25%
+[Info] : Downloading... 25%
+[Info] : Downloading... 25%
+[Info] : Downloading... 26%
+[Info] : Downloading... 26%
+[Info] : Downloading... 27%
+[Info] : Downloading... 27%
+[Info] : Downloading... 27%
+[Info] : Downloading... 28%
+[Info] : Downloading... 28%
+[Info] : Downloading... 29%
+[Info] : Downloading... 29%
+[Info] : Downloading... 29%
+[Info] : Downloading... 30%
+[Info] : Downloading... 30%
+[Info] : Downloading... 30%
+[Info] : Downloading... 31%
+[Info] : Downloading... 31%
+[Info] : Downloading... 32%
+[Info] : Downloading... 32%
+[Info] : Downloading... 32%
+[Info] : Downloading... 33%
+[Info] : Downloading... 33%
+[Info] : Downloading... 33%
+[Info] : Downloading... 34%
+[Info] : Downloading... 34%
+[Info] : Downloading... 34%
+[Info] : Downloading... 35%
+[Info] : Downloading... 35%
+[Info] : Downloading... 35%
+[Info] : Downloading... 36%
+[Info] : Downloading... 36%
+[Info] : Downloading... 36%
+[Info] : Downloading... 37%
+[Info] : Downloading... 37%
+[Info] : Downloading... 37%
+[Info] : Downloading... 38%
+[Info] : Downloading... 38%
+[Info] : Downloading... 39%
+[Info] : Downloading... 39%
+[Info] : Downloading... 40%
+[Info] : Downloading... 40%
+[Info] : Downloading... 40%
+[Info] : Downloading... 41%
+[Info] : Downloading... 41%
+[Info] : Downloading... 41%
+[Info] : Downloading... 42%
+[Info] : Downloading... 42%
+[Info] : Downloading... 42%
+[Info] : Downloading... 43%
+[Info] : Downloading... 43%
+[Info] : Downloading... 43%
+[Info] : Downloading... 43%
+[Info] : Downloading... 44%
+[Info] : Downloading... 44%
+[Info] : Downloading... 45%
+[Info] : Downloading... 45%
+[Info] : Downloading... 45%
+[Info] : Downloading... 46%
+[Info] : Downloading... 46%
+[Info] : Downloading... 47%
+[Info] : Downloading... 47%
+[Info] : Downloading... 47%
+[Info] : Downloading... 48%
+[Info] : Downloading... 48%
+[Info] : Downloading... 48%
+[Info] : Downloading... 49%
+[Info] : Downloading... 49%
+[Info] : Downloading... 49%
+[Info] : Downloading... 50%
+[Info] : Downloading... 50%
+[Info] : Downloading... 51%
+[Info] : Downloading... 51%
+[Info] : Downloading... 51%
+[Info] : Downloading... 52%
+[Info] : Downloading... 52%
+[Info] : Downloading... 52%
+[Info] : Downloading... 53%
+[Info] : Downloading... 53%
+[Info] : Downloading... 54%
+[Info] : Downloading... 54%
+[Info] : Downloading... 54%
+[Info] : Downloading... 54%
+[Info] : Downloading... 55%
+[Info] : Downloading... 55%
+[Info] : Downloading... 56%
+[Info] : Downloading... 56%
+[Info] : Downloading... 56%
+[Info] : Downloading... 57%
+[Info] : Downloading... 57%
+[Info] : Downloading... 58%
+[Info] : Downloading... 58%
+[Info] : Downloading... 58%
+[Info] : Downloading... 59%
+[Info] : Downloading... 59%
+[Info] : Downloading... 60%
+[Info] : Downloading... 60%
+[Info] : Downloading... 60%
+[Info] : Downloading... 61%
+[Info] : Downloading... 61%
+[Info] : Downloading... 61%
+[Info] : Downloading... 62%
+[Info] : Downloading... 62%
+[Info] : Downloading... 63%
+[Info] : Downloading... 63%
+[Info] : Downloading... 63%
+[Info] : Downloading... 64%
+[Info] : Downloading... 64%
+[Info] : Downloading... 64%
+[Info] : Downloading... 65%
+[Info] : Downloading... 65%
+[Info] : Downloading... 66%
+[Info] : Downloading... 66%
+[Info] : Downloading... 66%
+[Info] : Downloading... 67%
+[Info] : Downloading... 67%
+[Info] : Downloading... 67%
+[Info] : Downloading... 68%
+[Info] : Downloading... 68%
+[Info] : Downloading... 69%
+[Info] : Downloading... 69%
+[Info] : Downloading... 70%
+[Info] : Downloading... 70%
+[Info] : Downloading... 70%
+[Info] : Downloading... 71%
+[Info] : Downloading... 71%
+[Info] : Downloading... 72%
+[Info] : Downloading... 72%
+[Info] : Downloading... 72%
+[Info] : Downloading... 73%
+[Info] : Downloading... 73%
+[Info] : Downloading... 73%
+[Info] : Downloading... 74%
+[Info] : Downloading... 74%
+[Info] : Downloading... 75%
+[Info] : Downloading... 75%
+[Info] : Downloading... 75%
+[Info] : Downloading... 75%
+[Info] : Downloading... 76%
+[Info] : Downloading... 76%
+[Info] : Downloading... 76%
+[Info] : Downloading... 77%
+[Info] : Downloading... 77%
+[Info] : Downloading... 77%
+[Info] : Downloading... 78%
+[Info] : Downloading... 78%
+[Info] : Downloading... 79%
+[Info] : Downloading... 79%
+[Info] : Downloading... 79%
+[Info] : Downloading... 80%
+[Info] : Downloading... 80%
+[Info] : Downloading... 81%
+[Info] : Downloading... 81%
+[Info] : Downloading... 81%
+[Info] : Downloading... 82%
+[Info] : Downloading... 82%
+[Info] : Downloading... 82%
+[Info] : Downloading... 83%
+[Info] : Downloading... 83%
+[Info] : Downloading... 84%
+[Info] : Downloading... 84%
+[Info] : Downloading... 84%
+[Info] : Downloading... 85%
+[Info] : Downloading... 85%
+[Info] : Downloading... 85%
+[Info] : Downloading... 86%
+[Info] : Downloading... 86%
+[Info] : Downloading... 86%
+[Info] : Downloading... 87%
+[Info] : Downloading... 87%
+[Info] : Downloading... 88%
+[Info] : Downloading... 88%
+[Info] : Downloading... 88%
+[Info] : Downloading... 89%
+[Info] : Downloading... 89%
+[Info] : Downloading... 89%
+[Info] : Downloading... 89%
+[Info] : Downloading... 90%
+[Info] : Downloading... 90%
+[Info] : Downloading... 91%
+[Info] : Downloading... 91%
+[Info] : Downloading... 92%
+[Info] : Downloading... 92%
+[Info] : Downloading... 92%
+[Info] : Downloading... 93%
+[Info] : Downloading... 93%
+[Info] : Downloading... 94%
+[Info] : Downloading... 94%
+[Info] : Downloading... 94%
+[Info] : Downloading... 95%
+[Info] : Downloading... 95%
+[Info] : Downloading... 95%
+[Info] : Downloading... 96%
+[Info] : Downloading... 96%
+[Info] : Downloading... 97%
+[Info] : Downloading... 97%
+[Info] : Downloading... 97%
+[Info] : Downloading... 98%
+[Info] : Downloading... 98%
+[Info] : Downloading... 99%
+[Info] : Downloading... 99%
+[Info] : Downloading... 100%
+[Info] : Downloading... 100%
+[Info] : Downloaded package file to C:\Users\prani\AppData\Local\Temp\QIKCache\5063cafe-f409-11ec-aebb-063166a9270b\1a37faa1-d87c-11f1-bb98-064291a33d05\Qualcomm_Profiler.2.26.10.6.Windows-AnyCPU.exe
+[Info] : Step 1 of 7: Checking environment
+[Info] : Step 2 of 7: Checking previous version
+[Info] : Step 3 of 7: Checking dependencies
+[Info] : Step 4 of 7: Preparing system
+[Info] : Step 5 of 7: Extracting files
+[Info] : Step 6 of 7: Configuring system
+[Info] : Downloading package file for component: Qualcomm_Profiler_CLI for version 2.26.10.6
+[Info] : Downloaded package file to C:\Users\prani\AppData\Local\Temp\QIKCache\143f7942-d87c-11f1-bb98-064291a33d05\Qualcomm_Profiler_CLI.2.26.10.6.Windows-AnyCPU.qik
+------------------------------------------------------
+    [Info] : Installing component Qualcomm_Profiler_CLI
+    [Info] : Installing package Qualcomm_Profiler_CLI.2.26.10.6.Windows-AnyCPU.qik
+    [Info] : Step 1 of 7: Checking environment
+    [Info] : Step 2 of 7: Checking previous version
+    [Info] : Step 3 of 7: Checking dependencies
+    [Info] : Step 4 of 7: Preparing system
+    [Info] : Step 5 of 7: Extracting files
+    [Info] : Step 6 of 7: Configuring system
+    [Info] : Step 7 of 7: Finishing installation
+    [Info] : SUCCESS: Installed Qualcomm_Profiler_CLI at C:\Program Files (x86)\Qualcomm\QualcommProfiler\CLI\host-windows
+    [Info] : Log File Location: file://C:/Users/prani/AppData/Local/Temp/Qualcomm/qik/logs/d8c2fd7a-e20b-4a1c-af34-665f2ba864b0/qiktool.20261114.4.log
+
+------------------------------------------------------
+[Info] : Downloading package file for component: Qualcomm_Profiler_QCP for version 2.26.10.4
+[Info] : Downloaded package file to C:\Users\prani\AppData\Local\Temp\QIKCache\e2d4bdf8-d87c-11f1-bb98-064291a33d05\Qualcomm_Profiler_QCP.2.26.10.4.Windows-x86.qik
+------------------------------------------------------
+    [Info] : Installing component Qualcomm_Profiler_QCP
+    [Info] : Installing package Qualcomm_Profiler_QCP.2.26.10.4.Windows-x86.qik
+    [Info] : Step 1 of 7: Checking environment
+    [Info] : Step 2 of 7: Checking previous version
+    [Info] : Step 3 of 7: Checking dependencies
+    [Info] : Step 4 of 7: Preparing system
+    [Info] : Step 5 of 7: Extracting files
+    [Info] : Step 6 of 7: Configuring system
+    [Info] : Step 7 of 7: Finishing installation
+    [Info] : SUCCESS: Installed Qualcomm_Profiler_QCP at C:\Program Files (x86)\Qualcomm\QualcommProfiler\GUI
+    [Info] : Log File Location: file://C:/Users/prani/AppData/Local/Temp/Qualcomm/qik/logs/d8c2fd7a-e20b-4a1c-af34-665f2ba864b0/qiktool.20261114.6.log
+
+------------------------------------------------------
+[Info] : Downloading package file for component: Qualcomm_Profiler_API for version 2.26.10.6
+[Info] : Downloaded package file to C:\Users\prani\AppData\Local\Temp\QIKCache\15cfbfd3-d87c-11f1-bb98-064291a33d05\Qualcomm_Profiler_API.2.26.10.6.Windows-AnyCPU.qik
+------------------------------------------------------
+    [Info] : Installing component Qualcomm_Profiler_API
+    [Info] : Installing package Qualcomm_Profiler_API.2.26.10.6.Windows-AnyCPU.qik
+    [Info] : Step 1 of 7: Checking environment
+    [Info] : Step 2 of 7: Checking previous version
+    [Info] : Step 3 of 7: Checking dependencies
+    [Info] : Step 4 of 7: Preparing system
+    [Info] : Step 5 of 7: Extracting files
+    [Info] : Step 6 of 7: Configuring system
+    [Info] : Step 7 of 7: Finishing installation
+    [Info] : SUCCESS: Installed Qualcomm_Profiler_API at C:\Program Files (x86)\Qualcomm\Shared\QualcommProfiler\API\target-qnx\qnx
+    [Info] : Log File Location: file://C:/Users/prani/AppData/Local/Temp/Qualcomm/qik/logs/d8c2fd7a-e20b-4a1c-af34-665f2ba864b0/qiktool.20261114.8.log
+
+------------------------------------------------------
+[Info] : Downloading package file for component: Qualcomm_Profiler_Utility_App for version 2.26.10.0
+[Info] : Downloaded package file to C:\Users\prani\AppData\Local\Temp\QIKCache\18823484-d87c-11f1-bb98-064291a33d05\Qualcomm_Profiler_Utility_App.2.26.10.0.Windows-AnyCPU.qik
+------------------------------------------------------
+    [Info] : Installing component Qualcomm_Profiler_Utility_App
+    [Info] : Installing package Qualcomm_Profiler_Utility_App.2.26.10.0.Windows-AnyCPU.qik
+    [Info] : Step 1 of 7: Checking environment
+    [Info] : Step 2 of 7: Checking previous version
+    [Info] : Step 3 of 7: Checking dependencies
+    [Info] : Step 4 of 7: Preparing system
+    [Info] : Step 5 of 7: Extracting files
+    [Info] : Step 6 of 7: Configuring system
+    [Info] : Step 7 of 7: Finishing installation
+    [Info] : SUCCESS: Installed Qualcomm_Profiler_Utility_App at C:\Program Files (x86)\Qualcomm\Shared\ProfilerUtilityApp
+    [Info] : Log File Location: file://C:/Users/prani/AppData/Local/Temp/Qualcomm/qik/logs/d8c2fd7a-e20b-4a1c-af34-665f2ba864b0/qiktool.20261114.10.log
+
+------------------------------------------------------
+[Info] : Step 7 of 7: Finishing installation
+[Info] : SUCCESS: Installed Qualcomm_Profiler.Core at C:\Program Files (x86)\Qualcomm\QualcommProfiler
+[Info] : Log File Location: file://C:/Users/prani/AppData/Local/Temp/Qualcomm/qik/logs/d8c2fd7a-e20b-4a1c-af34-665f2ba864b0/qiktool.20261114.2.log
+

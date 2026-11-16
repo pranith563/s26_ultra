@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "method": "Paused only collector with SIGSTOP for 3 s, then SIGCONT; no device suspend or power settings changed.",
+  "flagged_samples": 1,
+  "max_gap_ns": 3916405936,
+  "sampling_gap_threshold": "greater than 1.5 times requested interval",
+  "missing_data_interpolated": false,
+  "no_wake_lock": true
+}

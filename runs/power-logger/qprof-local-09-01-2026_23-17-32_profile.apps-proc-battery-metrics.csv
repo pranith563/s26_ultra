@@ -1,0 +1,13 @@
+Timestamp,Metric ID,Metric_Name,Value,pid,tid,ph
+7960115938417,4705,Battery Current,492968.000 micro amperes,,,
+7960115938417,4706,Battery Capacity,59.000 %,,,
+7960115938417,4703,Battery Voltage,3954000.000 micro V,,,
+7960115938417,4708,Battery Temperature,26.700 deg C,,,
+7961119836113,4705,Battery Current,461718.000 micro amperes,,,
+7961119836113,4706,Battery Capacity,59.000 %,,,
+7961119836113,4703,Battery Voltage,3954000.000 micro V,,,
+7961119836113,4708,Battery Temperature,26.700 deg C,,,
+7962124382507,4705,Battery Current,482031.000 micro amperes,,,
+7962124382507,4706,Battery Capacity,59.000 %,,,
+7962124382507,4703,Battery Voltage,3954000.000 micro V,,,
+7962124382507,4708,Battery Temperature,26.700 deg C,,,

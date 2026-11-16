@@ -1,0 +1,4 @@
+Using default Configuration for capability profiler:apps-proc-cpu-metrics
+Using default Configuration for capability profiler:apps-proc-mem-metrics
+Using default Configuration for capability profiler:apps-proc-thermal-metrics
+Please check profiling results at C:\Users\prani\s26_ultra\runs\qprof-baseline\

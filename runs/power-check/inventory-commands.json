@@ -1,0 +1,27 @@
+{
+  "state": {
+    "command": "id; getenforce; getprop ro.build.fingerprint; cat /proc/sys/kernel/random/boot_id; cat /proc/uptime; dumpsys battery",
+    "transport_exit": 0,
+    "file": "state.txt"
+  },
+  "power-supply": {
+    "command": "for p in /sys/class/power_supply/*; do echo \"=== $p ===\"; readlink -f \"$p\"; ls -1 \"$p\"; echo UEVENT; cat \"$p/uevent\"; done",
+    "transport_exit": 0,
+    "file": "power-supply.txt"
+  },
+  "monitor-interfaces": {
+    "command": "for p in /sys/class/hwmon/* /sys/bus/iio/devices/iio:device*; do [ -e \"$p\" ] || continue; echo \"=== $p ===\"; cat \"$p/name\"; ls -1 \"$p\"; done; echo DEBUGFS; ls -1 /sys/kernel/debug; echo PMIC_PATHS; find /sys/devices/platform -maxdepth 3 -type d | grep -Ei \"pmic|power.?monitor|power.?stat|qcom,spmi|odpm|qti.*power|energy\"",
+    "transport_exit": 0,
+    "file": "monitor-interfaces.txt"
+  },
+  "services": {
+    "command": "service list | grep -Ei \"power|health|thermal\"; dumpsys -l | grep -Ei \"power|health|thermal\"; timeout -s KILL 5 lshal | grep -Ei \"power.stats|health\"",
+    "transport_exit": 0,
+    "file": "services.txt"
+  },
+  "perfetto-sources": {
+    "command": "perfetto --query",
+    "transport_exit": 0,
+    "file": "perfetto-sources.txt"
+  }
+}

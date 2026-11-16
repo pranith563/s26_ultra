@@ -1,0 +1,121 @@
+S26 Ultra: root and restart guide
+Prepared 16 November 2026 from the verified 14 November baseline and project files.
+No phone was connected to ADB during this report; no new reboot test was run.
+
+HOW ROOT WORKS
+
+The phone starts its normal signed Samsung firmware with the bootloader locked.
+Root My Galaxy Ultra uses its DirtyFrag route to establish temporary KernelSU
+root in the running system. KernelSU manages which apps and ADB Shell can use su.
+A full reboot or loss of power removes active root. Root on boot then attempts
+to restore it after Android starts. This is automatic restoration of temporary
+root, not a bootloader unlock or a permanently flashed rooted boot image.
+
+The APKs, settings and saved files survive an ordinary restart. Running root
+processes, profiling sessions and measurement runs do not. USB disconnection
+alone does not remove root while the phone remains powered.
+
+TESTED BASELINE
+
+Phone: SM-S948B/DS; firmware S948BXXU1AZAB; Android 16 / One UI 8.5.
+Kernel: Android 16 / Linux 6.12.30 family; January 2026 security patch.
+Root My Galaxy Ultra: 1.4.1, package dev.experimental.azhlroot.
+KernelSU manager: v3.3.1-47-gdbb73665; driver/UAPI 32727/6.
+Manager status when working: Working [Jailbreak mode].
+Last verified security state: bootloader locked, Knox warranty bit 0,
+SELinux Enforcing. These are recorded observations, not future guarantees.
+
+Keep these tested settings:
+  Root on boot: ON
+  Root before first unlock: OFF
+  Auto Soft reboot: OFF
+  Disable KSU modules: ON (no modules installed)
+  Protect image partitions: ON
+  Root My Galaxy Ultra battery optimization exemption: enabled
+  Root grants: Root My Galaxy Ultra, Shell, and S26 Power
+
+One initial automatic reboot test and five additional full reboot tests passed
+without opening the rooting app manually. The five additional tests took about
+40-44 seconds each from reboot request through root verification.
+
+Automatic root also returned after the cold power cycle, but a clean cold start
+was NOT demonstrated. You reported 3-5 Samsung-logo repetitions before Android
+eventually started. You had observed this before rooting; its cause is unconfirmed.
+
+NORMAL COLD-START CHECKLIST
+
+1. For a planned shutdown, stop captures/workloads and shut Android down normally
+   before disabling Monsoon Vout. Sudden power loss can lose recent log writes.
+2. With Vout disabled and the existing wiring secured, confirm 3.90 V. Connect
+   the PHONE'S USB cable to this PC before enabling Vout. This is the startup
+   order that worked in your test; it is separate from the HVPM control USB.
+3. Enable Vout and check that the HVPM main LED stays green. Press the phone's
+   Side button if needed. If the LED turns red/amber, disable Vout and stop
+   retrying until the power path is checked. Do not raise voltage to fix this.
+4. Wait for stable Android startup, unlock the phone once, and allow automatic
+   root restoration to finish. The before-first-unlock option is OFF.
+5. Open KernelSU and look for Working [Jailbreak mode], or verify from the PC:
+
+   adb -s RZGL21DRL6B shell su -c id
+
+   Expected output includes uid=0(root), normally context=u:r:ksu:s0.
+   Optional baseline check:
+
+   adb -s RZGL21DRL6B shell getenforce
+
+   Expected: Enforcing. "adb root" failing on this production build is normal;
+   use su for commands requiring root. Do not rerun the exploit when su works.
+6. Start a NEW S26 Power measurement and relaunch the workload/profiler you need.
+   S26 Power and qprof are not configured to restart captures automatically.
+   Disconnect the phone USB only after Android, root and the measurement are
+   ready. Leave Monsoon powered. USB-off operation after boot was tested; a
+   reliable USB-free cold start was not established.
+
+S26 Power example: 10 seconds initialization, 60 seconds run, 1000 ms sampling:
+
+adb -s RZGL21DRL6B shell "su -c 'sh /data/local/tmp/s26-power-logger/control.sh start 10 60 1000'"
+
+Alternatively set those values in S26 Power and tap Start. Launch your app or
+binary separately. An ADB-launched binary must also be detached from ADB if it
+needs to survive cable removal. Leave the live-reading screen during measurement
+to reduce display overhead. See power-logger.txt for retrieval and sleep handling.
+The phone logger does not replace Monsoon's external measurement.
+
+IF ROOT DOES NOT RETURN
+
+An early "su: inaccessible or not found" can occur before restoration completes;
+this happened in the successful tests. Unlock once and allow a minute or two
+before treating it as a failure. This wait is guidance, not a guaranteed deadline.
+
+Check KernelSU. If it reports Working but ADB/app access fails, check the Shell
+or S26 Power superuser grant, respectively. That is different from missing root.
+
+If KernelSU is not working, open Root My Galaxy Ultra and inspect History/Logs
+and Root on boot. A failed or timed-out exploit needs a full reboot before
+another attempt; do not repeatedly tap Root in the same failed boot.
+
+For a controlled manual retry: turn Root on boot OFF, perform a full reboot,
+unlock, open Root My Galaxy Ultra, keep the KernelSU backend selected and modules
+disabled, and start one root run from Home. Confirm Working and uid=0 before
+turning Root on boot back ON. This DirtyFrag route does not need Shizuku or
+wireless debugging. Opening the KernelSU manager alone does not establish root.
+
+If automatic rooting itself causes repeated freezes/restarts, consult
+module-recovery.txt for disabling the root app and rebooting. Its emergency
+package-disable and Safe Mode procedures have not been tested on this phone.
+The older Monsoon-related startup symptoms must not automatically be attributed
+to root. Do not use patched boot/system flashing as recovery.
+
+Do not casually change firmware, rooting app, manager or backend during an
+experiment. Updates require a new compatibility and recovery check. Reinstallation
+and firmware flashing are not part of the normal restart procedure.
+
+EVIDENCE AND SOURCES
+
+rooting-test-results-2026-11-14.json: manual root and first automatic reboot.
+reliability-results-2026-11-14.json: five additional reboots and cold-cycle result.
+power-logger.txt: installed APK/collector workflow and lack of boot autostart.
+baseline-manifest-2026-11-14.json: saved package and artifact hashes.
+Project documentation for the installed root-app version:
+https://github.com/xorpix/Root-My-Galaxy-Ultra/tree/1.4.1
+https://raw.githubusercontent.com/xorpix/Root-My-Galaxy-Ultra/1.4.1/README.md

@@ -1,0 +1,122 @@
+{
+  "started_utc": "2026-11-14T11:38:08.768140+00:00",
+  "requested_additional_reboots": 5,
+  "baseline_boot_id": "e6c3c977-876f-4bde-8f1c-d0f829d56707",
+  "modules_disabled_at_start": true,
+  "manual_root_launches_during_test": 0,
+  "status": "warm_reboots_passed_cold_root_restored_preexisting_startup_issue_open",
+  "reboots": [
+    {
+      "number": 1,
+      "before_boot_id": "e6c3c977-876f-4bde-8f1c-d0f829d56707",
+      "passed": true,
+      "observed_new_boot_ids": [
+        "825e7db0-2c3d-4b19-abc0-c9b69b148f18"
+      ],
+      "last_root_response": "/system/bin/sh: su: inaccessible or not found",
+      "after_boot_id": "825e7db0-2c3d-4b19-abc0-c9b69b148f18",
+      "root_shell": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0",
+      "automatic_root_state": {
+        "verified": true,
+        "verifiedBoot": "825e7db0-2c3d-4b19-abc0-c9b69b148f18",
+        "broadcastBoot": "825e7db0-2c3d-4b19-abc0-c9b69b148f18",
+        "attemptedBoot": "825e7db0-2c3d-4b19-abc0-c9b69b148f18"
+      },
+      "elapsed_seconds": 40.2
+    },
+    {
+      "number": 2,
+      "before_boot_id": "825e7db0-2c3d-4b19-abc0-c9b69b148f18",
+      "passed": true,
+      "observed_new_boot_ids": [
+        "c9245d35-89bd-49e3-81af-1972a61d1cfb"
+      ],
+      "last_root_response": "/system/bin/sh: su: inaccessible or not found",
+      "after_boot_id": "c9245d35-89bd-49e3-81af-1972a61d1cfb",
+      "root_shell": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0",
+      "automatic_root_state": {
+        "verified": true,
+        "verifiedBoot": "c9245d35-89bd-49e3-81af-1972a61d1cfb",
+        "broadcastBoot": "c9245d35-89bd-49e3-81af-1972a61d1cfb",
+        "attemptedBoot": "c9245d35-89bd-49e3-81af-1972a61d1cfb"
+      },
+      "elapsed_seconds": 40.1
+    },
+    {
+      "number": 3,
+      "before_boot_id": "c9245d35-89bd-49e3-81af-1972a61d1cfb",
+      "passed": true,
+      "observed_new_boot_ids": [
+        "3ca480fb-82fe-4ef2-8a86-cb6155391a89"
+      ],
+      "last_root_response": "/system/bin/sh: su: inaccessible or not found",
+      "after_boot_id": "3ca480fb-82fe-4ef2-8a86-cb6155391a89",
+      "root_shell": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0",
+      "automatic_root_state": {
+        "verified": true,
+        "verifiedBoot": "3ca480fb-82fe-4ef2-8a86-cb6155391a89",
+        "broadcastBoot": "3ca480fb-82fe-4ef2-8a86-cb6155391a89",
+        "attemptedBoot": "3ca480fb-82fe-4ef2-8a86-cb6155391a89"
+      },
+      "elapsed_seconds": 43.4
+    },
+    {
+      "number": 4,
+      "before_boot_id": "3ca480fb-82fe-4ef2-8a86-cb6155391a89",
+      "passed": true,
+      "observed_new_boot_ids": [
+        "a87d05be-70ba-411e-8d07-b5f4bb382ddb"
+      ],
+      "last_root_response": "/system/bin/sh: su: inaccessible or not found",
+      "after_boot_id": "a87d05be-70ba-411e-8d07-b5f4bb382ddb",
+      "root_shell": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0",
+      "automatic_root_state": {
+        "verified": true,
+        "verifiedBoot": "a87d05be-70ba-411e-8d07-b5f4bb382ddb",
+        "broadcastBoot": "a87d05be-70ba-411e-8d07-b5f4bb382ddb",
+        "attemptedBoot": "a87d05be-70ba-411e-8d07-b5f4bb382ddb"
+      },
+      "elapsed_seconds": 43.3
+    },
+    {
+      "number": 5,
+      "before_boot_id": "a87d05be-70ba-411e-8d07-b5f4bb382ddb",
+      "passed": true,
+      "observed_new_boot_ids": [
+        "8deb3ed1-35ab-4dd7-b8c4-3bd0fc708f2d"
+      ],
+      "last_root_response": "/system/bin/sh: su: inaccessible or not found",
+      "after_boot_id": "8deb3ed1-35ab-4dd7-b8c4-3bd0fc708f2d",
+      "root_shell": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0",
+      "automatic_root_state": {
+        "verified": true,
+        "verifiedBoot": "8deb3ed1-35ab-4dd7-b8c4-3bd0fc708f2d",
+        "broadcastBoot": "8deb3ed1-35ab-4dd7-b8c4-3bd0fc708f2d",
+        "attemptedBoot": "8deb3ed1-35ab-4dd7-b8c4-3bd0fc708f2d"
+      },
+      "elapsed_seconds": 43.5
+    }
+  ],
+  "cold_power_cycle": {
+    "status": "root_restored_after_unstable_cold_start",
+    "before_boot_id": "8deb3ed1-35ab-4dd7-b8c4-3bd0fc708f2d",
+    "shutdown_requested_utc": "2026-11-14T11:42:17.276531+00:00",
+    "physical_cycle_reported_complete": true,
+    "usb_connected_before_vout": true,
+    "hardware_observation": "User reports HVPM red/amber when Vout is enabled without phone USB; no red/amber when phone USB is connected first.",
+    "startup_observation": "User reports the Samsung logo repeating approximately 3-5 times, resembling restarts, before the phone eventually booted. These possible restarts were not independently captured while ADB was unavailable.",
+    "preexisting_startup_issue": "User reports the same behavior existed before rooting, possibly since battery removal and Monsoon wiring. The cause remains unconfirmed.",
+    "passed": false,
+    "clean_cold_start_passed": false,
+    "automatic_root_restoration_passed": true,
+    "after_boot_id": "f23a96a6-fe8e-4804-8076-32df8aa2f25e",
+    "root_shell": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0",
+    "automatic_root_state": {
+      "verified": true,
+      "verifiedBoot": "f23a96a6-fe8e-4804-8076-32df8aa2f25e",
+      "broadcastBoot": "f23a96a6-fe8e-4804-8076-32df8aa2f25e",
+      "attemptedBoot": "f23a96a6-fe8e-4804-8076-32df8aa2f25e"
+    },
+    "verified_utc": "2026-11-14T11:47:57.695352+00:00"
+  }
+}

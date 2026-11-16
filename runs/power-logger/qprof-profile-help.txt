@@ -1,0 +1,39 @@
+It profiles the sync or async command. Sync calls involves command & response, Async calls involves streaming trace data to the client
+[0mExample Usage : qprof --profile --application Path_To_Executable --application-arguments [Arg1,Arg2] --trace-options Config_Json --profile-type async --capabilities-list capability1 capability2 --profile-time 5 --streaming-rate 500 --sampling-rate 100 --filter filter1 filter2 --metric-id-list metricId1 metricId3:metricId5 metricId7 --live --result-format verbose/trace/csv/qpbin  --transpose --analysis roofline-system --summary --roofline-operationType scalar --roofline-operationSubType float --roofline-pass 2 --pmu-event-list pmuEventId1 pmuEventId2 --result-dir-path C:/temp/resultdir
+[0mDescription:
+[0m-app          [--application]           (Optional) : To start some application before starting Profiling, takes path to executable.
+[0m-apparg       [--application-arguments] (Optional) : Application arguments.
+[0m-tops         [--trace-options]         (Optional) : Configuration to be passed to profiler.
+[0m                                                        If not passed default configuration will be used
+[0m-ptype        [--profile-type]          (Optional) : <sync/async> Async calls involves streaming trace data to the client.
+[0m                                                        Currently, only async mode is supported.
+[0m-clist        [--capabilities-list]    (Mandatory) : List of profilers to be enabled . More than 1 profiler can be enabled.
+[0m-ptime        [--profile-time]          (Optional) : Duration in seconds for which profilers need to  be enabled.
+[0m                                                        By default profiling will be enable for 10 sec.
+[0m-dtime        [--delayed-load-time]     (Optional) : Duration in seconds to wait before starting profiling data collection.
+[0m                                                        By default there is no delay.
+[0m-strate       [--streaming-rate]        (Optional) : Time interval in milliseconds between 2 profiling packets recieved on the client.
+[0m                                                        By default user will recieve packet every 500 ms
+[0m-sprate       [--sampling-rate]         (Optional) : Time interval in milliseconds between 2 profiling samples collected from the device.
+[0m                                                        By default sampling rate will be same as streaming rate.
+[0m-f            [--filter ]               (Optional) : Show the profiling result of specific parameter.
+[0m-milist       [--metric-id-list]        (Optional) : Filter results for particular IDs.
+[0m-l            [--live]                  (Optional) : Live streaming of data to standard output . By default live will not be enabled.
+[0m-resfmt       [--result-format arg]     (Optional) : Capture Profiling Data in verbose or trace event format. Supported values (verbose/trace/csv).
+[0m-anal         [--analysis arg]          (Optional) : Option to enable roofline profiling. Supported values (profile/roofline-system/roofline-functional/ops).
+[0m-smry         [--summary]               (Optional) : Print summary Min , Max & Avgerage at the end. By default summary will not be enabled.
+[0m-pelist       [--pmu-event-list]        (Optional) : collect defined pmu event Ids profiling data.
+[0m-rdirp        [--result-dir-path]       (Optional) : Directory path to save profiling result file
+[0m-roofoprtype  [--roofline-operationType]           : Option to provide roofline operation type. Supported values (scalar/vector/matrix).
+[0m-roofoprstype [--roofline-operationSubType]        : Option to provide roofline datatype. Supported values (fixed/float).
+[0m-roofpass     [--roofline-pass]         (Optional) : Perform roofline for the provided pass number. By Default roofline is performed for the supported pass numbers.
+[0m-tab          [--tabular]               (Optional) : Display metrics in tabular format. By Default verbose format is used.
+[0m-ct           [--custom]                (Optional) : Display metrics in transposed tabulat format.
+[0m-tr           [--transpose]             (Optional) : Use this flag to generate a unified CSV for all profilers
+[0m-m            [--mode arg]              (Optional) : Set profiling mode. Supported values (itrace/optrace).
+[0m                                                        itrace: Enable ITrace instruction trace alongside capability profiling.
+[0m                                                        An ITrace-enabled application must be running in remote mode. For NPU or ADSP profiling, the ITrace-enabled application should operate in slave mode and use the same PMUs registered by qprof (max 8).
+[0m                                                        optrace: Enable QNN operation-level tracing on HTP. Launches qnn-net-run along with profiling.
+[0m-optapp       [--optrace-app]           (Optional) : Path to qnn-net-run executable for optrace mode.
+[0m-optapparg    [--optrace-app-arguments] (Optional) : Arguments to pass to the optrace application.
+[0m

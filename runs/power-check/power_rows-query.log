@@ -1,0 +1,10 @@
+Trace loaded: 8.31 MB in 0.29s (28.5 MB/s)
+
+
+Trace health issues:
+
+  Import errors
+    entity_state_residency_invalid: 1
+    power_rail_empty_packet: 1
+
+Query executed in 0 ms

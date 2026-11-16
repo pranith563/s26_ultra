@@ -1,0 +1,11 @@
+{
+  "arch": "windows-amd64",
+  "file_name": "trace_processor_shell.exe",
+  "file_size": 15872000,
+  "url": "https://commondatastorage.googleapis.com/perfetto-luci-artifacts/v59.1/windows-amd64/trace_processor_shell.exe",
+  "sha256": "3acc5aca1c764541033a82ba3bb0a47524b5c3c0aa194eea8d9a7b0cdb346bdc",
+  "platform": "win32",
+  "machine": [
+    "amd64"
+  ]
+}

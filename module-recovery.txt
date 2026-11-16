@@ -1,0 +1,52 @@
+S26 Ultra module testing and recovery
+Prepared 14 November 2026 for SM-S948B / S948BXXU1AZAB.
+
+Baseline: KernelSU modules disabled; Root on boot enabled; Root before first
+unlock and Auto Soft reboot disabled. No KernelSU modules are installed.
+
+Before testing a chosen module
+1. Turn Root on boot off in Root My Galaxy Ultra so a faulty module cannot be
+   loaded automatically on every boot. Keep Auto Soft reboot off.
+2. Verify the module's source, requirements and compatibility with this KernelSU
+   version. Install only that module. Keep other modules disabled.
+3. Enable module loading only for this controlled trial. Follow the module's
+   documented activation requirements. A full reboot removes temporary root;
+   restore it manually and verify with adb shell su -c id.
+4. Verify the module's actual function before restoring automatic root.
+
+If the phone still responds
+Turn Disable KSU modules on and Root on boot off in Root My Galaxy Ultra.
+Disable the new module in KernelSU. Fully reboot, restore root manually with
+modules disabled, and uninstall the offending module.
+
+If automatic rooting causes repeated freezes or restarts and ADB is available
+These commands are recovery instructions; they were not executed during the
+baseline reliability test:
+
+adb -s RZGL21DRL6B shell am force-stop dev.experimental.azhlroot
+adb -s RZGL21DRL6B shell pm disable-user --user 0 dev.experimental.azhlroot
+adb -s RZGL21DRL6B reboot
+
+Disabling the app stops future automatic root restoration. A reboot removes
+the current temporary root session. To restore the app later:
+
+adb -s RZGL21DRL6B shell pm enable dev.experimental.azhlroot
+
+Then open it, turn Root on boot off and Disable KSU modules on before another
+manual attempt. Do not run another exploit repeatedly within a failed boot.
+
+If ADB is unavailable
+Try Samsung Safe Mode: start the phone, then hold Volume Down when the Samsung
+logo appears until startup finishes. Safe Mode disables third-party apps.
+If necessary, uninstall Root My Galaxy Ultra through Android Settings while
+in Safe Mode, then restart normally. Reinstall from the verified local APK
+later and begin with automatic root off and modules disabled.
+
+Do not flash a patched boot or system image as a module-recovery step.
+Safe Mode and the emergency package-disable procedure have not been exercised
+on this particular phone; these are documented recovery options, not guarantees.
+
+Sources:
+https://github.com/xorpix/Root-My-Galaxy-Ultra/tree/1.4.1#payloads-settings-and-recovery
+https://github.com/diabl0w/DFRoot#faq
+https://www.samsung.com/us/support/answer/ANS10003495/

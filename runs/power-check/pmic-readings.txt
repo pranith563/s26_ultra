@@ -1,0 +1,742 @@
+BTL
+total 0
+-r--r--r-- 1 root root 4096 2026-01-09 22:30 max_temperature
+-r--r--r-- 1 root root 4096 2026-01-09 22:30 min_temperature
+-rw-r--r-- 1 root root 4096 2026-01-09 22:30 sample_interval_ms
+-r--r--r-- 1 root root 4096 2026-01-09 22:30 temperature_counter
+-rw-r--r-- 1 root root 4096 2026-01-09 22:30 temperature_threshold
+ADC
+/sys/bus/iio/devices/iio:device0/in_temp_ap_therm_input=854714
+/sys/bus/iio/devices/iio:device0/in_temp_cf_therm_input=871583
+/sys/bus/iio/devices/iio:device0/in_temp_chg_thm_input=727681
+/sys/bus/iio/devices/iio:device0/in_temp_frc_id_input=759342
+/sys/bus/iio/devices/iio:device0/in_temp_lp_therm_input=874113
+/sys/bus/iio/devices/iio:device0/in_temp_pa_therm_input=863992
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0101_die_temp_input=29144
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_d_die_temp_input=27874
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_f_die_temp_input=29445
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_g_die_temp_input=29479
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_i_die_temp_input=29245
+/sys/bus/iio/devices/iio:device0/in_temp_pmk8850_die_temp_input=27472
+/sys/bus/iio/devices/iio:device0/in_temp_pmk8850_xo_therm_input=28745
+/sys/bus/iio/devices/iio:device0/in_temp_usb_thm_input=891565
+/sys/bus/iio/devices/iio:device0/in_temp_wf_therm_input=867690
+/sys/bus/iio/devices/iio:device0/in_temp_wpc_thm_input=752011
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_offset_ref_input=0
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_vph_pwr_input=3969615
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_vref_1p25_input=1249826
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_d_vph_pwr_input=3971364
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_f_vph_pwr_input=3968445
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_g_vph_pwr_input=3971949
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_i_vph_pwr_input=3970977
+/sys/bus/iio/devices/iio:device0/in_voltage_pmk8850_offset_ref_input=0
+/sys/bus/iio/devices/iio:device0/in_voltage_pmk8850_vref_1p25_input=1000043
+/sys/bus/iio/devices/iio:device0/in_temp_ap_therm_label=ap_therm
+/sys/bus/iio/devices/iio:device0/in_temp_cf_therm_label=cf_therm
+/sys/bus/iio/devices/iio:device0/in_temp_chg_thm_label=chg_thm
+/sys/bus/iio/devices/iio:device0/in_temp_frc_id_label=frc_id
+/sys/bus/iio/devices/iio:device0/in_temp_lp_therm_label=lp_therm
+/sys/bus/iio/devices/iio:device0/in_temp_pa_therm_label=pa_therm
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0101_die_temp_label=pmh0101_die_temp
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_d_die_temp_label=pmh0110_d_die_temp
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_f_die_temp_label=pmh0110_f_die_temp
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_g_die_temp_label=pmh0110_g_die_temp
+/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_i_die_temp_label=pmh0110_i_die_temp
+/sys/bus/iio/devices/iio:device0/in_temp_pmk8850_die_temp_label=pmk8850_die_temp
+/sys/bus/iio/devices/iio:device0/in_temp_pmk8850_xo_therm_label=pmk8850_xo_therm
+/sys/bus/iio/devices/iio:device0/in_temp_usb_thm_label=usb_thm
+/sys/bus/iio/devices/iio:device0/in_temp_wf_therm_label=wf_therm
+/sys/bus/iio/devices/iio:device0/in_temp_wpc_thm_label=wpc_thm
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_offset_ref_label=pmh0101_offset_ref
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_vph_pwr_label=pmh0101_vph_pwr
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_vref_1p25_label=pmh0101_vref_1p25
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_d_vph_pwr_label=pmh0110_d_vph_pwr
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_f_vph_pwr_label=pmh0110_f_vph_pwr
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_g_vph_pwr_label=pmh0110_g_vph_pwr
+/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_i_vph_pwr_label=pmh0110_i_vph_pwr
+/sys/bus/iio/devices/iio:device0/in_voltage_pmk8850_offset_ref_label=pmk8850_offset_ref
+/sys/bus/iio/devices/iio:device0/in_voltage_pmk8850_vref_1p25_label=pmk8850_vref_1p25
+REGULATORS
+/sys/class/regulator/regulator.0 regulator-dummy
+power
+requested_microamps
+/sys/class/regulator/regulator.1 pmh0110_d_s1_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.10 pmh0110_d_s7_level_ao
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.100 s2mpb02-l7
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.101 s2mpb02-l8
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.102 s2mpb02-l9
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.103 s2mpb02-l10
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.104 s2mpb02-l11
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.105 s2mpb02-l12
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.106 s2mpb02-l13
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.107 s2mpb02-l14
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.108 s2mpb02-l15
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.109 s2mpb02-l16
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.11 pmh0110_d_s7_level_so
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.110 s2mpb02-l17
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.111 s2mpb02-l18
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.112 s2mpb02-b1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.113 s2mpb02-b2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.114 s2mpb02-bb
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.12 pmh0110_f_s9_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.13 pmh0110_f_s9_level_ao
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.14 pmh0110_f_s9_mmcx_voter_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.15 pmh0110_g_s8_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.16 pmh0110_i_s1_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.17 pmh0110_i_s10_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.18 pmh0110_i_s10_level_ao
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.19 pmh0110_i_l1_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.2 pmh0110_d_s2_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.20 pmh0101_bob1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.21 pmh0101_bob2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.22 pmh0101_l1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.23 pmh0101_l2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.24 pmh0101_l4
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.25 pmh0101_l5
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.26 pmh0101_l6
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.27 pmh0101_l7
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.28 VDD_BTP_1P8
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.29 VDD_BTP_3P0
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.3 pmh0110_d_s4_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.30 pmh0101_l10
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.31 pmh0101_l11
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.32 panel_vdd3
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.33 pmh0101_l13
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.34 panel_vci
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.35 pmh0101_l15
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.36 pmh0101_l16
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.37 pmh0101_l17
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.38 pmh0101_l18
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.39 pmh0101_ls1
+power
+requested_microamps
+/sys/class/regulator/regulator.4 pmh0110_f_s1_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.40 pmh0101_ls2
+power
+requested_microamps
+/sys/class/regulator/regulator.41 pmh0101_ls3
+power
+requested_microamps
+/sys/class/regulator/regulator.42 pmh0101_ls4
+power
+requested_microamps
+/sys/class/regulator/regulator.43 pmh0110_d_s9
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.44 pmh0110_d_s10
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.45 pmh0110_d_l1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.46 pmh0110_d_l1_ao
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.47 pmh0110_d_l1_so
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.48 pmh0110_d_l2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.49 pmh0110_d_l3
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.5 pmh0110_f_s10_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.50 pmh0110_d_l3_ao
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.51 pmh0110_d_l3_so
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.52 pmh0110_d_l4
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.53 pmh0110_f_s6
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.54 pmh0110_f_s7
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.55 pmh0110_f_s8
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.56 pmh0110_f_l1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.57 pmh0110_f_l2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.58 pmh0110_f_l3
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.59 pmh0110_f_l4
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.6 pmh0110_f_s10_gfx_voter_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.60 pmh0110_g_s7
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.61 pmh0110_g_s9
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.62 pmh0110_g_l1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.63 pmh0110_g_l2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.64 pmh0110_g_l3
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.65 pmh0110_g_l4
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.66 pmh0110_i_s7
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.67 pmh0110_i_l2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.68 pmh0110_i_l3
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.69 pmh0110_i_l4
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.7 pmh0110_g_s5_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.70 pmh0104_s1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.71 pmh0104_s2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.72 pmh0104_s3
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.73 pmh0104_s4
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.74 pmr735d_l1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.75 pmr735d_l2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.76 pmr735d_l3
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.77 pmr735d_l4
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.78 pmr735d_l5
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.79 pmr735d_l6
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.8 pmh0110_g_s5_level_ao
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.80 pmr735d_l7
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.81 pmk8850_wcal_pbs
+power
+requested_microamps
+/sys/class/regulator/regulator.82 display_panel_avdd
+microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.83 display_panel_vdd
+microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.84 fixed_regulator${#}
+power
+requested_microamps
+/sys/class/regulator/regulator.85 ET5917-LDO1
+max_microamps
+max_microvolts
+microamps
+microvolts
+min_microamps
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.86 panel_vddr
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.87 panel_elvdd_elvss
+power
+requested_microamps
+/sys/class/regulator/regulator.88 ET5917-LDO2
+max_microamps
+max_microvolts
+microamps
+microvolts
+min_microamps
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.89 ET5917-LDO3
+max_microamps
+max_microvolts
+microamps
+microvolts
+min_microamps
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.9 pmh0110_d_s7_level
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.90 ET5917-LDO4
+max_microamps
+max_microvolts
+microamps
+microvolts
+min_microamps
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.91 ET5917-LDO5
+max_microamps
+max_microvolts
+microamps
+microvolts
+min_microamps
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.92 ET5917-LDO6
+max_microamps
+max_microvolts
+microamps
+microvolts
+min_microamps
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.93 ET5917-LDO7
+max_microamps
+max_microvolts
+microamps
+microvolts
+min_microamps
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.94 s2mpb02-l1
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.95 s2mpb02-l2
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.96 s2mpb02-l3
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.97 s2mpb02-l4
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.98 s2mpb02-l5
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps
+/sys/class/regulator/regulator.99 s2mpb02-l6
+max_microvolts
+microvolts
+min_microvolts
+power
+requested_microamps

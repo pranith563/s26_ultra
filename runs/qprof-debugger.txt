@@ -1,0 +1,1122 @@
+(lldb) target create "C:/Program Files (x86)/Qualcomm/Shared/QualcommProfiler/API/target-la/aarch64/bins/qprof"
+Current executable set to 'C:\Program Files (x86)\Qualcomm\Shared\QualcommProfiler\API\target-la\aarch64\bins\qprof' (aarch64).
+(lldb) gdb-remote 127.0.0.1:62473
+Process 16998 stopped
+* thread #1, name = 'qprof', stop reason = signal SIGSTOP
+    frame #0: 0x0000007ff7ebf280
+->  0x7ff7ebf280: bti    c
+    0x7ff7ebf284: mov    x0, sp
+    0x7ff7ebf288: bl     0x7ff7fc86e8
+    0x7ff7ebf28c: br     x0
+(lldb) continue
+Process 16998 resuming
+Process 16998 stopped and restarted: thread 1 received signal: SIGCHLD
+Process 16998 stopped
+* thread #1, name = 'qprof', stop reason = signal SIGSEGV: address not mapped to object (fault address=0x0)
+    frame #0: 0x0000007ff532acd0
+->  0x7ff532acd0: ldp    x2, x3, [x0]
+    0x7ff532acd4: mov    x8, #0x101010101010101    ; =72340172838076673 
+    0x7ff532acd8: sub    x4, x2, x8
+    0x7ff532acdc: orr    x5, x2, #0x7f7f7f7f7f7f7f7f
+(lldb) thread backtrace all
+* thread #1, name = 'qprof', stop reason = signal SIGSEGV: address not mapped to object (fault address=0x0)
+  * frame #0: 0x0000007ff532acd0
+    frame #1: 0x0000007d6399797c
+    frame #2: 0x0000007d63998c2c
+    frame #3: 0x0000007ff493c8ec
+    frame #4: 0x0000007ff493d190
+    frame #5: 0x0000007ff481c6d8
+    frame #6: 0x000000555556d7d8 qprof`___lldb_unnamed_symbol388 + 232
+    frame #7: 0x0000005555576538 qprof`___lldb_unnamed_symbol406 + 428
+    frame #8: 0x000000555557a7ec qprof`___lldb_unnamed_symbol418 + 1856
+    frame #9: 0x000000555557cb88 qprof`___lldb_unnamed_symbol423 + 556
+    frame #10: 0x0000007ff5329a28
+    frame #11: 0x000000555556ca9c qprof`___lldb_unnamed_symbol376 + 68
+(lldb) register read pc lr x0 x1 x2
+      pc = 0x0000007ff532acd0
+      lr = 0x0000007d63997ad4
+      x0 = 0x0000000000000000
+      x1 = 0x0000000000000000
+      x2 = 0x0000000000000000
+(lldb) script import subprocess; print(subprocess.check_output(['adb','-s','RZGL21DRL6B','exec-out','su','-c','cat /proc/' + str(lldb.debugger.GetSelectedTarget().GetProcess().GetProcessID()) + '/maps']).decode())
+5555554000-5555569000 r--p 00000000 fe:42 68510                          /data/local/tmp/s26-qprof-2.26.10.6/bins/qprof
+555556c000-5555596000 r-xp 00014000 fe:42 68510                          /data/local/tmp/s26-qprof-2.26.10.6/bins/qprof
+5555599000-555559a000 r--p 0003d000 fe:42 68510                          /data/local/tmp/s26-qprof-2.26.10.6/bins/qprof
+555559d000-555559f000 rw-p 0003d000 fe:42 68510                          /data/local/tmp/s26-qprof-2.26.10.6/bins/qprof
+555559f000-55555ae000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d478dd000-7d478de000 ---p 00000000 00:00 0 
+7d478de000-7d4797d000 rw-p 00000000 00:00 0                              [anon:scudo:secondary]
+7d4797d000-7d4797f000 ---p 00000000 00:00 0 
+7d4797f000-7d47a1e000 rw-p 00000000 00:00 0                              [anon:scudo:secondary]
+7d47a1e000-7d47a1f000 ---p 00000000 00:00 0 
+7d47a1f000-7d47a51000 r--p 00000000 fe:0a 41416547                       /vendor/lib64/libadreno_app_profiles.so
+7d47a51000-7d47a53000 ---p 00000000 00:00 0 
+7d47a53000-7d47b16000 r-xp 00034000 fe:0a 41416547                       /vendor/lib64/libadreno_app_profiles.so
+7d47b16000-7d47b17000 ---p 00000000 00:00 0 
+7d47b17000-7d47b1c000 r--p 000f8000 fe:0a 41416547                       /vendor/lib64/libadreno_app_profiles.so
+7d47b1c000-7d47b1f000 ---p 00000000 00:00 0 
+7d47b1f000-7d47b20000 rw-p 00100000 fe:0a 41416547                       /vendor/lib64/libadreno_app_profiles.so
+7d47b20000-7d47b21000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d47b6d000-7d47b6f000 r--p 00000000 fe:0a 97773593                       /vendor/lib64/libqspm-mem-utils-vendor.so
+7d47b6f000-7d47b71000 ---p 00000000 00:00 0                              [page size compat]
+7d47b71000-7d47b73000 r-xp 00004000 fe:0a 97773593                       /vendor/lib64/libqspm-mem-utils-vendor.so
+7d47b73000-7d47b75000 ---p 00000000 00:00 0                              [page size compat]
+7d47b75000-7d47b76000 r--p 00008000 fe:0a 97773593                       /vendor/lib64/libqspm-mem-utils-vendor.so
+7d47b76000-7d47b79000 ---p 00000000 00:00 0 
+7d47b79000-7d47b7a000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d47b86000-7d47b8b000 r--p 00000000 fe:0a 97781485                       /vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
+7d47b8b000-7d47b8e000 ---p 00000000 00:00 0                              [page size compat]
+7d47b8e000-7d47b94000 r-xp 00008000 fe:0a 97781485                       /vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
+7d47b94000-7d47b96000 ---p 00000000 00:00 0                              [page size compat]
+7d47b96000-7d47b97000 r--p 00010000 fe:0a 97781485                       /vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
+7d47b97000-7d47b9a000 ---p 00000000 00:00 0 
+7d47b9a000-7d47b9b000 rw-p 00014000 fe:0a 97781485                       /vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
+7d47bea000-7d47bec000 r--p 00000000 fe:0a 99072508                       /vendor/lib64/hw/gralloc.default.so
+7d47bec000-7d47bee000 ---p 00000000 00:00 0                              [page size compat]
+7d47bee000-7d47bf0000 r-xp 00004000 fe:0a 99072508                       /vendor/lib64/hw/gralloc.default.so
+7d47bf0000-7d47bf2000 ---p 00000000 00:00 0                              [page size compat]
+7d47bf2000-7d47bf3000 r--p 00008000 fe:0a 99072508                       /vendor/lib64/hw/gralloc.default.so
+7d47bf3000-7d47bf6000 ---p 00000000 00:00 0 
+7d47bf6000-7d47bf7000 rw-p 0000c000 fe:0a 99072508                       /vendor/lib64/hw/gralloc.default.so
+7d47c11000-7d47c16000 r--p 00000000 fe:0a 40194172                       /vendor/lib64/libcamxexternalformatutils.so
+7d47c16000-7d47c19000 ---p 00000000 00:00 0 
+7d47c19000-7d47c22000 r-xp 00008000 fe:0a 40194172                       /vendor/lib64/libcamxexternalformatutils.so
+7d47c22000-7d47c25000 ---p 00000000 00:00 0 
+7d47c25000-7d47c26000 r--p 00014000 fe:0a 40194172                       /vendor/lib64/libcamxexternalformatutils.so
+7d47c26000-7d47c29000 ---p 00000000 00:00 0 
+7d47c29000-7d47c2a000 rw-p 00018000 fe:0a 40194172                       /vendor/lib64/libcamxexternalformatutils.so
+7d47c4a000-7d47c67000 r--p 00000000 fe:0a 97770154                       /vendor/lib64/vendor.qti.hardware.display.snapalloc-impl.so
+7d47c67000-7d47c6a000 ---p 00000000 00:00 0                              [page size compat]
+7d47c6a000-7d47c97000 r-xp 00020000 fe:0a 97770154                       /vendor/lib64/vendor.qti.hardware.display.snapalloc-impl.so
+7d47c97000-7d47c9a000 ---p 00000000 00:00 0                              [page size compat]
+7d47c9a000-7d47c9c000 r--p 00050000 fe:0a 97770154                       /vendor/lib64/vendor.qti.hardware.display.snapalloc-impl.so
+7d47c9c000-7d47c9e000 ---p 00000000 00:00 0 
+7d47c9e000-7d47c9f000 rw-p 00054000 fe:0a 97770154                       /vendor/lib64/vendor.qti.hardware.display.snapalloc-impl.so
+7d47cc5000-7d47cd5000 r--p 00000000 fe:0a 97771553                       /vendor/lib64/libjsoncpp.so
+7d47cd5000-7d47cf2000 r-xp 00010000 fe:0a 97771553                       /vendor/lib64/libjsoncpp.so
+7d47cf2000-7d47cf5000 ---p 00000000 00:00 0                              [page size compat]
+7d47cf5000-7d47cf6000 r--p 00030000 fe:0a 97771553                       /vendor/lib64/libjsoncpp.so
+7d47cf6000-7d47cf9000 ---p 00000000 00:00 0 
+7d47cf9000-7d47cfa000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d47d03000-7d47d0e000 r--p 00000000 fe:0a 41697644                       /vendor/lib64/libgralloccore.so
+7d47d0e000-7d47d0f000 ---p 00000000 00:00 0                              [page size compat]
+7d47d0f000-7d47d21000 r-xp 0000c000 fe:0a 41697644                       /vendor/lib64/libgralloccore.so
+7d47d21000-7d47d23000 ---p 00000000 00:00 0                              [page size compat]
+7d47d23000-7d47d24000 r--p 00020000 fe:0a 41697644                       /vendor/lib64/libgralloccore.so
+7d47d24000-7d47d27000 ---p 00000000 00:00 0 
+7d47d27000-7d47d29000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d47d63000-7d47d66000 r--p 00000000 fe:0a 97775607                       /vendor/lib64/libvmmem.so
+7d47d66000-7d47d67000 ---p 00000000 00:00 0                              [page size compat]
+7d47d67000-7d47d6c000 r-xp 00004000 fe:0a 97775607                       /vendor/lib64/libvmmem.so
+7d47d6c000-7d47d6f000 ---p 00000000 00:00 0                              [page size compat]
+7d47d6f000-7d47d70000 r--p 0000c000 fe:0a 97775607                       /vendor/lib64/libvmmem.so
+7d47d70000-7d47d73000 ---p 00000000 00:00 0 
+7d47d73000-7d47d74000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d47d97000-7d47d9e000 r--p 00000000 fe:0a 100369967                      /vendor/lib64/hw/mapper.qti.so
+7d47d9e000-7d47d9f000 ---p 00000000 00:00 0                              [page size compat]
+7d47d9f000-7d47da9000 r-xp 00008000 fe:0a 100369967                      /vendor/lib64/hw/mapper.qti.so
+7d47da9000-7d47dab000 ---p 00000000 00:00 0                              [page size compat]
+7d47dab000-7d47dae000 r--p 00014000 fe:0a 100369967                      /vendor/lib64/hw/mapper.qti.so
+7d47dae000-7d47daf000 ---p 00000000 00:00 0 
+7d47daf000-7d47db0000 rw-p 00018000 fe:0a 100369967                      /vendor/lib64/hw/mapper.qti.so
+7d47dd4000-7d47dd5000 r--p 00000000 fe:0a 97754454                       /vendor/lib64/libion.so
+7d47dd5000-7d47dd8000 ---p 00000000 00:00 0                              [page size compat]
+7d47dd8000-7d47dda000 r-xp 00004000 fe:0a 97754454                       /vendor/lib64/libion.so
+7d47dda000-7d47ddc000 ---p 00000000 00:00 0                              [page size compat]
+7d47ddc000-7d47ddd000 r--p 00008000 fe:0a 97754454                       /vendor/lib64/libion.so
+7d47ddd000-7d47de0000 ---p 00000000 00:00 0 
+7d47de0000-7d47de1000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d47e14000-7d47f12000 r--p 00000000 00:22 4                              /dev/binderfs/binder
+7d47f12000-7d47f41000 r--p 00000000 fe:0a 97775488                       /vendor/lib64/libunwindstack.so
+7d47f41000-7d47f42000 ---p 00000000 00:00 0                              [page size compat]
+7d47f42000-7d47fb5000 r-xp 00030000 fe:0a 97775488                       /vendor/lib64/libunwindstack.so
+7d47fb5000-7d47fb6000 ---p 00000000 00:00 0                              [page size compat]
+7d47fb6000-7d47fbe000 r--p 000a4000 fe:0a 97775488                       /vendor/lib64/libunwindstack.so
+7d47fbe000-7d47fbf000 rw-p 000ac000 fe:0a 97775488                       /vendor/lib64/libunwindstack.so
+7d47fe6000-7d47fe8000 r--p 00000000 fe:0a 97771951                       /vendor/lib64/libmapperutils.so
+7d47fe8000-7d47fea000 ---p 00000000 00:00 0                              [page size compat]
+7d47fea000-7d47fed000 r-xp 00004000 fe:0a 97771951                       /vendor/lib64/libmapperutils.so
+7d47fed000-7d47fee000 ---p 00000000 00:00 0                              [page size compat]
+7d47fee000-7d47fef000 r--p 00008000 fe:0a 97771951                       /vendor/lib64/libmapperutils.so
+7d47fef000-7d47ff2000 ---p 00000000 00:00 0 
+7d47ff2000-7d47ff3000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d4800e000-7d48019000 r--p 00000000 fe:0a 40194426                       /vendor/lib64/android.hardware.graphics.mapper@2.0.so
+7d48019000-7d4801a000 ---p 00000000 00:00 0                              [page size compat]
+7d4801a000-7d48028000 r-xp 0000c000 fe:0a 40194426                       /vendor/lib64/android.hardware.graphics.mapper@2.0.so
+7d48028000-7d4802a000 ---p 00000000 00:00 0                              [page size compat]
+7d4802a000-7d4802c000 r--p 0001c000 fe:0a 40194426                       /vendor/lib64/android.hardware.graphics.mapper@2.0.so
+7d4802c000-7d4802e000 ---p 00000000 00:00 0 
+7d4802e000-7d4802f000 rw-p 00020000 fe:0a 40194426                       /vendor/lib64/android.hardware.graphics.mapper@2.0.so
+7d48047000-7d4804b000 r--p 00000000 fe:0a 40194411                       /vendor/lib64/android.hardware.graphics.common-V6-ndk.so
+7d4804b000-7d4804f000 r-xp 00004000 fe:0a 40194411                       /vendor/lib64/android.hardware.graphics.common-V6-ndk.so
+7d4804f000-7d48050000 r--p 00008000 fe:0a 40194411                       /vendor/lib64/android.hardware.graphics.common-V6-ndk.so
+7d48050000-7d48053000 ---p 00000000 00:00 0 
+7d48053000-7d48054000 rw-p 0000c000 fe:0a 40194411                       /vendor/lib64/android.hardware.graphics.common-V6-ndk.so
+7d4809b000-7d480a8000 r--p 00000000 fe:0a 97770117                       /vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
+7d480a8000-7d480ab000 ---p 00000000 00:00 0                              [page size compat]
+7d480ab000-7d480ba000 r-xp 00010000 fe:0a 97770117                       /vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
+7d480ba000-7d480bb000 ---p 00000000 00:00 0                              [page size compat]
+7d480bb000-7d480bd000 r--p 00020000 fe:0a 97770117                       /vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
+7d480bd000-7d480bf000 ---p 00000000 00:00 0 
+7d480bf000-7d480c0000 rw-p 00024000 fe:0a 97770117                       /vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
+7d480de000-7d480e6000 r--p 00000000 fe:0a 41697649                       /vendor/lib64/libgralloctypes.so
+7d480e6000-7d480f0000 r-xp 00008000 fe:0a 41697649                       /vendor/lib64/libgralloctypes.so
+7d480f0000-7d480f2000 ---p 00000000 00:00 0                              [page size compat]
+7d480f2000-7d480f3000 r--p 00014000 fe:0a 41697649                       /vendor/lib64/libgralloctypes.so
+7d480f3000-7d480f6000 ---p 00000000 00:00 0 
+7d480f6000-7d480f7000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d48119000-7d4811a000 r--p 00000000 fe:0a 40194415                       /vendor/lib64/android.hardware.graphics.common@1.2.so
+7d4811a000-7d4811d000 ---p 00000000 00:00 0                              [page size compat]
+7d4811d000-7d4811f000 r-xp 00004000 fe:0a 40194415                       /vendor/lib64/android.hardware.graphics.common@1.2.so
+7d4811f000-7d48121000 ---p 00000000 00:00 0                              [page size compat]
+7d48121000-7d48122000 r--p 00008000 fe:0a 40194415                       /vendor/lib64/android.hardware.graphics.common@1.2.so
+7d48122000-7d48125000 ---p 00000000 00:00 0 
+7d48125000-7d48126000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d48147000-7d48148000 r--p 00000000 fe:0a 41158781                       /vendor/lib64/android.hardware.graphics.common@1.0.so
+7d48148000-7d4814b000 ---p 00000000 00:00 0                              [page size compat]
+7d4814b000-7d4814d000 r-xp 00004000 fe:0a 41158781                       /vendor/lib64/android.hardware.graphics.common@1.0.so
+7d4814d000-7d4814f000 ---p 00000000 00:00 0                              [page size compat]
+7d4814f000-7d48150000 r--p 00008000 fe:0a 41158781                       /vendor/lib64/android.hardware.graphics.common@1.0.so
+7d48181000-7d48192000 r--p 00000000 fe:0a 97770127                       /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
+7d48192000-7d48195000 ---p 00000000 00:00 0                              [page size compat]
+7d48195000-7d481a9000 r-xp 00014000 fe:0a 97770127                       /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
+7d481a9000-7d481ac000 r--p 00028000 fe:0a 97770127                       /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
+7d481ac000-7d481ad000 ---p 00000000 00:00 0 
+7d481ad000-7d481ae000 rw-p 0002c000 fe:0a 97770127                       /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
+7d481c1000-7d481cf000 r--p 00000000 fe:0a 97780338                       /vendor/lib64/libutils.so
+7d481cf000-7d481d1000 ---p 00000000 00:00 0                              [page size compat]
+7d481d1000-7d481de000 r-xp 00010000 fe:0a 97780338                       /vendor/lib64/libutils.so
+7d481de000-7d481e1000 ---p 00000000 00:00 0                              [page size compat]
+7d481e1000-7d481e2000 r--p 00020000 fe:0a 97780338                       /vendor/lib64/libutils.so
+7d481e2000-7d481e5000 ---p 00000000 00:00 0 
+7d481e5000-7d481e6000 rw-p 00024000 fe:0a 97780338                       /vendor/lib64/libutils.so
+7d4821e000-7d48224000 r--p 00000000 fe:0a 41107704                       /vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so
+7d48224000-7d48226000 ---p 00000000 00:00 0                              [page size compat]
+7d48226000-7d4822d000 r-xp 00008000 fe:0a 41107704                       /vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so
+7d4822d000-7d4822e000 ---p 00000000 00:00 0                              [page size compat]
+7d4822e000-7d4822f000 r--p 00010000 fe:0a 41107704                       /vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so
+7d4822f000-7d48232000 ---p 00000000 00:00 0 
+7d48232000-7d48233000 rw-p 00014000 fe:0a 41107704                       /vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so
+7d48271000-7d48274000 r--p 00000000 fe:0a 97780343                       /vendor/lib64/libutilscallstack.so
+7d48274000-7d48275000 ---p 00000000 00:00 0                              [page size compat]
+7d48275000-7d48278000 r-xp 00004000 fe:0a 97780343                       /vendor/lib64/libutilscallstack.so
+7d48278000-7d48279000 ---p 00000000 00:00 0                              [page size compat]
+7d48279000-7d4827a000 r--p 00008000 fe:0a 97780343                       /vendor/lib64/libutilscallstack.so
+7d4827a000-7d4827d000 ---p 00000000 00:00 0 
+7d4827d000-7d4827e000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d48288000-7d48295000 r--p 00000000 fe:0a 97770112                       /vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
+7d48295000-7d48298000 ---p 00000000 00:00 0                              [page size compat]
+7d48298000-7d482a7000 r-xp 00010000 fe:0a 97770112                       /vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
+7d482a7000-7d482a8000 ---p 00000000 00:00 0                              [page size compat]
+7d482a8000-7d482ab000 r--p 00020000 fe:0a 97770112                       /vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
+7d482ab000-7d482ac000 ---p 00000000 00:00 0 
+7d482ac000-7d482ad000 rw-p 00024000 fe:0a 97770112                       /vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
+7d482c8000-7d482d4000 r--p 00000000 fe:0a 41280379                       /vendor/lib64/android.hardware.graphics.mapper@3.0.so
+7d482d4000-7d482e3000 r-xp 0000c000 fe:0a 41280379                       /vendor/lib64/android.hardware.graphics.mapper@3.0.so
+7d482e3000-7d482e4000 ---p 00000000 00:00 0                              [page size compat]
+7d482e4000-7d482e6000 r--p 0001c000 fe:0a 41280379                       /vendor/lib64/android.hardware.graphics.mapper@3.0.so
+7d482e6000-7d482e8000 ---p 00000000 00:00 0 
+7d482e8000-7d482e9000 rw-p 00020000 fe:0a 41280379                       /vendor/lib64/android.hardware.graphics.mapper@3.0.so
+7d48311000-7d4831f000 r--p 00000000 fe:0a 97770122                       /vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so
+7d4831f000-7d48321000 ---p 00000000 00:00 0                              [page size compat]
+7d48321000-7d48332000 r-xp 00010000 fe:0a 97770122                       /vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so
+7d48332000-7d48335000 ---p 00000000 00:00 0                              [page size compat]
+7d48335000-7d48338000 r--p 00024000 fe:0a 97770122                       /vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so
+7d48338000-7d48339000 ---p 00000000 00:00 0 
+7d48339000-7d4833a000 rw-p 00028000 fe:0a 97770122                       /vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so
+7d48352000-7d4835e000 r--p 00000000 fe:0a 41280375                       /vendor/lib64/android.hardware.graphics.mapper@2.1.so
+7d4835e000-7d4836c000 r-xp 0000c000 fe:0a 41280375                       /vendor/lib64/android.hardware.graphics.mapper@2.1.so
+7d4836c000-7d4836e000 ---p 00000000 00:00 0                              [page size compat]
+7d4836e000-7d48370000 r--p 0001c000 fe:0a 41280375                       /vendor/lib64/android.hardware.graphics.mapper@2.1.so
+7d48370000-7d48372000 ---p 00000000 00:00 0 
+7d48372000-7d48373000 rw-p 00020000 fe:0a 41280375                       /vendor/lib64/android.hardware.graphics.mapper@2.1.so
+7d48398000-7d483b5000 r--p 00000000 fe:0a 41697656                       /vendor/lib64/libgrallocutils.so
+7d483b5000-7d483b8000 ---p 00000000 00:00 0                              [page size compat]
+7d483b8000-7d483f3000 r-xp 00020000 fe:0a 41697656                       /vendor/lib64/libgrallocutils.so
+7d483f3000-7d483f4000 ---p 00000000 00:00 0                              [page size compat]
+7d483f4000-7d483f6000 r--p 0005c000 fe:0a 41697656                       /vendor/lib64/libgrallocutils.so
+7d483f6000-7d483f8000 ---p 00000000 00:00 0 
+7d483f8000-7d483f9000 rw-p 00060000 fe:0a 41697656                       /vendor/lib64/libgrallocutils.so
+7d483f9000-7d483fb000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d4841b000-7d48485000 r--p 00000000 fe:0a 97771816                       /vendor/lib64/libllvm-glnext.so
+7d48485000-7d48487000 ---p 00000000 00:00 0 
+7d48487000-7d485f6000 r-xp 0006c000 fe:0a 97771816                       /vendor/lib64/libllvm-glnext.so
+7d485f6000-7d485f7000 ---p 00000000 00:00 0 
+7d485f7000-7d485fc000 r--p 001dc000 fe:0a 97771816                       /vendor/lib64/libllvm-glnext.so
+7d485fc000-7d485ff000 ---p 00000000 00:00 0 
+7d485ff000-7d48603000 rw-p 001e4000 fe:0a 97771816                       /vendor/lib64/libllvm-glnext.so
+7d48603000-7d4863a000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d486a6000-7d486a7000 r--p 00000000 fe:0a 41565437                       /vendor/lib64/android.hardware.graphics.common@1.1.so
+7d486a7000-7d486aa000 ---p 00000000 00:00 0                              [page size compat]
+7d486aa000-7d486ac000 r-xp 00004000 fe:0a 41565437                       /vendor/lib64/android.hardware.graphics.common@1.1.so
+7d486ac000-7d486ae000 ---p 00000000 00:00 0                              [page size compat]
+7d486ae000-7d486af000 r--p 00008000 fe:0a 41565437                       /vendor/lib64/android.hardware.graphics.common@1.1.so
+7d486c2000-7d486d1000 r--p 00000000 fe:0a 41415014                       /vendor/lib64/android.hardware.graphics.mapper@4.0.so
+7d486d1000-7d486d2000 ---p 00000000 00:00 0                              [page size compat]
+7d486d2000-7d486e6000 r-xp 00010000 fe:0a 41415014                       /vendor/lib64/android.hardware.graphics.mapper@4.0.so
+7d486e6000-7d486e9000 r--p 00024000 fe:0a 41415014                       /vendor/lib64/android.hardware.graphics.mapper@4.0.so
+7d486e9000-7d486ea000 ---p 00000000 00:00 0 
+7d486ea000-7d486eb000 rw-p 00028000 fe:0a 41415014                       /vendor/lib64/android.hardware.graphics.mapper@4.0.so
+7d48709000-7d48745000 r--p 00000000 fe:0a 97769836                       /vendor/lib64/libhidlbase.so
+7d48745000-7d4879b000 r-xp 0003c000 fe:0a 97769836                       /vendor/lib64/libhidlbase.so
+7d4879b000-7d4879d000 ---p 00000000 00:00 0                              [page size compat]
+7d4879d000-7d487a8000 r--p 00094000 fe:0a 97769836                       /vendor/lib64/libhidlbase.so
+7d487a8000-7d487a9000 ---p 00000000 00:00 0 
+7d487a9000-7d487aa000 rw-p 000a0000 fe:0a 97769836                       /vendor/lib64/libhidlbase.so
+7d487c0000-7d487c9000 r--p 00000000 fe:0a 97771945                       /vendor/lib64/liblzma.so
+7d487c9000-7d487cc000 ---p 00000000 00:00 0                              [page size compat]
+7d487cc000-7d487ea000 r-xp 0000c000 fe:0a 97771945                       /vendor/lib64/liblzma.so
+7d487ea000-7d487ec000 ---p 00000000 00:00 0                              [page size compat]
+7d487ec000-7d487ed000 r--p 0002c000 fe:0a 97771945                       /vendor/lib64/liblzma.so
+7d487ed000-7d487f0000 ---p 00000000 00:00 0 
+7d487f0000-7d487f1000 rw-p 00030000 fe:0a 97771945                       /vendor/lib64/liblzma.so
+7d487f1000-7d487fc000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d48800000-7d49a00000 ---p 00000000 00:00 0 
+7d49a60000-7d49a64000 r--p 00000000 fe:0a 41697640                       /vendor/lib64/libgralloc.qti.so
+7d49a64000-7d49a69000 r-xp 00004000 fe:0a 41697640                       /vendor/lib64/libgralloc.qti.so
+7d49a69000-7d49a6c000 ---p 00000000 00:00 0                              [page size compat]
+7d49a6c000-7d49a6d000 r--p 0000c000 fe:0a 41697640                       /vendor/lib64/libgralloc.qti.so
+7d49a6d000-7d49a70000 ---p 00000000 00:00 0 
+7d49a70000-7d49a71000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d49a8e000-7d49a9e000 r--p 00000000 fe:0a 97770133                       /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
+7d49a9e000-7d49aaf000 r-xp 00010000 fe:0a 97770133                       /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
+7d49aaf000-7d49ab2000 ---p 00000000 00:00 0                              [page size compat]
+7d49ab2000-7d49ab5000 r--p 00024000 fe:0a 97770133                       /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
+7d49ab5000-7d49ab6000 ---p 00000000 00:00 0 
+7d49ab6000-7d49ab7000 rw-p 00028000 fe:0a 97770133                       /vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
+7d49ae1000-7d49c03000 r--p 00000000 fe:0a 99072256                       /vendor/lib64/egl/libGLESv2_adreno.so
+7d49c03000-7d49c05000 ---p 00000000 00:00 0 
+7d49c05000-7d49f2b000 r-xp 00124000 fe:0a 99072256                       /vendor/lib64/egl/libGLESv2_adreno.so
+7d49f2b000-7d49f2d000 ---p 00000000 00:00 0 
+7d49f2d000-7d49f3a000 r--p 0044c000 fe:0a 99072256                       /vendor/lib64/egl/libGLESv2_adreno.so
+7d49f3a000-7d49f3d000 ---p 00000000 00:00 0 
+7d49f3d000-7d49f43000 rw-p 0045c000 fe:0a 99072256                       /vendor/lib64/egl/libGLESv2_adreno.so
+7d49f43000-7d49f65000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d49f93000-7d49f9b000 r--p 00000000 fe:0a 98879553                       /vendor/lib64/egl/eglSubDriverAndroid.so
+7d49f9b000-7d49fb0000 r-xp 00008000 fe:0a 98879553                       /vendor/lib64/egl/eglSubDriverAndroid.so
+7d49fb0000-7d49fb3000 ---p 00000000 00:00 0 
+7d49fb3000-7d49fb5000 r--p 00020000 fe:0a 98879553                       /vendor/lib64/egl/eglSubDriverAndroid.so
+7d49fb5000-7d49fb7000 ---p 00000000 00:00 0 
+7d49fb7000-7d49fbc000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d49fe6000-7d49fe7000 r--p 00000000 fe:0a 57530357                       /vendor/lib64/libhardware.so
+7d49fe7000-7d49fea000 ---p 00000000 00:00 0                              [page size compat]
+7d49fea000-7d49feb000 r-xp 00004000 fe:0a 57530357                       /vendor/lib64/libhardware.so
+7d49feb000-7d49fee000 ---p 00000000 00:00 0                              [page size compat]
+7d49fee000-7d49fef000 r--p 00008000 fe:0a 57530357                       /vendor/lib64/libhardware.so
+7d4a000000-7d4c000000 ---p 00000000 00:00 0 
+7d4c048000-7d4c04e000 r--p 00000000 fe:07 149560960                      /system/lib64/libGLESv1_CM.so
+7d4c04e000-7d4c050000 ---p 00000000 00:00 0                              [page size compat]
+7d4c050000-7d4c052000 r-xp 00008000 fe:07 149560960                      /system/lib64/libGLESv1_CM.so
+7d4c052000-7d4c054000 ---p 00000000 00:00 0                              [page size compat]
+7d4c054000-7d4c055000 r--p 0000c000 fe:07 149560960                      /system/lib64/libGLESv1_CM.so
+7d4c087000-7d4c09a000 r--p 00000000 fe:0a 98879562                       /vendor/lib64/egl/libGLESv1_CM_adreno.so
+7d4c09a000-7d4c09b000 ---p 00000000 00:00 0 
+7d4c09b000-7d4c0ba000 r-xp 00014000 fe:0a 98879562                       /vendor/lib64/egl/libGLESv1_CM_adreno.so
+7d4c0ba000-7d4c0bb000 ---p 00000000 00:00 0 
+7d4c0bb000-7d4c0bc000 r--p 00034000 fe:0a 98879562                       /vendor/lib64/egl/libGLESv1_CM_adreno.so
+7d4c0bc000-7d4c0bf000 ---p 00000000 00:00 0 
+7d4c0bf000-7d4c0c0000 rw-p 00038000 fe:0a 98879562                       /vendor/lib64/egl/libGLESv1_CM_adreno.so
+7d4c0e8000-7d4c0e9000 ---p 00000000 00:00 0 
+7d4c0e9000-7d4c18a000 rw-p 00000000 00:00 0                              [anon:scudo:secondary]
+7d4c18a000-7d4c18b000 ---p 00000000 00:00 0 
+7d4c18b000-7d4c193000 r--p 00000000 fe:0a 41416566                       /vendor/lib64/libadreno_utils.so
+7d4c193000-7d4c1a5000 r-xp 00008000 fe:0a 41416566                       /vendor/lib64/libadreno_utils.so
+7d4c1a5000-7d4c1a7000 ---p 00000000 00:00 0 
+7d4c1a7000-7d4c1a8000 r--p 0001c000 fe:0a 41416566                       /vendor/lib64/libadreno_utils.so
+7d4c1a8000-7d4c1ab000 ---p 00000000 00:00 0 
+7d4c1ab000-7d4c1ac000 rw-p 00020000 fe:0a 41416566                       /vendor/lib64/libadreno_utils.so
+7d4c1c6000-7d4c1ce000 r--p 00000000 fe:0a 97780581                       /vendor/lib64/libz.so
+7d4c1ce000-7d4c1de000 r-xp 00008000 fe:0a 97780581                       /vendor/lib64/libz.so
+7d4c1de000-7d4c1df000 r--p 00018000 fe:0a 97780581                       /vendor/lib64/libz.so
+7d4c1df000-7d4c1e2000 ---p 00000000 00:00 0 
+7d4c1e2000-7d4c1e3000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d4c215000-7d4c21e000 r--p 00000000 fe:0a 57547118                       /vendor/lib64/libcutils.so
+7d4c21e000-7d4c221000 ---p 00000000 00:00 0                              [page size compat]
+7d4c221000-7d4c22c000 r-xp 0000c000 fe:0a 57547118                       /vendor/lib64/libcutils.so
+7d4c22c000-7d4c22d000 ---p 00000000 00:00 0                              [page size compat]
+7d4c22d000-7d4c22f000 r--p 00018000 fe:0a 57547118                       /vendor/lib64/libcutils.so
+7d4c22f000-7d4c231000 ---p 00000000 00:00 0 
+7d4c231000-7d4c232000 rw-p 0001c000 fe:0a 57547118                       /vendor/lib64/libcutils.so
+7d4c24a000-7d4c259000 r--p 00000000 fe:0a 41278830                       /vendor/lib64/libbase.so
+7d4c259000-7d4c25a000 ---p 00000000 00:00 0                              [page size compat]
+7d4c25a000-7d4c278000 r-xp 00010000 fe:0a 41278830                       /vendor/lib64/libbase.so
+7d4c278000-7d4c27a000 ---p 00000000 00:00 0                              [page size compat]
+7d4c27a000-7d4c27b000 r--p 00030000 fe:0a 41278830                       /vendor/lib64/libbase.so
+7d4c27b000-7d4c27e000 ---p 00000000 00:00 0 
+7d4c27e000-7d4c27f000 rw-p 00034000 fe:0a 41278830                       /vendor/lib64/libbase.so
+7d4c2ab000-7d4c323000 r--p 00000000 fe:0a 41280860                       /vendor/lib64/libc++.so
+7d4c323000-7d4c326000 ---p 00000000 00:00 0 
+7d4c326000-7d4c3a6000 r-xp 00077000 fe:0a 41280860                       /vendor/lib64/libc++.so
+7d4c3a6000-7d4c3a9000 ---p 00000000 00:00 0 
+7d4c3a9000-7d4c3b1000 r--p 000f6000 fe:0a 41280860                       /vendor/lib64/libc++.so
+7d4c3b1000-7d4c3b4000 ---p 00000000 00:00 0 
+7d4c3b4000-7d4c3b5000 rw-p 000fd000 fe:0a 41280860                       /vendor/lib64/libc++.so
+7d4c3b5000-7d4c3bd000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d4c400000-7d4fe00000 ---p 00000000 00:00 0 
+7d4fe4f000-7d4fe57000 r--p 00000000 fe:0a 42267491                       /vendor/lib64/libdmabufheap.so
+7d4fe57000-7d4fe63000 r-xp 00008000 fe:0a 42267491                       /vendor/lib64/libdmabufheap.so
+7d4fe63000-7d4fe64000 r--p 00014000 fe:0a 42267491                       /vendor/lib64/libdmabufheap.so
+7d4fe64000-7d4fe67000 ---p 00000000 00:00 0 
+7d4fe67000-7d4fe68000 rw-p 00018000 fe:0a 42267491                       /vendor/lib64/libdmabufheap.so
+7d4feac000-7d4feae000 r--p 00000000 fe:0a 40142328                       /vendor/lib64/android.hardware.common-V2-ndk.so
+7d4feae000-7d4feb0000 ---p 00000000 00:00 0                              [page size compat]
+7d4feb0000-7d4feb3000 r-xp 00004000 fe:0a 40142328                       /vendor/lib64/android.hardware.common-V2-ndk.so
+7d4feb3000-7d4feb4000 ---p 00000000 00:00 0                              [page size compat]
+7d4feb4000-7d4feb5000 r--p 00008000 fe:0a 40142328                       /vendor/lib64/android.hardware.common-V2-ndk.so
+7d4feb5000-7d4feb8000 ---p 00000000 00:00 0 
+7d4feb8000-7d4feb9000 rw-p 0000c000 fe:0a 40142328                       /vendor/lib64/android.hardware.common-V2-ndk.so
+7d4fef6000-7d4ffc5000 r--p 00000000 fe:0a 57530312                       /vendor/lib64/libgsl.so
+7d4ffc5000-7d4ffc6000 ---p 00000000 00:00 0 
+7d4ffc6000-7d500f7000 r-xp 000d0000 fe:0a 57530312                       /vendor/lib64/libgsl.so
+7d500f7000-7d500fa000 ---p 00000000 00:00 0 
+7d500fa000-7d500fc000 r--p 00204000 fe:0a 57530312                       /vendor/lib64/libgsl.so
+7d500fc000-7d500fe000 ---p 00000000 00:00 0 
+7d500fe000-7d500ff000 rw-p 00208000 fe:0a 57530312                       /vendor/lib64/libgsl.so
+7d500ff000-7d50100000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d50153000-7d5016d000 r--p 00000000 fe:0a 97770186                       /vendor/lib64/vendor.qti.hardware.hexlp-V2-ndk.so
+7d5016d000-7d5016f000 ---p 00000000 00:00 0                              [page size compat]
+7d5016f000-7d50195000 r-xp 0001c000 fe:0a 97770186                       /vendor/lib64/vendor.qti.hardware.hexlp-V2-ndk.so
+7d50195000-7d50197000 ---p 00000000 00:00 0                              [page size compat]
+7d50197000-7d50199000 r--p 00044000 fe:0a 97770186                       /vendor/lib64/vendor.qti.hardware.hexlp-V2-ndk.so
+7d50199000-7d5019b000 ---p 00000000 00:00 0 
+7d5019b000-7d5019c000 rw-p 00048000 fe:0a 97770186                       /vendor/lib64/vendor.qti.hardware.hexlp-V2-ndk.so
+7d501e3000-7d501e9000 r--p 00000000 fe:0a 98879558                       /vendor/lib64/egl/libEGL_adreno.so
+7d501e9000-7d501eb000 ---p 00000000 00:00 0 
+7d501eb000-7d501f0000 r-xp 00008000 fe:0a 98879558                       /vendor/lib64/egl/libEGL_adreno.so
+7d501f0000-7d501f3000 ---p 00000000 00:00 0 
+7d501f3000-7d501f4000 r--p 00010000 fe:0a 98879558                       /vendor/lib64/egl/libEGL_adreno.so
+7d501f4000-7d501f7000 ---p 00000000 00:00 0 
+7d501f7000-7d501f8000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d50200000-7d51600000 ---p 00000000 00:00 0 
+7d51647000-7d51659000 r--p 00000000 fe:07 149564800                      /system/lib64/libGLESv2.so
+7d51659000-7d5165b000 ---p 00000000 00:00 0                              [page size compat]
+7d5165b000-7d51661000 r-xp 00014000 fe:07 149564800                      /system/lib64/libGLESv2.so
+7d51661000-7d51663000 ---p 00000000 00:00 0                              [page size compat]
+7d51663000-7d51664000 r--p 0001c000 fe:07 149564800                      /system/lib64/libGLESv2.so
+7d5168f000-7d51691000 r--p 00000000 fe:07 149540992                      /system/lib64/android.hardware.configstore-utils.so
+7d51691000-7d51693000 ---p 00000000 00:00 0                              [page size compat]
+7d51693000-7d51695000 r-xp 00004000 fe:07 149540992                      /system/lib64/android.hardware.configstore-utils.so
+7d51695000-7d51697000 ---p 00000000 00:00 0                              [page size compat]
+7d51697000-7d51698000 r--p 00008000 fe:07 149540992                      /system/lib64/android.hardware.configstore-utils.so
+7d51698000-7d5169b000 ---p 00000000 00:00 0 
+7d5169b000-7d5169c000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d516d5000-7d516e3000 r--p 00000000 fe:07 149541120                      /system/lib64/android.hardware.configstore@1.0.so
+7d516e3000-7d516e5000 ---p 00000000 00:00 0                              [page size compat]
+7d516e5000-7d516f7000 r-xp 00010000 fe:07 149541120                      /system/lib64/android.hardware.configstore@1.0.so
+7d516f7000-7d516f9000 ---p 00000000 00:00 0                              [page size compat]
+7d516f9000-7d516fc000 r--p 00024000 fe:07 149541120                      /system/lib64/android.hardware.configstore@1.0.so
+7d516fc000-7d516fd000 ---p 00000000 00:00 0 
+7d516fd000-7d516fe000 rw-p 00028000 fe:07 149541120                      /system/lib64/android.hardware.configstore@1.0.so
+7d51703000-7d5170c000 r--p 00000000 fe:07 149565824                      /system/lib64/libaconfig_storage_read_api_cc.so
+7d5170c000-7d5170f000 ---p 00000000 00:00 0                              [page size compat]
+7d5170f000-7d5171d000 r-xp 0000c000 fe:07 149565824                      /system/lib64/libaconfig_storage_read_api_cc.so
+7d5171d000-7d5171f000 ---p 00000000 00:00 0                              [page size compat]
+7d5171f000-7d51721000 r--p 0001c000 fe:07 149565824                      /system/lib64/libaconfig_storage_read_api_cc.so
+7d51721000-7d51723000 ---p 00000000 00:00 0 
+7d51723000-7d51724000 rw-p 00020000 fe:07 149565824                      /system/lib64/libaconfig_storage_read_api_cc.so
+7d51762000-7d51763000 r--p 00000000 fe:07 149613696                      /system/lib64/libnativeloader_lazy.so
+7d51763000-7d51766000 ---p 00000000 00:00 0                              [page size compat]
+7d51766000-7d51767000 r-xp 00004000 fe:07 149613696                      /system/lib64/libnativeloader_lazy.so
+7d51767000-7d5176a000 ---p 00000000 00:00 0                              [page size compat]
+7d5176a000-7d5176b000 r--p 00008000 fe:07 149613696                      /system/lib64/libnativeloader_lazy.so
+7d5176b000-7d5176e000 ---p 00000000 00:00 0 
+7d5176e000-7d5176f000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d517ae000-7d517b1000 r--p 00000000 fe:07 149570048                      /system/lib64/libutilscallstack.so
+7d517b1000-7d517b2000 ---p 00000000 00:00 0                              [page size compat]
+7d517b2000-7d517b5000 r-xp 00004000 fe:07 149570048                      /system/lib64/libutilscallstack.so
+7d517b5000-7d517b6000 ---p 00000000 00:00 0                              [page size compat]
+7d517b6000-7d517b7000 r--p 00008000 fe:07 149570048                      /system/lib64/libutilscallstack.so
+7d517b7000-7d517ba000 ---p 00000000 00:00 0 
+7d517ba000-7d517bb000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d517e3000-7d517e4000 r--p 00000000 fe:07 149590784                      /system/lib64/libegl_flags.so
+7d517e4000-7d517e7000 ---p 00000000 00:00 0                              [page size compat]
+7d517e7000-7d517e8000 r-xp 00004000 fe:07 149590784                      /system/lib64/libegl_flags.so
+7d517e8000-7d517eb000 ---p 00000000 00:00 0                              [page size compat]
+7d517eb000-7d517ec000 r--p 00008000 fe:07 149590784                      /system/lib64/libegl_flags.so
+7d517ec000-7d517ef000 ---p 00000000 00:00 0 
+7d517ef000-7d517f0000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5181b000-7d51828000 r--p 00000000 fe:07 149530448                      /system/lib64/android.hardware.configstore@1.1.so
+7d51828000-7d5182b000 ---p 00000000 00:00 0                              [page size compat]
+7d5182b000-7d51839000 r-xp 00010000 fe:07 149530448                      /system/lib64/android.hardware.configstore@1.1.so
+7d51839000-7d5183b000 ---p 00000000 00:00 0                              [page size compat]
+7d5183b000-7d5183e000 r--p 00020000 fe:07 149530448                      /system/lib64/android.hardware.configstore@1.1.so
+7d5183e000-7d5183f000 ---p 00000000 00:00 0 
+7d5183f000-7d51840000 rw-p 00024000 fe:07 149530448                      /system/lib64/android.hardware.configstore@1.1.so
+7d5184c000-7d5196e000 r--p 00000000 fe:0a 99072256                       /vendor/lib64/egl/libGLESv2_adreno.so
+7d5196e000-7d51970000 ---p 00000000 00:00 0 
+7d51970000-7d51c96000 r-xp 00124000 fe:0a 99072256                       /vendor/lib64/egl/libGLESv2_adreno.so
+7d51c96000-7d51c98000 ---p 00000000 00:00 0 
+7d51c98000-7d51ca5000 r--p 0044c000 fe:0a 99072256                       /vendor/lib64/egl/libGLESv2_adreno.so
+7d51ca5000-7d51ca8000 ---p 00000000 00:00 0 
+7d51ca8000-7d51cae000 rw-p 0045c000 fe:0a 99072256                       /vendor/lib64/egl/libGLESv2_adreno.so
+7d51cae000-7d51cd0000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d51d42000-7d51d4b000 r--p 00000000 fe:07 149608320                      /system/lib64/liblzma.so
+7d51d4b000-7d51d4e000 ---p 00000000 00:00 0                              [page size compat]
+7d51d4e000-7d51d6b000 r-xp 0000c000 fe:07 149608320                      /system/lib64/liblzma.so
+7d51d6b000-7d51d6e000 ---p 00000000 00:00 0                              [page size compat]
+7d51d6e000-7d51d6f000 r--p 0002c000 fe:07 149608320                      /system/lib64/liblzma.so
+7d51d6f000-7d51d72000 ---p 00000000 00:00 0 
+7d51d72000-7d51d73000 rw-p 00030000 fe:07 149608320                      /system/lib64/liblzma.so
+7d51d73000-7d51d7e000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d51d93000-7d51d9b000 r--p 00000000 fe:07 149549312                      /system/lib64/libgraphicsenv.so
+7d51d9b000-7d51da3000 r-xp 00008000 fe:07 149549312                      /system/lib64/libgraphicsenv.so
+7d51da3000-7d51da5000 r--p 00010000 fe:07 149549312                      /system/lib64/libgraphicsenv.so
+7d51da5000-7d51da7000 ---p 00000000 00:00 0 
+7d51da7000-7d51da8000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d51dd5000-7d51dd6000 r--p 00000000 fe:07 149613312                      /system/lib64/libnativebridge_lazy.so
+7d51dd6000-7d51dd9000 ---p 00000000 00:00 0                              [page size compat]
+7d51dd9000-7d51dda000 r-xp 00004000 fe:07 149613312                      /system/lib64/libnativebridge_lazy.so
+7d51dda000-7d51ddd000 ---p 00000000 00:00 0                              [page size compat]
+7d51ddd000-7d51dde000 r--p 00008000 fe:07 149613312                      /system/lib64/libnativebridge_lazy.so
+7d51dde000-7d51de1000 ---p 00000000 00:00 0 
+7d51de1000-7d51de2000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d51e00000-7d55000000 ---p 00000000 00:00 0 
+7d5504e000-7d550b8000 r--p 00000000 fe:0a 97771816                       /vendor/lib64/libllvm-glnext.so
+7d550b8000-7d550ba000 ---p 00000000 00:00 0 
+7d550ba000-7d55229000 r-xp 0006c000 fe:0a 97771816                       /vendor/lib64/libllvm-glnext.so
+7d55229000-7d5522a000 ---p 00000000 00:00 0 
+7d5522a000-7d5522f000 r--p 001dc000 fe:0a 97771816                       /vendor/lib64/libllvm-glnext.so
+7d5522f000-7d55232000 ---p 00000000 00:00 0 
+7d55232000-7d55236000 rw-p 001e4000 fe:0a 97771816                       /vendor/lib64/libllvm-glnext.so
+7d55236000-7d5526d000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d552c9000-7d552ee000 r--p 00000000 fe:07 149563136                      /system/lib64/libEGL.so
+7d552ee000-7d552f1000 ---p 00000000 00:00 0                              [page size compat]
+7d552f1000-7d55329000 r-xp 00028000 fe:07 149563136                      /system/lib64/libEGL.so
+7d55329000-7d5532e000 r--p 00060000 fe:07 149563136                      /system/lib64/libEGL.so
+7d5532e000-7d55331000 ---p 00000000 00:00 0 
+7d55331000-7d55334000 rw-p 00068000 fe:07 149563136                      /system/lib64/libEGL.so
+7d55334000-7d5533c000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5534c000-7d5537c000 r--p 00000000 fe:07 149540691                      /system/lib64/libunwindstack.so
+7d5537c000-7d553f1000 r-xp 00030000 fe:07 149540691                      /system/lib64/libunwindstack.so
+7d553f1000-7d553f4000 ---p 00000000 00:00 0                              [page size compat]
+7d553f4000-7d553fc000 r--p 000a8000 fe:07 149540691                      /system/lib64/libunwindstack.so
+7d553fc000-7d553fd000 rw-p 000b0000 fe:07 149540691                      /system/lib64/libunwindstack.so
+7d55400000-7d58000000 ---p 00000000 00:00 0 
+7d58053000-7d5805c000 r--p 00000000 fe:07 149545216                      /system/lib64/libSurfaceFlingerProp.so
+7d5805c000-7d5805f000 ---p 00000000 00:00 0                              [page size compat]
+7d5805f000-7d58069000 r-xp 0000c000 fe:07 149545216                      /system/lib64/libSurfaceFlingerProp.so
+7d58069000-7d5806b000 ---p 00000000 00:00 0                              [page size compat]
+7d5806b000-7d5806c000 r--p 00018000 fe:07 149545216                      /system/lib64/libSurfaceFlingerProp.so
+7d5806c000-7d5806f000 ---p 00000000 00:00 0 
+7d5806f000-7d58070000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d58096000-7d58098000 r--p 00000000 fe:07 149642112                      /system/lib64/server_configurable_flags.so
+7d58098000-7d5809a000 ---p 00000000 00:00 0                              [page size compat]
+7d5809a000-7d5809c000 r-xp 00004000 fe:07 149642112                      /system/lib64/server_configurable_flags.so
+7d5809c000-7d5809e000 ---p 00000000 00:00 0                              [page size compat]
+7d5809e000-7d5809f000 r--p 00008000 fe:07 149642112                      /system/lib64/server_configurable_flags.so
+7d580e3000-7d580e4000 ---p 00000000 00:00 0 
+7d580e4000-7d58185000 rw-p 00000000 00:00 0                              [anon:scudo:secondary]
+7d58185000-7d58186000 ---p 00000000 00:00 0 
+7d58186000-7d58187000 r--p 00000000 07:88 27                             /apex/com.android.runtime/lib64/bionic/libdl_android.so
+7d58187000-7d5818a000 ---p 00000000 00:00 0                              [page size compat]
+7d5818a000-7d5818b000 r-xp 00004000 07:88 27                             /apex/com.android.runtime/lib64/bionic/libdl_android.so
+7d5818b000-7d5818e000 ---p 00000000 00:00 0                              [page size compat]
+7d5818e000-7d5818f000 r--p 00008000 07:88 27                             /apex/com.android.runtime/lib64/bionic/libdl_android.so
+7d581ce000-7d581dc000 r--p 00000000 fe:07 149570029                      /system/lib64/libutils.so
+7d581dc000-7d581de000 ---p 00000000 00:00 0                              [page size compat]
+7d581de000-7d581ef000 r-xp 00010000 fe:07 149570029                      /system/lib64/libutils.so
+7d581ef000-7d581f2000 ---p 00000000 00:00 0                              [page size compat]
+7d581f2000-7d581f3000 r--p 00024000 fe:07 149570029                      /system/lib64/libutils.so
+7d581f3000-7d581f6000 ---p 00000000 00:00 0 
+7d581f6000-7d581f7000 rw-p 00028000 fe:07 149570029                      /system/lib64/libutils.so
+7d5820f000-7d58217000 r--p 00000000 fe:07 149599488                      /system/lib64/libgralloctypes.so
+7d58217000-7d58221000 r-xp 00008000 fe:07 149599488                      /system/lib64/libgralloctypes.so
+7d58221000-7d58223000 ---p 00000000 00:00 0                              [page size compat]
+7d58223000-7d58224000 r--p 00014000 fe:07 149599488                      /system/lib64/libgralloctypes.so
+7d58224000-7d58227000 ---p 00000000 00:00 0 
+7d58227000-7d58228000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5825c000-7d58267000 r--p 00000000 fe:07 149543624                      /system/lib64/android.hardware.graphics.mapper@2.0.so
+7d58267000-7d58268000 ---p 00000000 00:00 0                              [page size compat]
+7d58268000-7d58275000 r-xp 0000c000 fe:07 149543624                      /system/lib64/android.hardware.graphics.mapper@2.0.so
+7d58275000-7d58278000 ---p 00000000 00:00 0                              [page size compat]
+7d58278000-7d5827a000 r--p 0001c000 fe:07 149543624                      /system/lib64/android.hardware.graphics.mapper@2.0.so
+7d5827a000-7d5827c000 ---p 00000000 00:00 0 
+7d5827c000-7d5827d000 rw-p 00020000 fe:07 149543624                      /system/lib64/android.hardware.graphics.mapper@2.0.so
+7d58283000-7d5828f000 r--p 00000000 fe:07 149544832                      /system/lib64/android.hardware.graphics.mapper@3.0.so
+7d5828f000-7d5829e000 r-xp 0000c000 fe:07 149544832                      /system/lib64/android.hardware.graphics.mapper@3.0.so
+7d5829e000-7d5829f000 ---p 00000000 00:00 0                              [page size compat]
+7d5829f000-7d582a1000 r--p 0001c000 fe:07 149544832                      /system/lib64/android.hardware.graphics.mapper@3.0.so
+7d582a1000-7d582a3000 ---p 00000000 00:00 0 
+7d582a3000-7d582a4000 rw-p 00020000 fe:07 149544832                      /system/lib64/android.hardware.graphics.mapper@3.0.so
+7d582cf000-7d5839e000 r--p 00000000 fe:0a 57530312                       /vendor/lib64/libgsl.so
+7d5839e000-7d5839f000 ---p 00000000 00:00 0 
+7d5839f000-7d584d0000 r-xp 000d0000 fe:0a 57530312                       /vendor/lib64/libgsl.so
+7d584d0000-7d584d3000 ---p 00000000 00:00 0 
+7d584d3000-7d584d5000 r--p 00204000 fe:0a 57530312                       /vendor/lib64/libgsl.so
+7d584d5000-7d584d7000 ---p 00000000 00:00 0 
+7d584d7000-7d584d8000 rw-p 00208000 fe:0a 57530312                       /vendor/lib64/libgsl.so
+7d584d8000-7d584d9000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d58555000-7d58556000 r--p 00000000 fe:07 149632896                      /system/lib64/libsync.so
+7d58556000-7d58559000 ---p 00000000 00:00 0                              [page size compat]
+7d58559000-7d5855a000 r-xp 00004000 fe:07 149632896                      /system/lib64/libsync.so
+7d5855a000-7d5855d000 ---p 00000000 00:00 0                              [page size compat]
+7d5855d000-7d5855e000 r--p 00008000 fe:07 149632896                      /system/lib64/libsync.so
+7d5855e000-7d58561000 ---p 00000000 00:00 0 
+7d58561000-7d58562000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5858e000-7d5859a000 r--p 00000000 fe:07 149544259                      /system/lib64/android.hardware.graphics.mapper@2.1.so
+7d5859a000-7d585a8000 r-xp 0000c000 fe:07 149544259                      /system/lib64/android.hardware.graphics.mapper@2.1.so
+7d585a8000-7d585aa000 ---p 00000000 00:00 0                              [page size compat]
+7d585aa000-7d585ac000 r--p 0001c000 fe:07 149544259                      /system/lib64/android.hardware.graphics.mapper@2.1.so
+7d585ac000-7d585ae000 ---p 00000000 00:00 0 
+7d585ae000-7d585af000 rw-p 00020000 fe:07 149544259                      /system/lib64/android.hardware.graphics.mapper@2.1.so
+7d585c4000-7d585ca000 r--p 00000000 fe:07 149536757                      /system/lib64/android.hardware.graphics.allocator-V2-ndk.so
+7d585ca000-7d585cc000 ---p 00000000 00:00 0                              [page size compat]
+7d585cc000-7d585d3000 r-xp 00008000 fe:07 149536757                      /system/lib64/android.hardware.graphics.allocator-V2-ndk.so
+7d585d3000-7d585d4000 ---p 00000000 00:00 0                              [page size compat]
+7d585d4000-7d585d5000 r--p 00010000 fe:07 149536757                      /system/lib64/android.hardware.graphics.allocator-V2-ndk.so
+7d585d5000-7d585d8000 ---p 00000000 00:00 0 
+7d585d8000-7d585d9000 rw-p 00014000 fe:07 149536757                      /system/lib64/android.hardware.graphics.allocator-V2-ndk.so
+7d58600000-7d5c400000 ---p 00000000 00:00 0 
+7d5c46d000-7d5c46f000 r--p 00000000 fe:07 149540480                      /system/lib64/android.hardware.common-V2-ndk.so
+7d5c46f000-7d5c471000 ---p 00000000 00:00 0                              [page size compat]
+7d5c471000-7d5c473000 r-xp 00004000 fe:07 149540480                      /system/lib64/android.hardware.common-V2-ndk.so
+7d5c473000-7d5c475000 ---p 00000000 00:00 0                              [page size compat]
+7d5c475000-7d5c476000 r--p 00008000 fe:07 149540480                      /system/lib64/android.hardware.common-V2-ndk.so
+7d5c476000-7d5c479000 ---p 00000000 00:00 0 
+7d5c479000-7d5c47a000 rw-p 0000c000 fe:07 149540480                      /system/lib64/android.hardware.common-V2-ndk.so
+7d5c48c000-7d5c496000 r--p 00000000 fe:07 149534810                      /system/lib64/android.hardware.graphics.allocator@2.0.so
+7d5c496000-7d5c498000 ---p 00000000 00:00 0                              [page size compat]
+7d5c498000-7d5c4a4000 r-xp 0000c000 fe:07 149534810                      /system/lib64/android.hardware.graphics.allocator@2.0.so
+7d5c4a4000-7d5c4a6000 r--p 00018000 fe:07 149534810                      /system/lib64/android.hardware.graphics.allocator@2.0.so
+7d5c4a6000-7d5c4a8000 ---p 00000000 00:00 0 
+7d5c4a8000-7d5c4a9000 rw-p 0001c000 fe:07 149534810                      /system/lib64/android.hardware.graphics.allocator@2.0.so
+7d5c4d6000-7d5c500000 r--p 00000000 fe:07 149549440                      /system/lib64/libui.so
+7d5c500000-7d5c502000 ---p 00000000 00:00 0                              [page size compat]
+7d5c502000-7d5c539000 r-xp 0002c000 fe:07 149549440                      /system/lib64/libui.so
+7d5c539000-7d5c53a000 ---p 00000000 00:00 0                              [page size compat]
+7d5c53a000-7d5c53d000 r--p 00064000 fe:07 149549440                      /system/lib64/libui.so
+7d5c53d000-7d5c53e000 ---p 00000000 00:00 0 
+7d5c53e000-7d5c540000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5c569000-7d5c583000 r--p 00000000 fe:07 149576311                      /system/lib64/vendor.qti.hardware.hexlp-V2-ndk.so
+7d5c583000-7d5c585000 ---p 00000000 00:00 0                              [page size compat]
+7d5c585000-7d5c5a9000 r-xp 0001c000 fe:07 149576311                      /system/lib64/vendor.qti.hardware.hexlp-V2-ndk.so
+7d5c5a9000-7d5c5ab000 r--p 00040000 fe:07 149576311                      /system/lib64/vendor.qti.hardware.hexlp-V2-ndk.so
+7d5c5ab000-7d5c5ad000 ---p 00000000 00:00 0 
+7d5c5ad000-7d5c5ae000 rw-p 00044000 fe:07 149576311                      /system/lib64/vendor.qti.hardware.hexlp-V2-ndk.so
+7d5c600000-7d5e800000 ---p 00000000 00:00 0 
+7d5e850000-7d5e861000 r--p 00000000 fe:07 149539456                      /system/lib64/libbinder_ndk.so
+7d5e861000-7d5e864000 ---p 00000000 00:00 0                              [page size compat]
+7d5e864000-7d5e876000 r-xp 00014000 fe:07 149539456                      /system/lib64/libbinder_ndk.so
+7d5e876000-7d5e878000 ---p 00000000 00:00 0                              [page size compat]
+7d5e878000-7d5e87a000 r--p 00028000 fe:07 149539456                      /system/lib64/libbinder_ndk.so
+7d5e87a000-7d5e87c000 ---p 00000000 00:00 0 
+7d5e87c000-7d5e87d000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5e886000-7d5e894000 r--p 00000000 fe:07 149572810                      /system/lib64/libbase.so
+7d5e894000-7d5e896000 ---p 00000000 00:00 0                              [page size compat]
+7d5e896000-7d5e8b3000 r-xp 00010000 fe:07 149572810                      /system/lib64/libbase.so
+7d5e8b3000-7d5e8b6000 ---p 00000000 00:00 0                              [page size compat]
+7d5e8b6000-7d5e8b7000 r--p 00030000 fe:07 149572810                      /system/lib64/libbase.so
+7d5e8b7000-7d5e8ba000 ---p 00000000 00:00 0 
+7d5e8ba000-7d5e8bb000 rw-p 00034000 fe:07 149572810                      /system/lib64/libbase.so
+7d5e8e1000-7d5e8ea000 r--p 00000000 fe:07 149548541                      /system/lib64/libdmabufheap.so
+7d5e8ea000-7d5e8ed000 ---p 00000000 00:00 0                              [page size compat]
+7d5e8ed000-7d5e8f9000 r-xp 0000c000 fe:07 149548541                      /system/lib64/libdmabufheap.so
+7d5e8f9000-7d5e8fa000 r--p 00018000 fe:07 149548541                      /system/lib64/libdmabufheap.so
+7d5e8fa000-7d5e8fd000 ---p 00000000 00:00 0 
+7d5e8fd000-7d5e8fe000 rw-p 0001c000 fe:07 149548541                      /system/lib64/libdmabufheap.so
+7d5e907000-7d5e910000 r--p 00000000 fe:07 149584256                      /system/lib64/libcutils.so
+7d5e910000-7d5e913000 ---p 00000000 00:00 0                              [page size compat]
+7d5e913000-7d5e91e000 r-xp 0000c000 fe:07 149584256                      /system/lib64/libcutils.so
+7d5e91e000-7d5e91f000 ---p 00000000 00:00 0                              [page size compat]
+7d5e91f000-7d5e921000 r--p 00018000 fe:07 149584256                      /system/lib64/libcutils.so
+7d5e921000-7d5e923000 ---p 00000000 00:00 0 
+7d5e923000-7d5e924000 rw-p 0001c000 fe:07 149584256                      /system/lib64/libcutils.so
+7d5e96f000-7d5e970000 r--p 00000000 fe:07 149540096                      /system/lib64/android.hardware.graphics.common@1.1.so
+7d5e970000-7d5e973000 ---p 00000000 00:00 0                              [page size compat]
+7d5e973000-7d5e975000 r-xp 00004000 fe:07 149540096                      /system/lib64/android.hardware.graphics.common@1.1.so
+7d5e975000-7d5e977000 ---p 00000000 00:00 0                              [page size compat]
+7d5e977000-7d5e978000 r--p 00008000 fe:07 149540096                      /system/lib64/android.hardware.graphics.common@1.1.so
+7d5e982000-7d5e983000 r--p 00000000 fe:07 149543808                      /system/lib64/android.hardware.graphics.common@1.2.so
+7d5e983000-7d5e986000 ---p 00000000 00:00 0                              [page size compat]
+7d5e986000-7d5e988000 r-xp 00004000 fe:07 149543808                      /system/lib64/android.hardware.graphics.common@1.2.so
+7d5e988000-7d5e98a000 ---p 00000000 00:00 0                              [page size compat]
+7d5e98a000-7d5e98b000 r--p 00008000 fe:07 149543808                      /system/lib64/android.hardware.graphics.common@1.2.so
+7d5e98b000-7d5e98e000 ---p 00000000 00:00 0 
+7d5e98e000-7d5e98f000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5e9c9000-7d5e9cf000 r--p 00000000 fe:0a 98879558                       /vendor/lib64/egl/libEGL_adreno.so
+7d5e9cf000-7d5e9d1000 ---p 00000000 00:00 0 
+7d5e9d1000-7d5e9d6000 r-xp 00008000 fe:0a 98879558                       /vendor/lib64/egl/libEGL_adreno.so
+7d5e9d6000-7d5e9d9000 ---p 00000000 00:00 0 
+7d5e9d9000-7d5e9da000 r--p 00010000 fe:0a 98879558                       /vendor/lib64/egl/libEGL_adreno.so
+7d5e9da000-7d5e9dd000 ---p 00000000 00:00 0 
+7d5e9dd000-7d5e9de000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5ea10000-7d5ea1f000 r--p 00000000 fe:07 149545088                      /system/lib64/android.hardware.graphics.mapper@4.0.so
+7d5ea1f000-7d5ea20000 ---p 00000000 00:00 0                              [page size compat]
+7d5ea20000-7d5ea33000 r-xp 00010000 fe:07 149545088                      /system/lib64/android.hardware.graphics.mapper@4.0.so
+7d5ea33000-7d5ea34000 ---p 00000000 00:00 0                              [page size compat]
+7d5ea34000-7d5ea37000 r--p 00024000 fe:07 149545088                      /system/lib64/android.hardware.graphics.mapper@4.0.so
+7d5ea37000-7d5ea38000 ---p 00000000 00:00 0 
+7d5ea38000-7d5ea39000 rw-p 00028000 fe:07 149545088                      /system/lib64/android.hardware.graphics.mapper@4.0.so
+7d5ea48000-7d5ea63000 r--p 00000000 fe:07 149618304                      /system/lib64/libprocessgroup.so
+7d5ea63000-7d5ea64000 ---p 00000000 00:00 0                              [page size compat]
+7d5ea64000-7d5ea9c000 r-xp 0001c000 fe:07 149618304                      /system/lib64/libprocessgroup.so
+7d5ea9c000-7d5ea9e000 r--p 00054000 fe:07 149618304                      /system/lib64/libprocessgroup.so
+7d5ea9e000-7d5eaa0000 ---p 00000000 00:00 0 
+7d5eaa0000-7d5eaa1000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5ead2000-7d5ead7000 r--p 00000000 fe:07 149613824                      /system/lib64/libnativewindow.so
+7d5ead7000-7d5eada000 ---p 00000000 00:00 0                              [page size compat]
+7d5eada000-7d5eadd000 r-xp 00008000 fe:07 149613824                      /system/lib64/libnativewindow.so
+7d5eadd000-7d5eade000 ---p 00000000 00:00 0                              [page size compat]
+7d5eade000-7d5eadf000 r--p 0000c000 fe:07 149613824                      /system/lib64/libnativewindow.so
+7d5eadf000-7d5eae2000 ---p 00000000 00:00 0 
+7d5eae2000-7d5eae3000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5eb17000-7d5eb21000 r--p 00000000 fe:07 149540058                      /system/lib64/android.hardware.graphics.allocator@3.0.so
+7d5eb21000-7d5eb23000 ---p 00000000 00:00 0                              [page size compat]
+7d5eb23000-7d5eb2f000 r-xp 0000c000 fe:07 149540058                      /system/lib64/android.hardware.graphics.allocator@3.0.so
+7d5eb2f000-7d5eb31000 r--p 00018000 fe:07 149540058                      /system/lib64/android.hardware.graphics.allocator@3.0.so
+7d5eb31000-7d5eb33000 ---p 00000000 00:00 0 
+7d5eb33000-7d5eb34000 rw-p 0001c000 fe:07 149540058                      /system/lib64/android.hardware.graphics.allocator@3.0.so
+7d5eb4b000-7d5eb53000 r--p 00000000 fe:0a 41416566                       /vendor/lib64/libadreno_utils.so
+7d5eb53000-7d5eb65000 r-xp 00008000 fe:0a 41416566                       /vendor/lib64/libadreno_utils.so
+7d5eb65000-7d5eb67000 ---p 00000000 00:00 0 
+7d5eb67000-7d5eb68000 r--p 0001c000 fe:0a 41416566                       /vendor/lib64/libadreno_utils.so
+7d5eb68000-7d5eb6b000 ---p 00000000 00:00 0 
+7d5eb6b000-7d5eb6c000 rw-p 00020000 fe:0a 41416566                       /vendor/lib64/libadreno_utils.so
+7d5eb83000-7d5eb84000 r--p 00000000 fe:07 149534848                      /system/lib64/android.hardware.graphics.common@1.0.so
+7d5eb84000-7d5eb87000 ---p 00000000 00:00 0                              [page size compat]
+7d5eb87000-7d5eb89000 r-xp 00004000 fe:07 149534848                      /system/lib64/android.hardware.graphics.common@1.0.so
+7d5eb89000-7d5eb8b000 ---p 00000000 00:00 0                              [page size compat]
+7d5eb8b000-7d5eb8c000 r--p 00008000 fe:07 149534848                      /system/lib64/android.hardware.graphics.common@1.0.so
+7d5ebc6000-7d5ebca000 r--p 00000000 fe:07 149525888                      /system/lib64/android.hardware.graphics.common-V7-ndk.so
+7d5ebca000-7d5ebce000 r-xp 00004000 fe:07 149525888                      /system/lib64/android.hardware.graphics.common-V7-ndk.so
+7d5ebce000-7d5ebcf000 r--p 00008000 fe:07 149525888                      /system/lib64/android.hardware.graphics.common-V7-ndk.so
+7d5ebcf000-7d5ebd2000 ---p 00000000 00:00 0 
+7d5ebd2000-7d5ebd3000 rw-p 0000c000 fe:07 149525888                      /system/lib64/android.hardware.graphics.common-V7-ndk.so
+7d5ec32000-7d5ec7f000 r--p 00000000 fe:07 149561169                      /system/lib64/libbinder.so
+7d5ec7f000-7d5ec82000 ---p 00000000 00:00 0                              [page size compat]
+7d5ec82000-7d5ecfb000 r-xp 00050000 fe:07 149561169                      /system/lib64/libbinder.so
+7d5ecfb000-7d5ecfe000 ---p 00000000 00:00 0                              [page size compat]
+7d5ecfe000-7d5ed0e000 r--p 000cc000 fe:07 149561169                      /system/lib64/libbinder.so
+7d5ed0e000-7d5ed0f000 rw-p 000dc000 fe:07 149561169                      /system/lib64/libbinder.so
+7d5ed83000-7d5ed8d000 r--p 00000000 fe:07 149532254                      /system/lib64/android.hardware.graphics.allocator@4.0.so
+7d5ed8d000-7d5ed8f000 ---p 00000000 00:00 0                              [page size compat]
+7d5ed8f000-7d5ed9a000 r-xp 0000c000 fe:07 149532254                      /system/lib64/android.hardware.graphics.allocator@4.0.so
+7d5ed9a000-7d5ed9b000 ---p 00000000 00:00 0                              [page size compat]
+7d5ed9b000-7d5ed9d000 r--p 00018000 fe:07 149532254                      /system/lib64/android.hardware.graphics.allocator@4.0.so
+7d5ed9d000-7d5ed9f000 ---p 00000000 00:00 0 
+7d5ed9f000-7d5eda0000 rw-p 0001c000 fe:07 149532254                      /system/lib64/android.hardware.graphics.allocator@4.0.so
+7d5edc4000-7d5edd4000 r--p 00000000 fe:07 149573248                      /system/lib64/libapexsupport.so
+7d5edd4000-7d5ede9000 r-xp 00010000 fe:07 149573248                      /system/lib64/libapexsupport.so
+7d5ede9000-7d5edec000 ---p 00000000 00:00 0                              [page size compat]
+7d5edec000-7d5edef000 r--p 00028000 fe:07 149573248                      /system/lib64/libapexsupport.so
+7d5edef000-7d5edf0000 ---p 00000000 00:00 0 
+7d5edf0000-7d5edf1000 rw-p 0002c000 fe:07 149573248                      /system/lib64/libapexsupport.so
+7d5ee00000-7d5fc00000 ---p 00000000 00:00 0 
+7d5fc5c000-7d5fdd5000 r-xp 00000000 fe:42 68519                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libGPUProf.so
+7d5fdd5000-7d5fdd8000 ---p 00000000 00:00 0 
+7d5fdd8000-7d5fdf4000 r--p 00178000 fe:42 68519                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libGPUProf.so
+7d5fdf4000-7d5fdf7000 ---p 00000000 00:00 0 
+7d5fdf7000-7d5fdfb000 rw-p 00193000 fe:42 68519                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libGPUProf.so
+7d5fdfb000-7d5fdfe000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d5fe00000-7d63800000 ---p 00000000 00:00 0 
+7d63854000-7d63894000 r--p 00000000 fe:07 149602560                      /system/lib64/libhidlbase.so
+7d63894000-7d638e8000 r-xp 00040000 fe:07 149602560                      /system/lib64/libhidlbase.so
+7d638e8000-7d638f3000 r--p 00094000 fe:07 149602560                      /system/lib64/libhidlbase.so
+7d638f3000-7d638f4000 ---p 00000000 00:00 0 
+7d638f4000-7d638f5000 rw-p 000a0000 fe:07 149602560                      /system/lib64/libhidlbase.so
+7d63900000-7d63901000 r--p 00000000 fe:07 149638528                      /system/lib64/libvndksupport.so
+7d63901000-7d63904000 ---p 00000000 00:00 0                              [page size compat]
+7d63904000-7d63905000 r-xp 00004000 fe:07 149638528                      /system/lib64/libvndksupport.so
+7d63905000-7d63908000 ---p 00000000 00:00 0                              [page size compat]
+7d63908000-7d63909000 r--p 00008000 fe:07 149638528                      /system/lib64/libvndksupport.so
+7d63909000-7d6390c000 ---p 00000000 00:00 0 
+7d6390c000-7d6390d000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d63924000-7d63954000 r--s 00000000 00:13 175                            /dev/__properties__/u:object_r:build_vendor_prop:s0
+7d63954000-7d6395c000 r--p 00000000 fe:42 68592                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libz.so
+7d6395c000-7d63975000 r-xp 00007000 fe:42 68592                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libz.so
+7d63975000-7d63976000 r--p 0001f000 fe:42 68592                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libz.so
+7d6398f000-7d63994000 r--p 00000000 fe:0a 102133666                      /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+7d63994000-7d63997000 ---p 00000000 00:00 0 
+7d63997000-7d6399f000 r-xp 00004000 fe:0a 102133666                      /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+7d6399f000-7d639a2000 ---p 00000000 00:00 0 
+7d639a2000-7d639a4000 r--p 0000b000 fe:0a 102133666                      /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+7d639a4000-7d639a7000 ---p 00000000 00:00 0 
+7d639a7000-7d639a8000 rw-p 0000c000 fe:0a 102133666                      /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+7d639b3000-7d639e3000 r--s 00000000 00:13 165                            /dev/__properties__/u:object_r:bootloader_prop:s0
+7d639e3000-7d639e6000 r--p 00000000 fe:0a 102133663                      /vendor/qprof/libs/handlers/libQualcommProfilerCpuHandler.so
+7d639e6000-7d639e9000 ---p 00000000 00:00 0 
+7d639e9000-7d639ee000 r-xp 00002000 fe:0a 102133663                      /vendor/qprof/libs/handlers/libQualcommProfilerCpuHandler.so
+7d639ee000-7d639f1000 ---p 00000000 00:00 0 
+7d639f1000-7d639f2000 r--p 00006000 fe:0a 102133663                      /vendor/qprof/libs/handlers/libQualcommProfilerCpuHandler.so
+7d639f2000-7d639f5000 ---p 00000000 00:00 0 
+7d639f5000-7d639f6000 rw-p 00006000 fe:0a 102133663                      /vendor/qprof/libs/handlers/libQualcommProfilerCpuHandler.so
+7d63a0c000-7d63a0f000 r--p 00000000 fe:42 68587                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerThreadProfiler.so
+7d63a0f000-7d63a12000 ---p 00000000 00:00 0 
+7d63a12000-7d63a15000 r-xp 00002000 fe:42 68587                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerThreadProfiler.so
+7d63a15000-7d63a18000 ---p 00000000 00:00 0 
+7d63a18000-7d63a19000 r--p 00004000 fe:42 68587                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerThreadProfiler.so
+7d63a19000-7d63a1c000 ---p 00000000 00:00 0 
+7d63a1c000-7d63a1d000 rw-p 00004000 fe:42 68587                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerThreadProfiler.so
+7d63a42000-7d63a46000 r--p 00000000 fe:42 68618                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerThreadProfilingHandler.so
+7d63a46000-7d63a49000 ---p 00000000 00:00 0 
+7d63a49000-7d63a53000 r-xp 00003000 fe:42 68618                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerThreadProfilingHandler.so
+7d63a53000-7d63a56000 ---p 00000000 00:00 0 
+7d63a56000-7d63a57000 r--p 0000c000 fe:42 68618                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerThreadProfilingHandler.so
+7d63a57000-7d63a5a000 ---p 00000000 00:00 0 
+7d63a5a000-7d63a5b000 rw-p 0000c000 fe:42 68618                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerThreadProfilingHandler.so
+7d63a71000-7d63aa1000 r--s 00000000 00:13 601                            /dev/__properties__/u:object_r:vendor_gralloc_prop:s0
+7d63aa1000-7d63aa6000 r--p 00000000 fe:42 68617                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerThermalHandler.so
+7d63aa6000-7d63aa9000 ---p 00000000 00:00 0 
+7d63aa9000-7d63ab4000 r-xp 00004000 fe:42 68617                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerThermalHandler.so
+7d63ab4000-7d63ab7000 ---p 00000000 00:00 0 
+7d63ab7000-7d63ab8000 r--p 0000e000 fe:42 68617                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerThermalHandler.so
+7d63ab8000-7d63abb000 ---p 00000000 00:00 0 
+7d63abb000-7d63abc000 rw-p 0000e000 fe:42 68617                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerThermalHandler.so
+7d63abc000-7d63abd000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d63aca000-7d63ad0000 r--p 00000000 fe:42 68616                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerSysmonStatsHandler.so
+7d63ad0000-7d63ad3000 ---p 00000000 00:00 0 
+7d63ad3000-7d63ae0000 r-xp 00005000 fe:42 68616                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerSysmonStatsHandler.so
+7d63ae0000-7d63ae3000 ---p 00000000 00:00 0 
+7d63ae3000-7d63ae4000 r--p 00011000 fe:42 68616                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerSysmonStatsHandler.so
+7d63ae4000-7d63ae7000 ---p 00000000 00:00 0 
+7d63ae7000-7d63ae8000 rw-p 00011000 fe:42 68616                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerSysmonStatsHandler.so
+7d63ae8000-7d63aec000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d63b08000-7d63b41000 r-xp 00000000 fe:0a 102133641                      /vendor/qprof/libs/libsysmonapps.so
+7d63b41000-7d63b44000 ---p 00000000 00:00 0 
+7d63b44000-7d63b47000 rw-p 00038000 fe:0a 102133641                      /vendor/qprof/libs/libsysmonapps.so
+7d63b47000-7d63b7e000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d63b97000-7d63ba1000 r--p 00000000 fe:42 68615                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerSysmonProfilingHandler.so
+7d63ba1000-7d63ba4000 ---p 00000000 00:00 0 
+7d63ba4000-7d63bb7000 r-xp 00009000 fe:42 68615                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerSysmonProfilingHandler.so
+7d63bb7000-7d63bba000 ---p 00000000 00:00 0 
+7d63bba000-7d63bbb000 r--p 0001b000 fe:42 68615                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerSysmonProfilingHandler.so
+7d63bbb000-7d63bbe000 ---p 00000000 00:00 0 
+7d63bbe000-7d63bbf000 rw-p 0001b000 fe:42 68615                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerSysmonProfilingHandler.so
+7d63bbf000-7d63bc0000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d63be4000-7d63be8000 r--p 00000000 fe:42 68614                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerProcmemHandler.so
+7d63be8000-7d63beb000 ---p 00000000 00:00 0 
+7d63beb000-7d63bf6000 r-xp 00003000 fe:42 68614                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerProcmemHandler.so
+7d63bf6000-7d63bf9000 ---p 00000000 00:00 0 
+7d63bf9000-7d63bfa000 r--p 0000d000 fe:42 68614                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerProcmemHandler.so
+7d63bfa000-7d63bfd000 ---p 00000000 00:00 0 
+7d63bfd000-7d63bfe000 rw-p 0000d000 fe:42 68614                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerProcmemHandler.so
+7d63bfe000-7d63bff000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d63c22000-7d63c27000 r--p 00000000 fe:42 68613                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerProcessHandler.so
+7d63c27000-7d63c2a000 ---p 00000000 00:00 0 
+7d63c2a000-7d63c37000 r-xp 00004000 fe:42 68613                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerProcessHandler.so
+7d63c37000-7d63c3a000 ---p 00000000 00:00 0 
+7d63c3a000-7d63c3b000 r--p 00010000 fe:42 68613                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerProcessHandler.so
+7d63c3b000-7d63c3e000 ---p 00000000 00:00 0 
+7d63c3e000-7d63c3f000 rw-p 00010000 fe:42 68613                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerProcessHandler.so
+7d63c61000-7d63c66000 r--p 00000000 fe:42 68611                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerNetStatHandler.so
+7d63c66000-7d63c69000 ---p 00000000 00:00 0 
+7d63c69000-7d63c74000 r-xp 00004000 fe:42 68611                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerNetStatHandler.so
+7d63c74000-7d63c77000 ---p 00000000 00:00 0 
+7d63c77000-7d63c78000 r--p 0000e000 fe:42 68611                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerNetStatHandler.so
+7d63c78000-7d63c7b000 ---p 00000000 00:00 0 
+7d63c7b000-7d63c7c000 rw-p 0000e000 fe:42 68611                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerNetStatHandler.so
+7d63c7c000-7d63c7d000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d63c92000-7d63c96000 r--p 00000000 fe:42 68610                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerMemHandler.so
+7d63c96000-7d63c99000 ---p 00000000 00:00 0 
+7d63c99000-7d63ca4000 r-xp 00003000 fe:42 68610                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerMemHandler.so
+7d63ca4000-7d63ca7000 ---p 00000000 00:00 0 
+7d63ca7000-7d63ca9000 r--p 0000d000 fe:42 68610                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerMemHandler.so
+7d63ca9000-7d63cac000 ---p 00000000 00:00 0 
+7d63cac000-7d63cad000 rw-p 0000e000 fe:42 68610                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerMemHandler.so
+7d63cd1000-7d63cd6000 r--p 00000000 fe:42 68609                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerLaDdrNocProfHandler.so
+7d63cd6000-7d63cd9000 ---p 00000000 00:00 0 
+7d63cd9000-7d63ce5000 r-xp 00004000 fe:42 68609                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerLaDdrNocProfHandler.so
+7d63ce5000-7d63ce8000 ---p 00000000 00:00 0 
+7d63ce8000-7d63ce9000 r--p 0000f000 fe:42 68609                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerLaDdrNocProfHandler.so
+7d63ce9000-7d63cec000 ---p 00000000 00:00 0 
+7d63cec000-7d63ced000 rw-p 0000f000 fe:42 68609                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerLaDdrNocProfHandler.so
+7d63ced000-7d63cee000 rw-p 00000000 00:00 0                              [anon:.bss]
+7d63d15000-7d63d19000 r--p 00000000 fe:42 68607                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerIoHandler.so
+7d63d19000-7d63d1c000 ---p 00000000 00:00 0 
+7d63d1c000-7d63d27000 r-xp 00003000 fe:42 68607                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerIoHandler.so
+7d63d27000-7d63d2a000 ---p 00000000 00:00 0 
+7d63d2a000-7d63d2c000 r--p 0000d000 fe:42 68607                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerIoHandler.so
+7d63d2c000-7d63d2f000 ---p 00000000 00:00 0 
+7d63d2f000-7d63d30000 rw-p 0000e000 fe:42 68607                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerIoHandler.so
+7d63d51000-7d63d5b000 r--p 00000000 fe:42 68580                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQRpcSocketUtility.so
+7d63d5b000-7d63d5e000 ---p 00000000 00:00 0 
+7d63d5e000-7d63d73000 r-xp 00009000 fe:42 68580                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQRpcSocketUtility.so
+7d63d73000-7d63d76000 ---p 00000000 00:00 0 
+7d63d76000-7d63d78000 r--p 0001d000 fe:42 68580                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQRpcSocketUtility.so
+7d63d78000-7d63d7b000 ---p 00000000 00:00 0 
+7d63d7b000-7d63d7c000 rw-p 0001e000 fe:42 68580                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQRpcSocketUtility.so
+7d63d93000-7d63d9a000 r--p 00000000 fe:42 68606                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+7d63d9a000-7d63d9d000 ---p 00000000 00:00 0 
+7d63d9d000-7d63da4000 r-xp 00006000 fe:42 68606                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+7d63da4000-7d63da7000 ---p 00000000 00:00 0 
+7d63da7000-7d63da9000 r--p 0000c000 fe:42 68606                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+7d63da9000-7d63dac000 ---p 00000000 00:00 0 
+7d63dac000-7d63dad000 rw-p 0000d000 fe:42 68606                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+7d63dbc000-7d63dec000 r--s 00000000 00:13 452                            /dev/__properties__/u:object_r:servicemanager_prop:s0
+7d63dec000-7d64600000 r--p 00000000 fe:42 68620                          /data/local/tmp/s26-qprof-2.26.10.6/ExtQProfiler.fb
+7d64600000-7d648aa000 ---p 00000000 00:00 0                              [anon:cfi shadow]
+7d648aa000-7d648ab000 r--p 00000000 00:00 0                              [anon:cfi shadow]
+7d648ab000-7d649ea000 ---p 00000000 00:00 0                              [anon:cfi shadow]
+7d649ea000-7d649eb000 r--p 00000000 00:00 0                              [anon:cfi shadow]
+7d649eb000-7d649ec000 r--p 00000000 00:00 0                              [anon:cfi shadow]
+7d649ec000-7d649ff000 ---p 00000000 00:00 0                              [anon:cfi shadow]
+7d649ff000-7d64a00000 r--p 00000000 00:00 0                              [anon:cfi shadow]
+7d64a00000-7de4600000 ---p 00000000 00:00 0                              [anon:cfi shadow]
+7de4600000-7de4602000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7de4602000-7de4642000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7de4642000-7df460b000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7df460b000-7df464b000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7df464b000-7e0460a000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e0460a000-7e0464a000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e0464a000-7e1460b000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e1460b000-7e1468b000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e1468b000-7e2460b000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e2460b000-7e2464b000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e2464b000-7e3460d000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e3460d000-7e3468d000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e3468d000-7e44606000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e44606000-7e44646000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e44646000-7e54604000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e54604000-7e54644000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e54644000-7e6460c000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e6460c000-7e6468c000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e6468c000-7e7460a000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e7460a000-7e7464a000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e7464a000-7e8460f000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e8460f000-7e8464f000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e8464f000-7e9460b000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7e9460b000-7e946cb000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7e946cb000-7ea460b000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7ea460b000-7ea464b000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7ea464b000-7eb4607000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7eb4607000-7eb4647000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7eb4647000-7ec4608000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7ec4608000-7ec4648000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7ec4648000-7ed4609000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7ed4609000-7ed4649000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7ed4649000-7ee4608000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7ee4608000-7ee4648000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7ee4648000-7ef4607000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7ef4607000-7ef4647000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7ef4647000-7f04602000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7f04602000-7f04642000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7f04642000-7f2460f000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7f2460f000-7f2464f000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7f2464f000-7f3460b000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7f3460b000-7f3464b000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7f3464b000-7f44606000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7f44606000-7f44646000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7f44646000-7f54607000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7f54607000-7f54647000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7f54647000-7f64608000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7f64608000-7f64648000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7f64648000-7f7460b000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7f7460b000-7f7464b000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7f7464b000-7f94606000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7f94606000-7f94646000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7f94646000-7fa4607000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7fa4607000-7fa4647000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7fa4647000-7fb4609000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7fb4609000-7fb4689000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7fb4689000-7fc460a000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7fc460a000-7fc464a000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7fc464a000-7fd4605000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7fd4605000-7fd4685000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7fd4685000-7fe4604000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7fe4604000-7fe4644000 rw-p 00000000 00:00 0                              [anon:scudo:primary]
+7fe4644000-7ff4600000 ---p 00000000 00:00 0                              [anon:scudo:primary_reserve]
+7ff4624000-7ff4654000 r--s 00000000 00:13 355                            /dev/__properties__/u:object_r:log_file_logger_prop:s0
+7ff4654000-7ff4659000 r--p 00000000 fe:42 68605                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerCpuPmuHandler.so
+7ff4659000-7ff465c000 ---p 00000000 00:00 0 
+7ff465c000-7ff4669000 r-xp 00004000 fe:42 68605                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerCpuPmuHandler.so
+7ff4669000-7ff466c000 ---p 00000000 00:00 0 
+7ff466c000-7ff466d000 r--p 00010000 fe:42 68605                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerCpuPmuHandler.so
+7ff466d000-7ff4670000 ---p 00000000 00:00 0 
+7ff4670000-7ff4671000 rw-p 00010000 fe:42 68605                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerCpuPmuHandler.so
+7ff4697000-7ff469e000 r--p 00000000 fe:42 68604                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerCpuHandler.so
+7ff469e000-7ff46a1000 ---p 00000000 00:00 0 
+7ff46a1000-7ff46af000 r-xp 00006000 fe:42 68604                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerCpuHandler.so
+7ff46af000-7ff46b2000 ---p 00000000 00:00 0 
+7ff46b2000-7ff46b4000 r--p 00013000 fe:42 68604                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerCpuHandler.so
+7ff46b4000-7ff46b7000 ---p 00000000 00:00 0 
+7ff46b7000-7ff46b8000 rw-p 00014000 fe:42 68604                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerCpuHandler.so
+7ff46ca000-7ff46cf000 r--p 00000000 fe:42 68603                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerBatteryHandler.so
+7ff46cf000-7ff46d2000 ---p 00000000 00:00 0 
+7ff46d2000-7ff46dd000 r-xp 00004000 fe:42 68603                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerBatteryHandler.so
+7ff46dd000-7ff46e0000 ---p 00000000 00:00 0 
+7ff46e0000-7ff46e1000 r--p 0000e000 fe:42 68603                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerBatteryHandler.so
+7ff46e1000-7ff46e4000 ---p 00000000 00:00 0 
+7ff46e4000-7ff46e5000 rw-p 0000e000 fe:42 68603                          /data/local/tmp/s26-qprof-2.26.10.6/libs/handlers/libQualcommProfilerBatteryHandler.so
+7ff46e5000-7ff46e6000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff46f8000-7ff4728000 r--s 00000000 00:13 357                            /dev/__properties__/u:object_r:log_tag_prop:s0
+7ff4728000-7ff4758000 r--s 00000000 00:13 310                            /dev/__properties__/u:object_r:graphics_config_prop:s0
+7ff4758000-7ff4788000 r--s 00000000 00:13 291                            /dev/__properties__/u:object_r:exported_default_prop:s0
+7ff4788000-7ff478b000 r--p 00000000 fe:07 149614336                      /system/lib64/libnetd_client.so
+7ff478b000-7ff478c000 ---p 00000000 00:00 0                              [page size compat]
+7ff478c000-7ff4790000 r-xp 00004000 fe:07 149614336                      /system/lib64/libnetd_client.so
+7ff4790000-7ff4791000 r--p 00008000 fe:07 149614336                      /system/lib64/libnetd_client.so
+7ff4791000-7ff4794000 ---p 00000000 00:00 0 
+7ff4794000-7ff4795000 rw-p 0000c000 fe:07 149614336                      /system/lib64/libnetd_client.so
+7ff47a7000-7ff47d7000 r--s 00000000 00:13 311                            /dev/__properties__/u:object_r:graphics_config_writable_prop:s0
+7ff47d7000-7ff47dc000 r--p 00000000 fe:42 68553                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libProfileCMetaSharedLib.so
+7ff47dc000-7ff47df000 ---p 00000000 00:00 0 
+7ff47df000-7ff47f1000 r-xp 00004000 fe:42 68553                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libProfileCMetaSharedLib.so
+7ff47f1000-7ff47f4000 ---p 00000000 00:00 0 
+7ff47f4000-7ff47f5000 r--p 00015000 fe:42 68553                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libProfileCMetaSharedLib.so
+7ff47f5000-7ff47f8000 ---p 00000000 00:00 0 
+7ff47f8000-7ff47f9000 rw-p 00015000 fe:42 68553                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libProfileCMetaSharedLib.so
+7ff47f9000-7ff47fa000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff480b000-7ff4817000 r--p 00000000 fe:42 68581                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerApi.so
+7ff4817000-7ff481a000 ---p 00000000 00:00 0 
+7ff481a000-7ff482a000 r-xp 0000b000 fe:42 68581                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerApi.so
+7ff482a000-7ff482d000 ---p 00000000 00:00 0 
+7ff482d000-7ff482e000 r--p 0001a000 fe:42 68581                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerApi.so
+7ff482e000-7ff4831000 ---p 00000000 00:00 0 
+7ff4831000-7ff4833000 rw-p 0001a000 fe:42 68581                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerApi.so
+7ff4833000-7ff48e0000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff4901000-7ff4931000 r--s 00000000 00:13 174                            /dev/__properties__/u:object_r:build_prop:s0
+7ff4931000-7ff4938000 r--p 00000000 fe:42 68582                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerCore.so
+7ff4938000-7ff493b000 ---p 00000000 00:00 0 
+7ff493b000-7ff4944000 r-xp 00006000 fe:42 68582                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerCore.so
+7ff4944000-7ff4947000 ---p 00000000 00:00 0 
+7ff4947000-7ff4948000 r--p 0000e000 fe:42 68582                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerCore.so
+7ff4948000-7ff494b000 ---p 00000000 00:00 0 
+7ff494b000-7ff494c000 rw-p 0000e000 fe:42 68582                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerCore.so
+7ff494c000-7ff4976000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff4995000-7ff49c5000 r--s 00000000 00:13 318                            /dev/__properties__/u:object_r:heapprofd_prop:s0
+7ff49c5000-7ff49c7000 r--p 00000000 fe:42 68586                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerQLog.so
+7ff49c7000-7ff49ca000 ---p 00000000 00:00 0 
+7ff49ca000-7ff49cb000 r-xp 00001000 fe:42 68586                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerQLog.so
+7ff49cb000-7ff49ce000 ---p 00000000 00:00 0 
+7ff49ce000-7ff49cf000 r--p 00001000 fe:42 68586                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerQLog.so
+7ff49cf000-7ff49d2000 ---p 00000000 00:00 0 
+7ff49d2000-7ff49d3000 rw-p 00001000 fe:42 68586                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerQLog.so
+7ff4a00000-7ff5200000 ---p 00000000 00:00 0 
+7ff5214000-7ff5224000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff5224000-7ff5254000 r--s 00000000 00:13 348                            /dev/__properties__/u:object_r:libc_debug_prop:s0
+7ff5254000-7ff5255000 r--p 00000000 07:88 26                             /apex/com.android.runtime/lib64/bionic/libdl.so
+7ff5255000-7ff5258000 ---p 00000000 00:00 0                              [page size compat]
+7ff5258000-7ff5259000 r-xp 00004000 07:88 26                             /apex/com.android.runtime/lib64/bionic/libdl.so
+7ff5259000-7ff525c000 ---p 00000000 00:00 0                              [page size compat]
+7ff525c000-7ff525d000 r--p 00008000 07:88 26                             /apex/com.android.runtime/lib64/bionic/libdl.so
+7ff525d000-7ff5260000 ---p 00000000 00:00 0 
+7ff5260000-7ff5261000 r--p 00000000 00:00 0                              [anon:.bss]
+7ff5261000-7ff5264000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff5265000-7ff5266000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff5272000-7ff5282000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff5282000-7ff5295000 r--p 00000000 07:88 28                             /apex/com.android.runtime/lib64/bionic/libm.so
+7ff5295000-7ff5296000 ---p 00000000 00:00 0                              [page size compat]
+7ff5296000-7ff52ba000 r-xp 00014000 07:88 28                             /apex/com.android.runtime/lib64/bionic/libm.so
+7ff52ba000-7ff52bb000 r--p 00038000 07:88 28                             /apex/com.android.runtime/lib64/bionic/libm.so
+7ff52bb000-7ff52be000 ---p 00000000 00:00 0 
+7ff52be000-7ff52bf000 rw-p 0003c000 07:88 28                             /apex/com.android.runtime/lib64/bionic/libm.so
+7ff52bf000-7ff52c0000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff52c0000-7ff5317000 r--p 00000000 07:88 24                             /apex/com.android.runtime/lib64/bionic/libc.so
+7ff5317000-7ff5318000 ---p 00000000 00:00 0                              [page size compat]
+7ff5318000-7ff53a9000 r-xp 00058000 07:88 24                             /apex/com.android.runtime/lib64/bionic/libc.so
+7ff53a9000-7ff53ac000 ---p 00000000 00:00 0                              [page size compat]
+7ff53ac000-7ff53b0000 r--p 000ec000 07:88 24                             /apex/com.android.runtime/lib64/bionic/libc.so
+7ff53b0000-7ff53b1000 rw-p 000f0000 07:88 24                             /apex/com.android.runtime/lib64/bionic/libc.so
+7ff53b1000-7ff53c8000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff53c8000-7ff53cc000 r--p 00000000 00:00 0                              [anon:.bss]
+7ff53cc000-7ff53d4000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff53dc000-7ff540c000 r--s 00000000 00:13 313                            /dev/__properties__/u:object_r:gwp_asan_prop:s0
+7ff540c000-7ff543c000 r--s 00000000 00:13 296                            /dev/__properties__/u:object_r:exported_system_prop:s0
+7ff543c000-7ff5441000 r--p 00000000 fe:42 68574                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQCoreRpcClientSocketUtility.so
+7ff5441000-7ff5444000 ---p 00000000 00:00 0 
+7ff5444000-7ff5451000 r-xp 00004000 fe:42 68574                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQCoreRpcClientSocketUtility.so
+7ff5451000-7ff5454000 ---p 00000000 00:00 0 
+7ff5454000-7ff5455000 r--p 00010000 fe:42 68574                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQCoreRpcClientSocketUtility.so
+7ff5455000-7ff5458000 ---p 00000000 00:00 0 
+7ff5458000-7ff5459000 rw-p 00010000 fe:42 68574                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQCoreRpcClientSocketUtility.so
+7ff5459000-7ff5480000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff5484000-7ff54ff000 r--p 00000000 fe:07 149582336                      /system/lib64/libc++.so
+7ff54ff000-7ff5502000 ---p 00000000 00:00 0 
+7ff5502000-7ff558e000 r-xp 0007a000 fe:07 149582336                      /system/lib64/libc++.so
+7ff558e000-7ff5591000 ---p 00000000 00:00 0 
+7ff5591000-7ff5599000 r--p 00105000 fe:07 149582336                      /system/lib64/libc++.so
+7ff5599000-7ff559c000 ---p 00000000 00:00 0 
+7ff559c000-7ff559d000 rw-p 0010c000 fe:07 149582336                      /system/lib64/libc++.so
+7ff559d000-7ff55a4000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff55a6000-7ff55a7000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff55b5000-7ff55b6000 ---p 00000000 00:00 0 
+7ff55b6000-7ff55cf000 rw-p 00000000 00:00 0                              [anon:scudo:secondary]
+7ff55cf000-7ff55d0000 ---p 00000000 00:00 0 
+7ff55d0000-7ff5600000 r--s 00000000 00:13 235                            /dev/__properties__/u:object_r:debug_prop:s0
+7ff5600000-7ff6a00000 ---p 00000000 00:00 0 
+7ff6a01000-7ff6a61000 rw-p 00000000 00:00 0                              [anon:linker_alloc]
+7ff6a61000-7ff6a67000 r--p 00000000 fe:07 149582575                      /system/lib64/liblog.so
+7ff6a67000-7ff6a69000 ---p 00000000 00:00 0                              [page size compat]
+7ff6a69000-7ff6a73000 r-xp 00008000 fe:07 149582575                      /system/lib64/liblog.so
+7ff6a73000-7ff6a75000 ---p 00000000 00:00 0                              [page size compat]
+7ff6a75000-7ff6a76000 r--p 00014000 fe:07 149582575                      /system/lib64/liblog.so
+7ff6a76000-7ff6a79000 ---p 00000000 00:00 0 
+7ff6a79000-7ff6a7a000 rw-p 00018000 fe:07 149582575                      /system/lib64/liblog.so
+7ff6a7a000-7ff6a8a000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6a8a000-7ff6a9a000 r--p 00000000 00:00 0                              [anon:atexit handlers]
+7ff6a9a000-7ff6a9e000 r--p 00000000 fe:42 68588                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerTraceRouter.so
+7ff6a9e000-7ff6aa1000 ---p 00000000 00:00 0 
+7ff6aa1000-7ff6aa6000 r-xp 00003000 fe:42 68588                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerTraceRouter.so
+7ff6aa6000-7ff6aa9000 ---p 00000000 00:00 0 
+7ff6aa9000-7ff6aaa000 r--p 00007000 fe:42 68588                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerTraceRouter.so
+7ff6aaa000-7ff6aad000 ---p 00000000 00:00 0 
+7ff6aad000-7ff6aae000 rw-p 00007000 fe:42 68588                          /data/local/tmp/s26-qprof-2.26.10.6/libs/libQualcommProfilerTraceRouter.so
+7ff6aae000-7ff6aaf000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6ab6000-7ff6ab7000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6ac1000-7ff6af1000 r--s 00000000 00:13 763                            /dev/__properties__/properties_serial
+7ff6af1000-7ff6b19000 r--s 00000000 00:13 122                            /dev/__properties__/property_info
+7ff6b19000-7ff6b1a000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6b1a000-7ff6b1b000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6b1b000-7ff6b1c000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6b1c000-7ff6b20000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6b20000-7ff6b21000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6b21000-7ff6b31000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6b31000-7ff6b39000 r--s effff000 00:13 1813                           /dev/kgsl-3d0
+7ff6b39000-7ff6b3d000 ---p 00000000 00:00 0 
+7ff6b3d000-7ff6b41000 rw-p 00000000 00:00 0                              [anon:stack_and_tls:main]
+7ff6b41000-7ff6b45000 ---p 00000000 00:00 0 
+7ff6b45000-7ff6b75000 r--s 00000000 00:13 647                            /dev/__properties__/u:object_r:vendor_public_vendor_default_prop:s0
+7ff6b75000-7ff6ba5000 r--s 00000000 00:13 689                            /dev/__properties__/u:object_r:vendor_socket_hook_prop:s0
+7ff6ba5000-7ff6c65000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7ff6c65000-7ff6c68000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6c68000-7ff6c69000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6c69000-7ff6c6a000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6c6a000-7ff6c6b000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6c6b000-7ff6c6d000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6c6d000-7ff6c74000 rw-p 00000000 00:00 0                              [anon:System property context nodes]
+7ff6c74000-7ff6c75000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6c75000-7ff6c76000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6c76000-7ff6c77000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6c77000-7ff6c78000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6c78000-7ff6c79000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6c79000-7ff6c7d000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff6c7d000-7ff6c86000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6c86000-7ff6cb6000 r--s 00000000 00:13 742                            /dev/__properties__/u:object_r:vndk_prop:s0
+7ff6cb6000-7ff6cb8000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff6cb8000-7ff6d18000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7ff6d18000-7ff6d48000 r--s 00000000 00:13 235                            /dev/__properties__/u:object_r:debug_prop:s0
+7ff6d48000-7ff6d78000 r--s 00000000 00:13 763                            /dev/__properties__/properties_serial
+7ff6d78000-7ff6da0000 r--s 00000000 00:13 122                            /dev/__properties__/property_info
+7ff6da0000-7ff6e00000 r--p 00000000 00:00 0                              [anon:linker_alloc]
+7ff6e00000-7ff7710000 ---p 00000000 00:00 0 
+7ff7710000-7ff7714000 rw-p 00000000 00:00 0 
+7ff7714000-7ff7e00000 ---p 00000000 00:00 0 
+7ff7e00000-7ff7e02000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff7e02000-7ff7e03000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff7e03000-7ff7e04000 ---p 00000000 00:00 0 
+7ff7e04000-7ff7e0c000 rw-p 00000000 00:00 0 
+7ff7e0c000-7ff7e0d000 ---p 00000000 00:00 0 
+7ff7e0d000-7ff7e14000 rw-p 00000000 00:00 0                              [anon:System property context nodes]
+7ff7e14000-7ff7e15000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff7e15000-7ff7e16000 r--p 00000000 00:00 0                              [anon:atexit handlers]
+7ff7e16000-7ff7e18000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_small_objects]
+7ff7e18000-7ff7e1c000 ---p 00000000 00:00 0 
+7ff7e1c000-7ff7e24000 rw-p 00000000 00:00 0                              [anon:thread signal stack]
+7ff7e24000-7ff7e26000 r--p 00000000 00:00 0                              [vvar]
+7ff7e26000-7ff7e28000 r-xp 00000000 00:00 0                              [vdso]
+7ff7e28000-7ff7e78000 r--p 00000000 07:88 14                             /apex/com.android.runtime/bin/linker64
+7ff7e78000-7ff7fd5000 r-xp 00050000 07:88 14                             /apex/com.android.runtime/bin/linker64
+7ff7fd5000-7ff7fd6000 rw-s 00000000 00:13 1813                           /dev/kgsl-3d0
+7ff7fd6000-7ff7fd7000 rw-p 00000000 00:00 0                              [anon:bionic_alloc_lob]
+7ff7fd7000-7ff7fd8000 rw-p 00000000 00:00 0                              [anon:arc4random data]
+7ff7fd8000-7ff7fe3000 r--p 001b0000 07:88 14                             /apex/com.android.runtime/bin/linker64
+7ff7fe3000-7ff7fe4000 rw-p 00000000 00:00 0                              [anon:arc4random data]
+7ff7fe4000-7ff7fe7000 rw-p 001bc000 07:88 14                             /apex/com.android.runtime/bin/linker64
+7ff7fe7000-7ff7ff0000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ff7ff0000-7ff7ff4000 r--p 00000000 00:00 0                              [anon:.bss]
+7ff7ff4000-7ff8000000 rw-p 00000000 00:00 0                              [anon:.bss]
+7ffffde000-8000000000 rw-p 00000000 00:00 0                              [stack]
+
+(lldb) process kill
+Process 16998 exited with status = 9 (0x00000009) killed
+(lldb) 

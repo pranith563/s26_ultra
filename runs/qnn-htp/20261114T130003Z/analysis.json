@@ -1,0 +1,194 @@
+{
+  "session": "runs\\qnn-htp\\20261114T130003Z",
+  "marker": {
+    "start_boottime_ns": 4422158014351,
+    "end_boottime_ns": 4425623297527,
+    "duration_seconds": 3.465283176
+  },
+  "clock_calibration": {
+    "probes": [
+      {
+        "boot_before_ns": 4422157504039,
+        "monotonic_ns": 4422157504143,
+        "monotonic_raw_ns": 4422157504250,
+        "realtime_ns": 1767977321124000243,
+        "boot_after_ns": 4422157504456,
+        "counter_ticks": 85025879303,
+        "counter_frequency_hz": 19200000,
+        "counter_ns": 4428431213697
+      },
+      {
+        "boot_before_ns": 4425630150496,
+        "monotonic_ns": 4425630150600,
+        "monotonic_raw_ns": 4425630150707,
+        "realtime_ns": 1767977324596646648,
+        "boot_after_ns": 4425630150913,
+        "counter_ticks": 85092554115,
+        "counter_frequency_hz": 19200000,
+        "counter_ns": 4431903860156
+      }
+    ],
+    "qtimer_ns_per_tick": 52.08333,
+    "qtimer_minus_boottime_ns_before": 6273426030.5,
+    "qtimer_minus_boottime_ns_after": 6273425809.5,
+    "method": "Linear mapping between paired ARM CNTVCT and CLOCK_BOOTTIME measurements before/after workload. Qprof uses ticks * 52.08333. QNN timestamps are MONOTONIC microseconds; Perfetto uses BOOTTIME nanoseconds.",
+    "max_probe_bracket_ns": 417
+  },
+  "perfetto_errors": [],
+  "scheduler_rows": 18783,
+  "qprof": {
+    "14-11-2026_18-30-05_profile.apps-proc-cpu-metrics.csv": {
+      "rows": 3400,
+      "metric_count": 34,
+      "start_boottime_ns": 4421131738362,
+      "end_boottime_ns": 4431211243463
+    },
+    "14-11-2026_18-30-05_profile.apps-proc-mem-metrics.csv": {
+      "rows": 800,
+      "metric_count": 8,
+      "start_boottime_ns": 4421131883466,
+      "end_boottime_ns": 4431160609504
+    },
+    "14-11-2026_18-30-05_profile.apps-proc-thermal-metrics.csv": {
+      "rows": 5499,
+      "metric_count": 2,
+      "start_boottime_ns": 4421141232529,
+      "end_boottime_ns": 4431003474608
+    },
+    "14-11-2026_18-30-06_profile.nsp-dsp-metrics.csv": {
+      "rows": 752,
+      "metric_count": 22,
+      "start_boottime_ns": 4421873565237,
+      "end_boottime_ns": 4430269091484
+    }
+  },
+  "npu_phases": {
+    "4098": {
+      "name": "QDSP6 Utilization",
+      "unit": "%",
+      "phases": {
+        "before": {
+          "count": 1,
+          "mean": 0.654,
+          "min": 0.654,
+          "max": 0.654
+        },
+        "during": {
+          "count": 32,
+          "mean": 44.9473125,
+          "min": 0.933,
+          "max": 63.323
+        },
+        "after": {
+          "count": 9,
+          "mean": 2.4872222222222224,
+          "min": 0.318,
+          "max": 18.928
+        }
+      }
+    },
+    "4182": {
+      "name": "QDSP Clock",
+      "unit": "MHz",
+      "phases": {
+        "before": {
+          "count": 1,
+          "mean": 403.2,
+          "min": 403.2,
+          "max": 403.2
+        },
+        "during": {
+          "count": 32,
+          "mean": 429.59999999999997,
+          "min": 403.2,
+          "max": 1248.0
+        },
+        "after": {
+          "count": 9,
+          "mean": 403.2,
+          "min": 403.2,
+          "max": 403.2
+        }
+      }
+    },
+    "4352": {
+      "name": "HVX Utilization",
+      "unit": "%",
+      "phases": {
+        "before": {
+          "count": 0
+        },
+        "during": {
+          "count": 30,
+          "mean": 4.3118,
+          "min": 1.15,
+          "max": 4.862
+        },
+        "after": {
+          "count": 1,
+          "mean": 1.15,
+          "min": 1.15,
+          "max": 1.15
+        }
+      }
+    },
+    "4480": {
+      "name": "HMX Utilization",
+      "unit": "%",
+      "phases": {
+        "before": {
+          "count": 0
+        },
+        "during": {
+          "count": 30,
+          "mean": 0.6398,
+          "min": 0.148,
+          "max": 0.703
+        },
+        "after": {
+          "count": 1,
+          "mean": 0.167,
+          "min": 0.167,
+          "max": 0.167
+        }
+      }
+    },
+    "4521": {
+      "name": "HMX Clock",
+      "unit": "MHz",
+      "phases": {
+        "before": {
+          "count": 1,
+          "mean": 268.8,
+          "min": 268.8,
+          "max": 268.8
+        },
+        "during": {
+          "count": 32,
+          "mean": 268.8,
+          "min": 268.8,
+          "max": 268.8
+        },
+        "after": {
+          "count": 9,
+          "mean": 268.8,
+          "min": 268.8,
+          "max": 268.8
+        }
+      }
+    }
+  },
+  "inferences_completed": 454,
+  "output_matches_initial_htp": {
+    "Result_0\\InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu_0.raw": true,
+    "Result_1\\InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu_0.raw": true
+  },
+  "limitations": [
+    "Small SDK Conv/ReLU graph with two bundled inputs; not an application benchmark or full InceptionV3 model.",
+    "Initial CPU/HTP output maximum difference is two quantization steps; not bit-identical.",
+    "Profiled run includes observer overhead and default power policy. QNN backend timing fields must not be summed indiscriminately.",
+    "Some source operations are fused; detailed profile does not give independent timing for every original layer.",
+    "NPU metrics correlate with workload, but this is not a calibration of every counter.",
+    "No GPU/HTP external DMA-BUF import or proof of zero-copy."
+  ]
+}

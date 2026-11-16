@@ -1,0 +1,90 @@
+S26 Ultra power telemetry assessment - 2026-11-14
+
+Result
+Battery-interface voltage/current and Samsung system-current telemetry work.
+Individual CPU/GPU/HTP rail energy was not exposed through the tested interfaces.
+Whole-device wattage has not been calibrated against an external measurement.
+
+Measured phase averages (32 samples each)
+                     Idle          CPU load       Recovery
+Battery voltage       3.951 V       3.952 V        3.954 V
+Battery current      +465.3 mA     -754.2 mA      +468.7 mA
+Battery temperature   26.9 C        26.9 C         27.0 C
+System current ISYS    95.2 mA     1338.9 mA        96.9 mA
+Signed battery V*I    +1.838 W      -2.980 W       +1.853 W
+
+The last row is a calculated battery-interface product, NOT total device power.
+The cell is removed, Monsoon supplies the battery strip, and PC USB is connected.
+Consequently battery current does not account for every supply path. Positive
+current is the gauge's charging-direction convention, not evidence of an actual
+cell charging. State of charge and remaining-capacity estimates are not useful
+physical battery capacity in this setup. Preserve current sign when analyzing it.
+
+The CPU phase ran the existing QNN CPU Conv/ReLU sample with an eight-second
+execution budget: 2329 inferences, successful exit. Samples include startup,
+teardown and measurement overhead; this was a response check, not an energy or
+performance benchmark. current_avg and power_avg lagged the phase transitions.
+
+Samsung-specific units
+Despite their names, /sys/class/power_supply/battery/power_now and power_avg
+return system CURRENT in mA on this firmware. The installed sec-battery and
+max77775-fuelgauge drivers confirm the mapping. See driver-evidence.txt and the
+preserved modules/disassembly. Do not interpret these fields as uW or mW.
+Periodic fuel-gauge logs also expose labeled ISYS/ISYSAVG (mA), VSYS (mV),
+IIN (mA), VBYP (mV), and QH (uAh). Those log snapshots are not synchronized with
+the load test. ISYS * matching VSYS could form a system-node power estimate,
+but its physical coverage and accuracy still need external validation.
+
+Perfetto and PowerStats
+The 30-second trace contains 121 samples per battery track. Scheduler events
+wrapped its ring buffer and removed the early phase markers. samples.tsv retains
+all three phases independently; do not treat this trace as a complete sched trace.
+An eight-second power-only capture confirmed 33 samples per battery track with
+the same outcome: power_rail_empty_packet=1, entity_state_residency_invalid=1,
+and no rail-energy or energy-estimation tracks. No AIDL/HIDL PowerStats HAL was
+found registered. The framework powerstats service exists but its dump was empty.
+This establishes no usable rail telemetry through these interfaces on this build,
+not proof that the silicon lacks measurement hardware.
+
+The apparent batt.power_mw Perfetto track is computed from abs(voltage*current)
+by the trace processor. It is not an independent hardware power measurement.
+
+Inventory
+12 power-supply devices: battery, ac, usb, wireless, pogo, otg, max77775-charger,
+max77775-fuelgauge, max77775-otg, mfc-charger, sc8583-charger, sec-direct-charger.
+25 PMIC ADC channels: 16 temperature-labeled and 9 voltage-labeled channels.
+VPH_PWR readings were approximately 3.97 million raw units, consistent with uV,
+but not externally calibrated. Some temperature-labeled channels appear to
+return thermistor ADC values: do not convert all of them directly to degrees C.
+115 regulators expose voltage settings and load requests, not measured rail power.
+77 thermal zones include CPU/GPU/NSP/DDR/PMIC sensors, plus unavailable sentinel
+readings, BCL levels, and trip-related entries. Those are classified in summary.json.
+qti_btl temperature extrema/counters are exposed but not validated as live readings.
+Additional bounded searches found SDAM NVMEM paths, without a usable rail-energy
+interface. Raw PMIC registers, calibration values and NVMEM were not accessed.
+
+Next measurement step
+Capture Monsoon output and USB input power together with the workload to validate
+the phone telemetry and account for both power paths. Monsoon alone measures its
+own supplied path while USB can contribute separately. The known failure to start
+reliably without USB must be resolved before attempting a single-supply experiment.
+No cables, charging controls or Monsoon settings were changed for this test.
+
+Final state
+Root retained; SELinux Enforcing; same boot; tracing off; test workload stopped.
+No firmware, module, clock, thermal or charging configuration changes were made.
+
+Evidence
+summary.json: phase statistics, units, inventory, interpretation and source URLs.
+samples.tsv: 96 timestamped samples, including original raw Samsung field names.
+power-only.perfetto-trace: small confirmation capture suitable for Perfetto.
+power-only-tracks.csv and power-only-errors.csv: parsed confirmation results.
+driver-evidence.txt: exact installed-driver mapping of misleading power fields.
+final-state.txt: post-test checks.
+
+Primary references
+https://perfetto.dev/docs/data-sources/battery-counters
+https://source.android.com/docs/core/power/power-stats-hal
+https://raw.githubusercontent.com/google/perfetto/main/src/trace_processor/importers/proto/android_probes_parser.cc
+https://docs.kernel.org/power/power_supply_class.html
+https://raw.githubusercontent.com/torvalds/linux/master/Documentation/ABI/testing/sysfs-class-regulator

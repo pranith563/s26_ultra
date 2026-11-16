@@ -1,0 +1,60 @@
+{
+  "checked_on": "2026-11-14",
+  "scope": "Read-only ADB inventory and rooting research. No APK installation, exploit execution, reboot, unlocking or flashing performed.",
+  "device": {
+    "model_adb": "SM-S948B",
+    "model_settings_photo": "SM-S948B/DS",
+    "codename": "m3q",
+    "product": "m3qxins",
+    "sales_code": "INS",
+    "android": "16",
+    "sdk": 36,
+    "one_ui_property": "80500",
+    "one_ui_settings_photo": "8.5",
+    "security_patch": "2026-01-01",
+    "build": "BP4A.251205.006.S948BXXU1AZAB",
+    "bootloader": "S948BXXU1AZAB",
+    "fingerprint": "samsung/m3qxins/m3q:16/BP4A.251205.006/S948BXXU1AZAB_OXM1AZAB:user/release-keys",
+    "kernel": "6.12.30-android16-5-p595aaaa-abogkiS948BXXU1AZAB-4k",
+    "architecture": "aarch64",
+    "abi": "arm64-v8a",
+    "page_size_bytes": 4096
+  },
+  "observed_security_state": {
+    "ro.boot.flash.locked": "1",
+    "ro.boot.vbmeta.device_state": "locked",
+    "ro.boot.verifiedbootstate": "green",
+    "ro.boot.other.locked": "1",
+    "ro.boot.veritymode": "enforcing",
+    "ro.boot.warranty_bit": "0",
+    "ro.boot.kg": "0x0",
+    "knox.kg.state": "Prenormal",
+    "adb_shell_uid": 2000,
+    "su_found_in_shell_path": false,
+    "download_mode_inspected": false,
+    "developer_options_oem_unlock_toggle_inspected": false,
+    "note": "Bootloader is currently locked. ADB properties do not establish whether an official unlocking procedure is available. KnoxGuard values are preserved as reported rather than interpreted as a confirmed Download Mode state."
+  },
+  "research": {
+    "magisk": {
+      "assessment": "The standard patched-firmware route requires an unlocked bootloader. No verified unlock procedure for this phone and build was established. Do not flash a patched AP, boot or init_boot image in the current locked state.",
+      "documented_consequences": "Magisk's Samsung instructions warn of an irreversible Knox warranty-bit change and an initial data wipe.",
+      "source": "https://topjohnwu.github.io/Magisk/install.html#samsung-devices"
+    },
+    "temporary_root_candidate": {
+      "project": "Root My Galaxy Ultra",
+      "release_checked": "1.4.1",
+      "release_url": "https://github.com/xorpix/Root-My-Galaxy-Ultra/releases/tag/1.4.1",
+      "route": "DirtyFrag with a matching KernelSU-family backend and manager",
+      "eligibility_assessment": "Observed model, codename, ABI, architecture, SDK, kernel family and page size match the published family requirements. This is an eligibility inference, not a successful root or vulnerability test.",
+      "exact_azab_success_report_found": false,
+      "limits": "Root is lost after a full reboot or power loss. Attempts can freeze or reboot the phone. Firmware mitigations and vendor kernel compatibility can prevent success despite matching the family rules.",
+      "ghostlock_note": "The project's GhostLock route requires the exact recorded AZHL identity, which does not match this AZAB phone.",
+      "support_rules": "https://github.com/xorpix/Root-My-Galaxy-Ultra/blob/main/docs/S26-ULTRA-SUPPORT.md",
+      "readme": "https://github.com/xorpix/Root-My-Galaxy-Ultra",
+      "upstream": "https://github.com/diabl0w/DFRoot",
+      "provenance": "https://github.com/xorpix/Root-My-Galaxy-Ultra/blob/main/app/src/main/cpp/dirtyfrag/DF_ORIGIN.md"
+    },
+    "next_step": "Review a specific release and its matching manager, then plan a manual temporary-root trial with modules and automatic root disabled. Preserve this baseline and avoid firmware changes while assessing compatibility."
+  }
+}

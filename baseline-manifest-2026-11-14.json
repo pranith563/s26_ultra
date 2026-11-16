@@ -1,0 +1,413 @@
+{
+  "recorded_utc": "2026-11-14T13:04:18.473254+00:00",
+  "test_date_local": "2026-11-14",
+  "timezone": "Asia/Calcutta",
+  "phone": "SM-S948B/DS",
+  "firmware": "S948BXXU1AZAB",
+  "boot_id": "f23a96a6-fe8e-4804-8076-32df8aa2f25e",
+  "versions": {
+    "NDK": "30.0.16248370",
+    "QAIRT": "2.44.0.260225143659",
+    "qprof_CLI_API": "2.26.10.6",
+    "qprof_GUI": "2.26.10.4",
+    "qsc-cli": "1.32.0",
+    "trace_processor": "v59.1"
+  },
+  "installed_apks": {
+    "dev.experimental.azhlroot": {
+      "apk_path": "/data/app/~~xQr2LZjmb5BckX-6PaLnNg==/dev.experimental.azhlroot-z4pNCQ919ri2bcZSBqapSg==/base.apk",
+      "sha256": "3fd0e50aa9e3a77b94009ac935d3f8a996aecc32adb5e201f1128916aa6d5318",
+      "version_details": [
+        "    versionCode=27398057 minSdk=33 targetSdk=36",
+        "    versionName=1.4.1"
+      ]
+    },
+    "me.weishu.kernelsu": {
+      "apk_path": "/data/app/~~TvDOF04E2ToQlTzRJfHZ4g==/me.weishu.kernelsu-q75ThbeGaEaBl6sG5JArqw==/base.apk",
+      "sha256": "cb6d4d95f8e0411e8822cb5e6d02c597bedfa031d5138867e9cd2b69f678030a",
+      "version_details": [
+        "    versionCode=32727 minSdk=31 targetSdk=37",
+        "    versionName=v3.3.1-47-gdbb73665"
+      ]
+    }
+  },
+  "root_baseline": "reliability-results-2026-11-14.json",
+  "htp_session": "C:\\Users\\prani\\s26_ultra\\runs\\qnn-htp\\20261114T130003Z",
+  "root_reliability_note": "Five additional warm reboots passed. Cold-start logo repetitions predate rooting and remain unresolved; cold cycle eventually restored root.",
+  "files": [
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\qprof-server.sh",
+      "bytes": 519,
+      "sha256": "596cd4a9e027e8b6fc70c93fe8bb648cc89d42f6c5e326e5602eee9deb6656af"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\run_htp_profile.py",
+      "bytes": 7596,
+      "sha256": "7b4aae2bb3f91487301275e995ce05247dd81d9ca4555056fe2ab43e2fa0f535"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\clock_probe.cpp",
+      "bytes": 1267,
+      "sha256": "d6708d46126166b7abc8ca3bfe732d0a3dcf445a1655d88024c434b3ec150449"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\dma_buf_smoke.cpp",
+      "bytes": 3898,
+      "sha256": "30cf3c1cea3a881305c1a6876a768423086fd90e138945bc697c55d0abec8d92"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\development-setup.txt",
+      "bytes": 11548,
+      "sha256": "26e0452dbdf39554b15a4d37196c862018f53211fd5c218c3cc1532efbed4f3b"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\rooting-test-results-2026-11-14.json",
+      "bytes": 2389,
+      "sha256": "54712b60051444d3bf60660392051102a9e83e20148c3430afb6b6bea49949b5"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\reliability-results-2026-11-14.json",
+      "bytes": 5452,
+      "sha256": "29edfd90ef0f12b673a64aaf2db704494d6260ce0a8e6d6c7ba3e64ba01020ba"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\qnn-htp\\build\\libqnn_conv_relu.so",
+      "bytes": 984344,
+      "sha256": "7b81fd9bc85d1ee41afac8a27f67db0f308aaca7c8ebdea5061e31fdcc1697de"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\qnn-htp\\build\\clock_probe",
+      "bytes": 8264,
+      "sha256": "601597b7fd2ee26377672eba5dd45e2623c1515b48966c3388035576403a417e"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\qnn-htp\\build\\commands.json",
+      "bytes": 2054,
+      "sha256": "195b5823334d50e0d9163dc73368fed526975e63a9f840473bdd719c592de764"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\downloads\\trace_processor_shell.exe",
+      "bytes": 15872000,
+      "sha256": "3acc5aca1c764541033a82ba3bb0a47524b5c3c0aa194eea8d9a7b0cdb346bdc"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\bin\\aarch64-android\\qnn-net-run",
+      "bytes": 4462720,
+      "sha256": "bd98535e89e5ea36b2c08891013e008d48738c2ffcf87c30352a8accec2fe20e"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnHtp.so",
+      "bytes": 2778176,
+      "sha256": "090e993822564851eab1405aff171643b21e644e3f696c95c96f2732aaed813a"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnHtpPrepare.so",
+      "bytes": 85539184,
+      "sha256": "09b1c15c62b6875af49ffd3d841961c098b85c367f584fee370f986c62511298"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnHtpV81Stub.so",
+      "bytes": 755464,
+      "sha256": "f85cc467bda23b8253f085c4fa2680a1428e5b94c6c5a3e572abaa20c5b13ba1"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnHtpNetRunExtensions.so",
+      "bytes": 906000,
+      "sha256": "950421ba9354c68e93fd73aaf37842d5963464292aaaf36aa327cc002a8f0064"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnSystem.so",
+      "bytes": 2983560,
+      "sha256": "7e69258e1278cc9b2bb62dbc6e2a52c227a100d6505a13fd6324a87993d0bba8"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnCpu.so",
+      "bytes": 6658336,
+      "sha256": "042a91a3146c4e328d58fa155e97ab2ebddabe5598af18d24ba92334ec894d8d"
+    },
+    {
+      "path": "C:\\Android\\android-ndk-r30\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+      "bytes": 9485032,
+      "sha256": "7466ed097631a564ed6bff0b47768caa76bf03270d2047b5a65c03f497b824df"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\hexagon-v81\\unsigned\\libQnnHtpV81Skel.so",
+      "bytes": 11797220,
+      "sha256": "66719325303f22562679edfed509d540cbff53ac59127b6e4ead84b62f1dc655"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\hexagon-v81\\unsigned\\libQnnHtpV81.so",
+      "bytes": 15314568,
+      "sha256": "9ded421928e479d97077adfa2a436f11b8f193e95dbb8de9c7e4dde1b87d9740"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\hexagon-v81\\unsigned\\libqnnhtpv81.cat",
+      "bytes": 12216,
+      "sha256": "c1c13240215fff6480a6e59b5590255e4b583f07239ccfb2602f271655459830"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\examples\\QNN\\converter\\models\\input_data_float\\1x299x299x3_float_1.raw",
+      "bytes": 1072812,
+      "sha256": "73a068c9f50c9bfeb5367892398b99821a849ac1b99baadd7916c791db018d91"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\examples\\QNN\\converter\\models\\input_data_float\\1x299x299x3_float_2.raw",
+      "bytes": 1072812,
+      "sha256": "ba691db7168db863333ccb3dd386a8ad3517d1a26ebcfcc319593a5d79fd59fa"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\qnn-htp\\input_list.txt",
+      "bytes": 64,
+      "sha256": "745c785143e92f1de3f45b665e238dbb9ee5e2e7084253cccac951d44ef40582"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\examples\\QNN\\converter\\models\\qnn_model_8bit_quantized.cpp",
+      "bytes": 15635,
+      "sha256": "9e083e6600d76ba0f1b2c3a9164d9737a2a71252cc41c25eca84e185f09d1ac2"
+    },
+    {
+      "path": "C:\\qairt-data\\qairt\\2.44.0.260225\\examples\\QNN\\converter\\models\\qnn_model_8bit_quantized.bin",
+      "bytes": 10240,
+      "sha256": "e032be65eef8c870ad6ef45951edf52fb8e9954c8c288cd043ea033fe1f07481"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\downloads\\Qualcomm_Software_Center.1.32.0.Windows-x86.exe",
+      "bytes": 260422560,
+      "sha256": "97c63661e133cb41bea1c2b47310e38832997edab334e10edfd75df0d0b4bc93"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\downloads\\RootMyGalaxyUltra-1.4.1.apk",
+      "bytes": 86143200,
+      "sha256": "3fd0e50aa9e3a77b94009ac935d3f8a996aecc32adb5e201f1128916aa6d5318"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\capability-check-2026-11-14.json",
+      "bytes": 47299,
+      "sha256": "363773c38a2dfd9a3f692dbf1a4fdefc8febbc228b824e5c9ce32c67008365e0"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\qnn-htp\\20261114T130003Z\\analysis.json",
+      "bytes": 5478,
+      "sha256": "304a99caa05f55df214f2fc7b4a1c79a3f0041950668bbc8f62c7904ce7bdf79"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\qnn-htp\\output-comparison.json",
+      "bytes": 778,
+      "sha256": "a902ebc4feab1c79870a528e23b446e823c855c7ad1d698b024e8298be7c7dac"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\bins\\qprof",
+      "bytes": 258080,
+      "sha256": "375a59c251377bdbd027124e1092e2df361ab08ce5ef82faba14d02d8579b63b"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\bins\\qmonitor-grpc-server",
+      "bytes": 1257072,
+      "sha256": "6f1178a25915412aade1822e740d9a5291231840e9d61c097d03e1cf8c82cd70"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\libs\\libQualcommProfilerCore.so",
+      "bytes": 62712,
+      "sha256": "759597ae980024c767d3ff9b3b36b9c36c96a253e59899014321bf09ad2b6ec7"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\libs\\libProfileCMetaSharedLib.so",
+      "bytes": 90720,
+      "sha256": "ac839c3e2dfbb74bcf6765aa6347c1008d990e0eb3f4e7f3860756ad2696894f"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\Prof_Ext\\ExtQProfiler.fb",
+      "bytes": 8468552,
+      "sha256": "5345791b3b2eb3c12452115570244f0f06a8acc1142d829c5f2dc7f916a2c9cc"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\QualcommProfiler\\CLI\\host-windows\\bins\\qprof.exe",
+      "bytes": 182272,
+      "sha256": "501f2a915285fcd00c1cdf9b2c5dbebdf99e2cf5b5a44daff20ebc9176398ad1"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Qualcomm_Software_Center\\1.32.0.0\\qsc-cli.exe",
+      "bytes": 90898696,
+      "sha256": "2661d6740d8d87bb8795616c60f012d917491852f111aa0b02235f40aed3b8e6"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\libs\\handlers\\libQualcommProfilerCpuHandler.so",
+      "bytes": 85112,
+      "sha256": "4593ce43a7b0806c1d9dc5f68a8889c07e088120e72b5a512a912cc910a5a801"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\libs\\handlers\\libQualcommProfilerMemHandler.so",
+      "bytes": 60288,
+      "sha256": "d37b8f6a39a5a6a6b2be0d33b3b36eaef050fdca4757d7ce7bc01c6462f7218c"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\libs\\handlers\\libQualcommProfilerThermalHandler.so",
+      "bytes": 62528,
+      "sha256": "cea72eacda616130599f826fd470f1d1442bd0f528aa91c765c8d4bd58d15fc1"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\libs\\handlers\\libQualcommProfilerSysmonProfilingHandler.so",
+      "bytes": 115696,
+      "sha256": "4a8ce3c1a573844aba2580ce30f824af6a75bce0bf926da9c322c8514bf65035"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Qualcomm\\Shared\\QualcommProfiler\\API\\target-la\\aarch64\\libs\\handlers\\libQualcommProfilerGpuProfilingHandler.so",
+      "bytes": 56032,
+      "sha256": "8d2e6e0b2d620c9691c07fa2115fd1a756fc5c7be89539509a1c4b13ce5da70f"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\assessment.txt",
+      "bytes": 5444,
+      "sha256": "33ba408d79dbf1fd512feb1f236bb1c8bd6222b62fe64e4a40f62718762f8ea6"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\summary.json",
+      "bytes": 56792,
+      "sha256": "ca19380e99e24bdcc5c39c55058ef30e1523adb2eb93ba1725702c691b8ffdcd"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\driver-evidence.txt",
+      "bytes": 1954,
+      "sha256": "631fc67ec6435a9d64cbf958377e177c5288c11d5d2d17ff0e7139e36d1439dd"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\samples.tsv",
+      "bytes": 6924,
+      "sha256": "6ad7b40b133d31cbe76f47b54b6153bd68fd0b90b45863f7814ce7f7250f4f92"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\sample-power.sh",
+      "bytes": 1451,
+      "sha256": "500cb51fbbde644479e73b7a9b35d6d8e1bfe1c433c9088160f877264ae20067"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\power.pbtxt",
+      "bytes": 899,
+      "sha256": "e00aa69af323c9be23cb0aa6b695ca8957d05a172f4d3fccbfb24cd715c3de7d"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\power-only.pbtxt",
+      "bytes": 523,
+      "sha256": "e8d9a32ce27fef9fab499a8a34407c591838972b08e0d836fc02880312447b88"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\power.perfetto-trace",
+      "bytes": 8305216,
+      "sha256": "f31380646b324b1a2db918e56b70339ad4c2a54fab84ec26339721f4b4b95e93"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\power-only.perfetto-trace",
+      "bytes": 2409,
+      "sha256": "e82d7e6d191c130b349a19f03021c463dcb053a67a76fe8ad9c59675b5ac51d5"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\sec-battery.ko",
+      "bytes": 1018680,
+      "sha256": "e139f81dcbb39fe48b8dde4b1e8f79288343b3196ed8bb039e33adb7e6a50133"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\max77775-fuelgauge.ko",
+      "bytes": 111680,
+      "sha256": "973a30c713eb221c848ab18aafc8d994988012f698e88570f067f6f5836e8df9"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\fuelgauge-kernel-log.txt",
+      "bytes": 1311,
+      "sha256": "e4a334dd48750c0966d500ad0611c4f75358e88e44115bb56a967535a3e44517"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-check\\final-state.txt",
+      "bytes": 215,
+      "sha256": "876db46c4a65611e027e7b64f7af5dbde323038543963c3c8f965a5b18d239fc"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power_logger.cpp",
+      "bytes": 8878,
+      "sha256": "7056436192e322a3ea563aca4719be14c86bf8a1160205e49058319a32316a03"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-logger.sh",
+      "bytes": 2282,
+      "sha256": "a18899e7a03f3bf055588c3f512e5785b52f85dc373d753a3c51412ef66a5212"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-logger.txt",
+      "bytes": 7180,
+      "sha256": "4ceb9ffa3d85996bdad4613ce67cbc80a93b1243f2aeb2db881c96b867780d62"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-app\\MainActivity.java",
+      "bytes": 14509,
+      "sha256": "c700af256f66e9350f6b9917c943099388164a28667588bac53a76182749a8f9"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-app\\AndroidManifest.xml",
+      "bytes": 779,
+      "sha256": "18fecf42cc616b10ea9a537a61d4a76d7d45e7f28d24812046b3ce4aa9d33135"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-app\\build.py",
+      "bytes": 3097,
+      "sha256": "3c38c941b7448f181199ee21411b925544b27063819466d1b6d7e0821cd41ebd"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-app\\build\\build.json",
+      "bytes": 3499,
+      "sha256": "63eb5dbbbd106668e28fbe99c9205ce8e126cb7ec94dc1af16a8a7f362cc9dc6"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-app\\build\\assets\\power-logger",
+      "bytes": 985304,
+      "sha256": "a9816aa81d745f21a119d76853c3be89f1efa35fb52fb4d9f13119b6d93592b4"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-app\\build\\S26-Power.apk",
+      "bytes": 287251,
+      "sha256": "84c876ba3fa4d623c268b2e9998cd9253d9e1d755b870364288341cef23bd827"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-logger\\validation.json",
+      "bytes": 2427,
+      "sha256": "240246a0c7e0d203d9c73b1408f5333c2f2c3ce7493695057396238c5924f020"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-logger\\usb-disconnect-test.json",
+      "bytes": 1550,
+      "sha256": "b8641cb635949111b97bbbd6b736d8a6b5c37ebee64a2493fb7fec01d3e37bd1"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-logger\\timed-test.json",
+      "bytes": 226,
+      "sha256": "c89f4376d21e0eb67524368e397cf83241c0fdccc839243131c33addd71ad470"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-logger\\apk-controls-test.json",
+      "bytes": 248,
+      "sha256": "ed87e0eee9a5ce1c36ebfaaff726978ebc508c321a94d6ec72faceed20ecb54a"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-logger\\adb-app-timed-test.json",
+      "bytes": 460,
+      "sha256": "ddb9bd29665d9a27512091d811f78c06a43b6c3f27309da54d097919a7c79445"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-logger\\gap-test.json",
+      "bytes": 337,
+      "sha256": "2bdc20b0e34d00b84b4445dc7a779b423d8c0bfdfa278d5506c7a09999ff4c28"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-logger\\final-state.txt",
+      "bytes": 1426,
+      "sha256": "d243b5185860279efe4f5dd856c5401d05850bfe456edbc08f3c97fde2466104"
+    }
+  ],
+  "qprof_reinstall_command": "qsc-cli tool install --name Qualcomm_Profiler --required-version 2.26.10.6 --silent --activate-default-license",
+  "notes": [
+    "Local file manifest, not a phone image backup. Qualcomm packages remain obtainable through the authenticated QSC catalog.",
+    "Root app settings and image protection were not modified during these tests.",
+    "No GPU or HTP external DMA-BUF import was tested."
+  ],
+  "updated_utc": "2026-11-14T14:12:40.129778+00:00",
+  "power_assessment": "runs/power-check/summary.json",
+  "power_logger": "runs/power-logger/validation.json"
+}

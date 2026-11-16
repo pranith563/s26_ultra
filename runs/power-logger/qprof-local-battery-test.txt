@@ -1,0 +1,3 @@
+[1;33mUsing default Configuration for capability profiler:apps-proc-battery-metrics
+[0m[1;33mPlease check profiling results at /data/local/tmp/s26-qprof-local-battery/
+[0mQPROF_EXIT=0

@@ -1,0 +1,7 @@
+POWER_STATS_HAL
+VINTF
+/system/etc/vintf/compatibility_matrix.202404.xml:376:        <name>android.hardware.power.stats</name>
+/system/etc/vintf/compatibility_matrix.202504.xml:352:        <name>android.hardware.power.stats</name>
+/system/etc/vintf/compatibility_matrix.6.xml:415:        <name>android.hardware.power.stats</name>
+/system/etc/vintf/compatibility_matrix.7.xml:463:        <name>android.hardware.power.stats</name>
+/system/etc/vintf/compatibility_matrix.8.xml:394:        <name>android.hardware.power.stats</name>

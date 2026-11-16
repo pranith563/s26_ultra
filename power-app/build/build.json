@@ -1,0 +1,95 @@
+{
+  "commands": [
+    [
+      "C:\\Android\\android-ndk-r30\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe",
+      "--target=aarch64-linux-android36",
+      "-std=c++17",
+      "-O2",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-static-libstdc++",
+      "C:\\Users\\prani\\s26_ultra\\power_logger.cpp",
+      "-o",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\assets\\power-logger"
+    ],
+    [
+      "C:\\Program Files\\Microsoft\\jdk-21.0.13.21-hotspot\\bin\\javac.exe",
+      "--release",
+      "8",
+      "-classpath",
+      "C:\\Android\\sdk\\platforms\\android-36\\android.jar",
+      "-encoding",
+      "UTF-8",
+      "-d",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\classes",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\MainActivity.java"
+    ],
+    [
+      "C:\\Program Files\\Microsoft\\jdk-21.0.13.21-hotspot\\bin\\jar.exe",
+      "cf",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\classes.jar",
+      "-C",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\classes",
+      "."
+    ],
+    [
+      "C:\\Program Files\\Microsoft\\jdk-21.0.13.21-hotspot\\bin\\java.exe",
+      "-cp",
+      "C:\\Android\\sdk\\build-tools\\36.0.0\\lib\\d8.jar",
+      "com.android.tools.r8.D8",
+      "--lib",
+      "C:\\Android\\sdk\\platforms\\android-36\\android.jar",
+      "--min-api",
+      "26",
+      "--output",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\dex",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\classes.jar"
+    ],
+    [
+      "C:\\Android\\sdk\\build-tools\\36.0.0\\aapt2.exe",
+      "link",
+      "-I",
+      "C:\\Android\\sdk\\platforms\\android-36\\android.jar",
+      "--manifest",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\AndroidManifest.xml",
+      "-A",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\assets",
+      "-o",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\unsigned.apk"
+    ],
+    [
+      "C:\\Android\\sdk\\build-tools\\36.0.0\\zipalign.exe",
+      "-f",
+      "4",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\unsigned.apk",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\aligned.apk"
+    ],
+    [
+      "C:\\Program Files\\Microsoft\\jdk-21.0.13.21-hotspot\\bin\\java.exe",
+      "-jar",
+      "C:\\Android\\sdk\\build-tools\\36.0.0\\lib\\apksigner.jar",
+      "sign",
+      "--ks",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\local-development.jks",
+      "--ks-pass",
+      "pass:android",
+      "--key-pass",
+      "pass:android",
+      "--out",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\S26-Power.apk",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\aligned.apk"
+    ],
+    [
+      "C:\\Program Files\\Microsoft\\jdk-21.0.13.21-hotspot\\bin\\java.exe",
+      "-jar",
+      "C:\\Android\\sdk\\build-tools\\36.0.0\\lib\\apksigner.jar",
+      "verify",
+      "--verbose",
+      "C:\\Users\\prani\\s26_ultra\\power-app\\build\\S26-Power.apk"
+    ]
+  ],
+  "apk_sha256": "84c876ba3fa4d623c268b2e9998cd9253d9e1d755b870364288341cef23bd827",
+  "verification": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n"
+}

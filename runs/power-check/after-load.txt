@@ -1,0 +1,13 @@
+-rw------- 1 root root 8305216 2026-01-09 22:32 /data/misc/perfetto-traces/s26-power-check.perfetto-trace
+qnn-net-run pid:18891
+qnn-net-run build version: v2.44.0.260225143659
+qnn-net-run log level is : QNN_LOG_LEVEL_INFO
+Processing inference input(s):
+inputs/1x299x299x3_float_1.raw
+inputs/1x299x299x3_float_2.raw
+Composing Graphs
+Finalizing Graphs
+Executing Graphs
+Finished Executing Graphs
+f23a96a6-fe8e-4804-8076-32df8aa2f25e
+Enforcing

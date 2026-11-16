@@ -1,0 +1,116 @@
+Install
+
+KernelSU active
+
+KernelSU active
+
+KernelSU and its control channel were verified
+
+Support check
+
+Check the device and firmware profile
+
+Download
+
+Load the support manifest
+
+Kernel exploit
+
+Obtain temporary root
+
+Load KernelSU
+
+Load KernelSU and verify the control channel
+
+Logs
+
+1.4.1 (27398057)
+[*] Checking the bundled DirtyFrag profile
+KernelSU flavour: KernelSU
+[*] Checking system logging
+[*] Transport: app process
+[+] Support profile: df-s26-5796aa7c07e8c09ad84f80f242692e83bee6b13c0333e6b38db1450ee018b033-kernelsu
+[+] Payload source: S26 Ultra bundled payloads
+[*] Run limits: 15 min total, 15 min of silence before the run is treated as stalled, 2 min per helper command
+[*] Verifying bundled DirtyFrag payloads
+[*] DirtyFrag target SM-S948B / S948BXXU1AZAB; kernel 6.12.30-android16-5-p595aaaa-abogkiS948BXXU1AZAB-4k
+[*] Verified DirtyFrag: ksud
+[*] Image protection armed pre-load (no grant needed)
+[*] Module disable armed before loading
+[*] Running kernel exploit
+[*] exploit route=default attempts=1 p0_cache=off shell=optional
+[*] payload origin=bundled
+[*] DirtyFrag single exploit launch; backend KernelSU; soft reboot off
+found ko_target: /vendor/lib64/libbinderdebug.so
+=== setup ===
+encap port: 59751
+spi: 0x11f1e0c0
+=== exploit ===
+* ko android16-6.12 (11128 bytes)
+* patch #1 (crash_dump64 ← splicehelper, 1312 bytes)
+0 ...
+512 ...
+1024 ...
+patched 1312 bytes to /apex/com.android.runtime/bin/crash_dump64+0x0
+* patch #2 (/vendor/lib64/libbinderdebug.so ← dirtyfrag.ko, 11136 bytes)
+0 ...
+512 ...
+1024 ...
+1536 ...
+2048 ...
+2560 ...
+3072 ...
+3584 ...
+4096 ...
+4608 ...
+5120 ...
+5632 ...
+6144 ...
+6656 ...
+7168 ...
+7680 ...
+8192 ...
+8704 ...
+9216 ...
+9728 ...
+10240 ...
+10752 ...
+patched 11136 bytes to /vendor/lib64/libbinderdebug.so+0x0
+PACIASP/BTI at hook site, advancing +4
+/system/lib64/libc++.so hook=0xb16f4 shell=0x105138 len=532
+* patching /system/lib64/libc++.so shellcode
+0 ...
+512 ...
+patched 544 bytes to /system/lib64/libc++.so+0x105138
+* patching /system/lib64/libc++.so trampoline at 0xb16f4
+0 ...
+patched 16 bytes to /system/lib64/libc++.so+0xb16f0
+* triggering...
+* readiness window complete; verifying backend
+libc++: mutex acquired, loading custom module
+image partitions protected before loading
+* marker check skipped by policy; verifying via su/manager
+=== cleanup ===
+* restore trampoline in /system/lib64/libc++.so
+0 ...
+patched 16 bytes to /system/lib64/libc++.so+0xb16f0
+* restore shellcode in /system/lib64/libc++.so
+0 ...
+512 ...
+patched 544 bytes to /system/lib64/libc++.so+0x105138
+* cache dropped: /apex/com.android.runtime/bin/crash_dump64
+[*] Verifying KernelSU control channel
+[+] Image partitions protected before loading
+[*] No marker file; verifying through su (needs a previous grant)
+[*] Verifying the selected backend
+Recorded KernelSU backend (trigger-ran) without app verification; confirm Working in the manager, and grant su to verify later runs
+[+] Cached for offline use: df-s26-5796aa7c07e8c09ad84f80f242692e83bee6b13c0333e6b38db1450ee018b033-kernelsu
+[!] Secure settings permission was not granted: no root, Shizuku, or saved wireless debugging pairing is available.
+[*] KernelSU active
+[+] Installation complete
+
+Newest
+
+Restart userspace to load modules
+
+Done

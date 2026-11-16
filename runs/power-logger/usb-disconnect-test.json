@@ -1,0 +1,60 @@
+{
+  "checked_host_utc": "2026-11-14T13:46:10.196585+00:00",
+  "active_phone_log": "/data/local/tmp/s26-power-logger/power-f23a96a6-fe8e-4804-8076-32df8aa2f25e-7031527445596.csv",
+  "pid": 19691,
+  "same_process_as_before_disconnect": true,
+  "same_boot": true,
+  "user_observed_phone_stayed_on": true,
+  "samples": 123,
+  "disconnected_samples": 33,
+  "maximum_sample_gap_s": 11.904679318,
+  "read_error_samples": 0,
+  "usb_segments": [
+    {
+      "usb_online": 1,
+      "first_boottime_s": 7031.527713564,
+      "last_boottime_s": 7089.527548282,
+      "samples": 59
+    },
+    {
+      "usb_online": 0,
+      "first_boottime_s": 7090.527916146,
+      "last_boottime_s": 7155.199878305,
+      "samples": 33
+    },
+    {
+      "usb_online": 1,
+      "first_boottime_s": 7156.199711378,
+      "last_boottime_s": 7186.199875429,
+      "samples": 31
+    }
+  ],
+  "disconnected_readings": {
+    "battery_voltage_uv": {
+      "mean": 3906969.696969697,
+      "min": 3884000.0,
+      "max": 3953000.0
+    },
+    "battery_current_ua": {
+      "mean": -102201.30303030302,
+      "min": -811718.0,
+      "max": 459375.0
+    },
+    "system_current_ma": {
+      "mean": 110.03030303030303,
+      "min": 0.0,
+      "max": 660.0
+    },
+    "battery_temp_deci_c": {
+      "mean": 266.8484848484849,
+      "min": 266.0,
+      "max": 267.0
+    },
+    "battery_interface_power_w": {
+      "mean": -0.40066384287878787,
+      "min": -3.208721254,
+      "max": 1.815909375
+    }
+  },
+  "left_running": true
+}

@@ -1,0 +1,50 @@
+{
+  "checked_host_utc": "2026-11-14T14:12:40.129778+00:00",
+  "native_build": "NDK r30; Android arm64 API 36; -Wall -Wextra -Werror passed",
+  "default_interval_ms": 1000,
+  "lifecycle_rows": 30,
+  "duration_s": 28.999841499,
+  "collector_cpu_s": 0.089674555,
+  "collector_cpu_percent_one_core": 0.30922429352964653,
+  "median_sample_read_ms": 14.8966145,
+  "read_error_samples": 0,
+  "usb_physical_disconnect_test": "PASSED: see usb-disconnect-test.json",
+  "files": [
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power_logger.cpp",
+      "sha256": "953632ebad4bc75ff9414a2fee7133c7e5a145e33051f625dbdf5b76438fcb9e"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-logger.sh",
+      "sha256": "912c7af15a5f407da0e86d3491d8aec8d04ccd197910e23cfe02c2783ecd88c8"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\power-logger.txt",
+      "sha256": "6d540b604e58153d39f5c3c7ef58b8fd6fb3a1511360cc36fc7f836aaed0d06c"
+    },
+    {
+      "path": "C:\\Users\\prani\\s26_ultra\\runs\\power-logger\\power-logger",
+      "sha256": "50578bde6375e4504b466db8551c8712f5fc9ead997edea0fc9faa3e81c129ee"
+    }
+  ],
+  "apk_installed": true,
+  "apk_sha256": "84c876ba3fa4d623c268b2e9998cd9253d9e1d755b870364288341cef23bd827",
+  "root_granted_app": "dev.s26.powerlogger",
+  "collector_status": "stopped",
+  "normal_sleep_preserved": true,
+  "timed_capture_test": "timed-test.json",
+  "apk_controls_test": "apk-controls-test.json",
+  "adb_app_timing_test": "adb-app-timed-test.json",
+  "gap_test": "gap-test.json",
+  "pulled_csv_and_metadata_files": 14,
+  "qprof_local_battery_capture": "passed; voltage, current, capacity and temperature returned",
+  "final_artifact_hashes": {
+    "power_logger.cpp": "7056436192e322a3ea563aca4719be14c86bf8a1160205e49058319a32316a03",
+    "power-logger.sh": "a18899e7a03f3bf055588c3f512e5785b52f85dc373d753a3c51412ef66a5212",
+    "power-logger.txt": "4ceb9ffa3d85996bdad4613ce67cbc80a93b1243f2aeb2db881c96b867780d62",
+    "power-app\\MainActivity.java": "c700af256f66e9350f6b9917c943099388164a28667588bac53a76182749a8f9",
+    "power-app\\AndroidManifest.xml": "18fecf42cc616b10ea9a537a61d4a76d7d45e7f28d24812046b3ce4aa9d33135",
+    "power-app\\build.py": "3c38c941b7448f181199ee21411b925544b27063819466d1b6d7e0821cd41ebd",
+    "power-app\\build\\S26-Power.apk": "84c876ba3fa4d623c268b2e9998cd9253d9e1d755b870364288341cef23bd827"
+  }
+}

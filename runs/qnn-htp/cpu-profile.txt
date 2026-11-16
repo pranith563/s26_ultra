@@ -1,0 +1,66 @@
+Input Log File Location: runs\qnn-htp\output_cpu\qnn-profiling-data_0.log
+Log File Created: Fri Jan  9 22:10:05 2026
+Time Scale: 1e-06
+Epoch Timestamp: 1767976805226911 Steady Clock Timestamp: 3906260415
+Generated using: 
+qnn-profile-viewer: v2.44.0.260225143659
+qnn-net-run: v2.44.0.260225143659
+Backend: v2.44.0.260225143659
+
+Qnn Init/Prepare/Finalize/De-Init/Execute/Lib-Load Statistics:
+------------------------------------------------------------
+Init Stats:
+-----------
+    NetRun: 1119 us
+
+Compose Graphs Stats:
+--------------
+    NetRun: 990 us
+
+Finalize Stats:
+---------------
+Graph 0 (convReluModel):
+    NetRun: 98 us
+    Backend (GRAPH_FINALIZE): 81 us
+        _InceptionV3_InceptionV3_Conv2d_1a_3x3_Conv2D: 21 us
+        _InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu: 2 us
+
+De-Init Stats:
+--------------
+    NetRun: 326 us
+    Backend (null): 0 us
+
+Execute Stats (Overall):
+------------------------
+    NetRun IPS (includes IO and misc. time): 40.8330 inf/sec 
+
+Execute Stats (Average):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (convReluModel):
+    NetRun: 3448 us
+    Backend (GRAPH_EXECUTE): 3238 us
+        _InceptionV3_InceptionV3_Conv2d_1a_3x3_Conv2D: 775 us
+        _InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu: 2459 us
+
+Execute Stats (Min):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (convReluModel):
+    NetRun: 2643 us
+    Backend (GRAPH_EXECUTE): 2582 us
+        _InceptionV3_InceptionV3_Conv2d_1a_3x3_Conv2D: 496 us
+        _InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu: 2084 us
+
+Execute Stats (Max):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (convReluModel):
+    NetRun: 4253 us
+    Backend (GRAPH_EXECUTE): 3895 us
+        _InceptionV3_InceptionV3_Conv2d_1a_3x3_Conv2D: 1054 us
+        _InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu: 2834 us
+

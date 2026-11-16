@@ -1,0 +1,18 @@
+Supported Options::
+[0m-h    [--help]            Display this Help Message
+[0m-v    [--version]         Display the version number
+[0m-lapp [--launch-app]      Launch Application with Specified Arguments
+[0m-ca   [--capabilities]    Get available Profilers for the Device
+[0m-pr   [--profile]         Start Profiling with Specified Arguments
+[0m-genc [--generate-config] Generate the configuration for the capabilities
+[0m-sts  [--start-server]    Start Profiling Server on the Device
+[0m-sos  [--stop-server]     Stop Profiling Server on the Device
+[0m-c    [--configure]       Configure the profiler CLI
+[0m-gsi  [--get-server-info] Display information about configured server ip and port
+[0m-cmds [--commands]        Get available commands for the Device
+[0m-exec [--execute-command] Execute command on the Device
+[0m-sm [--sysmon]            Sysmon Profiling with Specified Arguments
+[0m-mi [--metrics-info]      Show available metrics information for the device, based on supported capabilities
+[0m
+Please use help option with command name to get the Command Usage Information
+[0m

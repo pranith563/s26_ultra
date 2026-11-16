@@ -1,0 +1,31 @@
+# Download third-party SDKs, tools and rooting APKs from their original sources.
+/downloads/
+
+# Keep the tested app and build record, but not intermediate files or signing keys.
+/power-app/build/*
+!/power-app/build/S26-Power.apk
+!/power-app/build/build.json
+/runs/qnn-htp/build/*
+!/runs/qnn-htp/build/commands.json
+
+# Device vendor binaries are local evidence; keep the analysis and disassembly.
+*.ko
+*.ko.rodata.bin
+
+# Local credentials and development state.
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+.env
+.env.*
+!.env.example
+credentials.json
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,14 @@
+{"boot_before_ns":4422157504039,"monotonic_ns":4422157504143,"monotonic_raw_ns":4422157504250,"realtime_ns":1767977321124000243,"boot_after_ns":4422157504456,"counter_ticks":85025879303,"counter_frequency_hz":19200000,"counter_ns":4428431213697}
+4422.16 34671.91
+qnn-net-run pid:17901
+qnn-net-run build version: v2.44.0.260225143659
+qnn-net-run log level is : QNN_LOG_LEVEL_INFO
+Processing inference input(s):
+inputs/1x299x299x3_float_1.raw
+inputs/1x299x299x3_float_2.raw
+Composing Graphs
+Finalizing Graphs
+Executing Graphs
+Finished Executing Graphs
+4425.62 34696.88
+{"boot_before_ns":4425630150496,"monotonic_ns":4425630150600,"monotonic_raw_ns":4425630150707,"realtime_ns":1767977324596646648,"boot_after_ns":4425630150913,"counter_ticks":85092554115,"counter_frequency_hz":19200000,"counter_ns":4431903860156}

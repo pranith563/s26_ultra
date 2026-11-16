@@ -1,0 +1,6 @@
+Example Usage              : qprof --configure --server-ip 127.0.0.1 --port 62472
+[0m--server-ip                : IP address of the target server to connect to.
+[0m                             If IP address connection fails, error is thrown
+[0m--port (Optional)          : port of the target server to connect to. 
+[0m                             Default: 62472
+[0m

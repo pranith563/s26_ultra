@@ -1,0 +1,11 @@
+01-09 21:08:42.396 I Run Run started: unattended=false, offline=false, retry=false, withoutShizuku=false
+01-09 21:08:42.510 I Run Transport App (shell required=false, Shizuku requested=false, usable=true, pairing saved=false)
+01-09 21:08:48.757 W Permissions WRITE_SECURE_SETTINGS: no transport answered (IllegalStateException: Wireless debugging could not be enabled: WRITE_SECURE_SETTINGS is required)
+01-09 21:08:48.760 I Run Run finished: KernelSU loaded
+01-09 21:05:21.855 I Boot A boot install was asked for (root on boot=true, retry armed=false)
+01-09 21:05:21.923 I Boot Gate decision Run (KernelSU active=false)
+01-09 21:05:21.928 I Boot Shizuku for this boot: WithoutShell (the payload needs a shell=false)
+01-09 21:05:21.934 I Run Run started: unattended=true, offline=true, retry=false, withoutShizuku=true
+01-09 21:05:22.043 I Run Transport App (shell required=false, Shizuku requested=false, usable=true, pairing saved=false)
+01-09 21:05:24.576 I Permissions [+] Secure settings permission granted through Root; wireless debugging can now be enabled without a cable.
+01-09 21:05:24.597 I Run Run finished: KernelSU loaded

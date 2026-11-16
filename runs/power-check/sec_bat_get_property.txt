@@ -1,0 +1,767 @@
+<sec_bat_get_property>:
+   1237c: d503233f     	paciasp
+   12380: d10103ff     	sub	sp, sp, #0x40
+   12384: a9017bfd     	stp	x29, x30, [sp, #0x10]
+   12388: f90013f5     	str	x21, [sp, #0x20]
+   1238c: a9034ff4     	stp	x20, x19, [sp, #0x30]
+   12390: 910043fd     	add	x29, sp, #0x10
+   12394: d5384108     	mrs	x8, SP_EL0
+   12398: aa0203f3     	mov	x19, x2
+   1239c: 2a0103f4     	mov	w20, w1
+   123a0: f9438908     	ldr	x8, [x8, #0x710]
+   123a4: f90007e8     	str	x8, [sp, #0x8]
+   123a8: 94000000     	bl	0x123a8 <sec_bat_get_property+0x2c>
+		00000000000123a8:  R_AARCH64_CALL26	power_supply_get_drvdata
+   123ac: 7100fa9f     	cmp	w20, #0x3e
+   123b0: 91400409     	add	x9, x0, #0x1, lsl #12   // =0x1000
+   123b4: f90003ff     	str	xzr, [sp]
+   123b8: 54000168     	b.hi	0x123e4 <sec_bat_get_property+0x68>
+   123bc: 2a1403e8     	mov	w8, w20
+   123c0: 9000000a     	adrp	x10, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		00000000000123c0:  R_AARCH64_ADR_PREL_PG_HI21	.rodata+0x110
+   123c4: 9100014a     	add	x10, x10, #0x0
+		00000000000123c4:  R_AARCH64_ADD_ABS_LO12_NC	.rodata+0x110
+   123c8: 1000008b     	adr	x11, 0x123d8 <sec_bat_get_property+0x5c>
+   123cc: 3868694c     	ldrb	w12, [x10, x8]
+   123d0: 8b0c096b     	add	x11, x11, x12, lsl #2
+   123d4: d61f0160     	br	x11
+   123d8: f9400408     	ldr	x8, [x0, #0x8]
+   123dc: b94c3508     	ldr	w8, [x8, #0xc34]
+   123e0: 14000083     	b	0x125ec <sec_bat_get_property+0x270>
+   123e4: 510fa288     	sub	w8, w20, #0x3e8
+   123e8: 7103951f     	cmp	w8, #0xe5
+   123ec: 54002422     	b.hs	0x12870 <sec_bat_get_property+0x4f4>
+   123f0: 510fca8a     	sub	w10, w20, #0x3f2
+   123f4: 128002a8     	mov	w8, #-0x16              // =-22
+   123f8: 7103655f     	cmp	w10, #0xd9
+   123fc: 54001ba8     	b.hi	0x12770 <sec_bat_get_property+0x3f4>
+   12400: 9000000b     	adrp	x11, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012400:  R_AARCH64_ADR_PREL_PG_HI21	.rodata+0x178
+   12404: 9100016b     	add	x11, x11, #0x0
+		0000000000012404:  R_AARCH64_ADD_ABS_LO12_NC	.rodata+0x178
+   12408: 1000008c     	adr	x12, 0x12418 <sec_bat_get_property+0x9c>
+   1240c: 786a796d     	ldrh	w13, [x11, x10, lsl #1]
+   12410: 8b0d098c     	add	x12, x12, x13, lsl #2
+   12414: d61f0180     	br	x12
+   12418: 397d8008     	ldrb	w8, [x0, #0xf60]
+   1241c: 140000d3     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12420: b9483c08     	ldr	w8, [x0, #0x83c]
+   12424: 140000d1     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12428: f9400408     	ldr	x8, [x0, #0x8]
+   1242c: b90003ff     	str	wzr, [sp]
+   12430: f9447d08     	ldr	x8, [x8, #0x8f8]
+   12434: b5000348     	cbnz	x8, 0x1249c <sec_bat_get_property+0x120>
+   12438: 140001da     	b	0x12ba0 <sec_bat_get_property+0x824>
+   1243c: b9484008     	ldr	w8, [x0, #0x840]
+   12440: 140000ca     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12444: 90000008     	adrp	x8, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012444:  R_AARCH64_ADR_PREL_PG_HI21	.data..read_mostly
+   12448: b9400109     	ldr	w9, [x8]
+		0000000000012448:  R_AARCH64_LDST32_ABS_LO12_NC	.data..read_mostly
+   1244c: b9425808     	ldr	w8, [x0, #0x258]
+   12450: 34002049     	cbz	w9, 0x12858 <sec_bat_get_property+0x4dc>
+   12454: 7100611f     	cmp	w8, #0x18
+   12458: 54002008     	b.hi	0x12858 <sec_bat_get_property+0x4dc>
+   1245c: 52800029     	mov	w9, #0x1                // =1
+   12460: 5280020b     	mov	w11, #0x10              // =16
+   12464: 1ac8212a     	lsl	w10, w9, w8
+   12468: 72a0220b     	movk	w11, #0x110, lsl #16
+   1246c: 6a0b015f     	tst	w10, w11
+   12470: 54001f40     	b.eq	0x12858 <sec_bat_get_property+0x4dc>
+   12474: b9000269     	str	w9, [x19]
+   12478: 140000bd     	b	0x1276c <sec_bat_get_property+0x3f0>
+   1247c: f9400408     	ldr	x8, [x0, #0x8]
+   12480: b9426108     	ldr	w8, [x8, #0x260]
+   12484: 140000b9     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12488: f9400408     	ldr	x8, [x0, #0x8]
+   1248c: 52800049     	mov	w9, #0x2                // =2
+   12490: b90003e9     	str	w9, [sp]
+   12494: f9447d08     	ldr	x8, [x8, #0x8f8]
+   12498: b4003848     	cbz	x8, 0x12ba0 <sec_bat_get_property+0x824>
+   1249c: aa0003f5     	mov	x21, x0
+   124a0: aa0803e0     	mov	x0, x8
+   124a4: 94000000     	bl	0x124a4 <sec_bat_get_property+0x128>
+		00000000000124a4:  R_AARCH64_CALL26	power_supply_get_by_name
+   124a8: b4002080     	cbz	x0, 0x128b8 <sec_bat_get_property+0x53c>
+   124ac: f9400008     	ldr	x8, [x0]
+   124b0: f9401508     	ldr	x8, [x8, #0x28]
+   124b4: b4001568     	cbz	x8, 0x12760 <sec_bat_get_property+0x3e4>
+   124b8: 910003e2     	mov	x2, sp
+   124bc: 52808361     	mov	w1, #0x41b              // =1051
+   124c0: aa0003f4     	mov	x20, x0
+   124c4: b85fc110     	ldur	w16, [x8, #-0x4]
+   124c8: 72819a71     	movk	w17, #0xcd3
+   124cc: 72bd1331     	movk	w17, #0xe899, lsl #16
+   124d0: 6b11021f     	cmp	w16, w17
+   124d4: 54000040     	b.eq	0x124dc <sec_bat_get_property+0x160>
+   124d8: d4304500     	brk	#0x8228
+   124dc: d63f0100     	blr	x8
+   124e0: 2a0003e3     	mov	w3, w0
+   124e4: aa1403e0     	mov	x0, x20
+   124e8: 36f813c3     	tbz	w3, #0x1f, 0x12760 <sec_bat_get_property+0x3e4>
+   124ec: f94006a8     	ldr	x8, [x21, #0x8]
+   124f0: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		00000000000124f0:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x9ef3
+   124f4: 91000000     	add	x0, x0, #0x0
+		00000000000124f4:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x9ef3
+   124f8: 14000094     	b	0x12748 <sec_bat_get_property+0x3cc>
+   124fc: 52823c28     	mov	w8, #0x11e1             // =4577
+   12500: 38686808     	ldrb	w8, [x0, x8]
+   12504: 37301ba8     	tbnz	w8, #0x6, 0x12878 <sec_bat_get_property+0x4fc>
+   12508: b9425808     	ldr	w8, [x0, #0x258]
+   1250c: 321c0108     	orr	w8, w8, #0x10
+   12510: 7100511f     	cmp	w8, #0x14
+   12514: 54001aa0     	b.eq	0x12868 <sec_bat_get_property+0x4ec>
+   12518: f9400408     	ldr	x8, [x0, #0x8]
+   1251c: 3949f108     	ldrb	w8, [x8, #0x27c]
+   12520: 36000108     	tbz	w8, #0x0, 0x12540 <sec_bat_get_property+0x1c4>
+   12524: 90000008     	adrp	x8, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012524:  R_AARCH64_ADR_PREL_PG_HI21	.data..read_mostly
+   12528: b9400108     	ldr	w8, [x8]
+		0000000000012528:  R_AARCH64_LDST32_ABS_LO12_NC	.data..read_mostly
+   1252c: 350000a8     	cbnz	w8, 0x12540 <sec_bat_get_property+0x1c4>
+   12530: b948c808     	ldr	w8, [x0, #0x8c8]
+   12534: 121f7908     	and	w8, w8, #0xfffffffe
+   12538: 7100111f     	cmp	w8, #0x4
+   1253c: 54001960     	b.eq	0x12868 <sec_bat_get_property+0x4ec>
+   12540: f94a2408     	ldr	x8, [x0, #0x1448]
+   12544: aa0003f4     	mov	x20, x0
+   12548: aa0803e0     	mov	x0, x8
+   1254c: 94000000     	bl	0x1254c <sec_bat_get_property+0x1d0>
+		000000000001254c:  R_AARCH64_CALL26	is_eu_eco_rechg
+   12550: aa1403e8     	mov	x8, x20
+   12554: 360001c0     	tbz	w0, #0x0, 0x1258c <sec_bat_get_property+0x210>
+   12558: b9425509     	ldr	w9, [x8, #0x254]
+   1255c: 7100113f     	cmp	w9, #0x4
+   12560: 54000161     	b.ne	0x1258c <sec_bat_get_property+0x210>
+   12564: 3962f109     	ldrb	w9, [x8, #0x8bc]
+   12568: 7100053f     	cmp	w9, #0x1
+   1256c: 54000081     	b.ne	0x1257c <sec_bat_get_property+0x200>
+   12570: b942c108     	ldr	w8, [x8, #0x2c0]
+   12574: 7101911f     	cmp	w8, #0x64
+   12578: 540011c3     	b.lo	0x127b0 <sec_bat_get_property+0x434>
+   1257c: aa1403e0     	mov	x0, x20
+   12580: 94000000     	bl	0x12580 <sec_bat_get_property+0x204>
+		0000000000012580:  R_AARCH64_CALL26	check_eu_eco_rechg_ui_condition
+   12584: aa1403e8     	mov	x8, x20
+   12588: 37001140     	tbnz	w0, #0x0, 0x127b0 <sec_bat_get_property+0x434>
+   1258c: b9425508     	ldr	w8, [x8, #0x254]
+   12590: 14000076     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12594: b948c80a     	ldr	w10, [x0, #0x8c8]
+   12598: 7100cd5f     	cmp	w10, #0x33
+   1259c: 54004282     	b.hs	0x12dec <sec_bat_get_property+0xa70>
+   125a0: f9400408     	ldr	x8, [x0, #0x8]
+   125a4: 5100054b     	sub	w11, w10, #0x1
+   125a8: 7100c97f     	cmp	w11, #0x32
+   125ac: 8b0a0d0c     	add	x12, x8, x10, lsl #3
+   125b0: b940998a     	ldr	w10, [x12, #0x98]
+   125b4: 54001142     	b.hs	0x127dc <sec_bat_get_property+0x460>
+   125b8: d29ffc2c     	mov	x12, #0xffe1            // =65505
+   125bc: f2a38aec     	movk	x12, #0x1c57, lsl #16
+   125c0: f2df67ec     	movk	x12, #0xfb3f, lsl #32
+   125c4: f2e0006c     	movk	x12, #0x3, lsl #48
+   125c8: 9acb258c     	lsr	x12, x12, x11
+   125cc: 3600108c     	tbz	w12, #0x0, 0x127dc <sec_bat_get_property+0x460>
+   125d0: 90000008     	adrp	x8, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		00000000000125d0:  R_AARCH64_ADR_PREL_PG_HI21	.rodata+0x1108
+   125d4: 91000108     	add	x8, x8, #0x0
+		00000000000125d4:  R_AARCH64_ADD_ABS_LO12_NC	.rodata+0x1108
+   125d8: b86b5908     	ldr	w8, [x8, w11, uxtw #2]
+   125dc: 14000088     	b	0x127fc <sec_bat_get_property+0x480>
+   125e0: b9426408     	ldr	w8, [x0, #0x264]
+   125e4: 14000002     	b	0x125ec <sec_bat_get_property+0x270>
+   125e8: b9426808     	ldr	w8, [x0, #0x268]
+   125ec: 52807d09     	mov	w9, #0x3e8              // =1000
+   125f0: 1b097d08     	mul	w8, w8, w9
+   125f4: 1400005d     	b	0x12768 <sec_bat_get_property+0x3ec>
+   125f8: b948b808     	ldr	w8, [x0, #0x8b8]
+   125fc: 1400005b     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12600: b9428808     	ldr	w8, [x0, #0x288]
+   12604: 14000059     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12608: 39497008     	ldrb	w8, [x0, #0x25c]
+   1260c: b9000268     	str	w8, [x19]
+   12610: b951e009     	ldr	w9, [x0, #0x11e0]
+   12614: 7212013f     	tst	w9, #0x4000
+   12618: 1a9f0108     	csel	w8, w8, wzr, eq
+   1261c: 14000053     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12620: b948cc08     	ldr	w8, [x0, #0x8cc]
+   12624: 51015d08     	sub	w8, w8, #0x57
+   12628: 7100091f     	cmp	w8, #0x2
+   1262c: 540012a8     	b.hi	0x12880 <sec_bat_get_property+0x504>
+   12630: 52800c68     	mov	w8, #0x63               // =99
+   12634: 1400004d     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12638: f9400408     	ldr	x8, [x0, #0x8]
+   1263c: b90003ff     	str	wzr, [sp]
+   12640: f9447d08     	ldr	x8, [x8, #0x8f8]
+   12644: b4002ae8     	cbz	x8, 0x12ba0 <sec_bat_get_property+0x824>
+   12648: aa0003f5     	mov	x21, x0
+   1264c: aa0803e0     	mov	x0, x8
+   12650: 94000000     	bl	0x12650 <sec_bat_get_property+0x2d4>
+		0000000000012650:  R_AARCH64_CALL26	power_supply_get_by_name
+   12654: b4001320     	cbz	x0, 0x128b8 <sec_bat_get_property+0x53c>
+   12658: f9400008     	ldr	x8, [x0]
+   1265c: f9401508     	ldr	x8, [x8, #0x28]
+   12660: b4000808     	cbz	x8, 0x12760 <sec_bat_get_property+0x3e4>
+   12664: 910003e2     	mov	x2, sp
+   12668: 52800241     	mov	w1, #0x12               // =18
+   1266c: aa0003f4     	mov	x20, x0
+   12670: b85fc110     	ldur	w16, [x8, #-0x4]
+   12674: 72819a71     	movk	w17, #0xcd3
+   12678: 72bd1331     	movk	w17, #0xe899, lsl #16
+   1267c: 6b11021f     	cmp	w16, w17
+   12680: 54000040     	b.eq	0x12688 <sec_bat_get_property+0x30c>
+   12684: d4304500     	brk	#0x8228
+   12688: d63f0100     	blr	x8
+   1268c: 2a0003e3     	mov	w3, w0
+   12690: aa1403e0     	mov	x0, x20
+   12694: 36f80663     	tbz	w3, #0x1f, 0x12760 <sec_bat_get_property+0x3e4>
+   12698: f94006a8     	ldr	x8, [x21, #0x8]
+   1269c: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		000000000001269c:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x850a
+   126a0: 91000000     	add	x0, x0, #0x0
+		00000000000126a0:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x850a
+   126a4: 14000029     	b	0x12748 <sec_bat_get_property+0x3cc>
+   126a8: f9400408     	ldr	x8, [x0, #0x8]
+   126ac: 39707108     	ldrb	w8, [x8, #0xc1c]
+   126b0: 7100051f     	cmp	w8, #0x1
+   126b4: 54001520     	b.eq	0x12958 <sec_bat_get_property+0x5dc>
+   126b8: b942c008     	ldr	w8, [x0, #0x2c0]
+   126bc: b9000268     	str	w8, [x19]
+   126c0: b9425408     	ldr	w8, [x0, #0x254]
+   126c4: 7100111f     	cmp	w8, #0x4
+   126c8: 54000521     	b.ne	0x1276c <sec_bat_get_property+0x3f0>
+   126cc: f94a2400     	ldr	x0, [x0, #0x1448]
+   126d0: 94000000     	bl	0x126d0 <sec_bat_get_property+0x354>
+		00000000000126d0:  R_AARCH64_CALL26	is_eu_eco_rechg
+   126d4: 36000ee0     	tbz	w0, #0x0, 0x128b0 <sec_bat_get_property+0x534>
+   126d8: 14000025     	b	0x1276c <sec_bat_get_property+0x3f0>
+   126dc: f9400408     	ldr	x8, [x0, #0x8]
+   126e0: b90003ff     	str	wzr, [sp]
+   126e4: f9447d08     	ldr	x8, [x8, #0x8f8]
+   126e8: b40025c8     	cbz	x8, 0x12ba0 <sec_bat_get_property+0x824>
+   126ec: aa0003f5     	mov	x21, x0
+   126f0: aa0803e0     	mov	x0, x8
+   126f4: 94000000     	bl	0x126f4 <sec_bat_get_property+0x378>
+		00000000000126f4:  R_AARCH64_CALL26	power_supply_get_by_name
+   126f8: b4000e00     	cbz	x0, 0x128b8 <sec_bat_get_property+0x53c>
+   126fc: f9400008     	ldr	x8, [x0]
+   12700: f9401508     	ldr	x8, [x8, #0x28]
+   12704: b40002e8     	cbz	x8, 0x12760 <sec_bat_get_property+0x3e4>
+   12708: 910003e2     	mov	x2, sp
+   1270c: 52800221     	mov	w1, #0x11               // =17
+   12710: aa0003f4     	mov	x20, x0
+   12714: b85fc110     	ldur	w16, [x8, #-0x4]
+   12718: 72819a71     	movk	w17, #0xcd3
+   1271c: 72bd1331     	movk	w17, #0xe899, lsl #16
+   12720: 6b11021f     	cmp	w16, w17
+   12724: 54000040     	b.eq	0x1272c <sec_bat_get_property+0x3b0>
+   12728: d4304500     	brk	#0x8228
+   1272c: d63f0100     	blr	x8
+   12730: 2a0003e3     	mov	w3, w0
+   12734: aa1403e0     	mov	x0, x20
+   12738: 36f80143     	tbz	w3, #0x1f, 0x12760 <sec_bat_get_property+0x3e4>
+   1273c: f94006a8     	ldr	x8, [x21, #0x8]
+   12740: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012740:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x84d1
+   12744: 91000000     	add	x0, x0, #0x0
+		0000000000012744:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x84d1
+   12748: f9447d02     	ldr	x2, [x8, #0x8f8]
+   1274c: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		000000000001274c:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12750: 91000021     	add	x1, x1, #0x0
+		0000000000012750:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   12754: 94000000     	bl	0x12754 <sec_bat_get_property+0x3d8>
+		0000000000012754:  R_AARCH64_CALL26	_printk
+   12758: aa1403e0     	mov	x0, x20
+   1275c: b90003ff     	str	wzr, [sp]
+   12760: 94000000     	bl	0x12760 <sec_bat_get_property+0x3e4>
+		0000000000012760:  R_AARCH64_CALL26	power_supply_put
+   12764: b94003e8     	ldr	w8, [sp]
+   12768: b9000268     	str	w8, [x19]
+   1276c: 2a1f03e8     	mov	w8, wzr
+   12770: d5384109     	mrs	x9, SP_EL0
+   12774: f9438929     	ldr	x9, [x9, #0x710]
+   12778: f94007ea     	ldr	x10, [sp, #0x8]
+   1277c: eb0a013f     	cmp	x9, x10
+   12780: 54003341     	b.ne	0x12de8 <sec_bat_get_property+0xa6c>
+   12784: 2a0803e0     	mov	w0, w8
+   12788: a9434ff4     	ldp	x20, x19, [sp, #0x30]
+   1278c: f94013f5     	ldr	x21, [sp, #0x20]
+   12790: a9417bfd     	ldp	x29, x30, [sp, #0x10]
+   12794: 910103ff     	add	sp, sp, #0x40
+   12798: d50323bf     	autiasp
+   1279c: d65f03c0     	ret
+   127a0: 397c3008     	ldrb	w8, [x0, #0xf0c]
+   127a4: 52801709     	mov	w9, #0xb8               // =184
+   127a8: 6a09011f     	tst	w8, w9
+   127ac: 54002060     	b.eq	0x12bb8 <sec_bat_get_property+0x83c>
+   127b0: 52800028     	mov	w8, #0x1                // =1
+   127b4: 17ffffed     	b	0x12768 <sec_bat_get_property+0x3ec>
+   127b8: f9400809     	ldr	x9, [x0, #0x10]
+   127bc: b942c008     	ldr	w8, [x0, #0x2c0]
+   127c0: b9425401     	ldr	w1, [x0, #0x254]
+   127c4: b948ac02     	ldr	w2, [x0, #0x8ac]
+   127c8: b9400923     	ldr	w3, [x9, #0x8]
+   127cc: 2a0803e0     	mov	w0, w8
+   127d0: 94000000     	bl	0x127d0 <sec_bat_get_property+0x454>
+		00000000000127d0:  R_AARCH64_CALL26	ttf_display
+   127d4: b9000260     	str	w0, [x19]
+   127d8: 17ffffe5     	b	0x1276c <sec_bat_get_property+0x3f0>
+   127dc: 3952252b     	ldrb	w11, [x9, #0x489]
+   127e0: 3700016b     	tbnz	w11, #0x0, 0x1280c <sec_bat_get_property+0x490>
+   127e4: 9000000b     	adrp	x11, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		00000000000127e4:  R_AARCH64_ADR_PREL_PG_HI21	.data..read_mostly
+   127e8: b940016b     	ldr	w11, [x11]
+		00000000000127e8:  R_AARCH64_LDST32_ABS_LO12_NC	.data..read_mostly
+   127ec: 3500010b     	cbnz	w11, 0x1280c <sec_bat_get_property+0x490>
+   127f0: 3964a90b     	ldrb	w11, [x8, #0x92a]
+   127f4: 360000cb     	tbz	w11, #0x0, 0x1280c <sec_bat_get_property+0x490>
+   127f8: 52800068     	mov	w8, #0x3                // =3
+   127fc: 911e6009     	add	x9, x0, #0x798
+   12800: b9000268     	str	w8, [x19]
+   12804: b9000128     	str	w8, [x9]
+   12808: 17ffffd9     	b	0x1276c <sec_bat_get_property+0x3f0>
+   1280c: b948390b     	ldr	w11, [x8, #0x838]
+   12810: 6b0b015f     	cmp	w10, w11
+   12814: 54000069     	b.ls	0x12820 <sec_bat_get_property+0x4a4>
+   12818: 39522129     	ldrb	w9, [x9, #0x488]
+   1281c: 36000549     	tbz	w9, #0x0, 0x128c4 <sec_bat_get_property+0x548>
+   12820: 52800048     	mov	w8, #0x2                // =2
+   12824: b9000268     	str	w8, [x19]
+   12828: b9479809     	ldr	w9, [x0, #0x798]
+   1282c: 7100093f     	cmp	w9, #0x2
+   12830: 911e6009     	add	x9, x0, #0x798
+   12834: 54fffe80     	b.eq	0x12804 <sec_bat_get_property+0x488>
+   12838: 7100091f     	cmp	w8, #0x2
+   1283c: 54fffe41     	b.ne	0x12804 <sec_bat_get_property+0x488>
+   12840: b9463408     	ldr	w8, [x0, #0x634]
+   12844: 11000508     	add	w8, w8, #0x1
+   12848: b9063408     	str	w8, [x0, #0x634]
+   1284c: b9400268     	ldr	w8, [x19]
+   12850: b9000128     	str	w8, [x9]
+   12854: 17ffffc6     	b	0x1276c <sec_bat_get_property+0x3f0>
+   12858: 7100511f     	cmp	w8, #0x14
+   1285c: 54fff86b     	b.lt	0x12768 <sec_bat_get_property+0x3ec>
+   12860: 7100551f     	cmp	w8, #0x15
+   12864: 54001aa1     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12868: 52800048     	mov	w8, #0x2                // =2
+   1286c: 17ffffbf     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12870: 128002a8     	mov	w8, #-0x16              // =-22
+   12874: 17ffffbf     	b	0x12770 <sec_bat_get_property+0x3f4>
+   12878: 52800068     	mov	w8, #0x3                // =3
+   1287c: 17ffffbb     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12880: b948c808     	ldr	w8, [x0, #0x8c8]
+   12884: 51002d09     	sub	w9, w8, #0xb
+   12888: 71009d3f     	cmp	w9, #0x27
+   1288c: 54fff6e8     	b.hi	0x12768 <sec_bat_get_property+0x3ec>
+   12890: 9000000a     	adrp	x10, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012890:  R_AARCH64_ADR_PREL_PG_HI21	.rodata+0x14f
+   12894: 9100014a     	add	x10, x10, #0x0
+		0000000000012894:  R_AARCH64_ADD_ABS_LO12_NC	.rodata+0x14f
+   12898: 10fff68b     	adr	x11, 0x12768 <sec_bat_get_property+0x3ec>
+   1289c: 3869694c     	ldrb	w12, [x10, x9]
+   128a0: 8b0c096b     	add	x11, x11, x12, lsl #2
+   128a4: d61f0160     	br	x11
+   128a8: 94000000     	bl	0x128a8 <sec_bat_get_property+0x52c>
+		00000000000128a8:  R_AARCH64_CALL26	sec_bat_hv_wc_normal_mode_check
+   128ac: 37000840     	tbnz	w0, #0x0, 0x129b4 <sec_bat_get_property+0x638>
+   128b0: 52800c88     	mov	w8, #0x64               // =100
+   128b4: 17ffffad     	b	0x12768 <sec_bat_get_property+0x3ec>
+   128b8: f94006a8     	ldr	x8, [x21, #0x8]
+   128bc: f9447d02     	ldr	x2, [x8, #0x8f8]
+   128c0: 140000b9     	b	0x12ba4 <sec_bat_get_property+0x828>
+   128c4: aa0003f5     	mov	x21, x0
+   128c8: f9448900     	ldr	x0, [x8, #0x910]
+   128cc: b4001960     	cbz	x0, 0x12bf8 <sec_bat_get_property+0x87c>
+   128d0: 94000000     	bl	0x128d0 <sec_bat_get_property+0x554>
+		00000000000128d0:  R_AARCH64_CALL26	power_supply_get_by_name
+   128d4: b4001960     	cbz	x0, 0x12c00 <sec_bat_get_property+0x884>
+   128d8: f9400008     	ldr	x8, [x0]
+   128dc: f9401508     	ldr	x8, [x8, #0x28]
+   128e0: b40001c8     	cbz	x8, 0x12918 <sec_bat_get_property+0x59c>
+   128e4: 910003e2     	mov	x2, sp
+   128e8: 52800021     	mov	w1, #0x1                // =1
+   128ec: aa0003f4     	mov	x20, x0
+   128f0: b85fc110     	ldur	w16, [x8, #-0x4]
+   128f4: 72819a71     	movk	w17, #0xcd3
+   128f8: 72bd1331     	movk	w17, #0xe899, lsl #16
+   128fc: 6b11021f     	cmp	w16, w17
+   12900: 54000040     	b.eq	0x12908 <sec_bat_get_property+0x58c>
+   12904: d4304500     	brk	#0x8228
+   12908: d63f0100     	blr	x8
+   1290c: 2a0003e3     	mov	w3, w0
+   12910: aa1403e0     	mov	x0, x20
+   12914: 37f819c3     	tbnz	w3, #0x1f, 0x12c4c <sec_bat_get_property+0x8d0>
+   12918: 94000000     	bl	0x12918 <sec_bat_get_property+0x59c>
+		0000000000012918:  R_AARCH64_CALL26	power_supply_put
+   1291c: b94003e8     	ldr	w8, [sp]
+   12920: aa1503e0     	mov	x0, x21
+   12924: 35fff808     	cbnz	w8, 0x12824 <sec_bat_get_property+0x4a8>
+   12928: 52800028     	mov	w8, #0x1                // =1
+   1292c: 17ffffb4     	b	0x127fc <sec_bat_get_property+0x480>
+   12930: aa0003f4     	mov	x20, x0
+   12934: 94000000     	bl	0x12934 <sec_bat_get_property+0x5b8>
+		0000000000012934:  R_AARCH64_CALL26	sec_bat_hv_wc_normal_mode_check
+   12938: 370003e0     	tbnz	w0, #0x0, 0x129b4 <sec_bat_get_property+0x638>
+   1293c: b9504688     	ldr	w8, [x20, #0x1044]
+   12940: 5285a009     	mov	w9, #0x2d00             // =11520
+   12944: 72a02629     	movk	w9, #0x131, lsl #16
+   12948: 6b09011f     	cmp	w8, w9
+   1294c: 540002c3     	b.lo	0x129a4 <sec_bat_get_property+0x628>
+   12950: 52801908     	mov	w8, #0xc8               // =200
+   12954: 17ffff85     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12958: 528008c8     	mov	w8, #0x46               // =70
+   1295c: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		000000000001295c:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0xe3c5
+   12960: 91000000     	add	x0, x0, #0x0
+		0000000000012960:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0xe3c5
+   12964: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012964:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12968: 91000021     	add	x1, x1, #0x0
+		0000000000012968:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   1296c: 528008c2     	mov	w2, #0x46               // =70
+   12970: b9000268     	str	w8, [x19]
+   12974: 94000000     	bl	0x12974 <sec_bat_get_property+0x5f8>
+		0000000000012974:  R_AARCH64_CALL26	_printk
+   12978: 17ffff7d     	b	0x1276c <sec_bat_get_property+0x3f0>
+   1297c: aa0003f4     	mov	x20, x0
+   12980: 94000000     	bl	0x12980 <sec_bat_get_property+0x604>
+		0000000000012980:  R_AARCH64_CALL26	sec_bat_hv_wc_normal_mode_check
+   12984: 37000180     	tbnz	w0, #0x0, 0x129b4 <sec_bat_get_property+0x638>
+   12988: 528e1be9     	mov	w9, #0x70df             // =28895
+   1298c: b9504288     	ldr	w8, [x20, #0x1040]
+   12990: 72a00e49     	movk	w9, #0x72, lsl #16
+   12994: 11000529     	add	w9, w9, #0x1
+   12998: 6b09011f     	cmp	w8, w9
+   1299c: 54fff8a2     	b.hs	0x128b0 <sec_bat_get_property+0x534>
+   129a0: 14000005     	b	0x129b4 <sec_bat_get_property+0x638>
+   129a4: 528e1be9     	mov	w9, #0x70df             // =28895
+   129a8: 72a00e49     	movk	w9, #0x72, lsl #16
+   129ac: 6b09011f     	cmp	w8, w9
+   129b0: 54fff808     	b.hi	0x128b0 <sec_bat_get_property+0x534>
+   129b4: 52800148     	mov	w8, #0xa                // =10
+   129b8: 17ffff6c     	b	0x12768 <sec_bat_get_property+0x3ec>
+   129bc: b948ac08     	ldr	w8, [x0, #0x8ac]
+   129c0: 17ffff6a     	b	0x12768 <sec_bat_get_property+0x3ec>
+   129c4: b954b808     	ldr	w8, [x0, #0x14b8]
+   129c8: 17ffff68     	b	0x12768 <sec_bat_get_property+0x3ec>
+   129cc: b9483008     	ldr	w8, [x0, #0x830]
+   129d0: 17ffff66     	b	0x12768 <sec_bat_get_property+0x3ec>
+   129d4: 39422808     	ldrb	w8, [x0, #0x8a]
+   129d8: 17ffff64     	b	0x12768 <sec_bat_get_property+0x3ec>
+   129dc: b951e008     	ldr	w8, [x0, #0x11e0]
+   129e0: 17ffff62     	b	0x12768 <sec_bat_get_property+0x3ec>
+   129e4: b9548c08     	ldr	w8, [x0, #0x148c]
+   129e8: 17ffff60     	b	0x12768 <sec_bat_get_property+0x3ec>
+   129ec: 90000008     	adrp	x8, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		00000000000129ec:  R_AARCH64_ADR_PREL_PG_HI21	.bss+0x70
+   129f0: b9400108     	ldr	w8, [x8]
+		00000000000129f0:  R_AARCH64_LDST32_ABS_LO12_NC	.bss+0x70
+   129f4: 17ffff5d     	b	0x12768 <sec_bat_get_property+0x3ec>
+   129f8: f9400408     	ldr	x8, [x0, #0x8]
+   129fc: aa0003f5     	mov	x21, x0
+   12a00: f9448900     	ldr	x0, [x8, #0x910]
+   12a04: b4000ce0     	cbz	x0, 0x12ba0 <sec_bat_get_property+0x824>
+   12a08: 94000000     	bl	0x12a08 <sec_bat_get_property+0x68c>
+		0000000000012a08:  R_AARCH64_CALL26	power_supply_get_by_name
+   12a0c: b40018e0     	cbz	x0, 0x12d28 <sec_bat_get_property+0x9ac>
+   12a10: f9400008     	ldr	x8, [x0]
+   12a14: f9401508     	ldr	x8, [x8, #0x28]
+   12a18: b4ffea48     	cbz	x8, 0x12760 <sec_bat_get_property+0x3e4>
+   12a1c: 910003e2     	mov	x2, sp
+   12a20: 52808781     	mov	w1, #0x43c              // =1084
+   12a24: aa0003f4     	mov	x20, x0
+   12a28: b85fc110     	ldur	w16, [x8, #-0x4]
+   12a2c: 72819a71     	movk	w17, #0xcd3
+   12a30: 72bd1331     	movk	w17, #0xe899, lsl #16
+   12a34: 6b11021f     	cmp	w16, w17
+   12a38: 54000040     	b.eq	0x12a40 <sec_bat_get_property+0x6c4>
+   12a3c: d4304500     	brk	#0x8228
+   12a40: d63f0100     	blr	x8
+   12a44: 2a0003e3     	mov	w3, w0
+   12a48: aa1403e0     	mov	x0, x20
+   12a4c: 36ffe8a3     	tbz	w3, #0x1f, 0x12760 <sec_bat_get_property+0x3e4>
+   12a50: f94006a8     	ldr	x8, [x21, #0x8]
+   12a54: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012a54:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0xfb81
+   12a58: 91000000     	add	x0, x0, #0x0
+		0000000000012a58:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0xfb81
+   12a5c: f9448902     	ldr	x2, [x8, #0x910]
+   12a60: 17ffff3b     	b	0x1274c <sec_bat_get_property+0x3d0>
+   12a64: 39494008     	ldrb	w8, [x0, #0x250]
+   12a68: 7100051f     	cmp	w8, #0x1
+   12a6c: 54000a61     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12a70: 397ed008     	ldrb	w8, [x0, #0xfb4]
+   12a74: 17ffff3d     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12a78: 39514128     	ldrb	w8, [x9, #0x450]
+   12a7c: 7100051f     	cmp	w8, #0x1
+   12a80: 540009c1     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12a84: b9545408     	ldr	w8, [x0, #0x1454]
+   12a88: 17ffff38     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12a8c: b9400268     	ldr	w8, [x19]
+   12a90: 7100111f     	cmp	w8, #0x4
+   12a94: 54000cac     	b.gt	0x12c28 <sec_bat_get_property+0x8ac>
+   12a98: 7100091f     	cmp	w8, #0x2
+   12a9c: 54000ecc     	b.gt	0x12c74 <sec_bat_get_property+0x8f8>
+   12aa0: 7100051f     	cmp	w8, #0x1
+   12aa4: 54001040     	b.eq	0x12cac <sec_bat_get_property+0x930>
+   12aa8: 7100091f     	cmp	w8, #0x2
+   12aac: 54000861     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12ab0: f9400408     	ldr	x8, [x0, #0x8]
+   12ab4: b943d908     	ldr	w8, [x8, #0x3d8]
+   12ab8: 17ffff2c     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12abc: b942c808     	ldr	w8, [x0, #0x2c8]
+   12ac0: 17ffff2a     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12ac4: b941b008     	ldr	w8, [x0, #0x1b0]
+   12ac8: 17ffff28     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12acc: b9487408     	ldr	w8, [x0, #0x874]
+   12ad0: 17ffff26     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12ad4: b94f0c08     	ldr	w8, [x0, #0xf0c]
+   12ad8: 17ffff24     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12adc: f9400408     	ldr	x8, [x0, #0x8]
+   12ae0: 3973b108     	ldrb	w8, [x8, #0xcec]
+   12ae4: 7100051f     	cmp	w8, #0x1
+   12ae8: 54000681     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12aec: 39494008     	ldrb	w8, [x0, #0x250]
+   12af0: 17ffff1e     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12af4: 3948e008     	ldrb	w8, [x0, #0x238]
+   12af8: 17ffff1c     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12afc: b94f5c08     	ldr	w8, [x0, #0xf5c]
+   12b00: 17ffff1a     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12b04: 3948b008     	ldrb	w8, [x0, #0x22c]
+   12b08: 17ffff18     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12b0c: b94fc408     	ldr	w8, [x0, #0xfc4]
+   12b10: 17ffff16     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12b14: 39516528     	ldrb	w8, [x9, #0x459]
+   12b18: 17ffff14     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12b1c: f94a2400     	ldr	x0, [x0, #0x1448]
+   12b20: 94000000     	bl	0x12b20 <sec_bat_get_property+0x7a4>
+		0000000000012b20:  R_AARCH64_CALL26	get_full_capacity
+   12b24: b9000260     	str	w0, [x19]
+   12b28: 17ffff11     	b	0x1276c <sec_bat_get_property+0x3f0>
+   12b2c: b9425808     	ldr	w8, [x0, #0x258]
+   12b30: 17ffff0e     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12b34: f9400408     	ldr	x8, [x0, #0x8]
+   12b38: aa0003f5     	mov	x21, x0
+   12b3c: f9449900     	ldr	x0, [x8, #0x930]
+   12b40: b4000300     	cbz	x0, 0x12ba0 <sec_bat_get_property+0x824>
+   12b44: 94000000     	bl	0x12b44 <sec_bat_get_property+0x7c8>
+		0000000000012b44:  R_AARCH64_CALL26	power_supply_get_by_name
+   12b48: b4000f60     	cbz	x0, 0x12d34 <sec_bat_get_property+0x9b8>
+   12b4c: f9400008     	ldr	x8, [x0]
+   12b50: f9401508     	ldr	x8, [x8, #0x28]
+   12b54: b4ffe068     	cbz	x8, 0x12760 <sec_bat_get_property+0x3e4>
+   12b58: 910003e2     	mov	x2, sp
+   12b5c: 528095c1     	mov	w1, #0x4ae              // =1198
+   12b60: aa0003f4     	mov	x20, x0
+   12b64: b85fc110     	ldur	w16, [x8, #-0x4]
+   12b68: 72819a71     	movk	w17, #0xcd3
+   12b6c: 72bd1331     	movk	w17, #0xe899, lsl #16
+   12b70: 6b11021f     	cmp	w16, w17
+   12b74: 54000040     	b.eq	0x12b7c <sec_bat_get_property+0x800>
+   12b78: d4304500     	brk	#0x8228
+   12b7c: d63f0100     	blr	x8
+   12b80: 2a0003e3     	mov	w3, w0
+   12b84: aa1403e0     	mov	x0, x20
+   12b88: 36ffdec3     	tbz	w3, #0x1f, 0x12760 <sec_bat_get_property+0x3e4>
+   12b8c: f94006a8     	ldr	x8, [x21, #0x8]
+   12b90: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012b90:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x160bf
+   12b94: 91000000     	add	x0, x0, #0x0
+		0000000000012b94:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x160bf
+   12b98: f9449902     	ldr	x2, [x8, #0x930]
+   12b9c: 17fffeec     	b	0x1274c <sec_bat_get_property+0x3d0>
+   12ba0: aa1f03e2     	mov	x2, xzr
+   12ba4: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012ba4:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x3935
+   12ba8: 91000000     	add	x0, x0, #0x0
+		0000000000012ba8:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x3935
+   12bac: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012bac:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12bb0: 91000021     	add	x1, x1, #0x0
+		0000000000012bb0:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   12bb4: 94000000     	bl	0x12bb4 <sec_bat_get_property+0x838>
+		0000000000012bb4:  R_AARCH64_CALL26	_printk
+   12bb8: b900027f     	str	wzr, [x19]
+   12bbc: 17fffeec     	b	0x1276c <sec_bat_get_property+0x3f0>
+   12bc0: 94000000     	bl	0x12bc0 <sec_bat_get_property+0x844>
+		0000000000012bc0:  R_AARCH64_CALL26	sec_hmap_get_buf_status
+   12bc4: b9000260     	str	w0, [x19]
+   12bc8: 17fffee9     	b	0x1276c <sec_bat_get_property+0x3f0>
+   12bcc: b9485008     	ldr	w8, [x0, #0x850]
+   12bd0: 17fffee6     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12bd4: b9549008     	ldr	w8, [x0, #0x1490]
+   12bd8: 17fffee4     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12bdc: 3951e528     	ldrb	w8, [x9, #0x479]
+   12be0: 7100051f     	cmp	w8, #0x1
+   12be4: 54fffea1     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12be8: b94efc08     	ldr	w8, [x0, #0xefc]
+   12bec: 7136b11f     	cmp	w8, #0xdac
+   12bf0: 54ffde0d     	b.le	0x127b0 <sec_bat_get_property+0x434>
+   12bf4: 17fffff1     	b	0x12bb8 <sec_bat_get_property+0x83c>
+   12bf8: aa1f03e2     	mov	x2, xzr
+   12bfc: 14000003     	b	0x12c08 <sec_bat_get_property+0x88c>
+   12c00: f94006a8     	ldr	x8, [x21, #0x8]
+   12c04: f9448902     	ldr	x2, [x8, #0x910]
+   12c08: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012c08:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x3935
+   12c0c: 91000000     	add	x0, x0, #0x0
+		0000000000012c0c:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x3935
+   12c10: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012c10:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12c14: 91000021     	add	x1, x1, #0x0
+		0000000000012c14:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   12c18: 94000000     	bl	0x12c18 <sec_bat_get_property+0x89c>
+		0000000000012c18:  R_AARCH64_CALL26	_printk
+   12c1c: 52800028     	mov	w8, #0x1                // =1
+   12c20: aa1503e0     	mov	x0, x21
+   12c24: 17fffef6     	b	0x127fc <sec_bat_get_property+0x480>
+   12c28: 7100191f     	cmp	w8, #0x6
+   12c2c: 5400032c     	b.gt	0x12c90 <sec_bat_get_property+0x914>
+   12c30: 7100151f     	cmp	w8, #0x5
+   12c34: 54000420     	b.eq	0x12cb8 <sec_bat_get_property+0x93c>
+   12c38: 7100191f     	cmp	w8, #0x6
+   12c3c: 54fffbe1     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12c40: f9400408     	ldr	x8, [x0, #0x8]
+   12c44: b9449908     	ldr	w8, [x8, #0x498]
+   12c48: 17fffec8     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12c4c: f94006a8     	ldr	x8, [x21, #0x8]
+   12c50: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012c50:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x1285f
+   12c54: 91000000     	add	x0, x0, #0x0
+		0000000000012c54:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x1285f
+   12c58: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012c58:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12c5c: 91000021     	add	x1, x1, #0x0
+		0000000000012c5c:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   12c60: f9448902     	ldr	x2, [x8, #0x910]
+   12c64: 94000000     	bl	0x12c64 <sec_bat_get_property+0x8e8>
+		0000000000012c64:  R_AARCH64_CALL26	_printk
+   12c68: aa1403e0     	mov	x0, x20
+   12c6c: b90003ff     	str	wzr, [sp]
+   12c70: 17ffff2a     	b	0x12918 <sec_bat_get_property+0x59c>
+   12c74: 71000d1f     	cmp	w8, #0x3
+   12c78: 54000260     	b.eq	0x12cc4 <sec_bat_get_property+0x948>
+   12c7c: 7100111f     	cmp	w8, #0x4
+   12c80: 54fff9c1     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12c84: f9400408     	ldr	x8, [x0, #0x8]
+   12c88: b9443908     	ldr	w8, [x8, #0x438]
+   12c8c: 17fffeb7     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12c90: 71001d1f     	cmp	w8, #0x7
+   12c94: 540001e0     	b.eq	0x12cd0 <sec_bat_get_property+0x954>
+   12c98: 7100211f     	cmp	w8, #0x8
+   12c9c: 54fff8e1     	b.ne	0x12bb8 <sec_bat_get_property+0x83c>
+   12ca0: f9400408     	ldr	x8, [x0, #0x8]
+   12ca4: b944f908     	ldr	w8, [x8, #0x4f8]
+   12ca8: 17fffeb0     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12cac: f9400408     	ldr	x8, [x0, #0x8]
+   12cb0: b943a908     	ldr	w8, [x8, #0x3a8]
+   12cb4: 17fffead     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12cb8: f9400408     	ldr	x8, [x0, #0x8]
+   12cbc: b9446908     	ldr	w8, [x8, #0x468]
+   12cc0: 17fffeaa     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12cc4: f9400408     	ldr	x8, [x0, #0x8]
+   12cc8: b9440908     	ldr	w8, [x8, #0x408]
+   12ccc: 17fffea7     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12cd0: f9400408     	ldr	x8, [x0, #0x8]
+   12cd4: b944c908     	ldr	w8, [x8, #0x4c8]
+   12cd8: 17fffea4     	b	0x12768 <sec_bat_get_property+0x3ec>
+   12cdc: b948cc02     	ldr	w2, [x0, #0x8cc]
+   12ce0: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012ce0:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0xa148
+   12ce4: 91000000     	add	x0, x0, #0x0
+		0000000000012ce4:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0xa148
+   12ce8: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012ce8:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12cec: 91000021     	add	x1, x1, #0x0
+		0000000000012cec:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   12cf0: b9000262     	str	w2, [x19]
+   12cf4: 94000000     	bl	0x12cf4 <sec_bat_get_property+0x978>
+		0000000000012cf4:  R_AARCH64_CALL26	_printk
+   12cf8: 17fffe9d     	b	0x1276c <sec_bat_get_property+0x3f0>
+   12cfc: b9482809     	ldr	w9, [x0, #0x828]
+   12d00: 35000209     	cbnz	w9, 0x12d40 <sec_bat_get_property+0x9c4>
+   12d04: b9483409     	ldr	w9, [x0, #0x834]
+   12d08: aa0003e8     	mov	x8, x0
+   12d0c: 35000209     	cbnz	w9, 0x12d4c <sec_bat_get_property+0x9d0>
+   12d10: b94fa102     	ldr	w2, [x8, #0xfa0]
+   12d14: 71013c5f     	cmp	w2, #0x4f
+   12d18: 5400026c     	b.gt	0x12d64 <sec_bat_get_property+0x9e8>
+   12d1c: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012d1c:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x109d5
+   12d20: 91000000     	add	x0, x0, #0x0
+		0000000000012d20:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x109d5
+   12d24: 1400002d     	b	0x12dd8 <sec_bat_get_property+0xa5c>
+   12d28: f94006a8     	ldr	x8, [x21, #0x8]
+   12d2c: f9448902     	ldr	x2, [x8, #0x910]
+   12d30: 17ffff9d     	b	0x12ba4 <sec_bat_get_property+0x828>
+   12d34: f94006a8     	ldr	x8, [x21, #0x8]
+   12d38: f9449902     	ldr	x2, [x8, #0x930]
+   12d3c: 17ffff9a     	b	0x12ba4 <sec_bat_get_property+0x828>
+   12d40: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012d40:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x15823
+   12d44: 91000000     	add	x0, x0, #0x0
+		0000000000012d44:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x15823
+   12d48: 14000003     	b	0x12d54 <sec_bat_get_property+0x9d8>
+   12d4c: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012d4c:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x6832
+   12d50: 91000000     	add	x0, x0, #0x0
+		0000000000012d50:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x6832
+   12d54: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012d54:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12d58: 91000021     	add	x1, x1, #0x0
+		0000000000012d58:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   12d5c: 94000000     	bl	0x12d5c <sec_bat_get_property+0x9e0>
+		0000000000012d5c:  R_AARCH64_CALL26	_printk
+   12d60: 17fffe94     	b	0x127b0 <sec_bat_get_property+0x434>
+   12d64: b948ad02     	ldr	w2, [x8, #0x8ac]
+   12d68: 7100105f     	cmp	w2, #0x4
+   12d6c: 540000e1     	b.ne	0x12d88 <sec_bat_get_property+0xa0c>
+   12d70: b941c102     	ldr	w2, [x8, #0x1c0]
+   12d74: 7100045f     	cmp	w2, #0x1
+   12d78: 540000ec     	b.gt	0x12d94 <sec_bat_get_property+0xa18>
+   12d7c: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012d7c:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0xc2d5
+   12d80: 91000000     	add	x0, x0, #0x0
+		0000000000012d80:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0xc2d5
+   12d84: 14000015     	b	0x12dd8 <sec_bat_get_property+0xa5c>
+   12d88: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012d88:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x7b35
+   12d8c: 91000000     	add	x0, x0, #0x0
+		0000000000012d8c:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x7b35
+   12d90: 14000012     	b	0x12dd8 <sec_bat_get_property+0xa5c>
+   12d94: aa0803e9     	mov	x9, x8
+   12d98: f9400508     	ldr	x8, [x8, #0x8]
+   12d9c: b9483d22     	ldr	w2, [x9, #0x83c]
+   12da0: b9456909     	ldr	w9, [x8, #0x568]
+   12da4: 6b09005f     	cmp	w2, w9
+   12da8: 5400014d     	b.le	0x12dd0 <sec_bat_get_property+0xa54>
+   12dac: b9456d08     	ldr	w8, [x8, #0x56c]
+   12db0: 6b08005f     	cmp	w2, w8
+   12db4: 540000ea     	b.ge	0x12dd0 <sec_bat_get_property+0xa54>
+   12db8: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012db8:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x47b
+   12dbc: 91000000     	add	x0, x0, #0x0
+		0000000000012dbc:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x47b
+   12dc0: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012dc0:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12dc4: 91000021     	add	x1, x1, #0x0
+		0000000000012dc4:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   12dc8: 94000000     	bl	0x12dc8 <sec_bat_get_property+0xa4c>
+		0000000000012dc8:  R_AARCH64_CALL26	_printk
+   12dcc: 17ffff7b     	b	0x12bb8 <sec_bat_get_property+0x83c>
+   12dd0: 90000000     	adrp	x0, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012dd0:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x266b
+   12dd4: 91000000     	add	x0, x0, #0x0
+		0000000000012dd4:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x266b
+   12dd8: 90000001     	adrp	x1, 0x12000 <sb_disable_reverse_boost+0x1c4>
+		0000000000012dd8:  R_AARCH64_ADR_PREL_PG_HI21	.rodata.str1.1+0x2656
+   12ddc: 91000021     	add	x1, x1, #0x0
+		0000000000012ddc:  R_AARCH64_ADD_ABS_LO12_NC	.rodata.str1.1+0x2656
+   12de0: 94000000     	bl	0x12de0 <sec_bat_get_property+0xa64>
+		0000000000012de0:  R_AARCH64_CALL26	_printk
+   12de4: 17fffe73     	b	0x127b0 <sec_bat_get_property+0x434>
+   12de8: 94000000     	bl	0x12de8 <sec_bat_get_property+0xa6c>
+		0000000000012de8:  R_AARCH64_CALL26	__stack_chk_fail
+   12dec: d42aa240     	brk	#0x5512
+   12df0: 93 d6 9a 71  	.word	0x719ad693

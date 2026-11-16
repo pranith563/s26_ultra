@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "adb_start": true,
+  "app_showed_actual_adb_timings": {
+    "Init delay (seconds)": "2",
+    "Run duration (seconds)": "12",
+    "Sample interval (ms)": "1000"
+  },
+  "app_showed_live_run": true,
+  "background_automatic_stop": true,
+  "row_count": 14,
+  "phase_counts": {
+    "init": 2,
+    "run": 12
+  },
+  "phone_csv": "/data/local/tmp/s26-power-logger/power-f23a96a6-fe8e-4804-8076-32df8aa2f25e-8662402867105.csv"
+}

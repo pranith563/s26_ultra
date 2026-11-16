@@ -1,0 +1,1552 @@
+Timestamp,Metric ID,Metric_Name,Value,ZoneId,ZoneName
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,36,gpuss-0
+3300012106403,6464,Thermal Zone Temperature,30.081 deg C,64,pmh0110_g_tz
+3300012106403,6464,Thermal Zone Temperature,29.000 deg C,26,cpu-1-1-0
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,2,qmx-0-0
+3300012106403,6464,Thermal Zone Temperature,29.000 deg C,54,video
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,16,cpu-0-5-1
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,44,gpuss-8
+3300012106403,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3300012106403,6464,Thermal Zone Temperature,29.000 deg C,34,nsphmx-2
+3300012106403,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,24,cpu-1-0-0
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,0,cpullc-0-0
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,52,camera-0
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,14,cpu-0-4-1
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,42,gpuss-6
+3300012106403,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3300012106403,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,22,qmx-1-3
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,50,mdmss-2
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,12,cpu-0-3-1
+3300012106403,6464,Thermal Zone Temperature,29.000 deg C,40,gpuss-4
+3300012106403,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,30,nsphvx-2
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3300012106403,6464,Thermal Zone Temperature,30.248 deg C,59,pmh0110_f_tz
+3300012106403,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,49,mdmss-1
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,10,cpu-0-2-1
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,39,gpuss-3
+3300012106403,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,29,nsphvx-1
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,5,cpu-0-0-0
+3300012106403,6464,Thermal Zone Temperature,28.877 deg C,57,pmh0110_d_tz
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,19,qmx-1-0
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,47,ddr
+3300012106403,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3300012106403,6464,Thermal Zone Temperature,29.000 deg C,37,gpuss-1
+3300012106403,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3300012106403,6464,Thermal Zone Temperature,29.000 deg C,27,cpu-1-1-1
+3300012106403,6464,Thermal Zone Temperature,31.400 deg C,3,qmx-0-1
+3300012106403,6464,Thermal Zone Temperature,29.762 deg C,55,sys-therm-0
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,17,cpullc-1-0
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,45,gpuss-9
+3300012106403,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3300012106403,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,25,cpu-1-0-1
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,1,cpullc-0-1
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,15,cpu-0-5-0
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,43,gpuss-7
+3300012106403,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3300012106403,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3300012106403,6464,Thermal Zone Temperature,30.200 deg C,23,qmx-1-4
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,51,mdmss-3
+3300012106403,6464,Thermal Zone Temperature,30.200 deg C,13,cpu-0-4-0
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,41,gpuss-5
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,31,nsphvx-3
+3300012106403,6464,Thermal Zone Temperature,30.200 deg C,8,cpu-0-1-1
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,21,qmx-1-2
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,11,cpu-0-3-0
+3300012106403,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3300012106403,6464,Thermal Zone Temperature,31.000 deg C,6,cpu-0-0-1
+3300012106403,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3300012106403,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3300012106403,6464,Thermal Zone Temperature,30.114 deg C,66,pmh0110_i_tz
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,28,nsphvx-0
+3300012106403,6464,Thermal Zone Temperature,29.800 deg C,4,qmx-0-2
+3300012106403,6464,Thermal Zone Temperature,30.081 deg C,56,pmh0101_tz
+3300012106403,6464,Thermal Zone Temperature,30.200 deg C,18,cpullc-1-1
+3300012106403,6464,Thermal Zone Temperature,29.400 deg C,46,gpuss-10
+3300012106403,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3300012106403,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3300012106403,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3300012106403,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3300012106403,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3300012106403,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3300012106403,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3300012106403,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3300012106403,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3300012106403,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3300012106403,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3300012106403,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,36,gpu
+3300012106403,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3300012106403,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3300012106403,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3300012106403,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3300012106403,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3300012106403,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3300012106403,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3300012106403,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3300012106403,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3300012106403,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,2,ufs
+3300012106403,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3300012106403,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3300012106403,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3300012106403,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3300012106403,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3300012106403,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3300012106403,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3300012106403,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3300012106403,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3300012106403,6465,Passive Cooling,0.000 %,39,cdsp
+3300012106403,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3300012106403,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3300012106403,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3300012106403,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3300012106403,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3300012106403,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3300012106403,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3300012106403,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3300012106403,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3300012106403,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3300012106403,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3300012106403,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3300012106403,6465,Passive Cooling,0.000 %,63,modem_bcl
+3300012106403,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3300012106403,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3300012106403,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3300012106403,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3300012106403,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3300012106403,6465,Passive Cooling,0.000 %,33,kgsl
+3300012106403,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3300012106403,6465,Passive Cooling,0.000 %,3,display-fps
+3300012106403,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3300012106403,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3300242957690,6464,Thermal Zone Temperature,30.214 deg C,64,pmh0110_g_tz
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,26,cpu-1-1-0
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,2,qmx-0-0
+3300242957690,6464,Thermal Zone Temperature,29.000 deg C,54,video
+3300242957690,6464,Thermal Zone Temperature,31.000 deg C,16,cpu-0-5-1
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,44,gpuss-8
+3300242957690,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3300242957690,6464,Thermal Zone Temperature,29.000 deg C,34,nsphmx-2
+3300242957690,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,24,cpu-1-0-0
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,0,cpullc-0-0
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,52,camera-0
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,14,cpu-0-4-1
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3300242957690,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,9,cpu-0-2-0
+3300242957690,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,50,mdmss-2
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,12,cpu-0-3-1
+3300242957690,6464,Thermal Zone Temperature,29.000 deg C,40,gpuss-4
+3300242957690,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,30,nsphvx-2
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,7,cpu-0-1-0
+3300242957690,6464,Thermal Zone Temperature,30.281 deg C,59,pmh0110_f_tz
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,49,mdmss-1
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,10,cpu-0-2-1
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,39,gpuss-3
+3300242957690,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,29,nsphvx-1
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,5,cpu-0-0-0
+3300242957690,6464,Thermal Zone Temperature,28.877 deg C,57,pmh0110_d_tz
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,19,qmx-1-0
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,47,ddr
+3300242957690,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,37,gpuss-1
+3300242957690,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,27,cpu-1-1-1
+3300242957690,6464,Thermal Zone Temperature,31.400 deg C,3,qmx-0-1
+3300242957690,6464,Thermal Zone Temperature,29.771 deg C,55,sys-therm-0
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,17,cpullc-1-0
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,45,gpuss-9
+3300242957690,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3300242957690,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,25,cpu-1-0-1
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,1,cpullc-0-1
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,15,cpu-0-5-0
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,43,gpuss-7
+3300242957690,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3300242957690,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3300242957690,6464,Thermal Zone Temperature,30.600 deg C,23,qmx-1-4
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,51,mdmss-3
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,13,cpu-0-4-0
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,41,gpuss-5
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,31,nsphvx-3
+3300242957690,6464,Thermal Zone Temperature,30.600 deg C,8,cpu-0-1-1
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,21,qmx-1-2
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,11,cpu-0-3-0
+3300242957690,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3300242957690,6464,Thermal Zone Temperature,31.000 deg C,6,cpu-0-0-1
+3300242957690,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3300242957690,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3300242957690,6464,Thermal Zone Temperature,30.147 deg C,66,pmh0110_i_tz
+3300242957690,6464,Thermal Zone Temperature,29.800 deg C,28,nsphvx-0
+3300242957690,6464,Thermal Zone Temperature,30.600 deg C,4,qmx-0-2
+3300242957690,6464,Thermal Zone Temperature,30.047 deg C,56,pmh0101_tz
+3300242957690,6464,Thermal Zone Temperature,30.200 deg C,18,cpullc-1-1
+3300242957690,6464,Thermal Zone Temperature,29.400 deg C,46,gpuss-10
+3300242957690,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3300242957690,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3300242957690,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3300242957690,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3300242957690,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3300242957690,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3300242957690,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3300242957690,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3300242957690,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3300242957690,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3300242957690,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3300242957690,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,36,gpu
+3300242957690,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3300242957690,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3300242957690,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3300242957690,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3300242957690,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3300242957690,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3300242957690,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3300242957690,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3300242957690,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3300242957690,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,2,ufs
+3300242957690,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3300242957690,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3300242957690,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3300242957690,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3300242957690,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3300242957690,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3300242957690,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3300242957690,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3300242957690,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3300242957690,6465,Passive Cooling,0.000 %,39,cdsp
+3300242957690,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3300242957690,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3300242957690,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3300242957690,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3300242957690,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3300242957690,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3300242957690,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3300242957690,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3300242957690,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3300242957690,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3300242957690,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3300242957690,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3300242957690,6465,Passive Cooling,0.000 %,63,modem_bcl
+3300242957690,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3300242957690,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3300242957690,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3300242957690,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3300242957690,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3300242957690,6465,Passive Cooling,0.000 %,33,kgsl
+3300242957690,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3300242957690,6465,Passive Cooling,0.000 %,3,display-fps
+3300242957690,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3300242957690,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3300525648870,6464,Thermal Zone Temperature,30.248 deg C,64,pmh0110_g_tz
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,26,cpu-1-1-0
+3300525648870,6464,Thermal Zone Temperature,31.800 deg C,2,qmx-0-0
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,54,video
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,16,cpu-0-5-1
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,44,gpuss-8
+3300525648870,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,34,nsphmx-2
+3300525648870,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,24,cpu-1-0-0
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,0,cpullc-0-0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,52,camera-0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,14,cpu-0-4-1
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3300525648870,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3300525648870,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,22,qmx-1-3
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,50,mdmss-2
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,12,cpu-0-3-1
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,40,gpuss-4
+3300525648870,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,30,nsphvx-2
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3300525648870,6464,Thermal Zone Temperature,30.147 deg C,59,pmh0110_f_tz
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,49,mdmss-1
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,10,cpu-0-2-1
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,39,gpuss-3
+3300525648870,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,29,nsphvx-1
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,5,cpu-0-0-0
+3300525648870,6464,Thermal Zone Temperature,28.877 deg C,57,pmh0110_d_tz
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,19,qmx-1-0
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,47,ddr
+3300525648870,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,37,gpuss-1
+3300525648870,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,27,cpu-1-1-1
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,3,qmx-0-1
+3300525648870,6464,Thermal Zone Temperature,29.768 deg C,55,sys-therm-0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,17,cpullc-1-0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,45,gpuss-9
+3300525648870,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3300525648870,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,25,cpu-1-0-1
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,1,cpullc-0-1
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,53,camera-1
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,15,cpu-0-5-0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,43,gpuss-7
+3300525648870,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3300525648870,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,23,qmx-1-4
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,51,mdmss-3
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,41,gpuss-5
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,31,nsphvx-3
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,8,cpu-0-1-1
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,21,qmx-1-2
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,11,cpu-0-3-0
+3300525648870,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,6,cpu-0-0-1
+3300525648870,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3300525648870,6464,Thermal Zone Temperature,30.200 deg C,48,mdmss-0
+3300525648870,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3300525648870,6464,Thermal Zone Temperature,30.081 deg C,66,pmh0110_i_tz
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,28,nsphvx-0
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,4,qmx-0-2
+3300525648870,6464,Thermal Zone Temperature,30.181 deg C,56,pmh0101_tz
+3300525648870,6464,Thermal Zone Temperature,29.800 deg C,18,cpullc-1-1
+3300525648870,6464,Thermal Zone Temperature,29.400 deg C,46,gpuss-10
+3300525648870,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3300525648870,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3300525648870,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3300525648870,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3300525648870,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3300525648870,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3300525648870,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3300525648870,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3300525648870,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3300525648870,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3300525648870,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3300525648870,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,36,gpu
+3300525648870,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3300525648870,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3300525648870,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3300525648870,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3300525648870,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3300525648870,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3300525648870,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3300525648870,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3300525648870,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3300525648870,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,2,ufs
+3300525648870,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3300525648870,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3300525648870,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3300525648870,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3300525648870,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3300525648870,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3300525648870,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3300525648870,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3300525648870,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3300525648870,6465,Passive Cooling,0.000 %,39,cdsp
+3300525648870,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3300525648870,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3300525648870,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3300525648870,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3300525648870,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3300525648870,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3300525648870,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3300525648870,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3300525648870,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3300525648870,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3300525648870,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3300525648870,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3300525648870,6465,Passive Cooling,0.000 %,63,modem_bcl
+3300525648870,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3300525648870,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3300525648870,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3300525648870,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3300525648870,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3300525648870,6465,Passive Cooling,0.000 %,33,kgsl
+3300525648870,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3300525648870,6465,Passive Cooling,0.000 %,3,display-fps
+3300525648870,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3300525648870,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,36,gpuss-0
+3300840059319,6464,Thermal Zone Temperature,30.181 deg C,64,pmh0110_g_tz
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,26,cpu-1-1-0
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,2,qmx-0-0
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,54,video
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,16,cpu-0-5-1
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,44,gpuss-8
+3300840059319,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3300840059319,6464,Thermal Zone Temperature,29.000 deg C,34,nsphmx-2
+3300840059319,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,24,cpu-1-0-0
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,0,cpullc-0-0
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,52,camera-0
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,14,cpu-0-4-1
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,42,gpuss-6
+3300840059319,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3300840059319,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,50,mdmss-2
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,12,cpu-0-3-1
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,40,gpuss-4
+3300840059319,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,30,nsphvx-2
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3300840059319,6464,Thermal Zone Temperature,30.248 deg C,59,pmh0110_f_tz
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,49,mdmss-1
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,10,cpu-0-2-1
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,39,gpuss-3
+3300840059319,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,29,nsphvx-1
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,5,cpu-0-0-0
+3300840059319,6464,Thermal Zone Temperature,28.843 deg C,57,pmh0110_d_tz
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,19,qmx-1-0
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,47,ddr
+3300840059319,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,37,gpuss-1
+3300840059319,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,27,cpu-1-1-1
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,3,qmx-0-1
+3300840059319,6464,Thermal Zone Temperature,29.765 deg C,55,sys-therm-0
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,17,cpullc-1-0
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,45,gpuss-9
+3300840059319,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3300840059319,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,25,cpu-1-0-1
+3300840059319,6464,Thermal Zone Temperature,29.000 deg C,1,cpullc-0-1
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,15,cpu-0-5-0
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,43,gpuss-7
+3300840059319,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3300840059319,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,23,qmx-1-4
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,51,mdmss-3
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,41,gpuss-5
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,31,nsphvx-3
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,8,cpu-0-1-1
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,21,qmx-1-2
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,11,cpu-0-3-0
+3300840059319,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,6,cpu-0-0-1
+3300840059319,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3300840059319,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3300840059319,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3300840059319,6464,Thermal Zone Temperature,30.147 deg C,66,pmh0110_i_tz
+3300840059319,6464,Thermal Zone Temperature,29.400 deg C,28,nsphvx-0
+3300840059319,6464,Thermal Zone Temperature,31.400 deg C,4,qmx-0-2
+3300840059319,6464,Thermal Zone Temperature,30.181 deg C,56,pmh0101_tz
+3300840059319,6464,Thermal Zone Temperature,30.200 deg C,18,cpullc-1-1
+3300840059319,6464,Thermal Zone Temperature,29.000 deg C,46,gpuss-10
+3300840059319,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3300840059319,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3300840059319,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3300840059319,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3300840059319,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3300840059319,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3300840059319,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3300840059319,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3300840059319,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3300840059319,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3300840059319,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3300840059319,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,36,gpu
+3300840059319,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3300840059319,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3300840059319,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3300840059319,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3300840059319,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3300840059319,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3300840059319,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3300840059319,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3300840059319,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3300840059319,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,2,ufs
+3300840059319,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3300840059319,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3300840059319,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3300840059319,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3300840059319,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3300840059319,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3300840059319,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3300840059319,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3300840059319,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3300840059319,6465,Passive Cooling,0.000 %,39,cdsp
+3300840059319,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3300840059319,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3300840059319,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3300840059319,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3300840059319,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3300840059319,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3300840059319,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3300840059319,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3300840059319,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3300840059319,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3300840059319,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3300840059319,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3300840059319,6465,Passive Cooling,0.000 %,63,modem_bcl
+3300840059319,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3300840059319,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3300840059319,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3300840059319,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3300840059319,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3300840059319,6465,Passive Cooling,0.000 %,33,kgsl
+3300840059319,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3300840059319,6465,Passive Cooling,0.000 %,3,display-fps
+3300840059319,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3300840059319,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3301149402736,6464,Thermal Zone Temperature,30.147 deg C,64,pmh0110_g_tz
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,26,cpu-1-1-0
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,2,qmx-0-0
+3301149402736,6464,Thermal Zone Temperature,29.000 deg C,54,video
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,16,cpu-0-5-1
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,44,gpuss-8
+3301149402736,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,34,nsphmx-2
+3301149402736,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,24,cpu-1-0-0
+3301149402736,6464,Thermal Zone Temperature,31.000 deg C,0,cpullc-0-0
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,52,camera-0
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,14,cpu-0-4-1
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3301149402736,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,9,cpu-0-2-0
+3301149402736,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3301149402736,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,50,mdmss-2
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,12,cpu-0-3-1
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,40,gpuss-4
+3301149402736,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,30,nsphvx-2
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3301149402736,6464,Thermal Zone Temperature,30.248 deg C,59,pmh0110_f_tz
+3301149402736,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3301149402736,6464,Thermal Zone Temperature,30.200 deg C,49,mdmss-1
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,10,cpu-0-2-1
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,39,gpuss-3
+3301149402736,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3301149402736,6464,Thermal Zone Temperature,30.200 deg C,29,nsphvx-1
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,5,cpu-0-0-0
+3301149402736,6464,Thermal Zone Temperature,28.977 deg C,57,pmh0110_d_tz
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,19,qmx-1-0
+3301149402736,6464,Thermal Zone Temperature,30.200 deg C,47,ddr
+3301149402736,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,37,gpuss-1
+3301149402736,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,27,cpu-1-1-1
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,3,qmx-0-1
+3301149402736,6464,Thermal Zone Temperature,29.762 deg C,55,sys-therm-0
+3301149402736,6464,Thermal Zone Temperature,30.200 deg C,17,cpullc-1-0
+3301149402736,6464,Thermal Zone Temperature,30.200 deg C,45,gpuss-9
+3301149402736,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3301149402736,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,25,cpu-1-0-1
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,1,cpullc-0-1
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,15,cpu-0-5-0
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,43,gpuss-7
+3301149402736,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3301149402736,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,23,qmx-1-4
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,51,mdmss-3
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,41,gpuss-5
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,31,nsphvx-3
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,8,cpu-0-1-1
+3301149402736,6464,Thermal Zone Temperature,30.200 deg C,21,qmx-1-2
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,11,cpu-0-3-0
+3301149402736,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,6,cpu-0-0-1
+3301149402736,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3301149402736,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3301149402736,6464,Thermal Zone Temperature,30.181 deg C,66,pmh0110_i_tz
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,28,nsphvx-0
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,4,qmx-0-2
+3301149402736,6464,Thermal Zone Temperature,30.081 deg C,56,pmh0101_tz
+3301149402736,6464,Thermal Zone Temperature,29.800 deg C,18,cpullc-1-1
+3301149402736,6464,Thermal Zone Temperature,29.400 deg C,46,gpuss-10
+3301149402736,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3301149402736,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3301149402736,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3301149402736,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3301149402736,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3301149402736,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3301149402736,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3301149402736,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3301149402736,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3301149402736,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3301149402736,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3301149402736,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,36,gpu
+3301149402736,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3301149402736,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3301149402736,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3301149402736,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3301149402736,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3301149402736,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3301149402736,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3301149402736,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3301149402736,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3301149402736,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,2,ufs
+3301149402736,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3301149402736,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3301149402736,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3301149402736,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3301149402736,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3301149402736,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3301149402736,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3301149402736,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3301149402736,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3301149402736,6465,Passive Cooling,0.000 %,39,cdsp
+3301149402736,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3301149402736,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3301149402736,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3301149402736,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3301149402736,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3301149402736,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3301149402736,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3301149402736,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3301149402736,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3301149402736,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3301149402736,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3301149402736,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3301149402736,6465,Passive Cooling,0.000 %,63,modem_bcl
+3301149402736,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3301149402736,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3301149402736,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3301149402736,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3301149402736,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3301149402736,6465,Passive Cooling,0.000 %,33,kgsl
+3301149402736,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3301149402736,6465,Passive Cooling,0.000 %,3,display-fps
+3301149402736,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3301149402736,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3301460868498,6464,Thermal Zone Temperature,30.147 deg C,64,pmh0110_g_tz
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,26,cpu-1-1-0
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,2,qmx-0-0
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,54,video
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,16,cpu-0-5-1
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,44,gpuss-8
+3301460868498,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,34,nsphmx-2
+3301460868498,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,24,cpu-1-0-0
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,0,cpullc-0-0
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,52,camera-0
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,14,cpu-0-4-1
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3301460868498,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3301460868498,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,50,mdmss-2
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,12,cpu-0-3-1
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,40,gpuss-4
+3301460868498,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,30,nsphvx-2
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3301460868498,6464,Thermal Zone Temperature,30.315 deg C,59,pmh0110_f_tz
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,49,mdmss-1
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,10,cpu-0-2-1
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,39,gpuss-3
+3301460868498,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,29,nsphvx-1
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,5,cpu-0-0-0
+3301460868498,6464,Thermal Zone Temperature,28.944 deg C,57,pmh0110_d_tz
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,19,qmx-1-0
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,47,ddr
+3301460868498,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,37,gpuss-1
+3301460868498,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,27,cpu-1-1-1
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,3,qmx-0-1
+3301460868498,6464,Thermal Zone Temperature,29.765 deg C,55,sys-therm-0
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,17,cpullc-1-0
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,45,gpuss-9
+3301460868498,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3301460868498,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,25,cpu-1-0-1
+3301460868498,6464,Thermal Zone Temperature,29.000 deg C,1,cpullc-0-1
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,15,cpu-0-5-0
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,43,gpuss-7
+3301460868498,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,33,nsphmx-1
+3301460868498,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,23,qmx-1-4
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,51,mdmss-3
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,41,gpuss-5
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,31,nsphvx-3
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,8,cpu-0-1-1
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,21,qmx-1-2
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,11,cpu-0-3-0
+3301460868498,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,6,cpu-0-0-1
+3301460868498,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3301460868498,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3301460868498,6464,Thermal Zone Temperature,29.400 deg C,38,gpuss-2
+3301460868498,6464,Thermal Zone Temperature,30.248 deg C,66,pmh0110_i_tz
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,28,nsphvx-0
+3301460868498,6464,Thermal Zone Temperature,29.800 deg C,4,qmx-0-2
+3301460868498,6464,Thermal Zone Temperature,30.114 deg C,56,pmh0101_tz
+3301460868498,6464,Thermal Zone Temperature,30.200 deg C,18,cpullc-1-1
+3301460868498,6464,Thermal Zone Temperature,29.000 deg C,46,gpuss-10
+3301460868498,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3301460868498,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3301460868498,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3301460868498,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3301460868498,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3301460868498,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3301460868498,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3301460868498,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3301460868498,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3301460868498,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3301460868498,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3301460868498,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,36,gpu
+3301460868498,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3301460868498,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3301460868498,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3301460868498,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3301460868498,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3301460868498,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3301460868498,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3301460868498,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3301460868498,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3301460868498,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,2,ufs
+3301460868498,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3301460868498,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3301460868498,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3301460868498,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3301460868498,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3301460868498,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3301460868498,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3301460868498,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3301460868498,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3301460868498,6465,Passive Cooling,0.000 %,39,cdsp
+3301460868498,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3301460868498,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3301460868498,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3301460868498,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3301460868498,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3301460868498,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3301460868498,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3301460868498,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3301460868498,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3301460868498,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3301460868498,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3301460868498,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3301460868498,6465,Passive Cooling,0.000 %,63,modem_bcl
+3301460868498,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3301460868498,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3301460868498,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3301460868498,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3301460868498,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3301460868498,6465,Passive Cooling,0.000 %,33,kgsl
+3301460868498,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3301460868498,6465,Passive Cooling,0.000 %,3,display-fps
+3301460868498,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3301460868498,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3301773479467,6464,Thermal Zone Temperature,30.081 deg C,64,pmh0110_g_tz
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,26,cpu-1-1-0
+3301773479467,6464,Thermal Zone Temperature,31.000 deg C,2,qmx-0-0
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,54,video
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,16,cpu-0-5-1
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,44,gpuss-8
+3301773479467,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,34,nsphmx-2
+3301773479467,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,24,cpu-1-0-0
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,0,cpullc-0-0
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,52,camera-0
+3301773479467,6464,Thermal Zone Temperature,29.000 deg C,14,cpu-0-4-1
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3301773479467,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3301773479467,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3301773479467,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,50,mdmss-2
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,12,cpu-0-3-1
+3301773479467,6464,Thermal Zone Temperature,29.000 deg C,40,gpuss-4
+3301773479467,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,30,nsphvx-2
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3301773479467,6464,Thermal Zone Temperature,30.315 deg C,59,pmh0110_f_tz
+3301773479467,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3301773479467,6464,Thermal Zone Temperature,30.200 deg C,49,mdmss-1
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,10,cpu-0-2-1
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,39,gpuss-3
+3301773479467,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3301773479467,6464,Thermal Zone Temperature,30.200 deg C,29,nsphvx-1
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,5,cpu-0-0-0
+3301773479467,6464,Thermal Zone Temperature,28.977 deg C,57,pmh0110_d_tz
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,19,qmx-1-0
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,47,ddr
+3301773479467,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,37,gpuss-1
+3301773479467,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,27,cpu-1-1-1
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,3,qmx-0-1
+3301773479467,6464,Thermal Zone Temperature,29.762 deg C,55,sys-therm-0
+3301773479467,6464,Thermal Zone Temperature,30.200 deg C,17,cpullc-1-0
+3301773479467,6464,Thermal Zone Temperature,30.200 deg C,45,gpuss-9
+3301773479467,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3301773479467,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,25,cpu-1-0-1
+3301773479467,6464,Thermal Zone Temperature,30.600 deg C,1,cpullc-0-1
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,15,cpu-0-5-0
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,43,gpuss-7
+3301773479467,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3301773479467,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3301773479467,6464,Thermal Zone Temperature,30.200 deg C,23,qmx-1-4
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,51,mdmss-3
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3301773479467,6464,Thermal Zone Temperature,29.000 deg C,41,gpuss-5
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,31,nsphvx-3
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,8,cpu-0-1-1
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,21,qmx-1-2
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,11,cpu-0-3-0
+3301773479467,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3301773479467,6464,Thermal Zone Temperature,30.200 deg C,6,cpu-0-0-1
+3301773479467,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3301773479467,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3301773479467,6464,Thermal Zone Temperature,30.147 deg C,66,pmh0110_i_tz
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,28,nsphvx-0
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,4,qmx-0-2
+3301773479467,6464,Thermal Zone Temperature,30.147 deg C,56,pmh0101_tz
+3301773479467,6464,Thermal Zone Temperature,29.800 deg C,18,cpullc-1-1
+3301773479467,6464,Thermal Zone Temperature,29.400 deg C,46,gpuss-10
+3301773479467,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3301773479467,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3301773479467,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3301773479467,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3301773479467,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3301773479467,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3301773479467,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3301773479467,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3301773479467,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3301773479467,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3301773479467,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3301773479467,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,36,gpu
+3301773479467,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3301773479467,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3301773479467,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3301773479467,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3301773479467,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3301773479467,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3301773479467,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3301773479467,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3301773479467,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3301773479467,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,2,ufs
+3301773479467,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3301773479467,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3301773479467,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3301773479467,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3301773479467,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3301773479467,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3301773479467,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3301773479467,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3301773479467,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3301773479467,6465,Passive Cooling,0.000 %,39,cdsp
+3301773479467,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3301773479467,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3301773479467,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3301773479467,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3301773479467,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3301773479467,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3301773479467,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3301773479467,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3301773479467,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3301773479467,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3301773479467,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3301773479467,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3301773479467,6465,Passive Cooling,0.000 %,63,modem_bcl
+3301773479467,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3301773479467,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3301773479467,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3301773479467,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3301773479467,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3301773479467,6465,Passive Cooling,0.000 %,33,kgsl
+3301773479467,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3301773479467,6465,Passive Cooling,0.000 %,3,display-fps
+3301773479467,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3301773479467,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3302085853041,6464,Thermal Zone Temperature,30.081 deg C,64,pmh0110_g_tz
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,26,cpu-1-1-0
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,2,qmx-0-0
+3302085853041,6464,Thermal Zone Temperature,29.000 deg C,54,video
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,16,cpu-0-5-1
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,44,gpuss-8
+3302085853041,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3302085853041,6464,Thermal Zone Temperature,29.000 deg C,34,nsphmx-2
+3302085853041,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,24,cpu-1-0-0
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,0,cpullc-0-0
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,52,camera-0
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,14,cpu-0-4-1
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3302085853041,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3302085853041,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3302085853041,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,50,mdmss-2
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,12,cpu-0-3-1
+3302085853041,6464,Thermal Zone Temperature,29.000 deg C,40,gpuss-4
+3302085853041,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,30,nsphvx-2
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3302085853041,6464,Thermal Zone Temperature,30.248 deg C,59,pmh0110_f_tz
+3302085853041,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3302085853041,6464,Thermal Zone Temperature,30.200 deg C,49,mdmss-1
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,10,cpu-0-2-1
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,39,gpuss-3
+3302085853041,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,29,nsphvx-1
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,5,cpu-0-0-0
+3302085853041,6464,Thermal Zone Temperature,28.877 deg C,57,pmh0110_d_tz
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,19,qmx-1-0
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,47,ddr
+3302085853041,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3302085853041,6464,Thermal Zone Temperature,29.000 deg C,37,gpuss-1
+3302085853041,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,27,cpu-1-1-1
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,3,qmx-0-1
+3302085853041,6464,Thermal Zone Temperature,29.762 deg C,55,sys-therm-0
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,17,cpullc-1-0
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,45,gpuss-9
+3302085853041,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3302085853041,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,25,cpu-1-0-1
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,1,cpullc-0-1
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,15,cpu-0-5-0
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,43,gpuss-7
+3302085853041,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3302085853041,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,23,qmx-1-4
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,51,mdmss-3
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,41,gpuss-5
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,31,nsphvx-3
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,8,cpu-0-1-1
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,21,qmx-1-2
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,11,cpu-0-3-0
+3302085853041,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3302085853041,6464,Thermal Zone Temperature,30.200 deg C,6,cpu-0-0-1
+3302085853041,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3302085853041,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3302085853041,6464,Thermal Zone Temperature,30.114 deg C,66,pmh0110_i_tz
+3302085853041,6464,Thermal Zone Temperature,29.400 deg C,28,nsphvx-0
+3302085853041,6464,Thermal Zone Temperature,31.000 deg C,4,qmx-0-2
+3302085853041,6464,Thermal Zone Temperature,30.181 deg C,56,pmh0101_tz
+3302085853041,6464,Thermal Zone Temperature,29.800 deg C,18,cpullc-1-1
+3302085853041,6464,Thermal Zone Temperature,29.000 deg C,46,gpuss-10
+3302085853041,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3302085853041,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3302085853041,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3302085853041,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3302085853041,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3302085853041,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3302085853041,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3302085853041,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3302085853041,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3302085853041,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3302085853041,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3302085853041,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,36,gpu
+3302085853041,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3302085853041,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3302085853041,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3302085853041,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3302085853041,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3302085853041,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3302085853041,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3302085853041,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3302085853041,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3302085853041,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,2,ufs
+3302085853041,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3302085853041,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3302085853041,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3302085853041,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3302085853041,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3302085853041,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3302085853041,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3302085853041,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3302085853041,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3302085853041,6465,Passive Cooling,0.000 %,39,cdsp
+3302085853041,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3302085853041,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3302085853041,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3302085853041,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3302085853041,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3302085853041,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3302085853041,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3302085853041,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3302085853041,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3302085853041,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3302085853041,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3302085853041,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3302085853041,6465,Passive Cooling,0.000 %,63,modem_bcl
+3302085853041,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3302085853041,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3302085853041,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3302085853041,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3302085853041,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3302085853041,6465,Passive Cooling,0.000 %,33,kgsl
+3302085853041,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3302085853041,6465,Passive Cooling,0.000 %,3,display-fps
+3302085853041,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3302085853041,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3302370168283,6464,Thermal Zone Temperature,30.081 deg C,64,pmh0110_g_tz
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,26,cpu-1-1-0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,2,qmx-0-0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,54,video
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,16,cpu-0-5-1
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,44,gpuss-8
+3302370168283,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,34,nsphmx-2
+3302370168283,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,24,cpu-1-0-0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,0,cpullc-0-0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,52,camera-0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,14,cpu-0-4-1
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3302370168283,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3302370168283,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,50,mdmss-2
+3302370168283,6464,Thermal Zone Temperature,29.000 deg C,12,cpu-0-3-1
+3302370168283,6464,Thermal Zone Temperature,29.000 deg C,40,gpuss-4
+3302370168283,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,30,nsphvx-2
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3302370168283,6464,Thermal Zone Temperature,30.147 deg C,59,pmh0110_f_tz
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,49,mdmss-1
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,10,cpu-0-2-1
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,39,gpuss-3
+3302370168283,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,29,nsphvx-1
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,5,cpu-0-0-0
+3302370168283,6464,Thermal Zone Temperature,28.977 deg C,57,pmh0110_d_tz
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,19,qmx-1-0
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,47,ddr
+3302370168283,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,37,gpuss-1
+3302370168283,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,27,cpu-1-1-1
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,3,qmx-0-1
+3302370168283,6464,Thermal Zone Temperature,29.765 deg C,55,sys-therm-0
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,17,cpullc-1-0
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,45,gpuss-9
+3302370168283,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,35,nsphmx-3
+3302370168283,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,25,cpu-1-0-1
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,1,cpullc-0-1
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,15,cpu-0-5-0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,43,gpuss-7
+3302370168283,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3302370168283,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,23,qmx-1-4
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,51,mdmss-3
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,41,gpuss-5
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,31,nsphvx-3
+3302370168283,6464,Thermal Zone Temperature,29.000 deg C,8,cpu-0-1-1
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,21,qmx-1-2
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,11,cpu-0-3-0
+3302370168283,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,6,cpu-0-0-1
+3302370168283,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3302370168283,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,38,gpuss-2
+3302370168283,6464,Thermal Zone Temperature,30.147 deg C,66,pmh0110_i_tz
+3302370168283,6464,Thermal Zone Temperature,29.800 deg C,28,nsphvx-0
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,4,qmx-0-2
+3302370168283,6464,Thermal Zone Temperature,30.114 deg C,56,pmh0101_tz
+3302370168283,6464,Thermal Zone Temperature,30.200 deg C,18,cpullc-1-1
+3302370168283,6464,Thermal Zone Temperature,29.400 deg C,46,gpuss-10
+3302370168283,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3302370168283,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3302370168283,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3302370168283,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3302370168283,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3302370168283,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3302370168283,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3302370168283,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3302370168283,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3302370168283,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3302370168283,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3302370168283,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,36,gpu
+3302370168283,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3302370168283,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3302370168283,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3302370168283,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3302370168283,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3302370168283,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3302370168283,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3302370168283,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3302370168283,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3302370168283,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,2,ufs
+3302370168283,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3302370168283,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3302370168283,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3302370168283,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3302370168283,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3302370168283,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3302370168283,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3302370168283,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3302370168283,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3302370168283,6465,Passive Cooling,0.000 %,39,cdsp
+3302370168283,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3302370168283,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3302370168283,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3302370168283,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3302370168283,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3302370168283,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3302370168283,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3302370168283,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3302370168283,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3302370168283,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3302370168283,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3302370168283,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3302370168283,6465,Passive Cooling,0.000 %,63,modem_bcl
+3302370168283,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3302370168283,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3302370168283,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3302370168283,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3302370168283,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3302370168283,6465,Passive Cooling,0.000 %,33,kgsl
+3302370168283,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3302370168283,6465,Passive Cooling,0.000 %,3,display-fps
+3302370168283,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3302370168283,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3302681762899,6464,Thermal Zone Temperature,30.081 deg C,64,pmh0110_g_tz
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,26,cpu-1-1-0
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,2,qmx-0-0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,54,video
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,16,cpu-0-5-1
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,44,gpuss-8
+3302681762899,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,34,nsphmx-2
+3302681762899,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,24,cpu-1-0-0
+3302681762899,6464,Thermal Zone Temperature,29.000 deg C,0,cpullc-0-0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,52,camera-0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,14,cpu-0-4-1
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3302681762899,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3302681762899,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3302681762899,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,50,mdmss-2
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,12,cpu-0-3-1
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,40,gpuss-4
+3302681762899,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,30,nsphvx-2
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,7,cpu-0-1-0
+3302681762899,6464,Thermal Zone Temperature,30.348 deg C,59,pmh0110_f_tz
+3302681762899,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3302681762899,6464,Thermal Zone Temperature,30.200 deg C,49,mdmss-1
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,10,cpu-0-2-1
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,39,gpuss-3
+3302681762899,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3302681762899,6464,Thermal Zone Temperature,30.200 deg C,29,nsphvx-1
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,5,cpu-0-0-0
+3302681762899,6464,Thermal Zone Temperature,28.877 deg C,57,pmh0110_d_tz
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,19,qmx-1-0
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,47,ddr
+3302681762899,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,37,gpuss-1
+3302681762899,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,27,cpu-1-1-1
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,3,qmx-0-1
+3302681762899,6464,Thermal Zone Temperature,29.755 deg C,55,sys-therm-0
+3302681762899,6464,Thermal Zone Temperature,30.200 deg C,17,cpullc-1-0
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,45,gpuss-9
+3302681762899,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3302681762899,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,25,cpu-1-0-1
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,1,cpullc-0-1
+3302681762899,6464,Thermal Zone Temperature,30.200 deg C,53,camera-1
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,15,cpu-0-5-0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,43,gpuss-7
+3302681762899,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,33,nsphmx-1
+3302681762899,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,23,qmx-1-4
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,51,mdmss-3
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,41,gpuss-5
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,31,nsphvx-3
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,8,cpu-0-1-1
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,21,qmx-1-2
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,11,cpu-0-3-0
+3302681762899,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,6,cpu-0-0-1
+3302681762899,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,48,mdmss-0
+3302681762899,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3302681762899,6464,Thermal Zone Temperature,30.248 deg C,66,pmh0110_i_tz
+3302681762899,6464,Thermal Zone Temperature,29.800 deg C,28,nsphvx-0
+3302681762899,6464,Thermal Zone Temperature,31.000 deg C,4,qmx-0-2
+3302681762899,6464,Thermal Zone Temperature,30.081 deg C,56,pmh0101_tz
+3302681762899,6464,Thermal Zone Temperature,30.200 deg C,18,cpullc-1-1
+3302681762899,6464,Thermal Zone Temperature,29.400 deg C,46,gpuss-10
+3302681762899,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3302681762899,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3302681762899,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3302681762899,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3302681762899,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3302681762899,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3302681762899,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3302681762899,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3302681762899,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3302681762899,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3302681762899,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3302681762899,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,36,gpu
+3302681762899,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3302681762899,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3302681762899,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3302681762899,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3302681762899,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3302681762899,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3302681762899,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3302681762899,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3302681762899,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3302681762899,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,2,ufs
+3302681762899,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3302681762899,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3302681762899,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3302681762899,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3302681762899,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3302681762899,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3302681762899,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3302681762899,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3302681762899,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3302681762899,6465,Passive Cooling,0.000 %,39,cdsp
+3302681762899,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3302681762899,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3302681762899,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3302681762899,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3302681762899,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3302681762899,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3302681762899,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3302681762899,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3302681762899,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3302681762899,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3302681762899,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3302681762899,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3302681762899,6465,Passive Cooling,0.000 %,63,modem_bcl
+3302681762899,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3302681762899,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3302681762899,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3302681762899,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3302681762899,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3302681762899,6465,Passive Cooling,0.000 %,33,kgsl
+3302681762899,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3302681762899,6465,Passive Cooling,0.000 %,3,display-fps
+3302681762899,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3302681762899,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,36,gpuss-0
+3302992373452,6464,Thermal Zone Temperature,30.248 deg C,64,pmh0110_g_tz
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,26,cpu-1-1-0
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,2,qmx-0-0
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,54,video
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,16,cpu-0-5-1
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,44,gpuss-8
+3302992373452,6464,Thermal Zone Temperature,-273.000 deg C,72,mmw_ific0
+3302992373452,6464,Thermal Zone Temperature,29.000 deg C,34,nsphmx-2
+3302992373452,6464,Thermal Zone Temperature,105.000 deg C,62,cpu-hw-trip-1
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,24,cpu-1-0-0
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,0,cpullc-0-0
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,52,camera-0
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,14,cpu-0-4-1
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,42,gpuss-6
+3302992373452,6464,Thermal Zone Temperature,-273.000 deg C,70,sdr0_pa
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,32,nsphmx-0
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,9,cpu-0-2-0
+3302992373452,6464,Thermal Zone Temperature,0.000 deg C,60,pmh0101-bcl-lvl0
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,22,qmx-1-3
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,50,mdmss-2
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,12,cpu-0-3-1
+3302992373452,6464,Thermal Zone Temperature,29.000 deg C,40,gpuss-4
+3302992373452,6464,Thermal Zone Temperature,37.000 deg C,69,pmr735d_tz
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,30,nsphvx-2
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,7,cpu-0-1-0
+3302992373452,6464,Thermal Zone Temperature,30.315 deg C,59,pmh0110_f_tz
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,20,qmx-1-1
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,49,mdmss-1
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,10,cpu-0-2-1
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,39,gpuss-3
+3302992373452,6464,Thermal Zone Temperature,0.000 deg C,67,pmh0101-bcl-lvl2
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,29,nsphvx-1
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,5,cpu-0-0-0
+3302992373452,6464,Thermal Zone Temperature,28.877 deg C,57,pmh0110_d_tz
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,19,qmx-1-0
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,47,ddr
+3302992373452,6464,Thermal Zone Temperature,-273.000 deg C,75,mmw2
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,37,gpuss-1
+3302992373452,6464,Thermal Zone Temperature,27.600 deg C,65,battery
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,27,cpu-1-1-1
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,3,qmx-0-1
+3302992373452,6464,Thermal Zone Temperature,29.768 deg C,55,sys-therm-0
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,17,cpullc-1-0
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,45,gpuss-9
+3302992373452,6464,Thermal Zone Temperature,-273.000 deg C,73,mmw0
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,35,nsphmx-3
+3302992373452,6464,Thermal Zone Temperature,0.000 deg C,63,pmh0101-bcl-lvl1
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,25,cpu-1-0-1
+3302992373452,6464,Thermal Zone Temperature,29.000 deg C,1,cpullc-0-1
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,53,camera-1
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,15,cpu-0-5-0
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,43,gpuss-7
+3302992373452,6464,Thermal Zone Temperature,-273.000 deg C,71,sdr0
+3302992373452,6464,Thermal Zone Temperature,29.000 deg C,33,nsphmx-1
+3302992373452,6464,Thermal Zone Temperature,28.600 deg C,61,ac
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,23,qmx-1-4
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,51,mdmss-3
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,13,cpu-0-4-0
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,41,gpuss-5
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,31,nsphvx-3
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,8,cpu-0-1-1
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,21,qmx-1-2
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,11,cpu-0-3-0
+3302992373452,6464,Thermal Zone Temperature,37.000 deg C,68,pmh0104_tz
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,6,cpu-0-0-1
+3302992373452,6464,Thermal Zone Temperature,105.000 deg C,58,cpu-hw-trip-0
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,48,mdmss-0
+3302992373452,6464,Thermal Zone Temperature,-273.000 deg C,76,mmw3
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,38,gpuss-2
+3302992373452,6464,Thermal Zone Temperature,30.147 deg C,66,pmh0110_i_tz
+3302992373452,6464,Thermal Zone Temperature,29.800 deg C,28,nsphvx-0
+3302992373452,6464,Thermal Zone Temperature,29.400 deg C,4,qmx-0-2
+3302992373452,6464,Thermal Zone Temperature,30.248 deg C,56,pmh0101_tz
+3302992373452,6464,Thermal Zone Temperature,30.200 deg C,18,cpullc-1-1
+3302992373452,6464,Thermal Zone Temperature,29.000 deg C,46,gpuss-10
+3302992373452,6464,Thermal Zone Temperature,-273.000 deg C,74,mmw1
+3302992373452,6465,Passive Cooling,0.000 %,13,cpu-hotplug6
+3302992373452,6465,Passive Cooling,0.000 %,41,cdsp_sw_hmx
+3302992373452,6465,Passive Cooling,0.000 %,31,pause-cpu3
+3302992373452,6465,Passive Cooling,0.000 %,1,cpufreq-cpu6
+3302992373452,6465,Passive Cooling,0.000 %,21,thermal-pause-4
+3302992373452,6465,Passive Cooling,0.000 %,11,cpu-hotplug4
+3302992373452,6465,Passive Cooling,0.000 %,58,mmw1_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,48,modem_nr_scg_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,38,cdsp_hw
+3302992373452,6465,Passive Cooling,0.000 %,8,cpu-hotplug1
+3302992373452,6465,Passive Cooling,0.000 %,28,pause-cpu7
+3302992373452,6465,Passive Cooling,0.000 %,56,mmw0_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,18,thermal-pause-2
+3302992373452,6465,Passive Cooling,0.000 %,46,modem_nr_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,36,gpu
+3302992373452,6465,Passive Cooling,0.000 %,6,ddr-cdev
+3302992373452,6465,Passive Cooling,0.000 %,26,thermal-pause-C0
+3302992373452,6465,Passive Cooling,0.000 %,54,pa_nr_sdr0_scg_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,16,thermal-pause-1
+3302992373452,6465,Passive Cooling,0.000 %,44,modem_lte_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,34,thermal-pause-3C
+3302992373452,6465,Passive Cooling,0.000 %,62,mmw3_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,4,cpu-cluster0
+3302992373452,6465,Passive Cooling,0.000 %,24,pause-cpu5
+3302992373452,6465,Passive Cooling,0.000 %,52,pa_nr_sdr0_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,14,cpu-hotplug7
+3302992373452,6465,Passive Cooling,0.000 %,42,panel0-backlight
+3302992373452,6465,Passive Cooling,0.000 %,32,thermal-pause-8
+3302992373452,6465,Passive Cooling,0.000 %,60,mmw2_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,2,ufs
+3302992373452,6465,Passive Cooling,0.000 %,22,pause-cpu4
+3302992373452,6465,Passive Cooling,0.000 %,50,pa_lte_sdr0_sub1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,12,cpu-hotplug5
+3302992373452,6465,Passive Cooling,0.000 %,40,cdsp_sw_hvx
+3302992373452,6465,Passive Cooling,0.000 %,30,thermal-pause-40
+3302992373452,6465,Passive Cooling,0.000 %,59,mmw2_dsc
+3302992373452,6465,Passive Cooling,0.000 %,0,cpufreq-cpu0
+3302992373452,6465,Passive Cooling,0.000 %,20,thermal-pause-3C
+3302992373452,6465,Passive Cooling,0.000 %,49,pa_lte_sdr0_dsc
+3302992373452,6465,Passive Cooling,0.000 %,10,cpu-hotplug3
+3302992373452,6465,Passive Cooling,0.000 %,39,cdsp
+3302992373452,6465,Passive Cooling,0.000 %,9,cpu-hotplug2
+3302992373452,6465,Passive Cooling,0.000 %,29,thermal-pause-80
+3302992373452,6465,Passive Cooling,0.000 %,57,mmw1_dsc
+3302992373452,6465,Passive Cooling,0.000 %,19,pause-cpu2
+3302992373452,6465,Passive Cooling,0.000 %,47,modem_nr_scg_dsc
+3302992373452,6465,Passive Cooling,0.000 %,37,cdsp_ss
+3302992373452,6465,Passive Cooling,0.000 %,7,cpu-hotplug0
+3302992373452,6465,Passive Cooling,0.000 %,27,thermal-pause-20
+3302992373452,6465,Passive Cooling,0.000 %,55,mmw0_dsc
+3302992373452,6465,Passive Cooling,0.000 %,17,pause-cpu1
+3302992373452,6465,Passive Cooling,0.000 %,45,modem_nr_dsc
+3302992373452,6465,Passive Cooling,0.000 %,35,thermal-pause-C0
+3302992373452,6465,Passive Cooling,0.000 %,63,modem_bcl
+3302992373452,6465,Passive Cooling,0.000 %,5,cpu-cluster1
+3302992373452,6465,Passive Cooling,0.000 %,25,pause-cpu6
+3302992373452,6465,Passive Cooling,0.000 %,53,pa_nr_sdr0_scg_dsc
+3302992373452,6465,Passive Cooling,0.000 %,15,pause-cpu0
+3302992373452,6465,Passive Cooling,0.000 %,43,modem_lte_dsc
+3302992373452,6465,Passive Cooling,0.000 %,33,kgsl
+3302992373452,6465,Passive Cooling,0.000 %,61,mmw3_dsc
+3302992373452,6465,Passive Cooling,0.000 %,3,display-fps
+3302992373452,6465,Passive Cooling,0.000 %,23,thermal-pause-10
+3302992373452,6465,Passive Cooling,0.000 %,51,pa_nr_sdr0_dsc

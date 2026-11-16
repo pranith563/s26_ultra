@@ -1,0 +1,15 @@
+boot_id=f23a96a6-fe8e-4804-8076-32df8aa2f25e
+firmware=S948BXXU1AZAB
+interval_ms=500
+init_seconds=2
+run_seconds=4
+pid=20537
+start_boottime_ns=7954659045865
+start_realtime_ns=1767980853625973892
+units=column suffixes; Samsung power_now/power_avg are ISYS mA on S948BXXU1AZAB
+battery_interface_power_w=signed voltage*current, not calibrated total-device power
+read_error_mask=bit N identifies missing/invalid reading N in header order
+suspend=no wake lock; logging pauses during system suspend; boottime exposes gaps
+persistence=each row flushed to OS; fsync on clean stop; sudden power loss may lose recent rows
+stop_reason=duration
+stop_boottime_ns=7960664811696

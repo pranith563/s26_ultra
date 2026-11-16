@@ -1,0 +1,13 @@
+uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0
+Enforcing
+SM-S948B
+SM8850
+samsung/m3qxins/m3q:16/BP4A.251205.006/S948BXXU1AZAB_OXM1AZAB:user/release-keys
+green
+1
+0
+f23a96a6-fe8e-4804-8076-32df8aa2f25e
+0
+18016 sh                          sh -c su '-c' 'id; getenforce; getprop ro.product.model; getprop ro.soc.model; getprop ro.build.fingerprint; getprop ro.boot.verifiedbootstate; getprop ro.boot.flash.locked; getprop ro.boot.warranty_bit; cat /proc/sys/kernel/random/boot_id; cat /sys/kernel/tracing/tracing_on; ps -A -o PID,NAME,ARGS | grep -E "qnn-net-run|qmonitor-grpc-server|lldb-server"'
+18018 sh                          sh -c id; getenforce; getprop ro.product.model; getprop ro.soc.model; getprop ro.build.fingerprint; getprop ro.boot.verifiedbootstate; getprop ro.boot.flash.locked; getprop ro.boot.warranty_bit; cat /proc/sys/kernel/random/boot_id; cat /sys/kernel/tracing/tracing_on; ps -A -o PID,NAME,ARGS | grep -E "qnn-net-run|qmonitor-grpc-server|lldb-server"
+18030 grep                        grep -E qnn-net-run|qmonitor-grpc-server|lldb-server

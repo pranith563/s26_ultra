@@ -1,0 +1,112 @@
+S26 Power: on-phone app and USB-independent collector
+
+Installed APK: dev.s26.powerlogger (S26 Power)
+Local APK: power-app\build\S26-Power.apk
+Collector on phone: /data/local/tmp/s26-power-logger
+Both the APK and ADB commands control this same native root process.
+
+Phone workflow
+1. Open S26 Power. Set Init delay, Run duration, and Sample interval.
+2. Tap Start. The countdown gives you time to launch your workload and disconnect
+   the phone's USB cable while Monsoon stays powered.
+3. Leave this screen while measuring: the display and live updates add overhead.
+4. The collector records locally and stops automatically when the run ends.
+   You can reopen S26 Power and tap Stop early, without reconnecting USB.
+5. Reconnect USB to copy the CSVs to the PC.
+
+Init delay and run duration are seconds. The sample interval is milliseconds.
+Defaults: 10 seconds init, 60 seconds run, 1000 ms sampling.
+The CSV includes both init and run rows, explicitly labeled by phase. Use phase=run
+and usb_online=0 for the intended USB-disconnected measurement window.
+The app controls measurement; launch your own app/binary separately.
+
+ADB workflow (Windows PowerShell)
+Start with 10 seconds init, 60 seconds run, and a sample every 1000 ms:
+  adb -s RZGL21DRL6B shell "su -c 'sh /data/local/tmp/s26-power-logger/control.sh start 10 60 1000'"
+Status, settings and latest sample:
+  adb -s RZGL21DRL6B shell "su -c 'sh /data/local/tmp/s26-power-logger/control.sh status'"
+Stop early:
+  adb -s RZGL21DRL6B shell "su -c 'sh /data/local/tmp/s26-power-logger/control.sh stop'"
+Retrieve files after reconnecting:
+  New-Item -ItemType Directory -Force .\runs\power-logger\captures | Out-Null
+  adb -s RZGL21DRL6B shell "ls /data/local/tmp/s26-power-logger/power-*.csv*" | ForEach-Object {
+    adb -s RZGL21DRL6B pull $_.Trim() .\runs\power-logger\captures
+  }
+
+Start does not replace an active run. Stop first to change timings.
+Limits: init 0..86400 s, run 1..86400 s, sampling 250..60000 ms.
+Faster polling does not increase the fuel gauge's own update rate or accuracy.
+If you start a binary over ADB, detach that workload too so its lifetime does not
+depend on the ADB session. The collector does not launch or detach your workload.
+
+Data and sleep
+Each run creates power-<boot-id>-<start-boottime-ns>.csv plus a .meta.txt file.
+The current filename is in current; prior runs are preserved.
+Sequence, phase, elapsed_seconds and boot ID identify the run and its phases.
+boottime_ns and read_end_boottime_ns bracket sequential sensor reads.
+monotonic_ns excludes system suspend. sample_gap_ns is the interval since the
+previous sample (zero initially). sampling_gap=1 means a gap larger than 1.5 times
+the configured interval. Missing samples are not interpolated.
+Normal sleep is preserved, as requested: no wake lock or clock/thermal changes.
+Sampling pauses during deep suspend. If the run deadline passes while asleep,
+the process exits on wake without additional out-of-window samples.
+Do not integrate across gaps as if continuous power data were available.
+
+Measurement columns
+  battery_voltage_uv: battery-interface microvolts.
+  battery_current_ua, battery_current_avg_ua: signed microamps; positive is the
+    gauge's charging direction, negative its discharge direction. Average lags.
+  battery_temp_deci_c, charger_temp_deci_c, usb_temp_deci_c: tenths of degree C.
+  system_current_ma, system_current_avg_ma: Samsung ISYS milliamps, read from
+    power_now/power_avg. Verified for S948BXXU1AZAB; these are not watts.
+  charge_uah, capacity_pct: gauge estimates; not physical remaining cell capacity
+    when the battery cell has been removed.
+  usb_online: phone-reported USB state, 0 disconnected / 1 connected.
+  battery_interface_power_w: signed voltage*current / 1e12. Derived and not
+    independently calibrated whole-device power. Monsoon remains the reference.
+  process_cpu_ns: the collector's own CPU time, for estimating CPU overhead.
+  read_error_mask: 0 means all reads succeeded. Bit 0 maps to battery_voltage_uv,
+    through bit 10 for usb_online. Failed readings are empty cells, not zeros.
+
+The app displays live captured readings while running and labels saved readings
+after stopping. It uses root only for this collector and its fixed control script.
+No network permission, boot autostart, KernelSU module or firmware changes.
+Root for S26 Power is enabled in KernelSU > Superuser. If reinstalling on a new
+setup, enable that entry and reopen the app. The APK contains the collector and
+installs it if absent. Reboot ends a run; start again after root restoration.
+Every row is flushed to the OS; a clean stop syncs the CSV. Sudden power loss may
+lose recent rows. Write failures stop collection and are reported in service.log.
+The phone wall clock is wrong; use boottime/elapsed time for duration analysis.
+
+What qprof provides
+The installed Android qprof 2.26.10.6 client successfully captured battery voltage,
+current, capacity and temperature directly on the phone without the Windows client.
+It uses the staged matching libraries in the private mount namespace already
+established for this device. The available Battery capability does not list ISYS.
+No per-CPU/GPU/HTP hardware rail energy was exposed in the earlier investigation.
+The APK currently controls the lightweight power collector, not qprof. Performance
+counter capture can run separately; its own overhead must be considered.
+
+Build / update
+  python .\power-app\build.py
+Uses installed JDK 21, Android platform/build-tools 36 and NDK r30. No Gradle or
+third-party app libraries. Build commands, signing verification and APK hash are
+in power-app\build\build.json. Signing key: build\local-development.jks, local
+development certificate only; retain it for compatible updates on this device.
+To update an already installed backend, stop the run before replacing it:
+  adb -s RZGL21DRL6B shell "su -c 'sh /data/local/tmp/s26-power-logger/control.sh stop'"
+  adb -s RZGL21DRL6B push .\power-app\build\assets\power-logger /data/local/tmp/s26-power-logger/power-logger
+  adb -s RZGL21DRL6B push .\power-app\build\assets\control.sh /data/local/tmp/s26-power-logger/control.sh
+  adb -s RZGL21DRL6B shell "su -c 'chmod 755 /data/local/tmp/s26-power-logger/power-logger'"
+  adb -s RZGL21DRL6B install -r .\power-app\build\S26-Power.apk
+
+Validation evidence
+  runs\power-logger\usb-disconnect-test.json: same process and boot across actual
+    USB removal; 33 disconnected samples, no read errors, gaps up to 11.9 seconds.
+    This initial capture predates timed runs and explicit gap columns.
+  runs\power-logger\gap-test.json: deliberate collector pause flagged correctly.
+  runs\power-logger\timed-test.json: 2 s init + 4 s run, phase labels and auto-stop.
+  runs\power-logger\apk-controls-test.json: APK start/countdown/background/stop.
+  runs\power-logger\adb-app-timed-test.json: ADB timing shown in app, then auto-stop.
+  runs\power-logger\qprof-local-battery-test.txt: on-phone qprof capture result.
+  runs\power-check\assessment.txt: units, driver evidence and power limitations.

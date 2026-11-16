@@ -1,0 +1,34 @@
+[
+  {
+    "tensor": "Result_0\\InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu_0.raw",
+    "elements": 710432,
+    "all_finite": true,
+    "max_abs_error": 0.10941743850708008,
+    "mean_abs_error": 0.013712934321023908,
+    "equal_elements": 532562,
+    "cpu_range": [
+      0.0,
+      9.847530364990234
+    ],
+    "htp_range": [
+      0.0,
+      9.902238845825195
+    ]
+  },
+  {
+    "tensor": "Result_1\\InceptionV3_InceptionV3_Conv2d_1a_3x3_Relu_0.raw",
+    "elements": 710432,
+    "all_finite": true,
+    "max_abs_error": 0.10941720008850098,
+    "mean_abs_error": 0.013724331411994797,
+    "equal_elements": 532385,
+    "cpu_range": [
+      0.0,
+      10.668157577514648
+    ],
+    "htp_range": [
+      0.0,
+      10.72286605834961
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\bin\\aarch64-android\\qnn-net-run",
+    "target": "/data/local/tmp/s26-qnn-2.44/qnn-net-run",
+    "bytes": 4462720
+  },
+  {
+    "source": "runs\\qnn-htp\\build\\libqnn_conv_relu.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/libqnn_conv_relu.so",
+    "bytes": 984344
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnHtp.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/lib/libQnnHtp.so",
+    "bytes": 2778176
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnHtpPrepare.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/lib/libQnnHtpPrepare.so",
+    "bytes": 85539184
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnHtpV81Stub.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/lib/libQnnHtpV81Stub.so",
+    "bytes": 755464
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnHtpNetRunExtensions.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/lib/libQnnHtpNetRunExtensions.so",
+    "bytes": 906000
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnSystem.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/lib/libQnnSystem.so",
+    "bytes": 2983560
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\aarch64-android\\libQnnCpu.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/lib/libQnnCpu.so",
+    "bytes": 6658336
+  },
+  {
+    "source": "C:\\Android\\android-ndk-r30\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/lib/libc++_shared.so",
+    "bytes": 9485032
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\hexagon-v81\\unsigned\\libQnnHtpV81Skel.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/dsp/libQnnHtpV81Skel.so",
+    "bytes": 11797220
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\hexagon-v81\\unsigned\\libQnnHtpV81.so",
+    "target": "/data/local/tmp/s26-qnn-2.44/dsp/libQnnHtpV81.so",
+    "bytes": 15314568
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\lib\\hexagon-v81\\unsigned\\libqnnhtpv81.cat",
+    "target": "/data/local/tmp/s26-qnn-2.44/dsp/libqnnhtpv81.cat",
+    "bytes": 12216
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\examples\\QNN\\converter\\models\\input_data_float\\1x299x299x3_float_1.raw",
+    "target": "/data/local/tmp/s26-qnn-2.44/inputs/1x299x299x3_float_1.raw",
+    "bytes": 1072812
+  },
+  {
+    "source": "C:\\qairt-data\\qairt\\2.44.0.260225\\examples\\QNN\\converter\\models\\input_data_float\\1x299x299x3_float_2.raw",
+    "target": "/data/local/tmp/s26-qnn-2.44/inputs/1x299x299x3_float_2.raw",
+    "bytes": 1072812
+  },
+  {
+    "source": "runs\\qnn-htp\\input_list.txt",
+    "target": "/data/local/tmp/s26-qnn-2.44/input_list.txt",
+    "bytes": 64
+  }
+]

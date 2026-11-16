@@ -1,0 +1,5 @@
+target create "C:/Program Files (x86)/Qualcomm/Shared/QualcommProfiler/API/target-la/aarch64/bins/qprof"
+settings set target.exec-search-paths "C:/Program Files (x86)/Qualcomm/Shared/QualcommProfiler/API/target-la/aarch64/libs" "C:/Program Files (x86)/Qualcomm/Shared/QualcommProfiler/API/target-la/aarch64/bins"
+target modules search-paths add /data/local/tmp/s26-qprof-2.26.10.6 "C:/Program Files (x86)/Qualcomm/Shared/QualcommProfiler/API/target-la/aarch64"
+gdb-remote 127.0.0.1:62473
+continue

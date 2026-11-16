@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "init_seconds": 2,
+  "run_seconds": 4,
+  "interval_ms": 500,
+  "rows": 12,
+  "phase_counts": {
+    "init": 4,
+    "run": 8
+  },
+  "automatic_stop": true,
+  "zero_duration_rejected": true
+}

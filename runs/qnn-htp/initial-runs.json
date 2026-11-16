@@ -1,0 +1,14 @@
+[
+  {
+    "backend": "Cpu",
+    "exit": 0,
+    "seconds": 0.1802017000154592,
+    "command": "cd /data/local/tmp/s26-qnn-2.44; export LD_LIBRARY_PATH=/data/local/tmp/s26-qnn-2.44/lib; export ADSP_LIBRARY_PATH=\"/data/local/tmp/s26-qnn-2.44/dsp;/vendor/lib/rfsa/adsp;/vendor/dsp/cdsp\"; timeout -s KILL 45 ./qnn-net-run --model ./libqnn_conv_relu.so --backend ./lib/libQnnCpu.so --input_list input_list.txt --output_dir output_cpu --profiling_level detailed --log_level info; result=$?; echo QNN_EXIT=$result; exit $result"
+  },
+  {
+    "backend": "Htp",
+    "exit": 0,
+    "seconds": 0.5401822999701835,
+    "command": "cd /data/local/tmp/s26-qnn-2.44; export LD_LIBRARY_PATH=/data/local/tmp/s26-qnn-2.44/lib; export ADSP_LIBRARY_PATH=\"/data/local/tmp/s26-qnn-2.44/dsp;/vendor/lib/rfsa/adsp;/vendor/dsp/cdsp\"; timeout -s KILL 45 ./qnn-net-run --model ./libqnn_conv_relu.so --backend ./lib/libQnnHtp.so --input_list input_list.txt --output_dir output_htp --profiling_level detailed --log_level info; result=$?; echo QNN_EXIT=$result; exit $result"
+  }
+]

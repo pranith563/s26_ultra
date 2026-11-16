@@ -1,0 +1,7 @@
+{
+  "tracks": "SELECT t.id,t.name,t.type,t.unit,COUNT(*) AS samples,MIN(c.value) AS min_value,MAX(c.value) AS max_value FROM counter c JOIN counter_track t ON t.id=c.track_id GROUP BY t.id ORDER BY t.name",
+  "power_rows": "SELECT c.ts,t.name,c.value FROM counter c JOIN counter_track t ON t.id=c.track_id WHERE t.name GLOB 'batt.*' OR lower(t.name) GLOB '*rail*' OR lower(t.name) GLOB '*energy*' ORDER BY c.ts",
+  "errors": "SELECT name,value,severity FROM stats WHERE value>0 AND severity!='info'",
+  "markers": "SELECT name,ts,dur FROM slice WHERE name GLOB 'S26_POWER_*'",
+  "bounds": "SELECT * FROM trace_bounds"
+}

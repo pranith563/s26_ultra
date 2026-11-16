@@ -1,0 +1,23 @@
+uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0
+Enforcing
+f23a96a6-fe8e-4804-8076-32df8aa2f25e
+STATE=stopped
+FILE=/data/local/tmp/s26-power-logger/power-f23a96a6-fe8e-4804-8076-32df8aa2f25e-8662402867105.csv
+boot_id=f23a96a6-fe8e-4804-8076-32df8aa2f25e
+firmware=S948BXXU1AZAB
+interval_ms=1000
+init_seconds=2
+run_seconds=12
+pid=23268
+start_boottime_ns=8662402867105
+start_realtime_ns=1767981561369810966
+units=column suffixes; Samsung power_now/power_avg are ISYS mA on S948BXXU1AZAB
+battery_interface_power_w=signed voltage*current, not calibrated total-device power
+read_error_mask=bit N identifies missing/invalid reading N in header order
+suspend=no wake lock; logging pauses during system suspend; boottime exposes gaps
+persistence=each row flushed to OS; fsync on clean stop; sudden power loss may lose recent rows
+stop_reason=duration
+stop_boottime_ns=8676406830225
+CSV_HEADER=sequence,phase,elapsed_seconds,boottime_ns,monotonic_ns,sample_gap_ns,sampling_gap,read_end_boottime_ns,process_cpu_ns,battery_voltage_uv,battery_current_ua,battery_current_avg_ua,battery_temp_deci_c,system_current_ma,system_current_avg_ma,charge_uah,capacity_pct,charger_temp_deci_c,usb_temp_deci_c,usb_online,battery_interface_power_w,read_error_mask
+CSV_LAST=13,run,13.000,8675403120330,8638894679618,999960885,0,8675416816996,63156601,3948000,439062,393750,269,124,160,2969050,59,279,270,1,1.733416776,0
+0

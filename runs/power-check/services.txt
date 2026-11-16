@@ -1,0 +1,21 @@
+10	PowerSolution_Framework_service: [com.samsung.android.powerSolution.IpowerSolution]
+59	android.hardware.health.IHealth/default: [android.hardware.health.IHealth]
+65	android.hardware.power.IPower/default: [android.hardware.power.IPower]
+91	android.hardware.thermal.IThermal/default: [android.hardware.thermal.IThermal]
+203	healthconnect: [android.health.connect.aidl.IHealthConnectService]
+300	power: [android.os.IPowerManager]
+301	powerstats: [android.os.IPowerStatsService]
+324	sdhms: [com.sec.android.sdhms.ISamsungDeviceHealthManager]
+381	thermalservice: [android.os.IThermalService]
+416	vendor.qti.hardware.power.powermodule.IPowerModule/default: [vendor.qti.hardware.power.powermodule.IPowerModule]
+426	vendor.qti.syshealthmon.ISysHealthMon/default: [vendor.qti.syshealthmon.ISysHealthMon]
+  PowerSolution_Framework_service
+  android.hardware.health.IHealth/default
+  android.hardware.power.IPower/default
+  android.hardware.thermal.IThermal/default
+  healthconnect
+  power
+  powerstats
+  thermalservice
+  vendor.qti.hardware.power.powermodule.IPowerModule/default
+  vendor.qti.syshealthmon.ISysHealthMon/default

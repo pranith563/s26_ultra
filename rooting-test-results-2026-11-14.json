@@ -1,0 +1,61 @@
+{
+  "tested_on": "2026-11-14",
+  "model": "SM-S948B",
+  "firmware": "S948BXXU1AZAB",
+  "root_app": {
+    "version": "1.4.1",
+    "package": "dev.experimental.azhlroot",
+    "sha256": "3fd0e50aa9e3a77b94009ac935d3f8a996aecc32adb5e201f1128916aa6d5318",
+    "source": "https://github.com/xorpix/Root-My-Galaxy-Ultra/releases/tag/1.4.1"
+  },
+  "manager": {
+    "version": "v3.3.1-47-gdbb73665",
+    "driver_uapi": "32727-6",
+    "package": "me.weishu.kernelsu",
+    "archive_sha256": "ecf91d15e6468ce039e8a48fd14fa1e0810017d95513713d035dd9fae93db530",
+    "source": "https://github.com/tiann/KernelSU/actions/runs/42841909373"
+  },
+  "manual_test": {
+    "passed": true,
+    "boot_id": "a5923fe2-fe2c-4ee3-bb0b-17aff3917327",
+    "manager_status": "Working [Jailbreak mode]",
+    "root_shell": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0"
+  },
+  "automatic_test": {
+    "passed": true,
+    "full_reboots_tested": 1,
+    "boot_id": "e6c3c977-876f-4bde-8f1c-d0f829d56707",
+    "root_shell": "uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0",
+    "app_opened_to_trigger_root_after_reboot": false,
+    "app_boot_state": {
+      "verified": true,
+      "verifiedBoot": "e6c3c977-876f-4bde-8f1c-d0f829d56707",
+      "broadcastBoot": "e6c3c977-876f-4bde-8f1c-d0f829d56707",
+      "attemptedBoot": "e6c3c977-876f-4bde-8f1c-d0f829d56707"
+    }
+  },
+  "settings": {
+    "root_on_boot": true,
+    "root_before_first_unlock": false,
+    "auto_soft_reboot": false,
+    "disable_ksu_modules": true,
+    "protect_image_partitions": true,
+    "battery_optimization_exemption": true,
+    "notifications_allowed": true,
+    "explicit_superuser_grants": [
+      "dev.experimental.azhlroot",
+      "com.android.shell"
+    ]
+  },
+  "post_test_state": {
+    "knox_warranty_bit": "0",
+    "bootloader": "locked",
+    "selinux": "Enforcing"
+  },
+  "limitations": [
+    "Temporary root is restored by an exploit after reboot; this is not a bootloader unlock.",
+    "One manual activation and one automatic full-reboot restoration were verified. Long-term reliability and a Monsoon cold-power cycle were not tested.",
+    "Phone clock resets to January 2026; phone log timestamps do not match the actual test date.",
+    "No firmware was flashed, no bootloader unlock was attempted, and no third-party modules were installed."
+  ]
+}

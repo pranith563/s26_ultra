@@ -1,0 +1,14 @@
+$LD_DEBUG is a comma-separated list of:
+
+  calls       ctors/dtors/ifuncs
+  cfi         control flow integrity messages
+  dynamic     dynamic section processing
+  lookup      symbol lookup
+  props       ELF property processing
+  reloc       relocation resolution
+  statistics  relocation statistics
+  timing      timing information
+
+or 'all' for all of the above.
+
+TOOL_EXIT=1

@@ -1,0 +1,25 @@
+d48142468b6d94f7fb22a954457567c56a46c0bb0fdda162510d89e554202b7f  /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so
+[1;33mFriendly Name                                      Capability                Streaming Rate(s)         Sampling Rate(s)               Available Metric(s)           
+[0m[1;32m-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[0m[1;32mBattery                   profiler:apps-proc-battery-metrics                200-1000                  50-1000                        4703 4705-4706 4708 
+[0m[1;32mCPU                           profiler:apps-proc-cpu-metrics                200-1000                  10-1000                        4609-4616 4618-4624 4696 4720 4731-4735 6414 6424-6426 6455-6462 
+[0m[1;32mCPU-PMU                   profiler:apps-proc-cpu-pmu-metrics                200-1000                  20-200                         0-33133 
+[0m[1;32mGPU-Processor             profiler:proc-gpu-specific-metrics                200-2000                  50-1000                        4864-4876 4878-4886 4888-4906 4908-4919 4923-4927 4929-4930 4932-4952 
+[0m[1;32mIO                             profiler:apps-proc-io-metrics                1000                      200-1000                       4646-4647 
+[0m[1;32mDDR                           profiler:apps-proc-ddr-metrics                200-500                   10                             4661-4663 4268 4270-4271 4275 
+[0m[1;32mMemory                        profiler:apps-proc-mem-metrics                200-1000                  50-1000                        4639-4641 4643-4645 4648-4649 
+[0m[1;32mNetwork                       profiler:apps-proc-net-metrics                200-1000                  100-1000                       4656-4659 4678-4682 
+[0m[1;32mProcess                   profiler:apps-proc-process-metrics                200-1000                  50-1000                        4642 
+[0m[1;32mProcess Memory        profiler:apps-proc-process-mem-metrics                200-1000                  50-1000                        4683-4686 
+[0m[1;32mADSP                               profiler:adsp-dsp-metrics                200-5000                  1-200                          4096-4182 4185-4187 4189-4190 4193-4197 4204-4205 4244-4259 4261-4263 4285 
+[0m[1;32m                                                                                                                                     4287-4288 4290 
+[0m[1;32mNPU0                                profiler:nsp-dsp-metrics                200-1000                  1-200                          4096-4184 4187-4188 4190-4192 4195 4204-4205 4236-4241 4244-4259 4266-4267 
+[0m[1;32m                                                                                                                                     4285 4288 4290 4352 4356 4358 4360-4362 4366-4374 4377-4385 4391 4394 
+[0m[1;32m                                                                                                                                     4480-4481 4496-4524 
+[0m[1;32mADSP-Stats                           profiler:adsp-dsp-stats                1000-2000                 1000-2000                      5888-5897 5900 5903-5907 5909-5910 5912 5914 
+[0m[1;32mNPU0-Stats                            profiler:nsp-dsp-stats                1000-2000                 1000-2000                      5888-5890 5893-5900 5903-5907 5909-5912 5914 
+[0m[1;32mThermal                   profiler:apps-proc-thermal-metrics                200-1000                  10-1000                        6464-6465 
+[0m[1;32mTHREAD                   profiler:apps-proc-thread-profiling                200-400                   100-1000                       4660 
+[0m
+TOOL_EXIT=0
+d48142468b6d94f7fb22a954457567c56a46c0bb0fdda162510d89e554202b7f  /vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so

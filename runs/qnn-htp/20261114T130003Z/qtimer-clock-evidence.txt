@@ -1,0 +1,61 @@
+Deployed Qualcomm Profiler 2.26.10.6 handler. CNTVCT_EL0 path loads double 52.08333 at 0x5198. The same constant occurs in CPU, memory, thermal and Sysmon profiling handlers.
+
+
+C:\Program Files (x86)\Qualcomm\Shared\QualcommProfiler\API\target-la\aarch64\libs\handlers\libQualcommProfilerCpuHandler.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+000000000000ea7c <qtimer_getCurrentTime>:
+    ea7c: d10103ff     	sub	sp, sp, #0x40
+    ea80: a9027bfd     	stp	x29, x30, [sp, #0x20]
+    ea84: a9034ff4     	stp	x20, x19, [sp, #0x30]
+    ea88: 910083fd     	add	x29, sp, #0x20
+    ea8c: d53bd054     	mrs	x20, TPIDR_EL0
+    ea90: f9401688     	ldr	x8, [x20, #0x28]
+    ea94: f81f83a8     	stur	x8, [x29, #-0x8]
+    ea98: b4000261     	cbz	x1, 0xeae4 <qtimer_getCurrentTime+0x68>
+    ea9c: aa0103f3     	mov	x19, x1
+    eaa0: 340002e0     	cbz	w0, 0xeafc <qtimer_getCurrentTime+0x80>
+    eaa4: 910023e1     	add	x1, sp, #0x8
+    eaa8: 2a1f03e0     	mov	w0, wzr
+    eaac: a900ffff     	stp	xzr, xzr, [sp, #0x8]
+    eab0: 94002484     	bl	0x17cc0 <clock_gettime@plt>
+    eab4: 3100041f     	cmn	w0, #0x1
+    eab8: 54000400     	b.eq	0xeb38 <qtimer_getCurrentTime+0xbc>
+    eabc: 6d4087e0     	ldp	d0, d1, [sp, #0x8]
+    eac0: d2d9aca8     	mov	x8, #0xcd6500000000     // =225833675390976
+    eac4: f2e839a8     	movk	x8, #0x41cd, lsl #48
+    eac8: 9e670102     	fmov	d2, x8
+    eacc: 5e61d800     	scvtf	d0, d0
+    ead0: 1e620800     	fmul	d0, d0, d2
+    ead4: 5e61d821     	scvtf	d1, d1
+    ead8: 2a1f03e0     	mov	w0, wzr
+    eadc: 1e612800     	fadd	d0, d0, d1
+    eae0: 1400000c     	b	0xeb10 <qtimer_getCurrentTime+0x94>
+    eae4: 52800040     	mov	w0, #0x2                // =2
+    eae8: f9401688     	ldr	x8, [x20, #0x28]
+    eaec: f85f83a9     	ldur	x9, [x29, #-0x8]
+    eaf0: eb09011f     	cmp	x8, x9
+    eaf4: 540001a0     	b.eq	0xeb28 <qtimer_getCurrentTime+0xac>
+    eaf8: 14000015     	b	0xeb4c <qtimer_getCurrentTime+0xd0>
+    eafc: f0ffffa8     	adrp	x8, 0x5000 <g_cpuDirectory+0x1b4f>
+    eb00: fd40cd00     	ldr	d0, [x8, #0x198]
+    eb04: d53be048     	mrs	x8, CNTVCT_EL0
+    eb08: 9e630101     	ucvtf	d1, x8
+    eb0c: 1e600820     	fmul	d0, d1, d0
+    eb10: 9e790008     	fcvtzu	x8, d0
+    eb14: f9000268     	str	x8, [x19]
+    eb18: f9401688     	ldr	x8, [x20, #0x28]
+    eb1c: f85f83a9     	ldur	x9, [x29, #-0x8]
+    eb20: eb09011f     	cmp	x8, x9
+    eb24: 54000141     	b.ne	0xeb4c <qtimer_getCurrentTime+0xd0>
+    eb28: a9434ff4     	ldp	x20, x19, [sp, #0x30]
+    eb2c: a9427bfd     	ldp	x29, x30, [sp, #0x20]
+    eb30: 910103ff     	add	sp, sp, #0x40
+    eb34: d65f03c0     	ret
+    eb38: 52800020     	mov	w0, #0x1                // =1
+    eb3c: f9401688     	ldr	x8, [x20, #0x28]
+    eb40: f85f83a9     	ldur	x9, [x29, #-0x8]
+    eb44: eb09011f     	cmp	x8, x9
+    eb48: 54ffff00     	b.eq	0xeb28 <qtimer_getCurrentTime+0xac>
+    eb4c: 9400239d     	bl	0x179c0 <__stack_chk_fail@plt>

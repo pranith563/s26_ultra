@@ -1,0 +1,7 @@
+"id","name","type","unit","samples","min_value","max_value"
+1,"batt.capacity_pct","battery_counter","[NULL]",33,59.000000,59.000000
+0,"batt.charge_uah","battery_counter","[NULL]",33,2954080.000000,2954080.000000
+3,"batt.current.avg_ua","battery_counter","[NULL]",33,483593.000000,487500.000000
+2,"batt.current_ua","battery_counter","[NULL]",33,459375.000000,505468.000000
+5,"batt.power_mw","battery_counter","[NULL]",33,1816.000000,1998.000000
+4,"batt.voltage_uv","battery_counter","[NULL]",33,3953000.000000,3954000.000000

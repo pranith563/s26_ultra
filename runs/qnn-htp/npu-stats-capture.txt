@@ -1,0 +1,2 @@
+Using default Configuration for capability profiler:nsp-dsp-stats
+Please check profiling results at C:\Users\prani\s26_ultra\runs\qnn-htp\npu-stats\

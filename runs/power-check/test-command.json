@@ -1,0 +1,4 @@
+{
+  "sampler": "sh /data/local/tmp/s26-power-check/sample-power.sh; result=$?; echo SAMPLE_EXIT=$result >&2; exit $result",
+  "topology": "Monsoon at previously set 3.90 V, battery cell removed, USB connected. No power controls changed."
+}

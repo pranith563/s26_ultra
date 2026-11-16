@@ -1,0 +1,1803 @@
+{
+  "checked_utc": "2026-11-14T13:24:21.872789+00:00",
+  "device": "SM-S948B/DS",
+  "firmware": "S948BXXU1AZAB",
+  "boot_id": "f23a96a6-fe8e-4804-8076-32df8aa2f25e",
+  "topology": "Battery cell removed; original battery strip connected to Monsoon set to 3.90 V; PC USB also connected. Wiring and current-sense boundaries not electrically verified.",
+  "method": "32 sequential sysfs reads per phase, nominal 250 ms sleep plus read overhead; one bounded QNN CPU Conv/ReLU workload with duration 8 seconds, 2329 inferences. Not a calibrated benchmark; idle includes measurement overhead.",
+  "phases": {
+    "idle": {
+      "samples": 32,
+      "first_uptime_s": 5238.4,
+      "last_uptime_s": 5247.31,
+      "statistics": {
+        "voltage_uv": {
+          "mean": 3951031.25,
+          "min": 3951000,
+          "max": 3952000
+        },
+        "current_ua": {
+          "mean": 465282.78125,
+          "min": 303906,
+          "max": 497656
+        },
+        "current_avg_ua": {
+          "mean": 475365.96875,
+          "min": 474218,
+          "max": 477343
+        },
+        "temp_deciC": {
+          "mean": 269,
+          "min": 269,
+          "max": 269
+        },
+        "power_now_raw": {
+          "mean": 95.21875,
+          "min": 64,
+          "max": 257
+        },
+        "power_avg_raw": {
+          "mean": 85.625,
+          "min": 84,
+          "max": 87
+        },
+        "signed_voltage_times_current_w": {
+          "mean": 1.8383468683125,
+          "meaning": "Signed battery-interface product, not validated whole-device power."
+        }
+      }
+    },
+    "cpu": {
+      "samples": 32,
+      "first_uptime_s": 5247.6,
+      "last_uptime_s": 5255.79,
+      "statistics": {
+        "voltage_uv": {
+          "mean": 3952000,
+          "min": 3952000,
+          "max": 3952000
+        },
+        "current_ua": {
+          "mean": -754174.53125,
+          "min": -1146093,
+          "max": 378125
+        },
+        "current_avg_ua": {
+          "mean": 111962.78125,
+          "min": -182031,
+          "max": 472656
+        },
+        "temp_deciC": {
+          "mean": 269,
+          "min": 269,
+          "max": 269
+        },
+        "power_now_raw": {
+          "mean": 1338.90625,
+          "min": 191,
+          "max": 1764
+        },
+        "power_avg_raw": {
+          "mean": 389.71875,
+          "min": 89,
+          "max": 645
+        },
+        "signed_voltage_times_current_w": {
+          "mean": -2.9804977475000003,
+          "meaning": "Signed battery-interface product, not validated whole-device power."
+        }
+      }
+    },
+    "recovery": {
+      "samples": 32,
+      "first_uptime_s": 5256.07,
+      "last_uptime_s": 5264.9,
+      "statistics": {
+        "voltage_uv": {
+          "mean": 3953687.5,
+          "min": 3952000,
+          "max": 3954000
+        },
+        "current_ua": {
+          "mean": 468676.3125,
+          "min": 408593,
+          "max": 497656
+        },
+        "current_avg_ua": {
+          "mean": 31811.375,
+          "min": -161718,
+          "max": 182031
+        },
+        "temp_deciC": {
+          "mean": 269.8125,
+          "min": 269,
+          "max": 270
+        },
+        "power_now_raw": {
+          "mean": 96.875,
+          "min": 63,
+          "max": 152
+        },
+        "power_avg_raw": {
+          "mean": 487.5625,
+          "min": 373,
+          "max": 630
+        },
+        "signed_voltage_times_current_w": {
+          "mean": 1.8530019014999999,
+          "meaning": "Signed battery-interface product, not validated whole-device power."
+        }
+      }
+    }
+  },
+  "battery_units": {
+    "voltage_now": "microvolts",
+    "current_now": "microamps, signed",
+    "current_avg": "microamps, lagging average",
+    "temp": "tenths C",
+    "charge_counter": "microamp-hours",
+    "capacity": "reported percent, not meaningful physical remaining cell charge with cell removed",
+    "power_now": "Samsung driver exposes ISYS in milliamps; not watts or microwatts",
+    "power_avg": "Samsung driver exposes averaged ISYS in milliamps; lagging"
+  },
+  "perfetto": {
+    "main_trace": "power.perfetto-trace",
+    "battery_samples_per_track": 121,
+    "limitation": "Scheduler events wrapped the main trace ring buffer; initial phase markers absent. Do not use it as a complete scheduler capture.",
+    "confirmatory_trace": "power-only.perfetto-trace",
+    "duration_ms": 8000,
+    "tracks": [
+      {
+        "id": "1",
+        "name": "batt.capacity_pct",
+        "type": "battery_counter",
+        "unit": "[NULL]",
+        "samples": "33",
+        "min_value": "59.000000",
+        "max_value": "59.000000"
+      },
+      {
+        "id": "0",
+        "name": "batt.charge_uah",
+        "type": "battery_counter",
+        "unit": "[NULL]",
+        "samples": "33",
+        "min_value": "2954080.000000",
+        "max_value": "2954080.000000"
+      },
+      {
+        "id": "3",
+        "name": "batt.current.avg_ua",
+        "type": "battery_counter",
+        "unit": "[NULL]",
+        "samples": "33",
+        "min_value": "483593.000000",
+        "max_value": "487500.000000"
+      },
+      {
+        "id": "2",
+        "name": "batt.current_ua",
+        "type": "battery_counter",
+        "unit": "[NULL]",
+        "samples": "33",
+        "min_value": "459375.000000",
+        "max_value": "505468.000000"
+      },
+      {
+        "id": "5",
+        "name": "batt.power_mw",
+        "type": "battery_counter",
+        "unit": "[NULL]",
+        "samples": "33",
+        "min_value": "1816.000000",
+        "max_value": "1998.000000"
+      },
+      {
+        "id": "4",
+        "name": "batt.voltage_uv",
+        "type": "battery_counter",
+        "unit": "[NULL]",
+        "samples": "33",
+        "min_value": "3953000.000000",
+        "max_value": "3954000.000000"
+      }
+    ],
+    "errors": [
+      {
+        "name": "entity_state_residency_invalid",
+        "value": "1",
+        "severity": "error"
+      },
+      {
+        "name": "power_rail_empty_packet",
+        "value": "1",
+        "severity": "error"
+      }
+    ],
+    "hardware_rail_energy_tracks_found": 0,
+    "derived_power": "batt.power_mw is abs(current_ua * voltage_uv) / 1e9, calculated by trace processor; it is not an independent meter.",
+    "powerstats_hal": "No registered AIDL or HIDL PowerStats HAL found; framework powerstats service exists but its dump was empty. Power/Health HALs are different services."
+  },
+  "inventory": {
+    "power_supplies": [
+      {
+        "class_path": "/sys/class/power_supply/ac",
+        "device_path": "/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/ac",
+        "listed_attributes": [
+          "device",
+          "online",
+          "power",
+          "subsystem",
+          "temp",
+          "type",
+          "uevent",
+          "wakeup52"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "ac",
+          "POWER_SUPPLY_TYPE": "Mains",
+          "POWER_SUPPLY_ONLINE": "0",
+          "POWER_SUPPLY_TEMP": "276"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/battery",
+        "device_path": "/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/battery",
+        "listed_attributes": [
+          "2g_call",
+          "3g_call",
+          "adc_rsense",
+          "ari_cnt",
+          "auth",
+          "batt_battery_id",
+          "batt_capacity_max",
+          "batt_charging_source",
+          "batt_chip_id",
+          "batt_con_det",
+          "batt_current_event",
+          "batt_current_ua_avg",
+          "batt_current_ua_now",
+          "batt_ext_dev_chg",
+          "batt_factory_mode",
+          "batt_filter_cfg",
+          "batt_full_capacity",
+          "batt_high_current_usb",
+          "batt_hv_wireless_pad_ctrl",
+          "batt_hv_wireless_status",
+          "batt_inbat_voltage",
+          "batt_inbat_voltage_adc",
+          "batt_inbat_voltage_ocv",
+          "batt_inbat_wireless_cs100",
+          "batt_jig_gpio",
+          "batt_lp_charging",
+          "batt_misc_event",
+          "batt_misc_test",
+          "batt_read_adj_soc",
+          "batt_read_raw_soc",
+          "batt_repcap_1st",
+          "batt_reset_soc",
+          "batt_shipmode_test",
+          "batt_shipmode_test_db_t",
+          "batt_slate_mode",
+          "batt_soc_rechg",
+          "batt_swelling_control",
+          "batt_temp",
+          "batt_temp_adc",
+          "batt_temp_adc_aver",
+          "batt_temp_aver",
+          "batt_temp_control_test",
+          "batt_temp_raw",
+          "batt_temp_table",
+          "batt_temp_test",
+          "batt_tx_event",
+          "batt_type",
+          "batt_vf_adc",
+          "batt_vfocv",
+          "batt_vol_adc",
+          "batt_vol_adc_aver",
+          "batt_vol_adc_cal",
+          "batt_vol_aver",
+          "batt_volt_test",
+          "batt_voltage_now",
+          "batt_wdt_control",
+          "batt_wireless_firmware_update",
+          "batt_wpc_temp",
+          "batt_wpc_temp_adc",
+          "battery_cycle",
+          "battery_cycle_test",
+          "battery_dump",
+          "blkt_temp",
+          "blkt_temp_adc",
+          "boot_completed",
+          "browser",
+          "call",
+          "camcorder",
+          "camera",
+          "capacity",
+          "cc_info",
+          "charge_counter",
+          "charge_counter_shadow",
+          "charge_full",
+          "charge_full_design",
+          "charge_now",
+          "charge_otg_control",
+          "charge_type",
+          "charge_uno_control",
+          "charger_ic_name",
+          "charging_type",
+          "check_ps_ready",
+          "check_sub_chg",
+          "chg_current_adc",
+          "chg_info",
+          "chg_soc_lim",
+          "chg_temp",
+          "chg_temp_adc",
+          "chg_type",
+          "cisd_cable_data",
+          "cisd_cable_data_json",
+          "cisd_data",
+          "cisd_data_d_json",
+          "cisd_data_json",
+          "cisd_dcerr_data",
+          "cisd_dcerr_data_json",
+          "cisd_event_data",
+          "cisd_event_data_json",
+          "cisd_fullcaprep_max",
+          "cisd_pd_data",
+          "cisd_pd_data_json",
+          "cisd_power_data",
+          "cisd_power_data_json",
+          "cisd_tx_data",
+          "cisd_tx_data_json",
+          "cisd_wc_data",
+          "cisd_wc_data_json",
+          "cisd_wire_count",
+          "current_avg",
+          "current_now",
+          "data_call",
+          "dc_adc_mode",
+          "dc_error_cause",
+          "dc_ic_id",
+          "dc_op_mode",
+          "dc_rb_en",
+          "dc_vbus",
+          "dchg_adc_mode_ctrl",
+          "dchg_read_batp_batn",
+          "dchg_temp",
+          "dchg_temp_adc",
+          "device",
+          "direct_charging_chg_status",
+          "direct_charging_iin",
+          "direct_charging_ratio",
+          "direct_charging_status",
+          "direct_charging_step",
+          "ep_test",
+          "error_cause",
+          "event",
+          "ext_event",
+          "factory_mode",
+          "factory_mode_bypass",
+          "factory_mode_disable",
+          "factory_mode_relieve",
+          "factory_voltage_regulation",
+          "fg_asoc",
+          "fg_capacity",
+          "fg_cycle",
+          "fg_full_voltage",
+          "fg_fullcapnom",
+          "fg_reg_dump",
+          "fg_reset_cap",
+          "gps",
+          "health",
+          "hmap_logging_control",
+          "hmap_logging_data",
+          "hmt_ta_charge",
+          "hmt_ta_connected",
+          "hotspot",
+          "hp_d2d",
+          "hv_charger_set",
+          "hv_charger_status",
+          "hv_wc_charger_status",
+          "lcd",
+          "led_cover",
+          "lrp",
+          "lte",
+          "mag_cloak",
+          "mag_cover",
+          "mag_value",
+          "mode",
+          "mst_en",
+          "mst_switch_test",
+          "music",
+          "normal_mode_bypass",
+          "ocpwarn",
+          "online",
+          "otp_firmware_result",
+          "otp_firmware_ver",
+          "otp_firmware_ver_bin",
+          "pass_through",
+          "pd_disable",
+          "power",
+          "power_avg",
+          "power_now",
+          "present",
+          "prev_battery_data",
+          "prev_battery_info",
+          "safety_timer_info",
+          "safety_timer_set",
+          "set_stability_test",
+          "siop_activated",
+          "siop_event",
+          "siop_level",
+          "spsn_test",
+          "status",
+          "store_mode",
+          "sub_bat_temp",
+          "sub_bat_temp_adc",
+          "sub_chg_temp",
+          "sub_chg_temp_adc",
+          "subsystem",
+          "support_functions",
+          "switch_charging_source",
+          "talk_gsm",
+          "talk_wcdma",
+          "technology",
+          "temp",
+          "temp_ambient",
+          "test_mode",
+          "time_to_full_now",
+          "type",
+          "uevent",
+          "update",
+          "usb_conf_test",
+          "usb_temp",
+          "usb_temp_adc",
+          "vbyp_voltage",
+          "video",
+          "voltage_avg",
+          "voltage_now",
+          "voter_status",
+          "wakeup61",
+          "wc_adc",
+          "wc_auth_adt_sent",
+          "wc_cmd_info",
+          "wc_control",
+          "wc_control_cnt",
+          "wc_duo_rx_power",
+          "wc_enable",
+          "wc_ic_chip_id",
+          "wc_ic_grade",
+          "wc_op_freq",
+          "wc_param_info",
+          "wc_phm_ctrl",
+          "wc_rx_connected",
+          "wc_rx_connected_dev",
+          "wc_status",
+          "wc_tx_avg_curr",
+          "wc_tx_en",
+          "wc_tx_id",
+          "wc_tx_mfc_iin_from_uno",
+          "wc_tx_mfc_vin_from_uno",
+          "wc_tx_stop_capacity",
+          "wc_tx_timer_en",
+          "wc_tx_total_pwr",
+          "wc_tx_vout",
+          "wc_vout",
+          "wc_vrect",
+          "wibro",
+          "wifi",
+          "wpc_auth_mode",
+          "wpc_op_mode",
+          "wpc_qi_ver"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "battery",
+          "POWER_SUPPLY_TYPE": "Battery",
+          "POWER_SUPPLY_STATUS": "Charging",
+          "POWER_SUPPLY_CHARGE_TYPE": "Trickle",
+          "POWER_SUPPLY_HEALTH": "Good",
+          "POWER_SUPPLY_PRESENT": "1",
+          "POWER_SUPPLY_ONLINE": "4",
+          "POWER_SUPPLY_TECHNOLOGY": "Li-ion",
+          "POWER_SUPPLY_VOLTAGE_NOW": "3954000",
+          "POWER_SUPPLY_VOLTAGE_AVG": "3953000",
+          "POWER_SUPPLY_CURRENT_NOW": "482812",
+          "POWER_SUPPLY_CURRENT_AVG": "486718",
+          "POWER_SUPPLY_CHARGE_FULL_DESIGN": "5000000",
+          "POWER_SUPPLY_CHARGE_FULL": "5000000",
+          "POWER_SUPPLY_CHARGE_NOW": "1",
+          "POWER_SUPPLY_CAPACITY": "59",
+          "POWER_SUPPLY_TEMP": "269",
+          "POWER_SUPPLY_TEMP_AMBIENT": "269",
+          "POWER_SUPPLY_POWER_NOW": "81",
+          "POWER_SUPPLY_POWER_AVG": "77",
+          "POWER_SUPPLY_TIME_TO_FULL_NOW": "14337",
+          "POWER_SUPPLY_CHARGE_COUNTER": "2949090"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/max77775-charger",
+        "device_path": "/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-3/3-0066/max77775-charger/power_supply/max77775-charger",
+        "listed_attributes": [
+          "chip_id",
+          "data",
+          "device",
+          "online",
+          "power",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup130"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "max77775-charger",
+          "POWER_SUPPLY_TYPE": "Unknown",
+          "POWER_SUPPLY_ONLINE": "3"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/max77775-fuelgauge",
+        "device_path": "/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-3/3-0066/max77775-fuelgauge/power_supply/max77775-fuelgauge",
+        "listed_attributes": [
+          "device",
+          "fg_data",
+          "online",
+          "power",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup73"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "max77775-fuelgauge",
+          "POWER_SUPPLY_TYPE": "Unknown",
+          "POWER_SUPPLY_ONLINE": "4"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/max77775-otg",
+        "device_path": "/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-3/3-0066/max77775-charger/power_supply/max77775-otg",
+        "listed_attributes": [
+          "device",
+          "online",
+          "power",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup131"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "max77775-otg",
+          "POWER_SUPPLY_TYPE": "Unknown",
+          "POWER_SUPPLY_ONLINE": "0"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/mfc-charger",
+        "device_path": "/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a94000.i2c/i2c-5/5-0030/power_supply/mfc-charger",
+        "listed_attributes": [
+          "device",
+          "mfc_addr",
+          "mfc_data",
+          "mfc_epp_t",
+          "mfc_packet",
+          "mfc_size",
+          "online",
+          "power",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup112"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "mfc-charger",
+          "POWER_SUPPLY_TYPE": "Unknown",
+          "POWER_SUPPLY_ONLINE": "1"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/otg",
+        "device_path": "/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/otg",
+        "listed_attributes": [
+          "device",
+          "online",
+          "power",
+          "sec_type",
+          "subsystem",
+          "type",
+          "uevent",
+          "voltage_max",
+          "wakeup64"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "otg",
+          "POWER_SUPPLY_TYPE": "Unknown",
+          "POWER_SUPPLY_ONLINE": "0",
+          "POWER_SUPPLY_VOLTAGE_MAX": "0"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/pogo",
+        "device_path": "/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/pogo",
+        "listed_attributes": [
+          "device",
+          "online",
+          "power",
+          "sec_type",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup62"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "pogo",
+          "POWER_SUPPLY_TYPE": "Unknown",
+          "POWER_SUPPLY_ONLINE": "0"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/sc8583-charger",
+        "device_path": "/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-3/3-006e/power_supply/sc8583-charger",
+        "listed_attributes": [
+          "device",
+          "online",
+          "power",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup134"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "sc8583-charger",
+          "POWER_SUPPLY_TYPE": "Unknown",
+          "POWER_SUPPLY_ONLINE": "0"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/sec-direct-charger",
+        "device_path": "/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:sec-direct-charger/power_supply/sec-direct-charger",
+        "listed_attributes": [
+          "device",
+          "online",
+          "power",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup77"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "sec-direct-charger",
+          "POWER_SUPPLY_TYPE": "Unknown",
+          "POWER_SUPPLY_ONLINE": "3"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/usb",
+        "device_path": "/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/usb",
+        "listed_attributes": [
+          "device",
+          "online",
+          "power",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup51"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "usb",
+          "POWER_SUPPLY_TYPE": "USB",
+          "POWER_SUPPLY_ONLINE": "1"
+        }
+      },
+      {
+        "class_path": "/sys/class/power_supply/wireless",
+        "device_path": "/sys/devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/wireless",
+        "listed_attributes": [
+          "device",
+          "online",
+          "power",
+          "present",
+          "sgf",
+          "subsystem",
+          "type",
+          "uevent",
+          "wakeup63"
+        ],
+        "uevent": {
+          "DEVTYPE": "power_supply",
+          "POWER_SUPPLY_NAME": "wireless",
+          "POWER_SUPPLY_TYPE": "Wireless",
+          "POWER_SUPPLY_ONLINE": "0",
+          "POWER_SUPPLY_PRESENT": "1"
+        }
+      }
+    ],
+    "iio_channels": [
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_ap_therm_input",
+        "raw": 854714,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_cf_therm_input",
+        "raw": 871583,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_chg_thm_input",
+        "raw": 727681,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_frc_id_input",
+        "raw": 759342,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_lp_therm_input",
+        "raw": 874113,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_pa_therm_input",
+        "raw": 863992,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_pmh0101_die_temp_input",
+        "raw": 29144,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_d_die_temp_input",
+        "raw": 27874,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_f_die_temp_input",
+        "raw": 29445,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_g_die_temp_input",
+        "raw": 29479,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_pmh0110_i_die_temp_input",
+        "raw": 29245,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_pmk8850_die_temp_input",
+        "raw": 27472,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_pmk8850_xo_therm_input",
+        "raw": 28745,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_usb_thm_input",
+        "raw": 891565,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_wf_therm_input",
+        "raw": 867690,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_temp_wpc_thm_input",
+        "raw": 752011,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_offset_ref_input",
+        "raw": 0,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_vph_pwr_input",
+        "raw": 3969615,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmh0101_vref_1p25_input",
+        "raw": 1249826,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_d_vph_pwr_input",
+        "raw": 3971364,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_f_vph_pwr_input",
+        "raw": 3968445,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_g_vph_pwr_input",
+        "raw": 3971949,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmh0110_i_vph_pwr_input",
+        "raw": 3970977,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmk8850_offset_ref_input",
+        "raw": 0,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      },
+      {
+        "path": "/sys/bus/iio/devices/iio:device0/in_voltage_pmk8850_vref_1p25_input",
+        "raw": 1000043,
+        "interpretation": "Uncalibrated ADC output; no current or energy counterpart demonstrated."
+      }
+    ],
+    "regulators": [
+      {
+        "path": "/sys/class/regulator/regulator.0",
+        "name": "regulator-dummy"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.1",
+        "name": "pmh0110_d_s1_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.10",
+        "name": "pmh0110_d_s7_level_ao"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.100",
+        "name": "s2mpb02-l7"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.101",
+        "name": "s2mpb02-l8"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.102",
+        "name": "s2mpb02-l9"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.103",
+        "name": "s2mpb02-l10"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.104",
+        "name": "s2mpb02-l11"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.105",
+        "name": "s2mpb02-l12"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.106",
+        "name": "s2mpb02-l13"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.107",
+        "name": "s2mpb02-l14"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.108",
+        "name": "s2mpb02-l15"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.109",
+        "name": "s2mpb02-l16"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.11",
+        "name": "pmh0110_d_s7_level_so"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.110",
+        "name": "s2mpb02-l17"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.111",
+        "name": "s2mpb02-l18"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.112",
+        "name": "s2mpb02-b1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.113",
+        "name": "s2mpb02-b2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.114",
+        "name": "s2mpb02-bb"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.12",
+        "name": "pmh0110_f_s9_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.13",
+        "name": "pmh0110_f_s9_level_ao"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.14",
+        "name": "pmh0110_f_s9_mmcx_voter_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.15",
+        "name": "pmh0110_g_s8_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.16",
+        "name": "pmh0110_i_s1_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.17",
+        "name": "pmh0110_i_s10_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.18",
+        "name": "pmh0110_i_s10_level_ao"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.19",
+        "name": "pmh0110_i_l1_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.2",
+        "name": "pmh0110_d_s2_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.20",
+        "name": "pmh0101_bob1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.21",
+        "name": "pmh0101_bob2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.22",
+        "name": "pmh0101_l1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.23",
+        "name": "pmh0101_l2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.24",
+        "name": "pmh0101_l4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.25",
+        "name": "pmh0101_l5"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.26",
+        "name": "pmh0101_l6"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.27",
+        "name": "pmh0101_l7"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.28",
+        "name": "VDD_BTP_1P8"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.29",
+        "name": "VDD_BTP_3P0"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.3",
+        "name": "pmh0110_d_s4_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.30",
+        "name": "pmh0101_l10"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.31",
+        "name": "pmh0101_l11"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.32",
+        "name": "panel_vdd3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.33",
+        "name": "pmh0101_l13"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.34",
+        "name": "panel_vci"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.35",
+        "name": "pmh0101_l15"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.36",
+        "name": "pmh0101_l16"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.37",
+        "name": "pmh0101_l17"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.38",
+        "name": "pmh0101_l18"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.39",
+        "name": "pmh0101_ls1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.4",
+        "name": "pmh0110_f_s1_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.40",
+        "name": "pmh0101_ls2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.41",
+        "name": "pmh0101_ls3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.42",
+        "name": "pmh0101_ls4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.43",
+        "name": "pmh0110_d_s9"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.44",
+        "name": "pmh0110_d_s10"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.45",
+        "name": "pmh0110_d_l1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.46",
+        "name": "pmh0110_d_l1_ao"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.47",
+        "name": "pmh0110_d_l1_so"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.48",
+        "name": "pmh0110_d_l2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.49",
+        "name": "pmh0110_d_l3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.5",
+        "name": "pmh0110_f_s10_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.50",
+        "name": "pmh0110_d_l3_ao"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.51",
+        "name": "pmh0110_d_l3_so"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.52",
+        "name": "pmh0110_d_l4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.53",
+        "name": "pmh0110_f_s6"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.54",
+        "name": "pmh0110_f_s7"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.55",
+        "name": "pmh0110_f_s8"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.56",
+        "name": "pmh0110_f_l1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.57",
+        "name": "pmh0110_f_l2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.58",
+        "name": "pmh0110_f_l3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.59",
+        "name": "pmh0110_f_l4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.6",
+        "name": "pmh0110_f_s10_gfx_voter_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.60",
+        "name": "pmh0110_g_s7"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.61",
+        "name": "pmh0110_g_s9"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.62",
+        "name": "pmh0110_g_l1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.63",
+        "name": "pmh0110_g_l2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.64",
+        "name": "pmh0110_g_l3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.65",
+        "name": "pmh0110_g_l4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.66",
+        "name": "pmh0110_i_s7"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.67",
+        "name": "pmh0110_i_l2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.68",
+        "name": "pmh0110_i_l3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.69",
+        "name": "pmh0110_i_l4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.7",
+        "name": "pmh0110_g_s5_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.70",
+        "name": "pmh0104_s1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.71",
+        "name": "pmh0104_s2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.72",
+        "name": "pmh0104_s3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.73",
+        "name": "pmh0104_s4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.74",
+        "name": "pmr735d_l1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.75",
+        "name": "pmr735d_l2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.76",
+        "name": "pmr735d_l3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.77",
+        "name": "pmr735d_l4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.78",
+        "name": "pmr735d_l5"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.79",
+        "name": "pmr735d_l6"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.8",
+        "name": "pmh0110_g_s5_level_ao"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.80",
+        "name": "pmr735d_l7"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.81",
+        "name": "pmk8850_wcal_pbs"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.82",
+        "name": "display_panel_avdd"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.83",
+        "name": "display_panel_vdd"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.84",
+        "name": "fixed_regulator${#}"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.85",
+        "name": "ET5917-LDO1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.86",
+        "name": "panel_vddr"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.87",
+        "name": "panel_elvdd_elvss"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.88",
+        "name": "ET5917-LDO2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.89",
+        "name": "ET5917-LDO3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.9",
+        "name": "pmh0110_d_s7_level"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.90",
+        "name": "ET5917-LDO4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.91",
+        "name": "ET5917-LDO5"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.92",
+        "name": "ET5917-LDO6"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.93",
+        "name": "ET5917-LDO7"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.94",
+        "name": "s2mpb02-l1"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.95",
+        "name": "s2mpb02-l2"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.96",
+        "name": "s2mpb02-l3"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.97",
+        "name": "s2mpb02-l4"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.98",
+        "name": "s2mpb02-l5"
+      },
+      {
+        "path": "/sys/class/regulator/regulator.99",
+        "name": "s2mpb02-l6"
+      }
+    ],
+    "thermal_zones": [
+      {
+        "path": "/sys/class/thermal/thermal_zone0",
+        "type": "cpullc-0-0",
+        "raw": 36400,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone1",
+        "type": "cpullc-0-1",
+        "raw": 35600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone10",
+        "type": "cpu-0-2-1",
+        "raw": 34500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone11",
+        "type": "cpu-0-3-0",
+        "raw": 34900,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone12",
+        "type": "cpu-0-3-1",
+        "raw": 35200,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone13",
+        "type": "cpu-0-4-0",
+        "raw": 34500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone14",
+        "type": "cpu-0-4-1",
+        "raw": 34100,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone15",
+        "type": "cpu-0-5-0",
+        "raw": 36400,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone16",
+        "type": "cpu-0-5-1",
+        "raw": 36000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone17",
+        "type": "cpullc-1-0",
+        "raw": 32900,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone18",
+        "type": "cpullc-1-1",
+        "raw": 33300,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone19",
+        "type": "qmx-1-0",
+        "raw": 32500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone2",
+        "type": "qmx-0-0",
+        "raw": 33700,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone20",
+        "type": "qmx-1-1",
+        "raw": 32900,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone21",
+        "type": "qmx-1-2",
+        "raw": 32500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone22",
+        "type": "qmx-1-3",
+        "raw": 32900,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone23",
+        "type": "qmx-1-4",
+        "raw": 32900,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone24",
+        "type": "cpu-1-0-0",
+        "raw": 31800,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone25",
+        "type": "cpu-1-0-1",
+        "raw": 32100,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone26",
+        "type": "cpu-1-1-0",
+        "raw": 32500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone27",
+        "type": "cpu-1-1-1",
+        "raw": 32500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone28",
+        "type": "nsphvx-0",
+        "raw": 29800,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone29",
+        "type": "nsphvx-1",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone3",
+        "type": "qmx-0-1",
+        "raw": 34900,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone30",
+        "type": "nsphvx-2",
+        "raw": 29800,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone31",
+        "type": "nsphvx-3",
+        "raw": 29800,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone32",
+        "type": "nsphmx-0",
+        "raw": 29800,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone33",
+        "type": "nsphmx-1",
+        "raw": 30200,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone34",
+        "type": "nsphmx-2",
+        "raw": 30200,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone35",
+        "type": "nsphmx-3",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone36",
+        "type": "gpuss-0",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone37",
+        "type": "gpuss-1",
+        "raw": 30200,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone38",
+        "type": "gpuss-2",
+        "raw": 31000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone39",
+        "type": "gpuss-3",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone4",
+        "type": "qmx-0-2",
+        "raw": 32500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone40",
+        "type": "gpuss-4",
+        "raw": 30200,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone41",
+        "type": "gpuss-5",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone42",
+        "type": "gpuss-6",
+        "raw": 31800,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone43",
+        "type": "gpuss-7",
+        "raw": 31800,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone44",
+        "type": "gpuss-8",
+        "raw": 31000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone45",
+        "type": "gpuss-9",
+        "raw": 31000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone46",
+        "type": "gpuss-10",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone47",
+        "type": "ddr",
+        "raw": 31400,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone48",
+        "type": "mdmss-0",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone49",
+        "type": "mdmss-1",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone5",
+        "type": "cpu-0-0-0",
+        "raw": 32500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone50",
+        "type": "mdmss-2",
+        "raw": 29800,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone51",
+        "type": "mdmss-3",
+        "raw": 30200,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone52",
+        "type": "camera-0",
+        "raw": 31000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone53",
+        "type": "camera-1",
+        "raw": 31000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone54",
+        "type": "video",
+        "raw": 30600,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone55",
+        "type": "sys-therm-0",
+        "raw": 29040,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone56",
+        "type": "pmh0101_tz",
+        "raw": 30047,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone57",
+        "type": "pmh0110_d_tz",
+        "raw": 28509,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone58",
+        "type": "cpu-hw-trip-0",
+        "raw": 105000,
+        "interpretation": "trip-related value; exclude from live temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone59",
+        "type": "pmh0110_f_tz",
+        "raw": 30014,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone6",
+        "type": "cpu-0-0-1",
+        "raw": 32500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone60",
+        "type": "pmh0101-bcl-lvl0",
+        "raw": 0,
+        "interpretation": "BCL level, not a temperature measurement"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone61",
+        "type": "ac",
+        "raw": 27900,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone62",
+        "type": "cpu-hw-trip-1",
+        "raw": 105000,
+        "interpretation": "trip-related value; exclude from live temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone63",
+        "type": "pmh0101-bcl-lvl1",
+        "raw": 0,
+        "interpretation": "BCL level, not a temperature measurement"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone64",
+        "type": "pmh0110_g_tz",
+        "raw": 31185,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone65",
+        "type": "battery",
+        "raw": 27000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone66",
+        "type": "pmh0110_i_tz",
+        "raw": 30348,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone67",
+        "type": "pmh0101-bcl-lvl2",
+        "raw": 0,
+        "interpretation": "BCL level, not a temperature measurement"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone68",
+        "type": "pmh0104_tz",
+        "raw": 37000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone69",
+        "type": "pmr735d_tz",
+        "raw": 37000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone7",
+        "type": "cpu-0-1-0",
+        "raw": 32500,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone70",
+        "type": "sdr0_pa",
+        "raw": -273000,
+        "interpretation": "unavailable/sentinel reading; exclude from temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone71",
+        "type": "sdr0",
+        "raw": -273000,
+        "interpretation": "unavailable/sentinel reading; exclude from temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone72",
+        "type": "mmw_ific0",
+        "raw": -273000,
+        "interpretation": "unavailable/sentinel reading; exclude from temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone73",
+        "type": "mmw0",
+        "raw": -273000,
+        "interpretation": "unavailable/sentinel reading; exclude from temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone74",
+        "type": "mmw1",
+        "raw": -273000,
+        "interpretation": "unavailable/sentinel reading; exclude from temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone75",
+        "type": "mmw2",
+        "raw": -273000,
+        "interpretation": "unavailable/sentinel reading; exclude from temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone76",
+        "type": "mmw3",
+        "raw": -273000,
+        "interpretation": "unavailable/sentinel reading; exclude from temperature analysis"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone8",
+        "type": "cpu-0-1-1",
+        "raw": 31000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      },
+      {
+        "path": "/sys/class/thermal/thermal_zone9",
+        "type": "cpu-0-2-0",
+        "raw": 31000,
+        "interpretation": "temperature interface, nominal millidegrees C"
+      }
+    ],
+    "hwmon": "qti_btl exposes temperature extrema/counters; extrema 98000 with all-zero counters are not established live temperatures.",
+    "additional_search": "Bounded PMIC/debugfs/energy interface enumeration found SDAM NVMEM paths and scheduler energy events, not usable calibrated rail-energy readings. Raw NVMEM registers were not read."
+  },
+  "validation": {
+    "battery_interface_load_response": true,
+    "system_current_units_confirmed_from_installed_drivers": true,
+    "whole_device_watts_validated": false,
+    "monsoon_simultaneous_capture": false,
+    "usb_input_power_measured": false,
+    "cpu_gpu_htp_individual_rail_power_measured": false,
+    "root_retained": true,
+    "selinux": "Enforcing",
+    "same_boot": true,
+    "tracing_on_after": 0,
+    "power_or_firmware_settings_changed": false
+  },
+  "sources": [
+    "https://perfetto.dev/docs/data-sources/battery-counters",
+    "https://source.android.com/docs/core/power/power-stats-hal",
+    "https://raw.githubusercontent.com/google/perfetto/main/src/trace_processor/importers/proto/android_probes_parser.cc",
+    "https://raw.githubusercontent.com/torvalds/linux/v6.12/include/linux/power_supply.h",
+    "https://docs.kernel.org/power/power_supply_class.html",
+    "https://raw.githubusercontent.com/torvalds/linux/master/Documentation/ABI/testing/sysfs-class-regulator"
+  ]
+}

@@ -1,0 +1,6 @@
+uid=0(root) gid=0(root) groups=0(root) context=u:r:ksu:s0
+Enforcing
+f23a96a6-fe8e-4804-8076-32df8aa2f25e
+0
+CHECK_DONE
+cat: /data/user/0/dev.experimental.azhlroot/shared_prefs/appearance.xml: Permission denied

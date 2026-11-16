@@ -1,0 +1,13 @@
+usage: C:\qairt-data\qairt\2.44.0.260225\bin\x86_64-windows-msvc\qnn-profile-viewer.exe --input_log PROFILING_LOG1,PROFILING_LOG2  [--help] [--output=CSV_FILE] [--extract_opaque_objects] [--reader=CUSTOM_READER_SHARED_LIB]
+Reads profiling logs and output the contents to stdout.
+Note: The IPS calculation takes the following into account: graph execute time, tensor file IO time, and misc. time for quantization, callbacks, etc.
+
+Command Line Options:
+  [ --help ]            Displays this help message.
+  [ --version ]         Displays version information.
+  [ --input_log=<val> ] 
+                        Provides a comma-separated list of Profiling log files
+  [ --output=<val> ]    Path for output file with processed profiling data. File formats vary depending upon the reader used (see --reader). If not provided, no output is created.
+  [ --extract_opaque_objects ]
+                        Specifies that the opaque objects will be dumped to output files
+  [ --reader=<val> ]    Path to a reader library. If not provided, the default reader outputs a CSV file.
