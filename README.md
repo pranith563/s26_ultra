@@ -139,8 +139,8 @@ import and zero-copy operation have not been established. QNN tests use a small
 sample, not a representative full application or an energy benchmark.
 
 Raw CSVs, profiler traces, output tensors, logs, screenshots, and test metadata
-are retained in [runs/](runs/). This repository contains device identifiers and
-host-specific paths and is intended to remain private unless reviewed for sharing.
+are retained in [runs/](runs/). Device identifiers and host-specific paths describe
+the original test setup; adjust them before running commands on another setup.
 
 ## What stays local
 
